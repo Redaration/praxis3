@@ -65,8 +65,8 @@ class SimpleApp:
             print(f"Health check interval: {config.HEALTH_CHECK_INTERVAL}s")
             
             # Check API keys
-            openrouter_set = bool(config.OPENROUTER_API_KEY and config.OPENROUTER_API_KEY != "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")
-            runware_set = bool(config.RUNWARE_API_KEY and config.RUNWARE_API_KEY != "A7K5P3-E2M4N2-Q2G8R6-Z1X9C3-V5B7N9")
+            openrouter_set = bool(config.OPENROUTER_API_KEY)
+            runware_set = bool(config.RUNWARE_API_KEY)
             
             print(f"OpenRouter API key: {'✅ Set' if openrouter_set else '❌ Not set'}")
             print(f"Runware API key: {'✅ Set' if runware_set else '❌ Not set'}")

@@ -1,29 +1,92 @@
 #!/usr/bin/env python3
 """
-Runware Image Generation Module
+Runware Image Generation Module - Standalone Image Generation Utility
 
-This module provides functions to generate and download images using the Runware API.
-It can be imported and used by other Python files.
+This module provides synchronous and asynchronous functions to generate and download
+images using the Runware API. It can be imported and used by other Python modules
+for batch image generation with parallel processing capabilities.
 
-Usage:
+THIRD-PARTY SERVICES:
+    - Runware AI: AI-powered image generation service
+      Website: https://runware.ai/
+      Documentation: https://docs.runware.ai/
+      License: Commercial API service (requires API key)
+      Attribution: All images generated using this module are created by Runware AI
+      Models: Supports multiple models including Stable Diffusion variants
+
+THIRD-PARTY LIBRARIES:
+    - runware: Official Runware Python SDK
+      License: Proprietary/Commercial
+      PyPI: https://pypi.org/project/runware/
+      Purpose: Interface to Runware's image generation API
+
+    - aiohttp: Asynchronous HTTP client
+      License: Apache 2.0
+      PyPI: https://pypi.org/project/aiohttp/
+      Purpose: Async download of generated images
+
+    - python-dotenv: Environment variable management
+      License: BSD-3-Clause
+      PyPI: https://pypi.org/project/python-dotenv/
+
+FEATURES:
+    - Single image generation with synchronous wrapper
+    - Parallel batch image generation for multiple prompts
+    - Automatic image download and file management
+    - Configurable image dimensions and model selection
+    - Negative prompt support for content filtering
+
+USAGE EXAMPLES:
     from arunware_image_generator import generate_image, generate_images_parallel
-    
-    # For a single image:
-    single_image = generate_image("a prompt", "path/to/image.png")
 
-    # For multiple images in parallel:
-    image_requests = [("prompt1", "path1.png"), ("prompt2", "path2.png")]
-    multiple_images = generate_images_parallel(image_requests)
+    # Generate a single image:
+    image_paths = generate_image(
+        prompt="A futuristic classroom with AI technology",
+        output_path="slides/classroom.png",
+        width=1024,
+        height=512
+    )
+
+    # Generate multiple images in parallel:
+    image_requests = [
+        ("Network topology diagram", "slides/network.png"),
+        ("Cloud computing infrastructure", "slides/cloud.png"),
+        ("Cybersecurity concept", "slides/security.png")
+    ]
+    all_images = generate_images_parallel(image_requests, width=1024, height=512)
+
+ACADEMIC CONTEXT:
+    This module is used in a doctoral research project to generate educational
+    imagery for AI-powered course content. All generated images are used for
+    educational purposes within course presentations and materials.
+
+IMPORTANT NOTES:
+    - API key required (set in .env file as RUNWARE_API_KEY)
+    - Image generation is metered and incurs costs
+    - Default negative prompt prevents text watermarks
+    - Images are automatically saved to specified paths
+    - Directory structure is created automatically
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import asyncio
 import os
-import aiohttp
+import aiohttp  # Apache 2.0 License
 from typing import List, Optional
-from runware import Runware, IImageInference
+from runware import Runware, IImageInference  # Proprietary/Commercial
+from dotenv import load_dotenv  # BSD-3-Clause License
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Default API key - you can override this when calling generate_image
-RUNWARE_API_KEY = "63vsF4qW47KsCTWSRdTZdZrZMi0Sq4Gk"
+RUNWARE_API_KEY = os.getenv("RUNWARE_API_KEY")
 
 # Create default directory to save images
 DEFAULT_IMAGE_DIR = "generated_images"

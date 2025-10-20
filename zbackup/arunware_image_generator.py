@@ -21,9 +21,12 @@ import os
 import aiohttp
 from typing import List, Optional
 from runware import Runware, IImageInference
+from dotenv import load_dotenv
 
-# Default API key - you can override this when calling generate_image
-RUNWARE_API_KEY = "63vsF4qW47KsCTWSRdTZdZrZMi0Sq4Gk"
+load_dotenv()
+
+# Load API key from environment variable
+RUNWARE_API_KEY = os.getenv("RUNWARE_API_KEY")
 
 # Create default directory to save images
 DEFAULT_IMAGE_DIR = "generated_images"
