@@ -1,0 +1,9 @@
+graph TD
+    A[Start] --> B{main}
+    B --> C{Print Welcome}
+    C --> D{Get Course Selection}
+    D --> E{Set and Save Directory}
+    E --> F{Read Description}
+    F --> G{Create Prompt}
+    G --> H{Call LLM}
+    H --> I{Print and Save Outline}

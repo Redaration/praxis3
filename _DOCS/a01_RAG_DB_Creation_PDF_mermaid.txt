@@ -1,0 +1,30 @@
+graph TD
+    A[Start] --> B{convert_pdf_to_text}
+    B --> C{Extract and Return Text}
+
+    D[Start] --> E{process_pdf_files}
+    E --> F{For each PDF}
+    F --> G{Convert to Text}
+    G --> H{Save and Chunk Text}
+    H --> F
+    F --> I[Return Chunks]
+
+    J[Start] --> K{chunk_text}
+    K --> L{Split text into chunks}
+    L --> M[Return Chunks]
+
+    N[Start] --> O{setup_chroma_db}
+    O --> P{Initialize and Create Collection}
+    P --> Q[Return Client and Collection]
+
+    R[Start] --> S{add_documents_to_chroma}
+    S --> T{Add documents in batches}
+
+    U[Start] --> V{test_query}
+    V --> W{Query collection and print results}
+
+    X[Start] --> Y{main}
+    Y --> Z{process_pdf_files}
+    Z --> AA{setup_chroma_db}
+    AA --> BB{add_documents_to_chroma}
+    BB --> CC{test_query}

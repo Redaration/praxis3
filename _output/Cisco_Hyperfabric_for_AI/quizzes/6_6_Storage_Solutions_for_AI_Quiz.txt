@@ -1,0 +1,71 @@
+# Quiz for 6: Storage Solutions for AI
+
+Question 1: Which AI/ML data access pattern is characterized by frequent, small read/write operations, often for saving model states?
+  A. Large sequential reads for training data
+  B. Small random reads/writes for checkpoints, logs
+  C. High ingest rates during data collection
+  D. Concurrent access from many compute nodes
+
+
+Question 2: For AI workloads, which storage technology offers the highest IOPS and lowest latency, making it ideal for active datasets, but is also the most costly for large capacities?
+  A. HDDs (Hard Disk Drives)
+  B. SAS/SATA SSDs
+  C. NVMe SSDs
+  D. Object Storage
+
+
+Question 3: What is the primary benefit of using Parallel File Systems like Lustre or GPFS in AI/ML environments?
+  A. Lowest cost per terabyte for large archival data
+  B. High-speed, concurrent access for many compute nodes
+  C. Simple deployment and management for small datasets
+  D. Best suited for single-user, interactive workloads
+
+
+Question 4: When considering data lifecycle management for AI, what is the purpose of data versioning and provenance?
+  A. To automatically delete old datasets to save space
+  B. To compress data for faster transfer
+  C. To track changes and ensure reproducibility of models
+  D. To secure data in transit using encryption
+
+
+Question 5: Which file system mount option is most likely to reduce metadata operations and improve read performance on large, frequently accessed datasets?
+  A. `sync` write
+  B. `noatime`
+  C. `hard` mount
+  D. `directio`
+
+
+Question 6: In the context of Kubernetes, what is the role of CSI (Container Storage Interface) drivers regarding storage for AI workloads?
+  A. To manage user roles and permissions within pods
+  B. To dynamically provision and manage storage for containers
+  C. To optimize network throughput for storage access
+  D. To perform data deduplication and compression automatically
+
+
+Question 7: What security measure is crucial for protecting sensitive AI training data while it travels over the network?
+  A. Full disk encryption (FDE)
+  B. TLS/SSL encryption for network protocols
+  C. Role-Based Access Control (RBAC)
+  D. Secure data wiping
+
+
+Question 8: Data deduplication and compression are techniques used in AI storage primarily to:
+  A. Increase data retrieval speeds
+  B. Reduce the overall storage footprint
+  C. Enhance data security through obscurity
+  D. Improve application performance by reducing latency
+
+
+Question 9: For compliance reasons related to data privacy (like GDPR or HIPAA), what is a critical aspect of data lifecycle management?
+  A. Utilizing the fastest available storage tier
+  B. Implementing strict data deletion and retention policies
+  C. Maximizing data ingest rates
+  D. Enabling maximum concurrent access from all nodes
+
+
+Question 10: When mounting distributed file systems for AI compute nodes, setting the `rsize` and `wsize` mount options primarily affects:
+  A. The security of data in transit
+  B. The block size for read and write operations
+  C. The method of data versioning
+  D. The availability of object storage
+

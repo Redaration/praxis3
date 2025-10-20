@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B{Main Loop};
+    B --> C{Get User Query};
+    C --> D{Check for Exit};
+    D -- 'exit' --> E[End];
+    D -- 'query' --> F{Query RAG Database};
+    F --> G{Display Results};
+    G --> B;

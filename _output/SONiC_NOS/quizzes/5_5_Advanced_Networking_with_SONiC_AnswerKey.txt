@@ -1,0 +1,12 @@
+# Answer Key for 5: Advanced Networking with SONiC
+
+Question 1: B
+Question 2: B
+Question 3: C
+Question 4: B
+Question 5: B
+Question 6: B
+Question 7: B
+Question 8: C
+Question 9: C
+Question 10: C

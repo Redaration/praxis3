@@ -1,0 +1,22 @@
+FUNCTION download_image(session, image_url, filename):
+    DOWNLOAD and SAVE image from URL
+
+FUNCTION generate_and_download_image(prompt, output_path, ...):
+    INITIALIZE and CONNECT to Runware
+    CREATE and SEND image request
+    DOWNLOAD and SAVE generated images
+    DISCONNECT from Runware
+    RETURN list of image paths
+
+FUNCTION generate_image(prompt, output_path, ...):
+    RUN generate_and_download_image asynchronously
+
+FUNCTION generate_multiple_images_parallel(prompts_and_paths, ...):
+    INITIALIZE and CONNECT to Runware
+    PREPARE and SEND all image requests in parallel
+    DOWNLOAD and SAVE all generated images
+    DISCONNECT from Runware
+    RETURN list of image paths
+
+FUNCTION generate_images_parallel(prompts_and_paths, ...):
+    RUN generate_multiple_images_parallel asynchronously

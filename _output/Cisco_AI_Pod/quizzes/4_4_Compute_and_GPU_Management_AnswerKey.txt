@@ -1,0 +1,12 @@
+# Answer Key for 4: Compute and GPU Management
+
+Question 1: A
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: B
+Question 6: C
+Question 7: B
+Question 8: C
+Question 9: C
+Question 10: B

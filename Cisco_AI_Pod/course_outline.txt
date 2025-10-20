@@ -1,0 +1,2386 @@
+Title: Cisco HyperFabric for AI Fundamentals
+1.Module 1
+1.1 The AI/ML Infrastructure Challenge
+1.1.1 The Growing Demand for AI/ML
+1.1.1.1 Exponential growth in data volumes
+1.1.1.2 Increasing complexity of AI models
+1.1.1.3 Need for faster and more efficient processing
+1.1.1.4 Driving innovation across industries
+1.1.1.5 Impact on traditional IT infrastructure
+1.1.1.6 Requirements for specialized hardware
+1.1.2 Common Infrastructure Bottlenecks
+1.1.2.1 Data ingestion and pre-processing speeds
+1.1.2.2 Network latency and bandwidth limitations
+1.1.2.3 Storage I/O performance
+1.1.2.4 Compute resource limitations (CPU, GPU)
+1.1.2.5 Interconnectivity between components
+1.1.2.6 Management complexity and integration issues
+1.1.3 The Need for an Integrated AI Infrastructure Solution
+1.1.3.1 Challenges of disparate systems
+1.1.3.2 Importance of unified management
+1.1.3.3 Streamlining deployment and operations
+1.1.3.4 Ensuring interoperability between components
+1.1.3.5 Preventing vendor lock-in with holistic approach
+1.1.3.6 Optimizing for end-to-end performance
+1.1.4 Impact of AI on Data Center Design
+1.1.4.1 Increased power and cooling requirements
+1.1.4.2 Need for high-density compute and storage
+1.1.4.3 Emergence of specialized networking technologies
+1.1.4.4 Considerations for scalability and flexibility
+1.1.4.5 Security implications of AI workloads
+1.1.4.6 Location strategies for AI clusters
+1.2 Cisco's Approach to AI/ML Infrastructure
+1.2.1 Vision for AI-Powered Infrastructure
+1.2.1.1 Accelerating AI/ML adoption
+1.2.1.2 Simplifying deployment and management
+1.2.1.3 Enhancing performance and efficiency
+1.2.1.4 Providing a scalable and reliable foundation
+1.2.1.5 Adapting to evolving AI technologies
+1.2.1.6 Enabling business transformation through AI
+1.2.2 Key Principles of Cisco's AI/ML Solutions
+1.2.2.1 Integration of best-of-breed technologies
+1.2.2.2 Focus on end-to-end performance
+1.2.2.3 Simplified deployment and lifecycle management
+1.2.2.4 Robust security at every layer
+1.2.2.5 Openness and interoperability
+1.2.2.6 Proactive monitoring and AIOps capabilities
+1.2.3 Cisco's Portfolio for AI/ML
+1.2.3.1 Networking solutions (Switches, Routers, Wi-Fi)
+1.2.3.2 Compute platforms (Servers, Converged Systems)
+1.2.3.3 Storage solutions (Unified, High-Performance)
+1.2.3.4 Software and Orchestration tools
+1.2.3.5 Security and management platforms
+1.2.3.6 Partnerships and ecosystem integration
+1.3 Cisco HyperFabric for AI Overview and Value Proposition
+1.3.1 What is Cisco HyperFabric for AI?
+1.3.1.1 An integrated, end-to-end solution
+1.3.1.2 Designed for accelerating AI/ML workloads
+1.3.1.3 Combines hardware, software, and services
+1.3.1.4 Optimized for NVIDIA AI Enterprise
+1.3.1.5 Enables seamless data flow and processing
+1.3.1.6 Simplifies the AI infrastructure lifecycle
+1.3.2 Core Components of HyperFabric for AI
+1.3.2.1 High-performance compute nodes
+1.3.2.2 Specialized GPU acceleration
+1.3.2.3 Optimized networking fabric
+1.3.2.4 High-throughput, low-latency storage
+1.3.2.5 Integrated management and orchestration software
+1.3.2.6 Underlying infrastructure services
+1.3.3 Key Benefits and Value Proposition
+1.3.3.1 Accelerated AI/ML model development and deployment
+1.3.3.2 Improved resource utilization and efficiency
+1.3.3.3 Reduced infrastructure complexity and operational overhead
+1.3.3.4 Enhanced scalability and flexibility for growing needs
+1.3.3.5 Faster time-to-insight and business value
+1.3.3.6 Future-proof architecture for evolving AI demands
+1.3.4 Differentiators from Traditional Architectures
+1.3.4.1 Pre-validated and integrated components
+1.3.4.2 Optimized for specific AI workloads
+1.3.4.3 Unified management plane
+1.3.4.4 Built-in high-performance networking
+1.3.4.5 Seamless integration with AI software stacks
+1.3.4.6 Designed for ease of deployment
+1.4 Key Use Cases and Business Benefits
+1.4.1 Deep Learning for Image and Speech Recognition
+1.4.1.1 Accelerating training of computer vision models
+1.4.1.2 Improving accuracy of natural language processing
+1.4.1.3 Applications in healthcare, retail, security
+1.4.1.4 Enabling autonomous systems and robotics
+1.4.1.5 Real-time analysis of visual and auditory data
+1.4.1.6 Personalized user experiences
+1.4.2 Natural Language Processing (NLP) and Large Language Models (LLMs)
+1.4.2.1 Training and inference for advanced NLP tasks
+1.4.2.2 Powering chatbots, virtual assistants, content generation
+1.4.2.3 Analyzing vast amounts of text data
+1.4.2.4 Revolutionizing customer service and knowledge management
+1.4.2.5 Enabling advanced search and recommendation engines
+1.4.2.6 Driving new forms of human-computer interaction
+1.4.3 Data Analytics and Business Intelligence
+1.4.3.1 Faster processing of large datasets
+1.4.3.2 Advanced predictive analytics and forecasting
+1.4.3.3 Identifying trends and insights for business decisions
+1.4.3.4 Optimizing operations and resource allocation
+1.4.3.5 Personalization of customer offerings
+1.4.3.6 Enhancing fraud detection and risk management
+1.4.4 Scientific Research and Simulation
+1.4.4.1 Accelerating complex scientific simulations
+1.4.4.2 Enabling drug discovery and genomic research
+1.4.4.3 Advancing climate modeling and materials science
+1.4.4.4 Analyzing large-scale experimental data
+1.4.4.5 Facilitating breakthroughs in various scientific fields
+1.4.4.6 Reducing time-to-discovery
+1.4.5 Business Outcomes and ROI
+1.4.5.1 Increased operational efficiency
+1.4.5.2 Faster time-to-market for AI-driven products
+1.4.5.3 Improved customer satisfaction
+1.4.5.4 Competitive advantage through AI innovation
+1.4.5.5 Cost savings through optimized resource utilization
+1.4.5.6 Enhanced data-driven decision-making
+2.Module 2
+2.1 Core Components (Compute, Network, Storage)
+2.1.1 Compute Nodes
+2.1.1.1 Purpose-built servers for AI workloads
+2.1.1.2 High CPU core counts for parallel processing
+2.1.1.3 Support for multiple high-performance GPUs
+2.1.1.4 Dense memory configurations
+2.1.1.5 Optimized for power and thermal efficiency
+2.1.1.6 Scalable by adding more compute nodes
+2.1.2 GPU Acceleration
+2.1.2.1 NVIDIA GPUs: the standard for AI training
+2.1.2.2 Tensor Cores for AI-specific computations
+2.1.2.3 NVLink for high-speed GPU-to-GPU communication
+2.1.2.4 Large GPU memory capacity
+2.1.2.5 Software drivers and libraries (CUDA, cuDNN)
+2.1.2.6 Different GPU models for various workloads
+2.1.3 High-Performance Networking Fabric
+2.1.3.1 Low-latency, high-bandwidth interconnects
+2.1.3.2 Technologies like InfiniBand or advanced Ethernet (RoCE)
+2.1.3.3 Non-blocking architecture for full bisection bandwidth
+2.1.3.4 Support for RDMA (Remote Direct Memory Access)
+2.1.3.5 Optimized for GPU Direct RDMA
+2.1.3.6 Ensuring efficient data movement between nodes
+2.1.4 High-Throughput, Low-Latency Storage
+2.1.4.1 NVMe-based storage solutions
+2.1.4.2 Distributed file systems for parallel access
+2.1.4.3 High IOPS and throughput capabilities
+2.1.4.4 Capacity and performance scaling
+2.1.4.5 Data resiliency and protection mechanisms
+2.1.4.6 Integration with compute nodes via high-speed fabric
+2.1.5 Unified Management and Orchestration
+2.1.5.1 Centralized control plane for the entire fabric
+2.1.5.2 Kubernetes as the orchestration layer
+2.1.5.3 Software-defined networking and storage
+2.1.5.4 Simplified deployment and configuration
+2.1.5.5 Resource allocation and scheduling
+2.1.5.6 Monitoring and analytics
+2.2 Integration with NVIDIA AI Enterprise
+2.2.1 What is NVIDIA AI Enterprise?
+2.2.1.1 A comprehensive suite of AI and data analytics software
+2.2.1.2 Optimized, tested, and supported by NVIDIA
+2.2.1.3 Includes frameworks like TensorFlow, PyTorch, MXNet
+2.2.1.4 Offers tools for data preparation, model training, deployment
+2.2.1.5 Built to run on NVIDIA-certified systems
+2.2.1.6 Accelerates AI development and deployment
+2.2.2 Key Benefits of NVIDIA AI Enterprise
+2.2.2.1 Guaranteed compatibility and performance
+2.2.2.2 Access to the latest AI software advancements
+2.2.2.3 Simplified software stack management
+2.2.2.4 Enterprise-grade support and SLAs
+2.2.2.5 Enables rapid deployment of AI applications
+2.2.2.6 Streamlines AI workflows from start to finish
+2.2.3 How HyperFabric for AI Leverages NVIDIA AI Enterprise
+2.2.3.1 Provides the certified hardware infrastructure
+2.2.3.2 Seamless integration with the NVIDIA AI software stack
+2.2.3.3 Optimized networking for NVIDIA's specific requirements
+2.2.3.4 Ensures GPU Direct RDMA is fully functional
+2.2.3.5 Simplifies deployment of AI Enterprise components
+2.2.3.6 Offers a complete, validated AI solution
+2.2.4 Supported AI/ML Frameworks and Libraries
+2.2.4.1 TensorFlow, PyTorch, Keras
+2.2.4.2 RAPIDS for GPU-accelerated data science
+2.2.4.3 Horovod for distributed deep learning
+2.2.4.4 TensorRT for high-performance inference
+2.2.4.5 Other popular AI/ML libraries and frameworks
+2.2.4.6 Access to a rich ecosystem of AI tools
+2.3 Software Stack Overview (Kubernetes, AI/ML Frameworks)
+2.3.1 Kubernetes for Container Orchestration
+2.3.1.1 Role of Kubernetes in AI infrastructure
+2.3.1.2 Managing containerized AI workloads
+2.3.1.3 Resource scheduling and scaling
+2.3.1.4 High availability and fault tolerance
+2.3.1.5 Networking and storage integration with Kubernetes
+2.3.1.6 MLOps integration using Kubernetes
+2.3.2 AI/ML Frameworks and Libraries
+2.3.2.1 Core deep learning frameworks (TensorFlow, PyTorch)
+2.3.2.2 Data processing and manipulation libraries
+2.3.2.3 Distributed training frameworks
+2.3.2.4 Model optimization and deployment tools
+2.3.2.5 Libraries for specific AI domains (e.g., CV, NLP)
+2.3.2.6 Managing dependencies and versions
+2.3.3 Storage and Data Management Software
+2.3.3.1 Distributed file systems (e.g., Lustre, BeeGFS)
+2.3.3.2 Object storage solutions
+2.3.3.3 Data versioning and lineage tools
+2.3.3.4 Data replication and backup strategies
+2.3.3.5 Access control and security policies
+2.3.3.6 Caching mechanisms for performance
+2.3.4 Networking Software and Tools
+2.3.4.1 Software-defined networking (SDN) controllers
+2.3.4.2 Network virtualization
+2.3.4.3 Performance monitoring and analytics tools
+2.3.4.4 RDMA configuration and management
+2.3.4.5 Network policy enforcement
+2.3.4.6 Traffic shaping and QoS
+2.3.5 Management and Monitoring Software
+2.3.5.1 Unified dashboard for infrastructure management
+2.3.5.2 Cluster health monitoring
+2.3.5.3 Performance telemetry collection
+2.3.5.4 Log aggregation and analysis
+2.3.5.5 Alerting and notification systems
+2.3.5.6 Automation and orchestration tools
+2.4 Data Flow and Connectivity within HyperFabric
+2.4.1 Data Ingestion Paths
+2.4.1.1 Sources of AI training data
+2.4.1.2 High-speed data loading into the cluster
+2.4.1.3 Integration with existing data lakes or warehouses
+2.4.1.4 Data pre-processing pipelines
+2.4.1.5 Data staging and preparation areas
+2.4.1.6 Secure data transfer mechanisms
+2.4.2 Data Movement for Training
+2.4.2.1 Data access from distributed storage
+2.4.2.2 Efficient data transfer to GPU memory
+2.4.2.3 Role of NVLink and high-speed fabric
+2.4.2.4 Data parallelism and model parallelism data needs
+2.4.2.5 Caching mechanisms for frequently accessed data
+2.4.2.6 Minimizing data transfer bottlenecks
+2.4.3 Inter-GPU Communication
+2.4.3.1 GPU-to-GPU communication within a node
+2.4.3.2 Usage of NVLink for maximum bandwidth
+2.4.3.3 GPU-to-GPU communication across nodes
+2.4.3.4 Role of high-speed network fabric (InfiniBand/RoCE)
+2.4.3.5 RDMA for direct memory access between GPUs
+2.4.3.6 Impact of communication latency on training time
+2.4.4 Node-to-Node Communication
+2.4.4.1 Traffic patterns between compute nodes
+2.4.4.2 Communication for distributed training synchronization
+2.4.4.3 Data sharing and aggregation
+2.4.4.4 Network topology impact on communication
+2.4.4.5 Protocols used for inter-node communication
+2.4.4.6 Ensuring quality of service for AI traffic
+2.4.5 Data Offload and Archival
+2.4.5.1 Storing trained models and intermediate results
+2.4.5.2 Moving completed datasets to long-term storage
+2.4.5.3 Data lifecycle management policies
+2.4.5.4 Integration with tape or cloud archival solutions
+2.4.5.5 Data security during archival
+2.4.5.6 Versioning of datasets and models
+3.Module 3
+3.1 Planning and Sizing for AI Workloads
+3.1.1 Understanding Your AI/ML Workload Requirements
+3.1.1.1 Identifying model complexity and size
+3.1.1.2 Estimating data volume and velocity
+3.1.1.3 Determining computational needs (CPU, GPU, memory)
+3.1.1.4 Analyzing network bandwidth and latency requirements
+3.1.1.5 Defining storage capacity and IOPS needs
+3.1.1.6 Anticipating future growth and scalability
+3.1.2 Capacity Planning Metrics
+3.1.2.1 FLOPS (Floating Point Operations Per Second)
+3.1.2.2 GPU memory and bandwidth requirements
+3.1.2.3 CPU core utilization and thread counts
+3.1.2.4 Storage IOPS and throughput
+3.1.2.5 Network bandwidth (Gbps/Tbps) and latency (microseconds)
+3.1.2.6 Power and cooling considerations per rack/node
+3.1.3 Sizing Compute Resources
+3.1.3.1 Number of GPUs per node
+3.1.3.2 GPU model selection based on workload
+3.1.3.3 CPU to GPU ratio
+3.1.3.4 RAM per GPU/node
+3.1.3.5 Interconnect within the compute node (NVLink)
+3.1.3.6 Determining the total number of compute nodes
+3.1.4 Sizing Network Resources
+3.1.4.1 Choosing the right network fabric (Ethernet, InfiniBand)
+3.1.4.2 Determining required port speeds (100GbE, 200GbE, 400GbE)
+3.1.4.3 Understanding bisection bandwidth needs
+3.1.4.4 Diagranmming the network topology
+3.1.4.5 NIC selection for nodes
+3.1.4.6 Planning for network redundancy
+3.1.5 Sizing Storage Resources
+3.1.5.1 Estimating total storage capacity (TB/PB)
+3.1.5.2 IOPS requirements for concurrent access
+3.1.5.3 Throughput requirements for data loading
+3.1.5.4 Tiering strategies for hot/cold data
+3.1.5.5 Deduplication and compression considerations
+3.1.5.6 Backup and disaster recovery planning
+3.1.6 Performance Benchmarking and Profiling
+3.1.6.1 Using industry-standard benchmarks (e.g., MLPerf)
+3.1.6.2 Profiling existing AI workloads
+3.1.6.3 Identifying performance bottlenecks preemptively
+3.1.6.4 Testing different hardware configurations
+3.1.6.5 Validating network fabric performance
+3.1.6.6 Storage read/write performance tests
+3.2 Installation and Initial Setup
+3.2.1 Pre-installation Checks
+3.2.1.1 Network connectivity and cabling
+3.2.1.2 Power and cooling infrastructure readiness
+3.2.1.3 Rack space and mounting requirements
+3.2.1.4 Management network accessibility
+3.2.1.5 Required software licenses and keys
+3.2.1.6 Firmware versions for all components
+3.2.2 Hardware Installation
+3.2.2.1 Rack mounting servers and network switches
+3.2.2.2 Connecting power cords and management interfaces
+3.2.2.3 Cabling compute nodes to network switches
+3.2.2.4 Connecting storage to the fabric
+3.2.2.5 Installing GPUs and other hardware components
+3.2.2.6 Verifying physical connections
+3.2.3 Base System Configuration
+3.2.3.1 Initial server boot and BIOS/UEFI configuration
+3.2.3.2 Network interface configuration (IP addresses, VLANs)
+3.2.3.3 Setting management passwords and security settings
+3.2.3.4 Firmware updates for servers, NICs, and HBAs
+3.2.3.5 Integrating with directory services (e.g., LDAP, Active Directory)
+3.2.3.6 Basic storage connectivity tests
+3.2.4 Software Deployment
+3.2.4.1 Installing the HyperFabric management software
+3.2.4.2 Deploying GPU drivers and libraries
+3.2.4.3 Installing Kubernetes or container orchestration platform
+3.2.4.4 Deploying NVIDIA AI Enterprise components
+3.2.4.5 Configuring storage drivers and clients
+3.2.4.6 Setting up initial monitoring agents
+3.2.5 Initial Validation and Testing
+3.2.5.1 Verifying hardware component detection
+3.2.5.2 Testing network connectivity and bandwidth
+3.2.5.3 Confirming storage accessibility and performance
+3.2.5.4 Running basic container orchestration tests
+3.2.5.5 Validating GPU availability and drivers
+3.2.5.6 Checking system health via the management interface
+3.3 Network and Storage Configuration Best Practices
+3.3.1 Network Configuration
+3.3.1.1 Static IP addressing for management and critical services
+3.3.1.2 VLAN segmentation for traffic isolation
+3.3.1.3 Jumbo frames for improved network throughput
+3.3.1.4 MTU settings for RDMA and high-speed networking
+3.3.1.5 QoS markings for AI traffic priorities
+3.3.1.6 Load balancing and failover configurations
+3.3.2 Storage Configuration
+3.3.2.1 Optimal file system tuning parameters
+3.3.2.2 Mount options for performance and reliability
+3.3.2.3 Setting up storage namespaces or clients
+3.3.2.4 Configuring data redundancy (RAID, replication)
+3.3.2.5 Establishing access control lists (ACLs)
+3.3.2.6 Defining quotas and limits for users/projects
+3.3.3 High-Performance Networking Best Practices
+3.3.3.1 Enabling RoCE or InfiniBand drivers
+3.3.3.2 Configuring RDMA parameters
+3.3.3.3 Tuning NIC offload features
+3.3.3.4 Ensuring network fabric is non-blocking
+3.3.3.5 Minimizing latency by optimizing paths
+3.3.3.6 Using diagnostic tools to monitor network health
+3.3.4 Distributed Storage Best Practices
+3.3.4.1 Distributing data across multiple storage nodes/disks
+3.3.4.2 Balancing I/O workloads
+3.3.4.3 Monitoring storage utilization and performance
+3.3.4.4 Implementing data integrity checks
+3.3.4.5 Planning for storage expansion
+3.3.4.6 Securing data at rest and in transit
+3.3.5 Security Considerations
+3.3.5.1 Network access control lists (ACLs)
+3.3.5.2 Firewall rules for management and data ports
+3.3.5.3 Secure protocols for management access (SSH, HTTPS)
+3.3.5.4 Encrypting sensitive data at rest and in transit
+3.3.5.5 Role-based access control for management tools
+3.3.5.6 Regular security audits and vulnerability scans
+3.4 Validated Designs and Reference Architectures
+3.4.1 Understanding Cisco's Validated Designs (CVDs)
+3.4.1.1 Pre-defined, tested, and documented architectures
+3.4.1.2 Ensuring interoperability and performance
+3.4.1.3 Reducing deployment risks and complexity
+3.4.1.4 Providing a blueprint for successful implementation
+3.4.1.5 Based on Cisco's extensive testing
+3.4.1.6 Available for various NVIDIA AI Enterprise versions
+3.4.2 Key Components of Reference Architectures
+3.4.2.1 Specific server models and configurations
+3.4.2.2 Recommended network switch models and configurations
+3.4.2.3 Storage system choices and configurations
+3.4.2.4 Software stack versions and integration details
+3.4.2.5 Networking fabric topology diagrams
+3.4.2.6 Step-by-step deployment guides
+3.4.3 Selecting the Right Architecture for Your Needs
+3.4.3.1 Matching workload requirements to architecture scaling
+3.4.3.2 Considering budget and performance trade-offs
+3.4.3.3 Evaluating existing infrastructure compatibility
+3.4.3.4 Assessing future scalability requirements
+3.4.3.5 Reviewing supported NVIDIA AI Enterprise features
+3.4.3.6 Consulting Cisco documentation and experts
+3.4.4 Deployment Considerations
+3.4.4.1 Phased rollout strategies
+3.4.4.2 Integration with existing data center operations
+3.4.4.3 Staff training and skill development
+3.4.4.4 Performance testing after deployment
+3.4.4.5 Documentation and knowledge transfer
+3.4.4.6 Change management processes
+3.4.5 Example Reference Architectures
+3.4.5.1 Small-to-medium scale AI clusters for R&D
+3.4.5.2 Large-scale deep learning training clusters
+3.4.5.3 Inference-optimized deployments
+3.4.5.4 Architectures for specific NVIDIA software stacks
+3.4.5.5 Hybrid cloud AI integration scenarios
+3.4.5.6 Architectures focused on specific industries or use cases
+4.Module 4
+4.1 NVIDIA GPU Integration and Management
+4.1.1 GPU Hardware Overview
+4.1.1.1 Different NVIDIA GPU series (e.g., A100, H100)
+4.1.1.2 GPU architecture and key features (Tensor Cores, SMs)
+4.1.1.3 GPU memory capacity and bandwidth
+4.1.1.4 GPU interconnect technologies (NVLink, NVSwitch)
+4.1.1.5 Form factors of GPUs (PCIe, SXM)
+4.1.1.6 Understanding GPU cooling and power requirements
+4.1.2 GPU Drivers and Software Stack
+4.1.2.1 NVIDIA driver installation and management
+4.1.2.2 CUDA Toolkit for GPU programming
+4.1.2.3 cuDNN for deep neural network primitives
+4.1.2.4 NVIDIA container runtime for Docker/Kubernetes
+4.1.2.5 Data Center GPU Manager (DCGM)
+4.1.2.6 NVIDIA AI Enterprise compatibility
+4.1.3 GPU Virtualization and Partitioning (vGPU)
+4.1.3.1 Enabling multiple users/applications on a single GPU
+4.1.3.2 NVIDIA vGPU licensing and software
+4.1.3.3 VM placement considerations for optimal GPU access
+4.1.4 Managing GPUs in Kubernetes
+4.1.4.1 Device plugin for Kubernetes
+4.1.4.2 Requesting GPUs in pod specifications
+4.1.4.3 GPU sharing mechanisms
+4.1.4.4 Monitoring GPU utilization through Kubernetes
+4.1.4.5 Node labeling for GPU types
+4.1.4.6 GPU topologies within Kubernetes
+4.1.5 GPU Monitoring and Diagnostics
+4.1.5.1 Using `nvidia-smi` for real-time status
+4.1.5.2 DCGM for advanced monitoring and metrics
+4.1.5.3 Capturing GPU performance counters
+4.1.5.4 Troubleshooting GPU driver issues
+4.1.5.5 Identifying GPU failures or anomalies
+4.1.5.6 Monitoring GPU temperature and power usage
+4.2 Kubernetes for Container Orchestration
+4.2.1 Kubernetes Fundamentals
+4.2.1.1 Pods, Deployments, Services, and Nodes
+4.2.1.2 Control Plane components (API Server, etcd, Controller Manager, Scheduler)
+4.2.1.3 Worker Node components (Kubelet, Kube-proxy, Container Runtime)
+4.2.1.4 Kubernetes networking model
+4.2.1.5 Storage orchestration in Kubernetes
+4.2.1.6 Configuration management (ConfigMaps, Secrets)
+4.2.2 Deploying AI/ML Workloads on Kubernetes
+4.2.2.1 Packaging AI applications into containers
+4.2.2.2 Defining resource requests and limits for AI jobs
+4.2.2.3 Using Jobs and CronJobs for training tasks
+4.2.2.4 Leveraging StatefulSets for persistent workloads
+4.2.2.5 Implementing distributed training strategies
+4.2.2.6 Managing dependencies with container images
+4.2.3 Resource Management and Scheduling
+4.2.3.1 Kubernetes scheduler for pod placement
+4.2.3.2 GPU scheduling and allocation
+4.2.3.3 Resource quotas and limit ranges
+4.2.3.4 Node affinity and anti-affinity rules
+4.2.3.5 Pod priority and preemption
+4.2.3.6 Custom schedulers for AI workloads
+4.2.4 Scaling AI Applications
+4.2.4.1 Horizontal Pod Autoscaler (HPA)
+4.2.4.2 Vertical Pod Autoscaler (VPA)
+4.2.4.3 Cluster Autoscaler for node scaling
+4.2.4.4 Managing replica sets for high availability
+4.2.4.5 Scaling based on GPU utilization
+4.2.4.6 Auto-scaling for inference services
+4.2.5 Kubernetes Networking for AI
+4.2.5.1 Service discovery and load balancing
+4.2.5.2 Network policies for security
+4.2.5.3 Optimizing pod-to-pod communication
+4.2.5.4 Integration with high-performance network fabrics
+4.2.5.5 RDMA awareness in Kubernetes networking
+4.2.5.6 Efficient data transfer between pods
+4.3 Resource Allocation and Scheduling for AI/ML
+4.3.1 Understanding Resource Needs for AI/ML
+4.3.1.1 CPU, Memory, GPU, and GPU Memory requirements
+4.3.1.2 Impact of batch size on memory and compute
+4.3.1.3 Data loading and pre-processing CPU demands
+4.3.1.4 Inter-GPU communication needs
+4.3.1.5 Storage I/O demands
+4.3.1.6 Network bandwidth requirements
+4.3.2 Static vs. Dynamic Resource Allocation
+4.3.2.1 Pre-allocating resources versus on-demand allocation
+4.3.2.2 Over-provisioning versus under-provisioning
+4.3.2.3 Benefits and drawbacks of each approach
+4.3.2.4 Dynamic scaling based on workload
+4.3.2.5 Resource pooling and sharing
+4.3.2.6 Cost optimization strategies
+4.3.3 Kubernetes Resource Management Features
+4.3.3.1 Requests and Limits for CPU, Memory, and GPUs
+4.3.3.2 Quality of Service (QoS) classes (Guaranteed, Burstable, BestEffort)
+4.3.3.3 Resource Quotas for namespaces
+4.3.3.4 LimitRanges for default limits and requests
+4.3.3.5 Node selectors and taints/tolerations
+4.3.3.6 Affinity and anti-affinity rules
+4.3.4 Schedulers and Scheduling Policies
+4.3.4.1 Kubernetes default scheduler
+4.3.4.2 GPU-aware scheduling plugins
+4.3.4.3 Custom scheduling logic for AI workloads
+4.3.4.4 Fair sharing versus priority-based scheduling
+4.3.4.5 Gang scheduling for distributed training
+4.3.4.6 Scheduling AI jobs with specific hardware requirements
+4.3.5 Best Practices for AI Resource Allocation
+4.3.5.1 Accurately define resource requests for pods
+4.3.5.2 Use appropriate QoS classes for critical workloads
+4.3.5.3 Leverage node affinity for GPU-specific nodes
+4.3.5.4 Monitor resource utilization to adjust requests/limits
+4.3.5.5 Implement resource quotas to prevent starvation
+4.3.5.6 Consider scheduling policies for optimal throughput
+4.4 Performance Tuning for Compute Resources
+4.4.1 GPU Tuning
+4.4.1.1 Optimizing batch sizes
+4.4.1.2 Mixed-precision training (FP16, TF32)
+4.4.1.3 Profile-guided optimization using NVIDIA Nsight
+4.4.1.4 CUDA kernel tuning
+4.4.1.5 GPU affinity and memory placement
+4.4.1.6 NVLink bandwidth utilization
+4.4.2 CPU Tuning
+4.4.2.1 Optimizing data pre-processing pipelines
+4.4.2.2 Multithreading and parallel processing
+4.4.2.3 CPU pinning for critical processes
+4.4.2.4 NUMA node awareness
+4.4.2.5 Reducing CPU overhead from orchestration
+4.4.2.6 Compiler optimizations
+4.4.3 Memory Tuning
+4.4.3.1 Optimizing GPU memory usage
+4.4.3.2 Efficient data loading into CPU RAM
+4.4.3.3 Memory bandwidth optimization
+4.4.3.4 Avoiding memory leaks in applications
+4.4.3.5 Using pinned memory for faster transfers
+4.4.3.6 Large Pages for reducing TLB misses
+4.4.4 Interconnect Tuning (NVLink, RoCE)
+4.4.4.1 Maximizing NVLink bandwidth between GPUs
+4.4.4.2 Optimizing RoCE parameters for low latency
+4.4.4.3 Tuning network interface card (NIC) settings
+4.4.4.4 Ensuring network fabric is not saturated
+4.4.4.5 Congestion management techniques
+4.4.4.6 RDMA latency reduction strategies
+4.4.5 Tuning AI/ML Frameworks
+4.4.5.1 Framework-specific optimization flags
+4.4.5.2 Using optimized libraries (e.g., cuDNN, Intel MKL)
+4.4.5.3 Parallelism strategies within frameworks
+4.4.5.4 Distributed training framework configuration
+4.4.5.5 Data loading optimization (e.g., tf.data, PyTorch DataLoader)
+4.4.5.6 Model architecture choices
+4.4.6 Tools for Performance Analysis
+4.4.6.1 NVIDIA Nsight Systems and Compute
+4.4.6.2 TensorBoard for TensorFlow/Keras profiling
+4.4.6.3 PyTorch Profiler
+4.4.6.4 `perf` and `strace` for system-level analysis
+4.4.6.5 Kubernetes monitoring tools (Prometheus, Grafana)
+4.4.6.5 Kubernetes monitoring tools (Prometheus, Grafana)
+5.Module 5
+5.1 High-Performance Networking (e.g., InfiniBand, Ethernet)
+5.1.1 Evolution of Networking for AI
+5.1.1.1 Limitations of traditional Ethernet for AI traffic
+5.1.1.2 Emergence of specialized interconnects
+5.1.1.3 Growing demands for bandwidth and low latency
+5.1.1.4 Impact of distributed training on network needs
+5.1.1.5 GPUs demanding faster data delivery
+5.1.1.6 Need for efficient GPU Direct RDMA
+5.1.2 InfiniBand Technology
+5.1.2.1 Key characteristics: low latency, high bandwidth
+5.1.2.2 RDMA natively supported
+5.1.2.3 Scalability and fabrics
+5.1.2.4 Common use cases in HPC and AI
+5.1.2.5 InfiniBand switches and adapters
+5.1.2.6 Manageability and configuration
+5.1.3 High-Speed Ethernet Ecosystem
+5.1.3.1 100GbE, 200GbE, 400GbE standards
+5.1.3.2 Lossless Ethernet requirements
+5.1.3.3 DCB (Data Center Bridging) components
+5.1.3.4 NIC technologies and offloads
+5.1.3.5 Optical transceivers and cabling
+5.1.3.6 Evolution towards higher speeds
+5.1.4 RDMA over Converged Ethernet (RoCE)
+5.1.4.1 Enabling RDMA capabilities over Ethernet
+5.1.4.2 RoCEv1 vs. RoCEv2
+5.1.4.3 Lossless Ethernet requirement for RoCE
+5.1.4.4 IP-based nature of RoCEv2
+5.1.4.5 Benefits for AI/ML workloads
+5.1.4.6 Configuration considerations
+5.1.5 GPU Direct Technologies
+5.1.5.1 GPU Direct RDMA for direct GPU-to-GPU communication
+5.1.5.2 GPU Direct Storage for accessing storage directly from GPU
+5.1.5.3 Bypassing the CPU for data transfers
+5.1.5.4 Reducing latency and improving efficiency
+5.1.5.5 Enabling higher AI training performance
+5.1.5.6 Software and hardware prerequisites
+5.2 Network Fabric Design for AI/ML Traffic
+5.2.1 Importance of Network Topology
+5.2.1.1 Fat-tree, spine-leaf, dragonfly topologies
+5.2.1.2 Impact of topology on bisection bandwidth
+5.2.1.3 Considerations for scalability and cost
+5.2.1.4 Minimizing hop count for latency-sensitive traffic
+5.2.1.5 Traffic patterns of AI workloads
+5.2.1.6 Ensuring high availability
+5.2.2 Bisection Bandwidth Requirements
+5.2.2.1 Defining bisection bandwidth for AI clusters
+5.2.2.2 Calculating required bandwidth based on GPU interconnects
+5.2.2.3 Over-subscription ratios and their impact
+5.2.2.4 Achieving non-blocking performance
+5.2.2.5 Balancing cost and performance
+5.2.2.6 Measuring bisection bandwidth
+5.2.3 Latency Considerations
+5.2.3.1 Sources of latency in the network
+5.2.3.2 Impact of latency on distributed training performance
+5.2.3.3 Techniques for reducing latency
+5.2.3.4 Switch buffer management
+5.2.3.5 NIC offloads for latency reduction
+5.2.3.6 Network protocol efficiency
+5.2.4 Congestion Management
+5.2.4.1 Identifying sources of network congestion
+5.2.4.2 Techniques like ECN (Explicit Congestion Notification)
+5.2.4.3 PFC (Priority Flow Control) for lossless Ethernet
+5.2.4.4 Buffer management in switches and NICs
+5.2.4.5 Traffic shaping and shaping
+5.2.4.6 Monitoring and troubleshooting congestion
+5.2.5 Quality of Service (QoS)
+5.2.5.1 Prioritizing AI traffic over other traffic
+5.2.5.2 Marking traffic with DSCP values
+5.2.5.3 Applying QoS policies on switches and routers
+5.2.5.4 Ensuring fair bandwidth allocation
+5.2.5.5 Differentiated services for different AI workloads
+5.2.5.6 Service Level Agreements (SLAs) for network performance
+5.3 RDMA over Converged Ethernet (RoCE)
+5.3.1 RoCE Fundamentals
+5.3.1.1 RDMA concept and benefits
+5.3.1.2 RoCE as an RDMA transport over Ethernet
+5.3.1.3 RoCEv1 (non-routable) and RoCEv2 (routable)
+5.3.1.4 UDP encapsulation for RoCEv2
+5.3.1.5 Importance of lossless Ethernet for RoCE
+5.3.1.6 Configuration requirements
+5.3.2 RoCE Configuration and Tuning
+5.3.2.1 Enabling RoCE on NICs and switches
+5.3.2.2 Configuring DCB parameters (PFC, ETS)
+5.3.2.3 Tuning RoCE transport parameters
+5.3.2.4 MTU settings for RoCE traffic
+5.3.2.5 Load balancing for RoCE traffic
+5.3.2.6 Verifying RoCE connectivity and performance
+5.3.3 RoCE vs. InfiniBand
+5.3.3.1 Key differences in architecture and features
+5.3.3.2 When to choose RoCE over InfiniBand
+5.3.3.3 When to choose InfiniBand over RoCE
+5.3.3.4 Cost and complexity comparisons
+5.3.3.5 Ecosystem support and availability
+5.3.3.6 Performance benchmarks in AI workloads
+5.3.4 RoCE in Kubernetes Environments
+5.3.4.1 Kubernetes networking plugins supporting RoCE
+5.3.4.2 Containerizing RoCE-enabled applications
+5.3.4.3 Exposing RoCE capabilities to pods
+5.3.4.4 Network policy considerations for RoCE
+5.3.4.5 Monitoring RoCE performance within Kubernetes
+5.3.4.6 Integration with GPU Direct RDMA
+5.3.5 Troubleshooting RoCE Issues
+5.3.5.1 Common configuration errors
+5.3.5.2 Diagnosing packet loss and congestion
+5.3.5.3 Verifying DCB settings
+5.3.5.4 Using RoCE-specific diagnostic tools
+5.3.5.5 Analyzing performance metrics
+5.3.5.6 Checking compatibility between NICs and switches
+5.4 Network Monitoring and Troubleshooting
+5.4.1 Key Network Metrics for AI
+5.4.1.1 Bandwidth utilization (ingress/egress)
+5.4.1.2 Latency (RTT, hop latency)
+5.4.1.3 Packet loss rate
+5.4.1.4 Jitter
+5.4.1.5 Throughput
+5.4.1.6 Queue depths and drops
+5.4.2 Network Monitoring Tools
+5.4.2.1 SNMP (Simple Network Management Protocol)
+5.4.2.2 NetFlow/sFlow for traffic analysis
+5.4.2.3 Vendor-specific management platforms
+5.4.2.4 Prometheuys and Grafana for metrics collection and visualization
+5.4.2.5 Packet capture tools (tcpdump, Wireshark)
+5.4.2.6 Network performance monitoring solutions
+5.4.3 Troubleshooting Common Network Issues
+5.4.3.1 Connectivity problems (ping, traceroute)
+5.4.3.2 Speed and duplex mismatches
+5.4.3.3 Packet loss scenarios
+5.4.3.4 Latency spikes and jitter
+5.4.3.5 Configuration errors on switches or NICs
+5.4.3.6 Bottlenecks in the network path
+5.4.4 Advanced Troubleshooting Techniques
+5.4.4.1 End-to-end network path analysis
+5.4.4.2 Deep packet inspection
+5.4.4.3 RDMA-specific diagnostics
+5.4.4.4 Performance testing tools
+5.4.4.5 Correlating network events with application performance
+5.4.4.6 Troubleshooting network fabric fabric fabric congestion
+5.4.5 Network Security Monitoring
+5.4.5.1 Detecting unauthorized network access
+5.4.5.2 Monitoring for denial-of-service attacks
+5.4.5.3 Analyzing firewall logs
+5.4.5.4 Identifying suspicious traffic patterns
+5.4.5.5 Intrusion detection and prevention systems (IDS/IPS)
+5.4.5.6 Security best practices for network devices
+6.Module 6
+6.1 High-Performance Storage for AI/ML Data
+6.1.1 Storage Requirements for AI/ML
+6.1.1.1 Massive datasets, high throughput, low latency
+6.1.1.2 Concurrent read/write access for distributed training
+6.1.1.3 Scalability to petabytes and beyond
+6.1.1.4 Support for high IOPS and bandwidth
+6.1.1.5 Fast access to training data and model checkpoints
+6.1.1.6 Integration with GPU Direct Storage (GDS)
+6.1.2 Storage Media and Technologies
+6.1.2.1 NVMe SSDs for high-performance tiers
+6.1.2.2 SSDs for capacity and mixed workloads
+6.1.2.3 HDDs for archival and cold data tiers
+6.1.2.4 Technologies like Optane for cache
+6.1.2.5 Cloud object storage for tiering
+6.1.2.6 New emerging storage technologies
+6.1.3 Parallel and Distributed File Systems
+6.1.3.1 Lustre, BeeGFS, GPFS (Spectrum Scale)
+6.1.3.2 Architecture: Metadata servers, Object Storage Servers, Clients
+6.1.3.3 Advantages for AI/ML workloads
+6.1.3.4 Performance tuning considerations
+6.1.3.5 High availability and data protection
+6.1.3.6 Integration with Kubernetes
+6.1.4 Object Storage Solutions
+6.1.4.1 S3-compatible APIs
+6.1.4.2 Scalability and durability
+6.1.4.3 Use cases for metadata, logs, and large unstructured data
+6.1.4.4 Integration with AI/ML frameworks
+6.1.4.5 Tiering and lifecycle management
+6.1.4.6 Cost-effectiveness for large datasets
+6.1.5 HyperFabric's Integrated Storage Solution
+6.1.5.1 Components of the Cisco storage offering
+6.1.5.2 High-speed interconnects for storage access
+6.1.5.3 Optimized performance for AI workloads
+6.1.5.4 Management and orchestration capabilities
+6.1.5.5 Data protection and resilience features
+6.1.5.6 Scalability options
+6.2 Data Management and Lifecycle
+6.2.1 Data Ingestion and Acquisition
+6.2.1.1 Strategies for collecting and loading data
+6.2.1.2 Data quality checks during ingestion
+6.2.1.3 ETL (Extract, Transform, Load) processes
+6.2.1.4 Secure data transfer protocols
+6.2.1.5 On-premise and cloud data sources
+6.2.1.6 Real-time data streaming
+6.2.2 Data Storage and Organization
+6.2.2.1 File system versus object storage
+6.2.2.2 Directory structure and naming conventions
+6.2.2.3 Metadata management and catalogs
+6.2.2.4 Data partitioning and sharding
+6.2.2.5 Data lakes, data warehouses, and feature stores
+6.2.2.6 Access patterns and performance optimization
+6.2.3 Data Preprocessing and Transformation
+6.2.3.1 Cleaning, filtering, and imputation
+6.2.3.2 Feature engineering and selection
+6.2.3.3 Data augmentation techniques
+6.2.3.4 Using accelerated libraries (RAPIDS)
+6.2.3.5 Versioning datasets for reproducibility
+6.2.3.6 Data privacy and anonymization
+6.2.4 Data Versioning and Lineage
+6.2.4.1 Tracking changes to datasets
+6.2.4.2 Linking data versions to models and experiments
+6.2.4.3 Importance for reproducibility and auditing
+6.2.4.4 Tools for data versioning (e.g., DVC)
+6.2.4.5 Establishing data lineage from source to model
+6.2.4.6 Managing multiple versions of datasets
+6.2.5 Data Retention and Archival
+6.2.5.1 Defining policies for data retention
+6.2.5.2 Moving inactive data to cheaper storage tiers
+6.2.5.3 Compliance requirements
+6.2.5.4 Data deletion and destruction policies
+6.2.5.5 Archival formats and standards
+6.2.5.6 Long-term data integrity
+6.3 Integration with Distributed File Systems
+6.3.1 Understanding Distributed File Systems for AI
+6.3.1.1 Architecture: clients, servers (OSS, MDS)
+6.3.1.2 Parallel I/O capabilities
+6.3.1.3 High availability and fault tolerance
+6.3.1.4 Scalability of capacity and performance
+6.3.1.5 Integration with AI frameworks and tools
+6.3.1.6 Use cases: large AI training datasets
+6.3.2 Mounting and Accessing Distributed File Systems
+6.3.2.1 Client installation and configuration
+6.3.2.2 Mount options for performance and stability
+6.3.2.3 Accessing data from compute nodes (e.g., via NFS, FUSE)
+6.3.2.4 Managing file system permissions
+6.3.2.5 Ensuring consistent data views
+6.3.2.6 Best practices for mounting
+6.3.3 Best Practices for AI Workloads
+6.3.3.1 Distributing data across OSTs/OSDs
+6.3.3.2 Optimizing stripe counts and stripe sizes
+6.3.3.3 Aligning file system layout with application access patterns
+6.3.3.4 Using caching mechanisms effectively
+6.3.3.5 Monitoring file system performance and health
+6.3.3.6 Tuning file system parameters
+6.3.4 Integrating with Kubernetes
+6.3.4.1 CSI (Container Storage Interface) drivers for distributed file systems
+6.3.4.2 Persistent Volumes (PV) and Persistent Volume Claims (PVC)
+6.3.4.3 Dynamic provisioning of storage
+6.3.4.4 Mounting file systems into pods
+6.3.4.5 Managing storage access for containerized applications
+6.3.4.6 Ensuring data consistency across pods
+6.3.5 Performance Tuning for Distributed File Systems
+6.3.5.1 Tuning client-side parameters
+6.3.5.2 Tuning server-side parameters
+6.3.5.3 Optimizing network connectivity to storage
+6.3.5.4 Load balancing across storage servers
+6.3.5.5 Analyzing I/O patterns and bottlenecks
+6.3.5.6 Using benchmarking tools
+6.4 Data Security and Access Control
+6.4.1 Security Principles for AI Data
+6.4.1.1 Confidentiality, Integrity, Availability (CIA triad)
+6.4.1.2 Least privilege access
+6.4.1.3 Defense in depth
+6.4.1.4 Regular security audits
+6.4.1.5 Compliance requirements (e.g., GDPR, HIPAA)
+6.4.1.6 Threat modeling for AI data
+6.4.2 Access Control Mechanisms
+6.4.2.1 File system permissions (POSIX ACLs)
+6.4.2.2 User and group management
+6.4.2.3 Role-Based Access Control (RBAC) in Kubernetes
+6.4.2.4 Object storage access policies (e.g., IAM, bucket policies)
+6.4.2.5 Network access control lists (ACLs)
+6.4.2.6 Data access logging and auditing
+6.4.3 Data Encryption
+6.4.3.1 Encryption at rest (e.g., self-encrypting drives, software encryption)
+6.4.3.2 Encryption in transit (SSL/TLS for network protocols)
+6.4.3.3 Key management strategies
+6.4.3.4 Performance impact of encryption
+6.4.3.5 Secure key storage and rotation
+6.4.3.6 Compliance related to encryption
+6.4.4 Data Integrity and Validation
+6.4.4.1 Checksums and cryptographic hashing
+6.4.4.2 Data validation upon ingestion and retrieval
+6.4.4.3 Detecting data corruption
+6.4.4.4 Implementing data backup and recovery plans
+6.4.4.5 Immutable storage options
+6.4.4.6 Media scrubs and health checks
+6.4.5 Auditing and Monitoring Data Access
+6.4.5.1 Logging all data access events
+6.4.5.2 Centralized log management
+6.4.5.3 Anomaly detection for suspicious access patterns
+6.4.5.4 Regular review of access logs
+6.4.5.5 Alerting for unauthorized access attempts
+6.4.5.6 Securing the audit logs themselves
+7.Module 7
+7.1 Deploying AI/ML Applications
+7.1.1 Packaging AI Applications
+7.1.1.1 Containerization with Docker
+7.1.1.2 Creating efficient and secure Docker images
+7.1.1.3 Including necessary libraries and dependencies
+7.1.1.4 Using base images from trusted sources
+7.1.1.5 Multi-stage builds for optimized images
+7.1.1.6 Reproducibility of container builds
+7.1.2 Defining Deployment Specifications
+7.1.2.1 Kubernetes Deployment objects
+7.1.2.2 StatefulSets for reproducible AI services
+7.1.2.3 Jobs and Batch Jobs for training runs
+7.1.2.4 Defining resource requests and limits
+7.1.2.5 Specifying volumes for data access
+7.1.2.6 Health checks and readiness probes
+7.1.3 Orchestrating Distributed Training
+7.1.3.1 Understanding distributed training paradigms (data, model, pipeline parallelism)
+7.1.3.2 Tools like Horovod or native framework support
+7.1.3.3 Kubernetes operators for distributed training frameworks
+7.1.3.4 Managing multiple worker pods
+7.1.3.5 Communication between distributed workers
+7.1.3.6 Fault tolerance in distributed training
+7.1.4 Deploying Inference Services
+7.1.4.1 Creating efficient inference containers
+7.1.4.2 Using model serving frameworks (e.g., TensorFlow Serving, TorchServe, Triton)
+7.1.4.3 Autoscaling inference deployments
+7.1.4.4 Load balancing for inference endpoints
+7.1.4.5 Optimizing for low latency and high throughput
+7.1.4.6 GPU sharing for inference
+7.1.5 CI/CD for AI/ML Applications
+7.1.5.1 Automating the build, test, and deployment process
+7.1.5.2 Integrating with Git repositories
+7.1.5.3 Tools like Jenkins, GitLab CI, Argo CD
+7.1.5.4 Continuous integration of code and models
+7.1.5.5 Continuous deployment to staging or production
+7.1.5.6 Strategies for safe rollouts and rollbacks
+7.2 MLOps Concepts and Tools on HyperFabric
+7.2.1 Introduction to MLOps
+7.2.1.1 Bridging the gap between ML development and operations
+7.2.1.2 Key principles: collaboration, automation, reproducibility
+7.2.1.3 Goals: faster iteration, reliable deployments, continuous monitoring
+7.2.1.4 Differences from traditional DevOps
+7.2.1.5 Benefits for AI teams
+7.2.1.6 The ML lifecycle
+7.2.2 Core MLOps Components
+7.2.2.1 Data versioning and management
+7.2.2.2 Experiment tracking
+7.2.2.3 Model versioning and registry
+7.2.2.4 Feature stores
+7.2.2.5 Model artifact management
+7.2.2.6 Infrastructure as Code (IaC)
+7.2.3 Experiment Tracking
+7.2.3.1 Logging hyperparameters, metrics, and artifacts
+7.2.3.2 Tools like MLflow, Weights & Biases, Comet ML
+7.2.3.3 Reproducibility of experiments
+7.2.3.4 Comparing different runs
+7.2.3.5 Linking experiments to code versions
+7.2.3.6 Visualizing experiment results
+7.2.4 Model Registry and Versioning
+7.2.4.1 Centralized repository for trained models
+7.2.4.2 Versioning models for tracking and rollback
+7.2.4.3 Storing model metadata and lineage
+7.2.4.4 Promoting models through stages (staging, production)
+7.2.4.5 Model signing and security
+7.2.4.6 Integration with deployment pipelines
+7.2.5 HyperFabric as an MLOps Platform Enabler
+7.2.5.1 Providing the underlying compute, storage, and network infrastructure
+7.2.5.2 Facilitating containerization and orchestration with Kubernetes
+7.2.5.3 Integrating with MLOps tools via APIs and integrations
+7.2.5.4 Ensuring reproducible environments for ML experiments
+7.2.5.5 Accelerating model training and deployment cycles
+7.2.5.6 Enabling seamless data access for MLOps pipelines
+7.3 Model Training and Inference Workflows
+7.3.1 Model Training Workflow
+7.3.1.1 Data preparation and loading
+7.3.1.2 Model definition and configuration
+7.3.1.3 Setting up distributed training environment
+7.3.1.4 Starting and monitoring training jobs
+7.3.1.5 Checkpointing and saving model state
+7.3.1.6 Hyperparameter tuning
+7.3.2 Data Parallelism Training
+7.3.2.1 Concept of splitting data across multiple workers
+7.3.2.2 Synchronizing gradients
+7.3.2.3 Frameworks and libraries supporting data parallelism
+7.3.2.4 Advantages and disadvantages
+7.3.2.5 Network bandwidth requirements
+7.3.2.6 Scaling considerations
+7.3.3 Model Parallelism Training
+7.3.3.1 Concept of splitting model layers across devices
+7.3.3.2 Communication between model partitions
+7.3.3.3 Use cases for very large models
+7.3.3.4 Frameworks and libraries supporting model parallelism
+7.3.3.5 Trade-offs in complexity and performance
+7.3.3.6 Inter-GPU communication demands
+7.3.4 Inference Workflow
+7.3.4.1 Loading trained models
+7.3.4.2 Preprocessing input data
+7.3.4.3 Running inference on GPUs or CPUs
+7.3.4.4 Postprocessing model output
+7.3.4.5 Model serving frameworks
+7.3.4.6 Deployment strategies for inference
+7.3.5 Optimizing Training and Inference Performance
+7.3.5.1 GPU utilization optimization
+7.3.5.2 Batch size tuning
+7.3.5.3 Mixed-precision computations
+7.3.5.4 Data loading efficiency
+7.3.5.5 Network communication optimization
+7.3.5.6 Efficient model quantization and pruning
+7.4 Monitoring AI/ML Pipeline Performance
+7.4.1 Key Performance Indicators (KPIs) for ML Pipelines
+7.4.1.1 Training time per epoch/step
+7.4.1.2 GPU/CPU utilization
+7.4.1.3 Memory usage (GPU and system)
+7.4.1.4 Data loading throughput
+7.4.1.5 Model accuracy and loss metrics
+7.4.1.6 Inference latency and throughput
+7.4.2 Monitoring Tools and Frameworks
+7.4.2.1 TensorBoard, Weights & Biases, MLflow for experiment tracking
+7.4.2.2 Kubernetes monitoring (Prometheus, Grafana)
+7.4.2.3 GPU monitoring tools (nvidia-smi, DCGM)
+7.4.2.4 System performance tools (top, htop, vmstat)
+7.4.2.5 Application Performance Monitoring (APM) tools
+7.4.2.6 Logging aggregation and analysis
+7.4.3 Monitoring Training Jobs
+7.4.3.1 Tracking loss, accuracy, and other metrics
+7.4.3.2 Monitoring resource utilization of training pods
+7.4.3.3 Identifying stalled or failed training jobs
+7.4.3.4 Detecting learning rate issues or divergence
+7.4.3.5 Observing data pipeline bottlenecks
+7.4.3.6 Alerting on unusual behavior
+7.4.4 Monitoring Inference Services
+7.4.4.1 Tracking request latency
+7.4.4.2 Monitoring inference throughput
+7.4.4.3 GPU utilization for inference pods
+7.4.4.4 Error rates and exception handling
+7.4.4.5 Resource usage of inference servers
+7.4.4.6 Model drift detection
+7.4.5 Analyzing Pipeline Bottlenecks
+7.4.5.1 Identifying performance limitations in data, compute, or network
+7.4.5.2 Correlating pipeline stage performance with overall throughput
+7.4.5.3 Using profiling tools to pinpoint issues
+7.4.5.4 Analyzing I/O performance of storage
+7.4.5.5 Understanding communication overhead
+7.4.5.6 Optimizing scheduling and resource allocation
+7.4.6 Alerting and Anomaly Detection
+7.4.6.1 Setting up alerts for critical KPIs
+7.4.6.2 Defining thresholds for anomalies
+7.4.6.3 Implementing automated response actions
+7.4.6.4 Proactive identification of potential issues
+7.4.6.5 Monitoring for security breaches
+7.4.6.6 Feedback loop for performance tuning
+8.Module 8
+8.1 Unified Management Interface
+8.1.1 Purpose of a Unified Management Interface
+8.1.1.1 Centralized control for complex infrastructure
+8.1.1.2 Simplification of operations
+8.1.1.3 Improved visibility across all components
+8.1.1.4 Consistent user experience
+8.1.1.5 Streamlined deployment and configuration
+8.1.1.6 Enhanced troubleshooting capabilities
+8.1.2 Key Features and Capabilities
+8.1.2.1 Dashboard for overview and health status
+8.1.2.2 Resource monitoring and utilization views
+8.1.2.3 Configuration management and deployment tools
+8.1.2.4 Alerting and event management
+8.1.2.5 Node and fabric status
+8.1.2.6 Integration with logging and analytics
+8.1.3 Navigating the HyperFabric Management Interface
+8.1.3.1 Understanding the layout and navigation
+8.1.3.2 Accessing different management modules
+8.1.3.3 User interface for network configuration
+8.1.3.4 Interface for compute and storage management
+8.1.3.5 Viewing system health and alerts
+8.1.3.6 Performing common administrative tasks
+8.1.4 User Roles and Permissions
+8.1.4.1 Role-Based Access Control (RBAC) for management interface
+8.1.4.2 Defining administrative privileges
+8.1.4.3 Limiting access based on job function
+8.1.4.4 Securing the management interface
+8.1.4.5 Audit trails for user actions
+8.1.4.6 Managing user accounts and groups
+8.1.5 Customization and Personalization
+8.1.5.1 Creating custom dashboards
+8.1.5.2 Setting preferred views and filters
+8.1.5.3 User-specific preferences
+8.1.5.4 Configuring notification settings
+8.1.5.5 Tailoring the interface to specific needs
+8.1.5.6 Saving common queries or reports
+8.2 Performance Monitoring and Telemetry
+8.2.1 Data Collection Mechanisms
+8.2.1.1 SNMP for network devices
+8.2.1.2 Agent-based collection from compute nodes
+8.2.1.3 Redfish/IPMI for server hardware telemetry
+8.2.1.4 Kubernetes metrics (kube-state-metrics, node-exporter)
+8.2.1.5 GPU metrics via libraries like DCGM
+8.2.1.6 Application-level metrics
+8.2.2 Key Performance Metrics to Monitor
+8.2.2.1 CPU, Memory, Disk, Network utilization (per node, per pod)
+8.2.2.2 GPU utilization, memory, and temperature
+8.2.2.3 Network latency, bandwidth, and packet loss
+8.2.2.4 Storage IOPS, throughput, and latency
+8.2.2.5 Application-specific metrics (e.g., training loss, inference latency)
+8.2.2.6 Kubernetes cluster health metrics
+8.2.3 Data Visualization and Dashboards
+8.2.3.1 Using tools like Grafana for real-time dashboards
+8.2.3.2 Creating time-series graphs of metrics
+8.2.3.3 Correlating data from different sources
+8.2.4 Anomaly Detection and Alerting
+8.2.4.1 Setting alert thresholds for critical metrics
+8.2.4.2 Defining alert escalation policies
+8.2.4.3 Identifying unusual performance patterns
+8.2.4.4 Proactive issue detection
+8.2.4.5 Integration with ticketing systems
+8.2.4.6 Automated remediation actions
+8.2.5 Performance Tuning Based on Telemetry
+8.2.5.1 Identifying resource bottlenecks
+8.2.5.2 Analyzing network saturation
+8.2.5.3 Optimizing storage I/O
+8.2.5.4 Adjusting Kubernetes resource requests/limits
+8.2.5.5 Tuning GPU scheduling
+8.2.5.6 Iterative performance improvement cycle
+8.3 Log Analysis and Diagnostics
+8.3.1 Importance of Logging
+8.3.1.1 Understanding system behavior
+8.3.1.2 Diagnosing errors and failures
+8.3.1.3 Auditing system activity
+8.3.1.4 Tracking changes and configurations
+8.3.1.5 Root cause analysis of problems
+8.3.1.6 Providing historical context
+8.3.2 Log Collection and Aggregation
+8.3.2.1 Centralized logging solutions (e.g., Elasticsearch, Loki)
+8.3.2.2 Log forwarding agents (e.g., Fluentd, Filebeat)
+8.3.2.3 Kubernetes logging architecture
+8.3.2.4 Capturing logs from all system components
+8.3.2.5 Structured logging for easier analysis
+8.3.2.6 Log retention policies
+8.3.3 Searching and Filtering Logs
+8.3.3.1 Query languages for log analysis
+8.3.3.2 Filtering by time, source, severity, keywords
+8.3.3.3 Correlating logs from different components
+8.3.3.4 Using log aggregation UIs
+8.3.3.5 Real-time log streaming and analysis
+8.3.3.6 Creating saved searches and alerts
+8.3.4 Diagnostic Tools and Techniques
+8.3.4.1 System logs (syslog, journald)
+8.3.4.2 Application-specific logs
+8.3.4.3 Network diagnostic tools (ping, traceroute, iperf)
+8.3.4.4 GPU diagnostic tools (nvidia-smi, DCGM)
+8.3.4.5 Kubernetes command-line tools (kubectl logs, describe)
+8.3.4.6 Analyzing error messages and stack traces
+8.3.5 Analyzing AI/ML Specific Logs
+8.3.5.1 Framework logs (TensorFlow, PyTorch)
+8.3.5.2 Distributed training logs for worker communication
+8.3.5.3 Model serving logs
+8.3.5.4 MLOps tool logs
+8.3.5.5 Data loading logs
+8.3.5.6 GPU driver logs
+8.4 Common Troubleshooting Scenarios and Best Practices
+8.4.1 Scenario: Compute Node Unreachable
+8.4.1.1 Potential causes: power, network cable, management interface failure
+8.4.1.2 Troubleshooting steps: check power, physical network, BMC/iDRAC
+8.4.1.3 Verifying management IP connectivity
+8.4.1.4 Checking switch port status
+8.4.1.5 Examining system logs on the node (if accessible)
+8.4.1.6 Isolating node hardware failure
+8.4.2 Scenario: GPU Not Detected or Errors
+8.4.2.1 Potential causes: driver issues, physical connection, GPU failure
+8.4.2.2 Troubleshooting steps: check `nvidia-smi`, driver installation
+8.4.2.3 Verifying GPU seating and power connections
+8.4.2.4 Testing GPU in another slot or node
+8.4.2.5 Checking DCGM metrics for GPU health
+8.4.2.6 Analyzing kernel logs for GPU errors
+8.4.3 Scenario: Slow AI Training Performance
+8.4.3.1 Potential causes: network bottleneck, storage bottleneck, poor GPU utilization, inefficient code
+8.4.3.2 Troubleshooting steps: monitor network bandwidth/latency, storage IOPS/throughput
+8.4.3.3 Analyze GPU utilization and memory usage
+8.4.3.4 Profile application code for optimizations
+8.4.3.5 Check data loading pipeline performance
+8.4.3.6 Verify distributed training communication efficiency
+8.4.4 Scenario: Kubernetes Pods Failing to Start
+8.4.4.1 Potential causes: resource constraints, misconfiguration, image pull errors, network issues
+8.4.4.2 Troubleshooting steps: check pod status (`kubectl get pods`), describe pod (`kubectl describe pod`)
+8.4.4.3 Examine pod logs (`kubectl logs`)
+8.4.4.4 Verify resource requests and node capacity
+8.4.4.5 Check for image registry connectivity issues
+8.4.4.6 Investigate network connectivity for pods
+8.4.5 Scenario: Storage Performance Issues
+8.4.5.1 Potential causes: overloaded storage servers, network congestion to storage, inefficient file system tuning
+8.4.5.2 Troubleshooting steps: monitor storage server load and health
+8.4.5.3 Analyze storage network performance
+8.4.5.4 Review file system mount options and tuning
+8.4.5.5 Check for storage client configuration errors
+8.4.5.6 Identify I/O patterns causing contention
+8.4.6 Best Practices for Troubleshooting
+8.4.6.1 Gather all relevant information before starting
+8.4.6.2 Isolate the problem to a specific component
+8.4.6.3 Work systematically through potential causes
+8.4.6.4 Use appropriate diagnostic tools
+8.4.6.5 Consult documentation and vendor support
+8.4.6.6 Document findings and solutions for future reference
+9.Lab 1: Environment Setup and Initial HyperFabric Deployment
+9.1 Pre-requisites and Environment Check
+9.1.1 Verify physical access to hardware
+9.1.2 Confirm network connectivity to management interfaces
+9.1.3 Ensure necessary console access
+9.1.4 Prepare IP addressing scheme
+9.1.5 Gather required credentials and licenses
+9.1.6 Ensure required software packages are available
+9.2 Hardware Installation and Cabling
+9.2.1 Rack and stack compute nodes, switches, and storage
+9.2.1.1 Securely mount all hardware in the rack
+9.2.1.2 Ensure proper airflow and power connections
+9.2.1.3 Connect power cords to PDUs and servers
+9.2.1.4 Verify physical stability of installed equipment
+9.2.1.5 Document hardware placement and connections
+9.2.1.6 Safety checks before powering on
+9.2.2 Network Cabling
+9.2.2.1 Connect management interfaces to management network
+9.2.2.2 Connect compute node NICs to fabric switches
+9.2.2.3 Connect storage interfaces to fabric switches
+9.2.2.4 Verify cable integrity and proper seating
+9.2.2.5 Document all network connections
+9.2.2.6 Labeling cables for clarity
+9.2.3 Storage Cabling
+9.2.3.1 Connect storage controllers to the network fabric
+9.2.3.2 Connect storage enclosures to controllers
+9.2.3.3 Ensure power and data cables are correctly routed
+9.2.3.4 Verify physical integrity of all storage connections
+9.2.3.5 Document storage connectivity
+9.2.3.6 Compliance with cabling standards
+9.3 Initial Power-On and BIOS/BMC Configuration
+9.3.1 Power on management switches first
+9.3.1.1 Ensure management network is operational
+9.3.1.2 Turn on compute nodes and storage systems
+9.3.1.3 Verify POST (Power-On Self-Test) completion
+9.3.1.4 Access BIOS/UEFI on each compute node
+9.3.1.5 Configure boot order and essential BIOS settings
+9.3.1.6 Access Baseboard Management Controller (BMC) or iDRAC
+9.3.2 BMC/iDRAC Configuration
+9.3.2.1 Assign static IP addresses to BMCs
+9.3.2.2 Configure default user accounts and passwords
+9.3.2.3 Update BMC firmware
+9.3.2.4 Enable remote console access
+9.3.2.5 Configure alert settings for hardware issues
+9.3.2.6 Ensure secure communication protocols are enabled
+9.3.3 Basic Firmware Updates
+9.3.3.1 Update NIC firmware
+9.3.3.2 Update Host Bus Adapter (HBA) firmware
+9.3.3.3 Ensure all hardware firmware is at recommended levels
+9.3.3.4 Check compatibility of firmware versions
+9.3.3.5 Document firmware versions applied
+9.3.3.6 Schedule updates to minimize downtime
+9.4 HyperFabric Software Installation
+9.4.1 Downloading the HyperFabric software package
+9.4.1.1 Accessing the Cisco support portal
+9.4.1.2 Verifying software integrity (checksums)
+9.4.1.3 Ensuring compatibility with hardware
+9.4.1.4 Storing the software on a management server or shared location
+9.4.1.5 Reviewing installation documentation
+9.4.1.6 Preparing necessary installation media
+9.4.2 Executing the Installation Procedure
+9.4.2.1 Running the installer script or executable
+9.4.2.2 Following prompts for configuration
+9.4.2.3 Specifying management network details
+9.4.2.4 Defining cluster name and initial settings
+9.4.2.5 Selecting components to install
+9.4.2.6 Monitoring installation progress
+9.4.3 Initial Cluster Configuration
+9.4.3.1 Registering compute nodes with the management server
+9.4.3.2 Configuring network fabric settings
+9.4.3.3 Defining storage pools or targets
+9.4.3.4 Setting up initial user accounts and roles
+9.4.3.5 Configuring management network interfaces
+9.4.3.6 Establishing connectivity to external services (e.g., NTP, DNS)
+9.4.4 Verifying Installation Success
+9.4.4.1 Checking the status of the management service
+9.4.4.2 Verifying that nodes are registered and healthy
+9.4.4.3 Confirming network fabric initialization
+9.4.4.4 Checking basic storage connectivity
+9.4.4.5 Reviewing installation logs for errors
+9.4.4.6 Performing a basic system health check
+9.5 Initial Validation of Cluster Components
+9.5.1 Network Fabric Validation
+9.5.1.1 Ping tests between nodes
+9.5.1.2 Bandwidth tests using tools like iperf3
+9.5.1.3 Latency tests
+9.5.1.4 Verifying MTU settings
+9.5.1.5 Checking switch port statistics for errors
+9.5.1.6 Confirming RDMA connectivity if applicable
+9.5.2 Storage System Validation
+9.5.2.1 Mounting exported file systems
+9.5.2.2 Performing read/write tests
+9.5.2.3 Verifying IOPS and throughput performance
+9.5.2.4 Checking storage system health via its own interface
+9.5.2.5 Confirming data redundancy mechanisms
+9.5.2.6 Testing access controls
+9.5.3 Compute Node Validation
+9.5.3.1 Checking CPU and memory detection
+9.5.3.2 Verifying GPU detection and driver status (`nvidia-smi`)
+9.5.3.3 Running basic CPU and memory benchmarks
+9.5.3.4 Testing GPU compute capabilities with simple CUDA samples
+9.5.3.5 Confirming node registration in the management interface
+9.5.3.6 Verifying access to storage
+10.Lab 2: Configuring Network and Storage for AI Workloads
+10.1 Network Configuration for AI Performance
+10.1.1 VLAN Configuration
+10.1.1.1 Creating VLANs for management and AI traffic
+10.1.1.2 Assigning ports to specific VLANs
+10.1.1.3 Trunking VLANs between switches
+10.1.1.4 Verifying VLAN tagging and isolation
+10.1.1.5 Applying QoS policies per VLAN
+10.1.1.6 Ensuring correct network segmentation
+10.1.2 MTU and Jumbo Frames
+10.1.2.1 Setting MTU to 9000 for AI traffic
+10.1.2.2 Ensuring consistency across all network devices (NICs, switches)
+10.1.2.3 Testing MTU path discovery
+10.1.2.4 Impact of MTU on performance
+10.1.2.5 Configuring jumbo frames on relevant interfaces
+10.1.2.6 Verifying no packet fragmentation
+10.1.3 RDMA Configuration (RoCE/InfiniBand)
+10.1.3.1 Enabling RoCE or InfiniBand on NICs/adapters
+10.1.3.2 Configuring DCB parameters (PFC, ETS) for RoCE
+10.1.3.3 Verifying RDMA capable network path
+10.1.3.4 Tuning RDMA parameters for optimal performance
+10.1.3.5 Testing RDMA connectivity and bandwidth
+10.1.3.10 Verifying RoCE configuration on switches
+10.1.4 Quality of Service (QoS) Policies
+10.1.4.1 Identifying critical AI traffic flows
+10.1.4.2 Configuring DSCP markings for AI traffic
+10.1.4.3 Implementing QoS policies on switches
+10.1.4.4 Prioritizing RDMA traffic
+10.1.4.5 Ensuring lossless transport for critical data
+10.1.4.6 Validating QoS implementation
+10.1.5 High Availability Network Design
+10.1.5.1 Implementing redundant switch uplinks
+10.1.5.2 Configuring link aggregation (LAG)
+10.1.5.3 Setting up routing protocols for redundancy
+10.1.5.4 Failover testing of network paths
+10.1.5.5 Ensuring resilient connectivity for critical services
+10.1.5.6 Monitoring link status and health
+10.2 Storage Configuration for AI Workloads
+10.2.1 File System Setup and Tuning
+10.2.1.1 Creating file systems on the storage array
+10.2.1.2 Configuring striping and block sizes
+10.2.1.3 Tuning file system parameters for performance
+10.2.1.4 Defining export paths (NFS) or access methods
+10.2.1.5 Setting up quotas where necessary
+10.2.1.6 Implementing data protection features (snapshots, replication)
+10.2.2 Mounting Storage on Compute Nodes
+10.2.2.1 Using NFS client for mounting
+10.2.2.2 Configuring mount options for performance (e.g., `rsize`, `wsize`)
+10.2.2.3 Implementing automounting or systemd mount units
+10.2.2.4 Ensuring consistent mount points across nodes
+10.2.2.5 Verifying mount access and permissions
+10.2.2.6 Testing read/write performance after mounting
+10.2.3 Distributed File System Configuration (if applicable)
+10.2.3.1 Installing client packages for the chosen distributed file system
+10.2.3.2 Configuring client settings (e.g., server addresses, configuration files)
+10.2.3.3 Mounting the distributed file system
+10.2.3.4 Tuning client performance parameters
+10.2.3.5 Verifying file system accessibility and performance
+10.2.3.6 Understanding metadata server interactions
+10.2.4 Integrating Storage with Kubernetes
+10.2.4.1 Deploying CSI drivers for the storage solution
+10.2.4.2 Creating StorageClass definitions
+10.2.4.3 Provisioning Persistent Volumes (PVs) dynamically
+10.2.4.4 Creating Persistent Volume Claims (PVCs) for applications
+10.2.4.5 Mounting volumes into Kubernetes pods
+10.2.4.6 Testing storage access from within pods
+10.2.5 Storage Performance Benchmarking
+10.2.5.1 Using tools like `fio`, `iozone`, `mdtest`
+10.2.5.2 Testing sequential and random I/O
+10.2.5.3 Measuring IOPS and throughput
+10.2.5.4 Benchmarking with different file sizes and access patterns
+10.2.5.5 Validating performance on mounted storage
+10.2.5.6 Comparing performance against baseline requirements
+10.3 Verifying Kubernetes Network Integration
+10.3.1 CNI Plugin Configuration
+10.3.1.1 Ensuring the correct CNI plugin is installed and configured
+10.3.1.2 Verifying pod networking setup
+10.3.1.3 Testing pod-to-pod communication
+10.3.1.4 Checking network policies
+10.1.1.5 Troubleshooting CNI errors
+10.1.1.6 Ensuring network overlays are functioning
+10.3.2 Service Discovery and DNS
+10.3.2.1 Verifying Kubernetes DNS resolution
+10.3.2.2 Testing service discovery for applications
+10.3.2.3 Ensuring internal cluster DNS is working correctly
+10.3.2.4 Checking external DNS resolution from within pods
+10.3.2.5 Understanding CoreDNS configuration
+10.3.2.6 Troubleshooting DNS issues
+10.3.3 Load Balancer Configuration
+10.3.3.1 Configuring Kubernetes Services of type LoadBalancer
+10.3.3.2 Integrating with external load balancers if applicable
+10.3.3.3 Testing load balancing across pods
+10.3.3.4 Verifying health checks for load balancers
+10.3.3.5 Ensuring traffic distribution
+10.3.3.6 Managing load balancer configurations
+10.3.4 Network Policy Enforcement
+10.3.4.1 Defining network policies to restrict pod communication
+10.3.4.2 Testing policy rules to ensure isolation
+10.3.4.3 Verifying ingress and egress rules
+10.3.4.4 Troubleshooting policy misconfigurations
+10.3.4.5 Implementing security best practices
+10.3.4.6 Auditing network policy effectiveness
+10.4 Setting Up GPU Access in Kubernetes
+10.4.1 Installing NVIDIA Device Plugin
+10.4.1.1 Deploying the device plugin as a DaemonSet
+10.4.1.2 Verifying the device plugin is running
+10.4.1.3 Checking node status for GPU resources
+10.4.1.4 Ensuring plugin is compatible with Kubernetes version
+10.4.1.5 Troubleshooting device plugin failures
+10.4.1.6 Confirming GPU resource reporting
+10.4.2 Requesting GPUs in Pod Specifications
+10.4.2.1 Adding `nvidia.com/gpu` to container resource requests
+10.4.2.2 Specifying the number of GPUs per pod
+10.4.2.3 Requesting GPUs with specific capabilities (e.g., MIG)
+10.4.2.4 Testing pod startup with GPU requests
+10.4.2.5 Verifying GPU availability within the pod
+10.4.2.6 Utilizing GPU sharing parameters
+10.4.3 Verifying GPU Access from Pods
+10.4.3.1 Executing `nvidia-smi` inside a privileged pod
+10.4.3.2 Running a simple CUDA sample program
+10.4.3.3 Testing GPU memory allocation
+10.4.3.4 Confirming correct GPU device assignment
+10.4.3.5 Logging GPU utilization metrics
+10.4.3.6 Stress testing GPU access
+10.4.4 Configuring GPU Sharing (if applicable)
+10.4.4.1 Understanding MIG (Multi-Instance GPU)
+10.4.4.2 Configuring MIG instances via device plugin
+10.4.4.3 Requesting specific MIG instances in pods
+10.4.4.4 Testing isolation and performance of MIG instances
+10.4.4.5 Verifying secure partitioning of GPUs
+10.4.4.6 Managing MIG configuration through Kubernetes
+10.4.5 GPU Affinity and Anti-Affinity
+10.4.5.1 Using node affinity to schedule pods on GPU nodes
+10.4.5.2 Using pod anti-affinity for distributing workloads on GPUs
+10.4.5.3 Specifying topology spread constraints
+10.4.5.4 Ensuring optimal placement for distributed training
+10.4.5.5 Avoiding resource contention
+10.4.5.6 Tuning scheduling for GPU workloads
+10.5 Storage Performance Validation
+10.5.1 Benchmarking Storage Performance
+10.5.1.1 Conducting read/write tests on mounted file systems
+10.5.1.2 Measuring IOPS and throughput with tools like `fio`
+10.5.1.3 Testing with large and small block sizes
+10.5.1.4 Assessing random vs. sequential access performance
+10.5.1.5 Running benchmarks from within Kubernetes pods
+10.5.1.6 Comparing results against expected performance
+10.5.2 Validating GPU Direct Storage (GDS)
+10.5.2.1 Ensuring GDS is enabled and configured correctly
+10.5.2.2 Running GDS-enabled benchmarks
+10.5.2.3 Measuring performance improvements with GDS
+10.5.2.4 Verifying direct data transfer from storage to GPU memory
+10.5.2.5 Troubleshooting GDS connectivity issues
+10.5.2.6 Confirming compatibility with storage and GPUs
+10.5.3 Monitoring Storage Metrics
+10.5.3.1 Using tools like Prometheus for storage metrics
+10.5.3.2 Monitoring storage controller performance
+10.5.3.3 Tracking IOPS, throughput, and latency of storage volumes
+10.5.3.4 Observing disk utilization and cache performance
+10.5.3.5 Identifying potential storage bottlenecks
+10.5.3.6 Setting up alerts for storage performance degradation
+10.5.4 Performance Tuning for Storage Access
+10.5.4.1 Adjusting NFS mount options
+10.5.4.2 Optimizing file system block sizes and striping
+10.5.4.3 Tuning network parameters related to storage
+10.5.4.4 Considering storage caching strategies
+10.5.4.5 Optimizing application data access patterns
+10.5.4.6 Monitoring and iterating on tuning parameters
+10.5.5 Storage Security Configuration Review
+10.5.5.1 Verifying file permissions and ACLs
+10.5.5.2 Reviewing access controls for CSI drivers
+10.5.5.3 Ensuring encrypted transport if configured
+10.5.5.4 Auditing storage access logs
+10.5.5.5 Confirming proper authentication for storage access
+10.5.5.6 Checking for enforce data integrity measures
+11.Lab 3: Deploying a Sample AI/ML Application on HyperFabric
+11.1 Understanding the Sample Application
+11.1.1 Application Overview (e.g., image classification, NLP model)
+11.1.1.1 Purpose and objective of the application
+11.1.1.2 Core functionalities and components
+11.1.1.3 Expected input and output
+11.1.1.4 Business problem it solves
+11.1.1.5 Technology stack used (framework, libraries)
+11.1.1.6 Performance expectations
+11.1.2 Required Data and Preprocessing
+11.1.2.1 Source of the dataset
+11.1.2.2 Data format and structure
+11.1.2.3 Any pre-processing steps required
+11.1.2.4 Location of the dataset (e.g., NFS, object storage)
+11.1.2.5 Data loading mechanism
+11.1.2.6 Validation of data integrity
+11.1.3 Model Architecture and Training Configuration
+11.1.3.1 Type of neural network used
+11.1.3.2 Key hyperparameters (learning rate, batch size, epochs)
+11.1.3.3 Distributed training setup (if applicable)
+11.1.3.4 Libraries and framework versions involved
+11.1.3.5 Model checkpointing strategy
+11.1.3.6 Optimization algorithms used
+11.1.4 Deployment Requirements
+11.1.4.1 Container image name and tag
+11.1.4.2 Required CPU, memory, and GPU resources
+11.1.4.3 Storage volume requirements and mount paths
+11.1.4.4 Environment variables or configuration files
+11.1.4.5 Network service requirements (if applicable)
+11.1.4.6 Deployment strategy (e.g., Deployment, Job)
+11.2 Preparing Application Artifacts
+11.2.1 Building the Docker Container Image
+11.2.1.1 Creating a Dockerfile
+11.2.1.2 Copying application code and dependencies
+11.2.1.3 Installing necessary libraries (AI frameworks, CUDA, cuDNN)
+11.2.1.4 Setting the entrypoint or command
+11.2.1.5 Building the image locally
+11.2.1.6 Tagging the image appropriately
+11.2.2 Pushing Image to Container Registry
+11.2.2.1 Authenticating with the container registry (e.g., Docker Hub, private registry)
+11.2.2.2 Tagging the image for the registry
+11.2.2.3 Pushing the image
+11.2.2.4 Verifying the image is available in the registry
+11.2.2.5 Ensuring the Kubernetes cluster can access the registry
+11.2.2.6 Setting up private registry credentials if needed
+11.2.3 Preparing Kubernetes Manifests (YAML files)
+11.2.3.1 Creating Deployment or Job manifests
+11.2.3.2 Defining resource requests and limits
+11.2.3.3 Specifying container image and command
+11.2.3.4 Configuring volume mounts for data access
+11.2.3.5 Setting environment variables
+11.2.3.6 Including probes for health checks
+11.2.4 Staging the Dataset
+11.2.4.1 Uploading dataset to NFS or object storage
+11.2.4.2 Creating necessary directories or buckets
+11.2.4.3 Ensuring proper permissions for access
+11.2.4.4 Verifying data integrity after upload
+11.2.4.5 Documenting dataset location and access method
+11.2.4.6 Conducting a quick data sanity check
+11.3 Deploying the Application to Kubernetes
+11.3.1 Applying Kubernetes Manifests
+11.3.1.1 Using `kubectl apply -f <manifest-file.yaml>`
+11.3.1.2 Applying manifests for the application components
+11.3.1.3 Creating Persistent Volume Claims (PVCs) if needed
+11.3.1.4 Applying any necessary network service configurations
+11.3.1.5 Monitoring the deployment process
+11.3.1.6 Rolling out the application components
+11.3.2 Monitoring Deployment Status
+11.3.2.1 Checking pod status (`kubectl get pods`)
+11.3.2.2 Describing pods for detailed status (`kubectl describe pod <pod-name>`)
+11.3.2.3 Reviewing logs for application startup errors (`kubectl logs <pod-name>`)
+11.3.2.4 Watching deployment rollout status
+11.3.2.5 Verifying health checks are passing
+11.3.2.6 Investigating any recurring errors
+11.3.3 Initiating Training Jobs
+11.3.3.1 Submitting a Kubernetes Job for training
+11.3.3.2 Monitoring job progress and status
+11.3.3.3 Checking logs for training progress
+11.3.3.4 Verifying resource allocation (CPU, GPU)
+11.3.3.5 Observing data loading performance
+11.3.3.6 Confirming successful completion of training job milestones
+11.3.4 Deploying Inference Services (if applicable)
+11.3.4.1 Creating a Kubernetes Deployment for inference
+11.3.4.2 Ensuring the inference server is running
+11.3.4.2 Ensuring the inference server is running
+11.3.4.3 Testing endpoint accessibility
+11.3.4.4 Monitoring inference resource usage
+11.3.4.5 Sending sample requests to the inference endpoint
+11.3.4.6 Verifying accuracy of predictions
+11.3.5 Cleanup and Rollback Procedures
+11.3.5.1 Deleting deployed resources (`kubectl delete`)
+11.3.5.2 Rolling back to a previous stable version
+11.3.5.3 Understanding how to revert changes
+11.3.5.4 Verifying cleanup operations
+11.3.5.5 Identifying potential orphaned resources
+11.3.5.6 Documenting tested rollback scenarios
+11.4 Verifying Application Functionality
+11.4.1 Checking Training Job Output
+11.4.1.1 Locating saved model checkpoints
+11.4.1.2 Reviewing training logs for final metrics (accuracy, loss)
+11.4.1.3 Verifying that the training job completed successfully
+11.4.1.4 Checking for any errors or warnings during training
+11.4.1.5 Ensuring expected output files are generated
+11.4.1.6 Validating model metadata and configurations
+11.4.2 Testing Inference Endpoint
+11.4.2.1 Sending sample data to the inference service
+11.4.2.2 Analyzing the prediction results for accuracy
+11.4.2.3 Measuring inference latency and throughput
+11.4.2.4 Testing with various valid and invalid inputs
+11.4.2.5 Checking error handling of the inference service
+11.4.2.6 Validating that predictions make sense in context
+11.4.3 Monitoring Resource Utilization
+11.4.3.1 Observing CPU and memory usage during training/inference
+11.4.3.2 Monitoring GPU utilization and memory consumption
+11.4.3.3 Checking network bandwidth usage
+11.4.3.4 Analyzing storage I/O patterns
+11.4.3.5 Identifying any resource contention or underutilization
+11.4.3.6 Correlating resource usage with application performance
+11.4.4 Validating Data Access
+11.4.4.1 Confirming that the application can read training data
+11.4.4.2 Verifying write access for model checkpoints
+11.4.4.3 Checking permissions and mount status of data volumes
+11.4.4.4 Monitoring storage I/O relevant to the application
+11.4.4.5 Ensuring efficient data transfer rates
+11.4.4.6 Verifying data integrity of accessed files
+11.4.5 Troubleshooting Application-Specific Issues
+11.4.5.1 Examining application logs for errors
+11.4.5.2 Debugging code within the container if necessary
+11.4.5.3 Resolving configuration issues
+11.4.5.4 Addressing library version conflicts
+11.4.5.5 Investigating potential race conditions or deadlocks
+11.4.5.6 Seeking help from documentation or communities
+11.5 Exploring Advanced Deployment Scenarios
+11.5.1 Implementing Checkpointing and Restarting
+11.5.1.1 Configuring periodic saving of model state
+11.5.1.2 Restarting training from a checkpoint after interruption
+11.5.1.3 Ensuring data consistency during restarts
+11.5.1.4 Verifying checkpoint loading process
+11.5.1.5 Automated recovery mechanisms
+11.5.1.6 Manual restart procedures
+11.5.2 Hyperparameter Tuning with KubeFlow or similar
+11.5.2.1 Setting up hyperparameter optimization jobs
+11.5.2.2 Defining search spaces and objective functions
+11.5.2.3 Using tools to manage trials
+11.2.3.4 Analyzing results from hyperparameter tuning
+11.2.3.5 Integrating with experiment tracking tools
+11.2.3.6 Automating the tuning process
+11.5.3 Model Export and Serialization
+11.5.3.1 Saving trained models in standard formats (e.g., SavedModel, ONNX)
+11.5.3.2 Preparing models for inference deployment
+11.5.3.3 Optimizing models for specific hardware
+11.5.3.4 Versioning exported models
+11.5.3.5 Securing model artifacts
+11.5.3.6 Ensuring compatibility with serving frameworks
+11.5.4 Blue/Green Deployments for Inference Services
+11.5.4.1 Deploying a new version alongside the old one
+11.5.4.2 Gradually shifting traffic to the new version
+11.5.4.3 Monitoring the new version's performance
+11.5.4.4 Rolling back if issues arise
+11.5.4.5 Strategies for zero-downtime updates
+11.5.4.6 Managing traffic routing
+11.5.5 Implementing Distributed Inference
+11.5.5.1 Scaling inference across multiple instances
+11.5.5.2 Techniques for distributing inference load
+11.5.5.3 Load balancing for inference endpoints
+11.5.5.4 Strategies for handling large batch inference
+11.5.5.5 Ensuring low latency for real-time inference
+11.5.5.6 Monitoring distributed inference performance
+11.5.6 Setting Up Model Monitoring for Drift
+11.5.6.1 Tracking model performance on live data
+11.5.6.2 Detecting changes in data distribution (data drift)
+11.5.6.3 Detecting changes in model predictions (concept drift)
+11.5.6.4 Tools and techniques for drift detection
+11.5.6.5 Setting up alerts for significant drift
+11.5.6.6 Establishing retraining triggers
+12.Lab 4: Monitoring AI/ML Workload Performance
+12.1 Setting Up Monitoring Tools
+12.1.1 Introduction to Prometheus and Grafana
+12.1.1.1 Prometheus: time-series database and monitoring system
+12.1.1.2 Grafana: visualization and dashboarding tool
+12.1.1.3 How they work together
+12.1.1.4 Common exporters (node-exporter, kube-state-metrics)
+12.1.1.5 Installing Prometheus and Grafana (e.g., via Helm charts)
+12.1.1.6 Basic configuration for scraping metrics
+12.1.2 Deploying Exporters for Key Components
+12.1.2.1 Node Exporter for host metrics
+12.1.2.2 Kube-State-Metrics for Kubernetes object states
+12.1.2.3 GPU Exporter (e.g., dcgm-exporter) for GPU metrics
+12.1.2.4 Exporter for storage system metrics
+12.1.2.5 Application-level metrics instrumentation
+12.1.2.6 Ensuring exporters are correctly deployed as DaemonSets or Deployments
+12.1.3 Configuring Data Sources in Grafana
+12.1.3.1 Adding Prometheus as a data source
+12.1.3.2 Verifying connectivity between Grafana and Prometheus
+12.1.3.3 Importing pre-built dashboards or creating new ones
+12.1.3.4 Configuring dashboard refresh rates
+12.1.3.5 Setting up user authentication for Grafana
+12.1.3.6 Organizing dashboards logically
+12.1.4 Setting Up Alerting with Alertmanager
+12.1.4.1 Configuring Alertmanager to receive alerts from Prometheus
+12.1.4.2 Defining alert rules in Prometheus
+12.1.4.3 Configuring notification channels (e.g., Slack, email)
+12.1.4.4 Testing alert configurations
+12.1.4.5 Managing alert routing and silences
+12.1.4.6 Ensuring timely notifications for critical events
+12.1.5 Integrating with Existing Monitoring Systems
+12.1.5.1 Exporting metrics in a compatible format
+12.1.5.2 Integrating with centralized logging platforms
+12.1.5.3 Alerting integration with incident management tools
+12.1.5.4 Leveraging existing dashboards where possible
+12.1.5.5 API integrations for data exchange
+12.1.5.6 Ensuring a unified view of system health
+12.2 Monitoring Cluster and Node Performance
+12.2.1 Monitoring Kubernetes Cluster Health
+12.2.1.1 Observing the status of control plane components
+12.2.1.2 Tracking node availability and readiness
+12.2.1.3 Monitoring API server latency and request rates
+12.2.1.4 Checking etcd health and performance
+12.2.1.5 Observing scheduler queue lengths
+12.2.1.6 Validating cluster autoscaler activity
+12.2.2 Monitoring Node Resource Utilization
+12.2.2.1 CPU and Memory usage across nodes
+12.2.2.2 Disk I/O and space utilization
+12.2.2.3 Network traffic patterns per node
+12.2.2.4 Identifying nodes that are overloaded or underutilized
+12.2.2.5 Monitoring OS-level performance metrics
+12.2.2.6 Checking for noisy neighbors
+12.2.3 Monitoring Network Fabric Performance
+12.2.3.1 Bandwidth utilization on switch ports
+12.2.3.2 Monitoring for packet loss and retransmissions
+12.2.3.3 Latency measurements between nodes
+12.2.3.4 Tracking buffer usage and drops on switches
+12.2.3.5 Verifying RDMA performance metrics
+12.2.3.6 Alerting on network congestion or degradation
+12.2.4 Monitoring Storage Performance
+12.2.4.1 Tracking IOPS and throughput for storage volumes
+12.2.4.2 Monitoring latency of storage operations
+12.2.4.3 Observing disk utilization on storage servers
+12.2.4.4 Checking cache hit rates and effectiveness
+12.2.4.5 Monitoring storage controller performance
+12.2.4.6 Identifying storage hot spots or bottlenecks
+12.2.5 Monitoring System Logs and Events
+12.2.5.1 Aggregating system logs from all nodes
+12.2.5.2 Creating dashboards for critical log messages
+12.2.5.3 Setting up alerts for specific error patterns
+12.2.5.4 Analyzing kernel messages for hardware issues
+12.2.5.5 Tracking system configuration changes
+12.2.5.6 Correlating log events with performance anomalies
+12.3 Monitoring AI/ML Workload Specific Metrics
+12.3.1 Monitoring GPU Utilization and Health
+12.3.1.1 Tracking GPU utilization percentage
+12.3.1.2 Monitoring GPU memory usage
+12.3.1.3 Observing GPU temperature and power consumption
+12.3.1.4 Checking NVLink utilization and bandwidth
+12.3.1.5 Identifying GPU compute or memory bottlenecks
+12.3.1.6 Alerting on overheating or excessive utilization
+12.3.2 Monitoring Application Performance Metrics
+12.3.2.1 Tracking training loss and accuracy over time
+12.3.2.2 Monitoring inference latency and throughput
+12.3.2.3 Logging custom application metrics (e.g., data loading time)
+12.3.2.4 Visualizing training progress in Grafana
+12.3.2.5 Correlating application metrics with resource utilization
+12.3.2.6 Setting up alerts for critical performance degradation
+12.3.3 Monitoring Data Loading and Preprocessing
+12.3.3.1 Measuring time spent on data loading
+12.3.3.2 Tracking CPU utilization for preprocessing tasks
+12.3.3.3 Monitoring I/O performance of data access
+12.3.3.4 Identifying bottlenecks in the data pipeline
+12.3.3.5 Optimizing data loading for GPU availability
+12.3.3.6 Ensuring efficient data throughput
+12.3.4 Monitoring Distributed Training Communication
+12.3.4.1 Measuring inter-GPU communication latency
+12.3.4.2 Tracking bandwidth usage for gradient synchronization
+12.3.4.3 Monitoring communication overhead in distributed jobs
+12.3.4.4 Identifying straggler nodes or processes
+12.3.4.5 Using profiling tools to analyze communication patterns
+12.3.4.6 Ensuring efficient collective operations
+12.3.5 Monitoring Inference Service Health and Throughput
+12.3.5.1 Tracking the number of inference requests processed
+12.3.5.2 Monitoring the latency of individual inference requests
+12.3.5.3 Observing GPU utilization during inference
+12.3.5.4 Logging error rates and types
+12.3.5.5 Checking the health of model serving containers
+12.3.5.6 Scaling inference services based on load
+12.4 Analyzing Performance Data and Identifying Bottlenecks
+12.4.1 Correlating Metrics Across Different Layers
+12.4.1.1 Linking application metrics to resource utilization
+12.4.1.2 Correlating network performance with training speed
+12.4.1.3 Connecting storage I/O to data loading times
+12.4.1.4 Understanding how GPU performance affects overall throughput
+12.4.1.5 Using dashboards to overlay related metrics
+12.4.1.6 Identifying performance degradation across the stack
+12.4.2 Identifying CPU Bottlenecks
+12.4.2.1 High CPU utilization during data preprocessing
+12.4.2.2 Low GPU utilization due to CPU starvation
+12.4.2.3 Identifying CPU-bound tasks in the application
+12.4.2.4 Analyzing thread usage and context switching
+12.4.2.5 Optimizing parallel processing in CPU-bound components
+12.4.2.6 Checking for inefficient algorithms
+12.4.3 Identifying GPU Bottlenecks
+12.4.3.1 Consistently high GPU utilization but low overall throughput
+12.4.3.2 GPU memory being exhausted
+12.4.3.3 Low utilization due to data loading delays
+12.4.3.4 Identify GPU communication overhead
+12.4.3.5 Inefficient CUDA kernels or computation
+12.4.3.6 Incorrect batch sizing for GPU architecture
+12.4.4 Identifying Network Bottlenecks
+12.4.4.1 Low network bandwidth utilization during data transfer
+12.4.4.2 High latency in communication between nodes
+12.4.4.3 Packet loss or discards
+12.4.4.4 Issues with RDMA or RoCE configuration
+12.4.4.5 Network congestion impacting training synchronization
+12.4.4.6 Inefficient data serialization or transfer protocols
+12.4.5 Identifying Storage Bottlenecks
+12.4.5.1 Slow data loading times
+12.4.5.2 Low storage I/O throughput
+12.4.5.3 High latency for read/write operations
+12.4.5.4 Storage server overload
+12.4.5.5 Inefficient file system configurations
+12.4.5.6 Congestion on the storage network path
+12.4.6 Using Profiling Tools for Deep Analysis
+12.4.6.1 NVIDIA Nsight Systems for system-wide tracing
+12.4.6.2 Nsight Compute for GPU kernel analysis
+12.4.6.3 Perf tools for CPU profiling
+12.4.6.4 Application-specific profilers
+12.4.6.5 Analyzing flame graphs and trace data
+12.4.6.6 Identifying specific code sections causing performance issues
+12.5 Creating Dashboards and Alerts for Performance
+12.5.1 Designing Effective Grafana Dashboards
+12.5.1.1 Organizing related metrics logically
+12.5.1.2 Using clear and descriptive panel titles
+12.5.1.3 Choosing appropriate visualization types (graphs, gauges, tables)
+12.5.1.4 Setting time ranges and auto-refresh
+12.5.1.5 Adding annotations for deployment events or outages
+12.5.1.6 Creating overview dashboards and drill-down views
+12.5.2 Configuring Performance Alerts
+12.5.2.1 Defining alert thresholds for critical KPIs
+12.5.2.2 Setting alert severity levels (warning, critical)
+12.5.2.3 Configuring alert notifications (channels, recipients)
+12.5.2.4 Avoiding alert fatigue by tuning thresholds
+12.5.2.5 Creating alerts for anomalous behavior
+12.5.2.6 Testing alert conditions
+12.5.3 Alerting on Bottlenecks
+12.5.3.1 Alerting when GPU utilization is high but throughput is low
+12.5.3.2 Alerting on sustained high CPU usage for data loading
+12.5.3.3 Notifying on increased network latency or packet loss
+12.5.3.4 Alerting on storage I/O exceeding latency thresholds
+12.5.3.5 Setting alerts for abnormally long training epochs
+12.5.3.6 Triggering alerts for failed inference requests
+12.5.4 Proactive Performance Management
+12.5.4.1 Monitoring resource capacity and predicting saturation
+12.5.4.2 Identifying trends in performance degradation
+12.5.4.3 Planning for capacity upgrades based on usage patterns
+12.5.4.4 Automating performance tuning tasks where possible
+12.5.4.5 Regularly reviewing performance dashboards
+12.5.4.5 Regularly reviewing performance dashboards
+12.5.5 Dashboards for Specific AI Workloads
+12.5.5.1 Training-specific dashboards (loss, accuracy, GPU utilization)
+12.5.5.2 Inference-specific dashboards (latency, throughput, error rate)
+12.5.5.3 Data pipeline monitoring dashboards
+12.5.5.4 Distributed training communication monitoring
+12.5.5.5 Monitoring resource usage per job/experiment
+12.5.5.6 Custom dashboards tailored to user needs
+12.5.6 Best Practices for Monitoring and Alerting
+12.5.6.1 Monitor what matters for your application
+12.5.6.2 Keep dashboards clean and focused
+12.5.6.3 Ensure alerts are actionable
+12.5.6.4 Regularly review and refine alerts and dashboards
+12.5.6.5 Understand the impact of metrics on application behavior
+12.5.6.6 Establish baseline performance metrics
+13.Lab 5: Scaling Compute Resources for AI Training
+13.1 Understanding Scaling Concepts in Kubernetes
+13.1.1 Horizontal Scaling vs. Vertical Scaling
+13.1.1.1 Adding more pods vs. adding more resources to existing pods
+13.1.1.2 Implications for distributed training
+13.1.1.3 Use cases for each scaling strategy
+13.1.1.4 Impact on resource utilization and cost
+13.1.1.5 Limitations of each approach
+13.1.1.6 When to choose one over the other
+13.1.2 Scaling AI Training Jobs
+13.1.2.1 Challenges of scaling distributed training
+13.1.2.2 Need for consistent resources across workers
+13.1.2.3 Communication overhead impact
+13.1.2.4 Data partitioning and management for scale
+13.1.2.5 Scaling strategies for different parallelism approaches
+13.1.2.6 Tooling for managing scaled training jobs
+13.1.3 Kubernetes Autoscaling Mechanisms
+13.1.3.1 Horizontal Pod Autoscaler (HPA)
+13.1.3.2 Vertical Pod Autoscaler (VPA)
+13.1.3.3 Cluster Autoscaler (CA)
+13.1.3.4 Metrics used for autoscaling (CPU, memory, custom metrics)
+13.1.3.5 Configuration of autoscaling parameters
+13.1.3.6 Autoscaling limitations and considerations for AI workloads
+13.1.4 GPU-Aware Scaling
+13.1.4.1 Scaling based on GPU utilization metrics
+13.1.4.2 Ensuring new nodes added have available GPUs
+13.1.4.3 Kubernetes device plugin and scaling
+13.1.4.4 Custom schedulers for GPU-based scaling decisions
+13.1.4.5 Scaling data parallelism jobs based on GPU count
+13.1.4.6 Balancing GPU resources across many jobs
+13.1.5 Scaling Inference Services
+13.1.5.1 Scaling for variable request loads
+13.1.5.2 Using HPA based on concurrent requests or CPU/GPU usage
+13.1.5.3 Ensuring smooth scaling of inference endpoints
+13.1.5.4 Managing model loading times during scaling
+13.1.5.5 Load balancing across scaled inference instances
+13.1.5.6 Stateful vs. stateless inference scaling
+13.2 Scaling Training Jobs Horizontally
+13.2.1 Modifying Job Definitions for Multiple Workers
+13.2.1.1 Adjusting replica counts in Deployment or StatefulSet
+13.2.1.2 Using Kubernetes Jobs with completion modes
+13.2.1.3 Scripting job submissions for various scales
+13.2.1.4 Ensuring unique worker IDs and configurations
+13.2.1.5 Dynamic discovery of peers in distributed training
+13.2.1.6 Managing workload distribution
+13.2.2 Implementing Distributed Training at Scale
+13.2.2.1 Parameter server vs. all-reduce strategies
+13.2.2.2 Configuring Horovod or similar frameworks for scale
+13.2.2.3 Tuning communication protocols for many nodes
+13.2.2.4 Managing RDMA/RoCE for large node counts
+13.2.2.5 Addressing potential stragglers
+13.2.2.6 Ensuring reliable synchronization
+13.2.3 Using Cluster Autoscaler for Node Scaling
+13.2.3.1 Configuring the Cluster Autoscaler with cloud provider or bare-metal setup
+13.2.3.2 Defining node groups with sufficient GPUs
+13.2.3.3 Tuning scaling thresholds and cool-down periods
+13.2.3.4 Observing nodes being added to the cluster
+13.2.3.5 Verifying new nodes are registered and discoverable
+13.2.3.6 Ensuring new nodes have necessary drivers and configurations
+13.2.4 Scaling with GPU Sharing (MIG)
+13.2.4.1 Configuring MIG profiles for various workloads
+13.2.4.2 Creating multiple smaller GPU instances from a single physical GPU
+13.2.4.3 Scaling the number of concurrent jobs by utilizing MIG
+13.2.4.4 Monitoring performance of MIG instances
+13.2.4.5 Managing MIG resources through Kubernetes
+13.2.4.6 Trade-offs between MIG and single GPU allocation
+13.2.5 Monitoring Scaled Training Jobs
+13.2.5.1 Tracking performance metrics across all workers
+13.2.5.2 Identifying performance variations between workers
+13.2.5.3 Monitoring network and communication overhead at scale
+13.2.5.4 Verifying resource utilization across the scaled deployment
+13.2.5.5 Detecting failures in scaled workloads
+13.2.5.6 Analyzing scaling efficiency
+13.3 Scaling Inference Services
+13.3.1 Horizontal Pod Autoscaling (HPA) for Inference
+13.3.1.1 Defining HPA based on CPU, memory, or custom metrics (e.g., requests per second)
+13.3.1.2 Configuring scale-up and scale-down policies
+13.3.1.3 Testing HPA by simulating load
+13.3.1.4 Monitoring the number of replicas dynamically
+13.3.1.5 Ensuring stable performance under varying load
+13.3.1.6 Tuning HPA metrics for optimal responsiveness
+13.3.2 Scaling with GPU Resources
+13.3.2.1 Using KEDA (Kubernetes Event-Driven Autoscaling) with GPU metrics
+13.3.2.2 Scaling inference based on GPU utilization or queue length
+13.3.2.3 Implementing custom metrics for GPU-based scaling
+13.3.2.4 Ensuring autoscaled pods are scheduled on nodes with GPUs
+13.3.2.5 Managing resources when scaling up/down GPU instances
+13.3.2.6 Balancing load across multiple inference instances
+13.3.3 Load Balancing for Scaled Services
+13.3.3.1 Using Kubernetes Services for load balancing
+13.3.3.2 Integrating with external load balancers (cloud or on-prem)
+13.3.3.3 Configuring health checks for load balancer routing
+13.3.3.4 Ensuring even distribution of inference requests
+13.3.3.5 Handling scaling events gracefully
+13.3.3.6 Monitoring load balancer performance
+13.3.4 Managing Model Loading and Caching
+13.3.4.1 Optimizing model loading times for new pods
+13.3.4.2 Strategies for fast model retrieval
+13.3.4.3 In-memory caching of models
+13.3.4.4 Pre-warming inference pods with models
+13.3.4.5 Impact of scaling on model availability
+13.3.4.6 Ensuring consistency of model versions across replicas
+13.3.5 Evaluating Performance at Scale
+13.3.5.1 Measuring end-to-end latency under load
+13.3.5.2 Tracking throughput (requests per second)
+13.3.5.3 Monitoring resource utilization of scaled instances
+13.3.5.4 Identifying performance regressions at higher scales
+13.3.5.5 Stress testing the system
+13.3.5.6 Validating Autoscaling effectiveness
+13.4 Scaling Storage and Network for Increased Load
+13.4.1 Scaling Storage Capacity and Performance
+13.4.1.1 Adding more storage nodes or disks
+13.4.1.2 Expanding distributed file system capacity
+13.4.1.3 Rebalancing data across the expanded storage pool
+13.4.1.4 Monitoring storage performance after expansion
+13.4.1.5 Ensuring storage network bandwidth scales with capacity
+13.4.1.6 Testing storage performance with increased load
+13.4.2 Scaling Network Fabric Bandwidth
+13.4.2.1 Adding more network switches or ports
+13.4.2.2 Upgrading switch fabrics to higher speeds
+13.4.2.3 Reconfiguring network topology for better bisection bandwidth
+13.4.2.4 Monitoring network utilization after changes
+13.4.2.5 Testing network performance end-to-end
+13.4.2.6 Ensuring load balancing across network paths
+13.4.3 Optimizing Network Configuration for Scale
+13.4.3.1 Reviewing MTU and jumbo frame settings
+13.4.3.2 Tuning RDMA/RoCE parameters for inter-node communication
+13.4.3.3 Adjusting QoS policies to accommodate increased traffic
+13.4.3.4 Ensuring lossless network operation if required
+13.4.3.5 Congestion management strategies for higher loads
+13.4.3.6 Validating network configuration for new hardware
+13.4.4 Managing Kubernetes Network Resources at Scale
+13.4.4.1 Ensuring CNI performance scales with cluster size
+13.4.4.2 Monitoring DNS resolution performance
+13.4.4.3 Managing IP address allocation for pods
+13.4.4.4 Optimizing Ingress and Egress traffic
+13.4.4.5 Network policy complexity management
+13.4.4.6 Ensuring high availability of network services
+13.4.5 Scaling Considerations for Multi-Cluster Deployments
+13.4.5.1 Managing federated clusters
+13.4.5.2 Cross-cluster communication strategies
+13.4.5.3 Distributed storage and networking challenges
+13.4.5.4 Centralized monitoring and management for multiple clusters
+13.4.5.5 Data locality concerns
+13.4.5.6 Application deployment across clusters
+13.4.1.5 Testing network performance end-to-end
+13.4.1.6 Ensuring load balancing across network paths
+13.5 Practical Scaling Exercise
+13.5.1 Define a Target Scale
+13.5.1.1 Specify the number of nodes or GPUs to target
+13.5.1.2 Define the expected performance increase
+13.5.1.3 Set clear objectives for the scaling exercise
+13.5.1.4 Identify key metrics to measure success
+13.5.1.5 Choose a representative AI workload
+13.5.1.6 Establish an acceptable performance baseline
+13.5.2 Prepare the Cluster for Scaling
+13.5.2.1 Ensure sufficient physical or virtual resources are available
+13.5.2.2 Pre-configure new nodes if adding hardware
+13.5.2.3 Check Kubernetes cluster autoscaler configuration
+13.5.2.4 Update storage and network capacity as needed
+13.5.2.5 Ensure new nodes have necessary drivers and software
+13.5.2.6 Verify network fabric can handle increased traffic
+13.5.3 Initiate and Monitor the Scaling Process
+13.5.3.1 Trigger scaling action (manual or automated)
+13.5.3.2 Monitor Kubernetes nodes coming online
+13.5.3.3 Observe new GPUs being registered
+13.5.3.4 Monitor the AI training job as it scales
+13.5.3.5 Track resource utilization across the expanded cluster
+13.5.3.6 Check for any scaling-related errors or warnings
+13.5.4 Measure Performance at the Target Scale
+13.5.4.1 Re-run performance benchmarks or monitor live job metrics
+13.5.4.2 Compare performance against the baseline and target scale
+13.4.2.3 Analyze scaling efficiency (performance gained per added resource)
+13.4.2.4 Identify bottlenecks that may appear at scale
+13.4.2.5 Assess the stability of the system
+13.4.2.6 Gather detailed performance data for analysis
+13.5.5 Analyze and Document Results
+13.5.5.1 Summarize performance improvements achieved
+13.5.5.2 Document any challenges encountered during scaling
+13.5.5.3 Identify key factors contributing to success or failure
+13.5.5.4 Make recommendations for future scaling operations
+13.5.5.5 Update any relevant documentation or runbooks
+13.5.5.6 Review monitoring dashboards and alerts post-scaling
+13.5.6 Scale Down and Cleanup
+13.5.6.1 Trigger a scale-down action
+13.5.6.2 Monitor pods and nodes being terminated
+13.5.6.3 Verify that resources are released correctly
+13.5.6.4 Ensure the cluster returns to its pre-scaling state
+13.5.6.5 Clean up any temporary configurations or resources
+13.5.6.6 Confirm normal cluster operation after scale-down
+14.Lab 6: Troubleshooting a Simulated Infrastructure Issue
+14.1 Common Infrastructure Failure Scenarios
+14.1.1 Node Failure (Hardware or OS Crash)
+14.1.1.1 Symptoms: node becomes unreachable, pods restart elsewhere
+14.1.1.2 Detection: monitoring tools, `kubectl get nodes` status
+14.1.1.3 Impact: workload interruption, resource loss
+14.1.1.4 Recovery: replacing node, rescheduling pods
+14.1.1.5 Prevention: redundant components, health checks
+14.1.1.6 Logging investigation
+14.1.2 Network Connectivity Issues
+14.1.2.1 Symptoms: pods cannot communicate, services unreachable
+14.1.2.2 Detection: ping, traceroute, network monitoring tools
+14.1.2.3 Impact: service disruption, data transfer failure
+14.1.2.4 Recovery: fixing cables, reconfiguring switches, CNI troubleshooting
+14.1.2.5 Prevention: resilient network design, QoS, monitoring
+14.1.2.6 Log analysis for network errors
+14.1.3 Storage Access Problems
+14.1.3.1 Symptoms: pods cannot mount volumes, I/O errors
+14.1.3.2 Detection: pod logs, storage system status, mount errors
+14.1.3.3 Impact: application failure, data corruption
+14.1.3.4 Recovery: fixing storage service, remounting volumes, checking permissions
+14.1.3.5 Prevention: robust storage solutions, regular health checks
+14.1.3.6 Storage system log investigation
+14.1.4 GPU Driver or Runtime Issues
+14.1.4.1 Symptoms: pods requesting GPUs fail to start, `nvidia container toolkit` errors
+14.1.4.2 Detection: `kubectl describe pod`, application logs, `nvidia-smi` failures
+14.1.4.3 Impact: AI workloads cannot run
+14.1.4.4 Recovery: reinstalling drivers, updating runtime, restarting kubelet
+14.1.4.5 Prevention: consistent driver versions, proper packaging
+14.1.4.6 Driver log analysis
+14.1.5 Configuration Errors (Kubernetes, Network, Storage)
+14.1.5.1 Symptoms: unexpected behavior, services not starting, incorrect resource allocation
+14.1.5.2 Detection: `kubectl describe`, configuration file reviews, logs
+14.1.5.3 Impact: instability, performance degradation, functional issues
+14.1.5.4 Recovery: correcting configuration, applying verified changes
+14.1.5.5 Prevention: IaC, peer review of configurations, thorough testing
+14.1.5.6 Audit logs for configuration changes
+14.1.6 Resource Exhaustion (CPU, Memory, GPU, Disk)
+14.1.6.1 Symptoms: pods evicted, scheduling failures, performance degradation
+14.1.6.2 Detection: monitoring tools, `kubectl describe node`, OOM killer logs
+14.1.6.3 Impact: service unavailability, application crashes
+14.1.6.4 Recovery: scaling resources, optimizing workloads, adjusting limits
+14.1.6.5 Prevention: capacity planning, resource quotas, autoscaling
+14.1.6.6 System performance logs
+14.2 Diagnostic Tools and Techniques
+14.2.1 Using `kubectl` for Troubleshooting
+14.2.1.1 `kubectl get nodes`, `kubectl describe node`
+14.2.1.2 `kubectl get pods`, `kubectl describe pod`, `kubectl logs`
+14.2.1.3 `kubectl get services`, `kubectl describe service`
+14.2.1.4 `kubectl exec` for running commands inside pods
+14.2.1.5 `kubectl top node`, `kubectl top pod` for resource usage
+14.2.1.6 `kubectl get events` for cluster event history
+14.2.2 Network Troubleshooting Tools
+14.2.2.1 `ping`, `traceroute` for basic connectivity and path
+14.2.2.2 `iperf3` for bandwidth and latency testing
+14.2.2.3 `tcpdump` or `tshark` for packet capture and analysis
+14.2.2.4 Nslookup or dig for DNS troubleshooting
+14.2.2.5 MTR for continuous network path analysis
+14.2.2.6 RDMA diagnostics tools (ibdiagnet, perftest)
+14.2.3 Storage Troubleshooting Tools
+14.2.3.1 `df`, `du` for disk space usage
+14.2.3.2 `mount` command to check mounted file systems
+14.2.3.3 `fio`, `iozone` for I/O performance testing
+14.2.3.4 Storage system's own diagnostic utilities
+14.2.3.5 Checking mount options and permissions
+14.2.3.6 Network connectivity to storage targets
+14.2.4 GPU Troubleshooting Tools
+14.2.4.1 `nvidia-smi` for basic GPU status
+14.2.4.2 `dcgm-exporter` and Grafana for detailed GPU metrics
+14.2.4.3 CUDA sample programs for verifying compute
+14.2.4.4 Checking GPU driver logs
+14.2.4.5 Verifying NVIDIA container runtime status
+14.2.4.6 Testing interoperability with AI frameworks
+14.2.5 Log Analysis Techniques
+14.2.5.1 Centralized log aggregation (e.g., ELK stack, Loki)
+14.2.5.2 Filtering logs by keywords, time, source, severity
+14.2.5.3 Correlating logs from different components
+14.2.5.4 Searching for specific error messages or stack traces
+14.2.5.5 Setting up alerts for critical log entries
+14.2.5.6 Understanding the context of log messages
+14.3 Simulating and Diagnosing Failures
+14.3.1 Simulating Node Failure
+14.3.1.1 Gracefully stopping kubelet on a node
+14.3.1.2 Simulating hardware failure (e.g., unplugging network cable)
+14.3.1.3 Observing node status changes in Kubernetes
+14.3.1.4 Monitoring pod restarts or rescheduling
+14.3.1.5 Diagnosing the impact on the running AI workload
+14.3.1.6 Using monitoring tools to detect the failure
+14.3.2 Simulating Network Interruption
+14.3.2.1 Blocking traffic between specific nodes or pods
+14.3.2.2 Simulating packet loss or high latency
+14.3.2.3 Disrupting DNS resolution
+14.3.2.4 Observing impact on distributed training communication
+14.3.2.5 Testing service availability and pod-to-pod communication
+14.3.2.6 Diagnosing network configuration issues
+14.3.3 Simulating Storage Unavailability
+14.3.3.1 Unmounting storage volumes from nodes or pods
+14.3.3.2 Blocking access to the storage service
+14.3.3.3 Simulating storage drive failures
+14.3.3.4 Observing application errors related to storage access
+14.3.3.5 Testing data access after storage is restored
+14.3.3.6 Diagnosing CSI driver or mount issues
+14.3.4 Simulating GPU Resource Depletion
+14.3.4.1 Scheduling pods that consume all available GPUs
+14.3.4.2 Simulating GPU driver crashes or errors
+14.3.4.3 Reducing GPU limits for existing pods
+14.3.4.4 Observing scheduling failures for new GPU requests
+14.3.4.5 Diagnosing GPU-related errors within AI applications
+14.3.4.6 Confirming GPU availability after simulated issues
+14.3.5 Restoring Service and Verifying Functionality
+14.3.5.1 Correcting the simulated failure (e.g., restarting services, fixing config)
+14.3.5.2 Verifying that pods and services are running correctly
+14.3.5.3 Re-running performance benchmarks or application tests
+14.3.5.4 Ensuring data integrity and consistency
+14.3.5.5 Monitoring system health post-recovery
+14.3.5.6 Validating that the workload resumes normal operation
+14.4 Common Troubleshooting Best Practices
+14.4.1 Reproduce the Issue Consistently
+14.4.1.1 Identify the exact steps to trigger the problem
+14.4.1.2 Isolate the problematic component or configuration
+14.4.1.3 Avoid making multiple changes simultaneously
+14.4.1.4 Test hypotheses one by one
+14.4.1.5 Document reproduction steps
+14.4.1.6 Understand the scope of the issue
+14.4.2 Analyze Logs and Metrics Systematically
+14.4.2.1 Start with high-level overviews (cluster health, node status)
+14.4.2.2 Drill down into specific components exhibiting problems
+14.4.2.3 Correlate logs from different sources (system, application, network)
+14.4.2.4 Look for patterns, recurring errors, or anomalies
+14.4.2.5 Understand the context of log messages
+14.4.2.6 Utilize centralized logging and monitoring tools effectively
+14.4.3 Understand the Kubernetes Component Interaction
+14.4.3.1 Know how the scheduler, kubelet, and API server interact
+14.4.3.2 Understand the CNI plugin's role in networking
+14.4.3.3 Recognize the function of the device plugin for GPUs
+14.4.3.4 Know how storage CSI drivers integrate
+14.4.3.5 Understand pod lifecycle and states
+14.4.3.6 Recognize common Kubernetes error codes and messages
+14.4.4 Leverage Vendor-Specific Tools and Documentation
+14.4.4.1 Consult Cisco HyperFabric documentation
+14.4.4.2 Utilize NVIDIA documentation for GPU-related issues
+14.4.4.3 Use switch vendor CLI tools for network troubleshooting
+14.4.4.4 Refer to storage system documentation
+14.4.4.5 Engage vendor support when necessary
+14.4.4.6 Utilize diagnostic utilities provided by vendors
+14.4.5 Isolate the Problem Domain
+14.4.5.1 Is it a hardware issue?
+14.4.5.2 Is it a network issue?
+14.4.5.3 Is it a storage issue?
+14.4.5.4 Is it a Kubernetes configuration issue?
+14.4.5.5 Is it an AI application or framework issue?
+14.4.5.6 Is it a driver or software stack issue?
+14.4.6 Document and Share Findings
+14.4.6.1 Record the problem, steps taken, and resolution
+14.4.6.2 Update internal knowledge base or runbooks
+14.4.6.3 Share learnings with the team to prevent recurrence
+14.4.6.4 Create clear and concise documentation
+14.4.6.5 Use diagrams to illustrate complex setups or issues
+14.4.6.6 Facilitate post-mortem analysis if needed
+14.5 Post-Troubleshooting Actions
+14.5.1 Root Cause Analysis
+14.5.1.1 Determine the underlying cause, not just the symptom
+14.5.1.2 Identify contributing factors
+14.5.1.3 Explain why the failure occurred
+14.5.1.4 Document the root cause clearly
+14.5.1.5 Use methods like the "5 Whys"
+14.5.1.6 Investigate systemic issues
+14.5.2 Implementing Preventative Measures
+14.5.2.1 Updating configurations to prevent recurrence
+14.5.2.2 Implementing stricter resource controls
+14.5.2.3 Enhancing monitoring and alerting
+14.5.2.4 Improving deployment practices (e.g., IaC)
+14.5.2.5 Revising capacity planning
+14.5.2.6 Training staff on best practices
+14.5.3 Updating Documentation and Runbooks
+14.5.3.1 Incorporating lessons learned into procedures
+14.5.3.2 Adding new troubleshooting steps or diagnostics
+14.5.3.3 Ensuring documentation accurately reflects the current system
+14.5.3.4 Making documentation easily accessible
+14.5.3.5 Reviewing and updating existing runbooks
+14.5.3.6 Validating updated documentation with tests
+14.5.4 Reviewing Monitoring and Alerting Configurations
+14.5.4.1 Adjusting alert thresholds based on observed behavior
+14.5.4.2 Adding new alerts for previously unseen failure modes
+14.5.4.3 Refining notification policies
+14.5.4.4 Ensuring monitoring covers all critical components
+14.5.4.5 Improving dashboard visibility for troubleshooting
+14.5.4.6 Regularly auditing alert configurations
+14.5.5 Applying System Updates and Patches
+14.5.5.1 Updating operating system, drivers, and firmware
+14.5.5.2 Patching Kubernetes components and CNI plugins
+14.5.5.3 Updating AI frameworks and libraries
+14.5.5.4 Applying security fixes
+14.5.5.5 Testing updates in a staging environment
+14.5.5.6 Planning and scheduling updates to minimize disruption
+14.5.6 Knowledge Sharing and Team Training
+14.5.6.1 Conducting post-mortem meetings
+14.5.6.2 Sharing findings and documentation with the team
+14.5.6.3 Providing training on new tools or procedures
+14.5.6.4 Cross-training team members on different components
+14.5.6.5 Fostering a culture of learning from failures
+14.5.6.6 Reviewing incident response procedures
+15.Lab 7: Exploring MLOps Tools and Workflows on HyperFabric
+15.1 Introduction to MLOps Tools for AI
+15.1.1 The Role of MLOps in the AI Lifecycle
+15.1.1.1 Bridging development and operations for ML models
+15.1.1.2 Automating the ML pipeline
+15.1.1.3 Ensuring reproducibility and governance
+15.1.1.4 Tracking experiments, models, and data
+15.1.1.5 Streamlining deployment and monitoring
+15.1.1.6 Improving collaboration across teams
+15.1.2 Tool Categories in MLOps
+15.1.2.1 Data versioning (DVC, LakeFS)
+15.1.2.2 Experiment tracking (MLflow, W&B, Comet)
+15.1.2.3 Feature stores (Feast, Tecton)
+15.1.2.4 Model registries (MLflow, cloud provider registries)
+15.1.2.5 Orchestration and pipelines (Kubeflow, Argo Workflows, Prefect)
+15.1.2.6 Monitoring and drift detection (Evidently AI, Arize)
+15.1.3 Integrating MLOps Tools with HyperFabric
+15.1.3.1 Leveraging HyperFabric's infrastructure for ML tasks
+15.1.3.2 Deploying MLOps tools as containers on Kubernetes
+15.1.3.3 Connecting tools to HyperFabric's storage for data and models
+15.1.3.4 Configuring tools to access GPUs on HyperFabric
+15.1.3.5 Using HyperFabric's networking for distributed training
+15.1.3.6 Monitoring MLOps tool performance on HyperFabric
+15.1.4 Benefits of an Integrated MLOps Platform
+15.1.4.1 Faster iteration cycles for ML models
+15.1.4.2 Improved model quality and reliability
+15.1.4.3 Enhanced collaboration and knowledge sharing
+15.1.4.4 Greater reproducibility and auditability
+15.1.4.5 Reduced operational overhead
+15.1.4.6 Simplified deployment and management of ML workflows
+15.1.5 Selecting the Right MLOps Tools
+15.1.5.1 Assessing team needs and existing workflows
+15.1.5.2 Evaluating tool integrations and ecosystem
+15.1.5.3 Considering ease of use and learning curve
+15.1.5.4 Scalability and performance requirements
+15.1.5.5 Cost and licensing
+15.1.5.6 Open-source vs. commercial solutions
+15.2 Experiment Tracking and Model Versioning
+15.2.1 Setting Up an Experiment Tracking Tool (e.g., MLflow)
+15.2.1.1 Installing MLflow server
+15.2.1.2 Configuring database backend for MLflow
+15.2.1.3 Deploying MLflow as a Kubernetes service
+15.2.1.4 Instruments code to log parameters, metrics, and artifacts
+15.2.1.5 Launching ML experiments and tracking runs
+15.2.1.6 Comparing results and identifying best models
+15.2.2 Tracking Model Experiments on HyperFabric
+15.2.2.1 Logging GPU utilization during training runs
+15.2.2.2 Tracking distributed training performance metrics
+15.2.2.3 Storing model artifacts (weights, checkpoints) on HyperFabric storage
+15.2.2.4 Associating experiments with specific hardware configurations
+15.2.2.5 Logging data versions used for training
+15.2.2.6 Capturing environment details (library versions)
+15.2.3 Model Registry and Lifecycle Management
+15.2.3.1 Registering trained models in MLflow Model Registry
+15.2.3.2 Assigning versions and stages (e.g., Staging, Production)
+15.2.3.3 Creating model descriptions and metadata
+15.2.3.4 Managing model lineage
+15.2.3.5 Collaborating on model development and promotion
+15.2.3.6 Archiving or retiring old model versions
+15.2.4 Reproducibility of Experiments
+15.2.4.1 Ensuring all hyperparameters and code versions are logged
+15.2.4.2 Storing dataset versions used
+15.2.4.3 Capturing environment configuration (Docker image, libraries)
+15.2.4.4 Recreating the exact conditions of an experiment
+15.2.4.5 Verifying that logged parameters reproduce results
+15.2.4.6 Importance of reproducible research and development
+15.2.5 Creating Model Serving Endpoints from Registered Models
+15.2.5.1 Using MLflow's deployment capabilities
+15.2.5.2 Deploying models to Kubernetes or other platforms
+15.2.5.3 Packaging models for inference
+15.2.5.4 Integrating with model serving frameworks (e.g., Triton)
+15.2.5.5 Canary deployments of new model versions
+15.2.5.6 A/B testing of different models
+15.3 Building End-to-End MLOps Pipelines
+15.3.1 Designing an ML Pipeline
+15.3.1.1 Stages: data ingestion, preprocessing, training, evaluation, deployment, monitoring
+15.3.1.2 Defining dependencies between stages
+15.3.1.3 Choosing an orchestration tool (e.g., Kubeflow Pipelines, Argo Workflows)
+15.3.1.4 Containerizing each pipeline stage
+15.3.1.5 Orchestrating pipeline execution on HyperFabric
+15.3.1.6 Handling parallel execution of tasks
+15.3.2 Data Versioning and Feature Stores
+15.3.2.1 Using DVC to version datasets and models
+15.3.2.2 Creating a feature store for reusable features
+15.3.2.3 Data consistency between training and inference
+15.3.2.4 Managing feature transformations
+15.3.2.5 Accessing features efficiently during training and serving
+15.3.2.6 Versioning features and their transformations
+15.3.3 Automating Model Training and Evaluation
+15.3.3.1 Triggering training jobs based on data changes or schedules
+15.3.3.2 Automating hyperparameter tuning sweeps
+15.3.3.3 Implementing automated model evaluation metrics
+15.3.3.4 Setting up model validation gates
+15.3.3.5 Running regression tests for models
+15.3.3.6 Generating automated reports on model performance
+15.3.4 Automating Model Deployment
+15.3.4.1 CI/CD integration for model deployment
+15.3.4.2 Creating deployment pipelines that pull from model registry
+15.3.4.3 Rolling out new model versions safely (e.g., blue/green)
+15.4.4 Automating model deployment safely.
+15.4.4.1 Ensuring successful deployments with automated testing.
+15.4.4.2 Implementing canary releases for new models.
+15.4.4.3 Rolling back automatically if issues are detected.
+15.4.4.4 Versioning deployment configurations.
+15.4.4.5 Integrating with CI/CD tools like Argo CD or Jenkins.
+15.4.4.6 Automating certificate management for model endpoints.
+15.3.5 Triggering Model Retraining
+15.3.5.1 Setting up triggers based on data drift detection
+15.3.5.2 Scheduling retraining based on performance degradation
+15.3.5.3 Automating retraining pipelines upon new data availability
+15.3.5.4 Monitoring factors that necessitate retraining
+15.3.5.5 Manual triggering of retraining processes
+15.3.5.6 Validating retrained models before deployment
+15.4 Monitoring Models in Production and Drift Detection
+15.4.1 Monitoring Deployed Models
+15.4.1.1 Tracking key performance metrics (accuracy, latency, throughput)
+15.4.1.2 Monitoring resource utilization of inference services
+15.4.1.3 Logging prediction inputs and outputs
+15.4.1.4 Setting up alerts for prediction errors or performance drops
+15.4.1.5 Using dashboards to visualize model behavior
+15.4.1.6 Establishing baseline performance for comparison
+15.4.2 Detecting Data Drift
+15.4.2.1 Comparing production data distributions with training data distributions
+15.4.2.2 Statistical methods for drift detection (e.g., KS test, PSI)
+15.4.2.3 Monitoring feature drift over time
+15.4.2.4 Setting thresholds for drift alerts
+15.4.2.5 Tools like Evidently AI or Arize for drift analysis
+15.4.2.6 Documenting detected drift patterns
+15.4.3 Detecting Concept Drift
+15.4.3.1 Monitoring changes in the relationship between features and target variable
+15.4.3.2 Tracking model performance degradation over time
+15.4.3.3 Identifying when model predictions become less accurate
+15.4.3.4 Importance of ground truth data for concept drift detection
+15.4.3.5 Analyzing prediction quality against real outcomes
+15.4.3.6 Setting alerts for significant concept drift
+15.4.4 Monitoring Model Performance and Quality
+15.4.4.1 Tracking accuracy, precision, recall, F1-score etc.
+15.4.4.2 Comparing deployed model performance against baseline
+15.4.4.3 Identifying potential biases in predictions
+15.4.4.4 Monitoring fairness metrics where applicable
+15.4.4.5 Using A/B testing for comparing models
+15.4.4.6 Analyzing prediction confidence scores
+15.4.5 Automation of Monitoring and Retraining Triggers
+15.4.5.1 Automatically triggering retraining pipelines when drift or performance issues are detected
+15.4.5.2 Integrating drift detection alerts with CI/CD systems
+15.4.5.3 Automating model validation after retraining
+15.4.5.4 Setting up automated rollback mechanisms if new models fail
+15.4.5.5 Managing the overall ML lifecycle with automation
+15.4.5.6 Creating feedback loops for continuous improvement
+15.4.6 Implementing Feedback Loops
+15.4.6.1 Establishing mechanisms for collecting new ground truth data
+15.4.6.2 Incorporating feedback from users or downstream systems
+15.4.6.3 Using feedback to improve feature engineering or data collection
+15.4.6.4 Informing model retraining strategies based on feedback
+15.4.6.5 Closing the loop between production monitoring and model development
+15.4.6.6 Continuous learning and adaptation of models
+15.5 Practical MLOps Workflow on HyperFabric
+15.5.1 Scenario: Retraining a Model Due to Drift
+15.5.1.1 Using monitoring tools to detect data drift
+15.5.1.2 Triggering an automated pipeline to fetch new data
+15.5.1.3 Running data preprocessing and feature engineering
+15.5.1.4 Initiating a hyperparameter-tuned training job on HyperFabric GPUs
+15.5.1.5 Logging experiments and registering the new model version
+15.5.1.6 Evaluating the new model against current production model
+15.5.2 Scenario: Deploying a New Model Version
+15.5.2.1 Promoting a validated model from the Model Registry to Production
+15.5.2.2 Triggering a CI/CD pipeline for deployment
+15.5.2.3 Performing a canary deployment of the new model
+15.5.2.4 Monitoring performance and accuracy of the canary release
+15.5.2.5 Gradually shifting traffic to the new model
+15.5.2.6 Automating rollback if issues arise
+15.5.3 Scenario: Implementing a Feature Store
+15.5.3.1 Defining and ingesting features into the feature store
+15.5.3.2 Implementing feature transformations
+15.5.3.3 Serving features for batch training and online inference
+15.5.3.4 Ensuring consistency between training and serving features
+15.5.3.5 Versioning features and their definitions
+15.5.3.6 Integrating feature store with training pipelines
+15.5.4 Hands-on: Building a Simple ML Pipeline
+15.5.4.1 Define a simple ML task (e.g., binary classification)
+15.5.4.2 Create a Docker image for data preprocessing
+15.5.4.3 Create a Docker image for model training
+15.5.4.4 Use Kubeflow Pipelines or Argo Workflows to orchestrate these tasks on HyperFabric
+15.5.4.5 Log experiments using MLflow
+15.5.4.6 Deploy a simple inference endpoint for the trained model
+15.5.5 Hands-on: Monitoring Model Performance
+15.5.5.1 Instrument the inference service to log predictions and metrics
+15.5.5.2 Set up Grafana dashboards to visualize key performance indicators
+15.5.5.3 Simulate data drift by providing slightly different input data
+15.5.5.4 Observe the impact on model accuracy and relevant metrics
+15.5.5.5 Configure alerts for performance degradation
+15.5.5.6 Discuss potential retraining triggers
+15.5.6 Reviewing MLOps Best Practices
+15.5.6.1 Emphasize collaboration between Data Science and Ops teams
+15.5.6.2 Promote versioning of all artifacts (data, code, models, environments)
+15.5.6.3 Automate repetitive tasks as much as possible
+15.5.6.4 Implement robust monitoring and alerting for ML systems
+15.5.6.5 Focus on reproducibility and traceability
+15.5.6.6 Continuously iterate and improve the MLOps process

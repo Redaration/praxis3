@@ -1,0 +1,35 @@
+graph TD
+    A[Start] --> B{setup}
+    B --> C{Create directory and check file}
+
+    D[Start] --> E{get_image_category}
+    E --> F{Return category from content}
+
+    G[Start] --> H{create_placeholder_image}
+    H --> I{Return styled image}
+
+    J[Start] --> K{generate_image_for_slide}
+    K --> L{Create prompt}
+    L --> M{Call API}
+    M --> N{Success?}
+    N -- Yes --> O{Save image}
+    N -- No --> P{Create and save placeholder}
+
+    Q[Start] --> R{extract_slide_content}
+    R --> S{Return title and content}
+
+    T[Start] --> U{add_image_to_slide}
+    U --> V{Add picture to slide}
+
+    W[Start] --> X{process_presentation}
+    X --> Y{Load presentation}
+    Y --> Z{For each slide}
+    Z --> AA{Extract content}
+    AA --> AB{Generate image if needed}
+    AB --> AC{Add image to slide}
+    AC --> Z
+    Z --> AD{Save presentation}
+
+    AE[Start] --> AF{main}
+    AF --> B
+    B --> X

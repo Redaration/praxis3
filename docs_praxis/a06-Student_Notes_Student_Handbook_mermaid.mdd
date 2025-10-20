@@ -1,0 +1,11 @@
+graph TD
+    A[Start] --> B{Process Presentation};
+    B --> C{Get Slide Info};
+    C -- From Outline --> D{Generate from Outline};
+    C -- From PPTX --> E{Extract from PowerPoint};
+    D & E --> F{Generate All Speaker Notes};
+    F --> G{Call LLM in Batch};
+    G --> H{Parse & Cache Notes};
+    H --> I{Add Notes to Presentation};
+    I --> J{Save Presentation};
+    J --> K[End];

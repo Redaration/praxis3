@@ -1,0 +1,46 @@
+START
+    // Runware Image Generation Module
+    // This module provides functions to generate and download images using the Runware API.
+
+    // Async Function
+    FUNCTION generate_and_download_image(prompt, output_path, ...):
+        INITIALIZE Runware client
+        CREATE image request
+        TRY
+            images = runware.imageInference(requestImage)
+            FOR each image:
+                DOWNLOAD the image
+                SAVE it to a file
+                ADD the file path to a list
+        FINALLY
+            DISCONNECT from Runware API
+        END TRY
+        RETURN list of generated file paths
+    END FUNCTION
+
+    // Sync Wrapper
+    FUNCTION generate_image(prompt, output_path, ...):
+        RUN the async function generate_and_download_image
+        RETURN the result
+    END FUNCTION
+
+    // Parallel Async Function
+    FUNCTION generate_multiple_images_parallel(prompts_and_paths, ...):
+        INITIALIZE Runware client
+        PREPARE all image requests
+        TRY
+            all_results = asyncio.gather(all_requests)
+            FOR each result:
+                DOWNLOAD and SAVE the images
+        FINALLY
+            DISCONNECT from Runware API
+        END TRY
+        RETURN list of generated file paths
+    END FUNCTION
+
+    // Parallel Sync Wrapper
+    FUNCTION generate_images_parallel(prompts_and_paths, ...):
+        RUN the async function generate_multiple_images_parallel
+        RETURN the result
+    END FUNCTION
+END

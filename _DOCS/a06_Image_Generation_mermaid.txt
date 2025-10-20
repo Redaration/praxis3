@@ -1,0 +1,14 @@
+graph TD
+    A[Start] --> B{generate_all_image_prompts}
+    B --> C{Prepare Slide Content}
+    C --> D{Create Prompt}
+    D --> E{Call LLM}
+    E --> F{Parse and Return Prompts}
+
+    G[Start] --> H{get_enhanced_prompt}
+    H --> I{Return Prompt}
+
+    J[Start] --> K{generate_image_for_slide}
+    K --> L{Get Prompt}
+    L --> M{Call Image API}
+    M --> N[Return Path]

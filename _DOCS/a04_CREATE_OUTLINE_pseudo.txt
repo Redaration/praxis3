@@ -1,0 +1,8 @@
+FUNCTION main():
+    PRINT welcome message
+    GET user selection for course file
+    SET and SAVE output directory
+    READ course description from file
+    CREATE prompt from description
+    CALL LLM to generate course outline
+    PRINT and SAVE generated outline

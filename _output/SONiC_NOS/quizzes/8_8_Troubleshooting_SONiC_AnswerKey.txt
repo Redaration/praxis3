@@ -1,0 +1,12 @@
+# Answer Key for 8: Troubleshooting SONiC
+
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: C
+Question 5: C
+Question 6: C
+Question 7: C
+Question 8: C
+Question 9: C
+Question 10: B

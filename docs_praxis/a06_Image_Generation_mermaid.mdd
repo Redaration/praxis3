@@ -1,0 +1,34 @@
+graph TD
+    A[Start] --> B{Setup Environment};
+    B --> C{Generate All Image Prompts};
+    C --> D{Extract Slide Info};
+    D --> E{Call LLM for Prompts};
+    E -- Success --> F{Parse & Cache Prompts};
+    E -- Failure --> G{Create Fallback Prompts};
+    F --> H{Generate Slide Images};
+    G --> H;
+    H --> I{For Each Slide};
+    I --> J{Get Enhanced Prompt};
+    J --> K{Generate Image};
+    K -- Success --> L{Save Image Path};
+    K -- Failure --> I;
+    L --> I;
+    I -- Loop End --> M{Return Image Paths};
+    M --> N[End];
+
+    subgraph "Prompt Generation"
+        C
+        D
+        E
+        F
+        G
+    end
+
+    subgraph "Image Generation"
+        H
+        I
+        J
+        K
+        L
+        M
+    end

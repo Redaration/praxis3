@@ -1,0 +1,9 @@
+graph TD
+    A[Start] --> B{List Course Files};
+    B --> C{Get User Selection};
+    C --> D{Read Course Description};
+    D --> E{Generate User Prompt};
+    E --> F{Call LLM with System Prompt};
+    F --> G{Receive Outline};
+    G --> H{Print & Save Outline};
+    H --> I[End];

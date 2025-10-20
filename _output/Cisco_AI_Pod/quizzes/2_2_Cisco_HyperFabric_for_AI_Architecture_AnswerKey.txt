@@ -1,0 +1,12 @@
+# Answer Key for 2: Cisco HyperFabric for AI Architecture
+
+Question 1: B
+Question 2: C
+Question 3: C
+Question 4: B
+Question 5: B
+Question 6: C
+Question 7: B
+Question 8: B
+Question 9: C
+Question 10: C

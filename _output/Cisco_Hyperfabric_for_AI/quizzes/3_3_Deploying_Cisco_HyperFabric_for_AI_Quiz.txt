@@ -1,0 +1,71 @@
+# Quiz for 3: Deploying Cisco HyperFabric for AI
+
+Question 1: When planning for AI workloads, which of the following is a critical factor to consider regarding the type of AI models being used?
+  A. The programming language used for development.
+  B. The specific type of AI model, such as CNN, RNN, or Transformers.
+  C. The user interface preferences for model training.
+  D. The licensing costs of the AI framework.
+
+
+Question 2: In assessing compute resources for an AI deployment, what hardware specification is particularly important for deep learning training due to its parallel processing capabilities?
+  A. CPU clock speed
+  B. RAM capacity
+  C. GPU type and quantity
+  D. Network interface card (NIC) speed
+
+
+Question 3: For AI workloads, what is a key consideration when evaluating network requirements to ensure efficient communication between compute nodes?
+  A. The number of available USB ports.
+  B. The acceptable latency thresholds and required bandwidth.
+  C. The physical size of the network switches.
+  D. The brand of the network router.
+
+
+Question 4: When determining storage needs for AI projects, which factor is essential to consider for handling large datasets and fast access?
+  A. Total data volume and I/O performance requirements (e.g., IOPS, throughput).
+  B. The color of the storage array chassis.
+  C. The number of physical drive bays.
+  D. The storage vendor's marketing materials.
+
+
+Question 5: Which software stack consideration is crucial for enabling efficient scheduling and management of AI workloads in a containerized environment?
+  A. The antivirus software used on the management station.
+  B. The specific version of the Kubernetes orchestration platform.
+  C. The choice of text editor for configuration files.
+  D. The operating system's default desktop environment.
+
+
+Question 6: During the installation and initial setup of Cisco HyperFabric, which pre-installation step is vital for ensuring a smooth deployment?
+  A. Verifying the availability of a coffee machine for the installation team.
+  B. Ensuring all hardware is procured, validated, and network connectivity is confirmed.
+  C. Checking the weather forecast for the installation day.
+  D. Selecting the preferred background music for the installation team.
+
+
+Question 7: What is a best practice for network configuration in a Cisco HyperFabric deployment designed for AI workloads?
+  A. Using a single, flat network for all traffic.
+  B. Implementing VLAN segmentation for traffic isolation and tuning network parameters for low latency.
+  C. Disabling all port security features.
+  D. Relying solely on default network settings.
+
+
+Question 8: In terms of storage configuration best practices for AI, what is important for optimizing performance with large datasets?
+  A. Creating and mounting high-performance file systems and optimizing their parameters for AI workloads.
+  B. Using the slowest available storage medium.
+  C. Avoiding any form of data striping or caching.
+  D. Limiting file system size to the smallest possible allocation.
+
+
+Question 9: Which of the following best describes the purpose of validated designs and reference architectures for Cisco HyperFabric?
+  A. To provide purely theoretical examples with no practical application.
+  B. To simplify deployment decisions, ensure interoperability, and reduce the risk of misconfiguration.
+  C. To outline the minimum qualifications for potential customers.
+  D. To offer a comprehensive list of all possible hardware components.
+
+
+Question 10: When choosing a reference architecture for a Cisco HyperFabric deployment, what is a primary factor to consider to ensure the solution meets project needs?
+  A. The reference architecture with the highest number of GPUs, regardless of workload.
+  B. Matching the architecture to the specific workload requirements and considering performance needs.
+  C. Selecting the architecture that uses the oldest available hardware.
+  D. Prioritizing the shortest implementation time without regard to future needs.
+

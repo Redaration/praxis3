@@ -1,0 +1,11 @@
+graph TD
+    A[Start] --> B{call_llm function};
+    B --> C{Prepare Request};
+    C --> D{Set API Key & URL};
+    C --> E{Create Payload};
+    D & E --> F{Send POST Request};
+    F -- Success --> G{Parse Response};
+    G --> H{Return Content};
+    F -- Failure --> I{Handle Error};
+    H --> J[End];
+    I --> J;

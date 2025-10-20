@@ -1,0 +1,71 @@
+# Quiz for 4: Basic SONiC Configuration
+
+Question 1: When accessing the SONiC CLI for initial setup, which method is recommended if network connectivity is not yet established?
+  A. Connect via SSH to the management IP.
+  B. Use a secure terminal emulator.
+  C. Connect via the console port.
+  D. Use the `show version` command.
+
+
+Question 2: What is the primary function of the `config` command in the SONiC CLI?
+  A. To display the current operational configuration.
+  B. To enter configuration mode for making changes.
+  C. To view system logs.
+  D. To shut down network interfaces.
+
+
+Question 3: After making configuration changes in SONiC, what command is used to apply these staged changes to the running configuration?
+  A. `exit`
+  B. `commit`
+  C. `discard`
+  D. `sudo`
+
+
+Question 4: If you want to add a description to a specific Ethernet interface in SONiC, which command would you use?
+  A. `config interface ethernet <ifname> alias "<description>"`
+  B. `config interface ethernet <ifname> description "<description>"`
+  C. `config interface ethernet <ifname> ip address <description>`
+  D. `show interfaces <ifname> description`
+
+
+Question 5: Which command is used to add a physical interface as a member to a created PortChannel?
+  A. `config portchannel <po_name> del <ifname>`
+  B. `config portchannel <po_name> ip address <ip>/<prefix>`
+  C. `config portchannel <po_name> add <ifname>`
+  D. `config interface ethernet <ifname> port-channel <po_name>`
+
+
+Question 6: To configure an interface to carry traffic for multiple VLANs, what `switchport mode` should be set?
+  A. Access
+  B. Dynamic
+  C. Trunk
+  D. None
+
+
+Question 7: What is the purpose of configuring a 'native VLAN' on a trunk port?
+  A. To specify which VLANs are allowed on the trunk.
+  B. To tag all traffic passing through the trunk port.
+  C. To define the VLAN for untagged traffic on the trunk.
+  D. To create a new VLAN.
+
+
+Question 8: Which command would you use to verify the IP addresses assigned to interfaces in SONiC?
+  A. `show ip route`
+  B. `show interfaces status`
+  C. `show ip interface brief`
+  D. `show interfaces ip address`
+
+
+Question 9: What is the purpose of a default route (0.0.0.0/0) in IP routing?
+  A. To route traffic to directly connected subnets.
+  B. To route traffic for destinations not explicitly listed in the routing table.
+  C. To establish a dynamic routing protocol session.
+  D. To segregate broadcast traffic within a VLAN.
+
+
+Question 10: When assigning a VLAN to an access port on a SONiC switch, what is a critical prerequisite?
+  A. The port must be configured as a trunk port.
+  B. The VLAN must already exist on the switch.
+  C. The port must be shut down.
+  D. A description must be added to the port.
+

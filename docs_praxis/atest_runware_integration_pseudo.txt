@@ -1,0 +1,24 @@
+START
+    // Test script for Runware image generator
+    // This script demonstrates how to use the image generator for a PowerPoint slide.
+
+    // Test Function
+    FUNCTION test_generate_slide_image():
+        DEFINE sample slide title and content
+        CREATE an output directory
+        CREATE a prompt from the slide content
+        PRINT the prompt
+
+        CALL generate_image from the runware_image_generator module
+        IF images are downloaded THEN
+            PRINT success message
+        ELSE
+            PRINT failure message
+        END IF
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        test_generate_slide_image()
+    END IF
+END

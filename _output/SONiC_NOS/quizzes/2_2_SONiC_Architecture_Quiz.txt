@@ -1,0 +1,71 @@
+# Quiz for 2: SONiC Architecture
+
+Question 1: What is the primary role of the SONiC System Services (SWSS)?
+  A. Translating software state to hardware instructions.
+  B. Centralizing network state management and communicating with other services.
+  C. Providing a standardized API for network silicon.
+  D. Storing the desired network configuration in a Redis database.
+
+
+Question 2: The Synchronizer Daemon (Syncd) is responsible for:
+  A. Managing routing protocols using the FRR daemon.
+  B. Acting as the central orchestrator for network state.
+  C. Ensuring consistency between software state and hardware by interacting with the ASIC Programming Interface (SAI).
+  D. Providing telemetry data through gNMI.
+
+
+Question 3: Which component provides a vendor-neutral interface that abstracts ASIC-specific details, enabling SONiC to run on diverse hardware?
+  A. SONiC System Services (SWSS)
+  B. Synchronizer Daemon (Syncd)
+  C. SONiC Abstraction Interface (SAI)
+  D. Configuration Database (Config DB)
+
+
+Question 4: The Configuration Database (Config DB) serves as:
+  A. The primary interface for the ASIC Programming Interface (SAI).
+  B. A repository for hardware telemetry data.
+  C. The centralized storage for the desired network configuration, written in Redis.
+  D. The service responsible for handling routing protocols.
+
+
+Question 5: What is a key benefit of SONiC's microservices-based architecture?
+  A. All network functions are tightly integrated into a single monolithic process.
+  B. It simplifies hardware vendor integration by having a single, complex service.
+  C. Modularity and fault isolation, allowing for easier updates and improved resilience.
+  D. It relies exclusively on direct hardware manipulation without any abstraction layers.
+
+
+Question 6: How does containerization (Docker) benefit the SONiC architecture?
+  A. It eliminates the need for any abstraction layers like SAI.
+  B. It promotes a monolithic design for better performance.
+  C. It provides isolation and portability for services, simplifying deployment and ensuring a consistent environment.
+  D. It's primarily used for managing the Config DB.
+
+
+Question 7: In the SONiC data flow, after a configuration change is written to the Config DB, which component first processes these changes?
+  A. Synchronizer Daemon (Syncd)
+  B. SONiC Abstraction Interface (SAI)
+  C. SONiC System Services (SWSS)
+  D. FRR (Free Range Routing)
+
+
+Question 8: Which statement best describes the interaction between SWSS and Syncd during a configuration update?
+  A. Syncd directly reads the Config DB and instructs SWSS.
+  B. SWSS generates SAI commands based on Config DB changes and sends them to Syncd for hardware programming.
+  C. SWSS interacts with SAI directly, bypassing Syncd.
+  D. Syncd translates SAI commands into Config DB entries.
+
+
+Question 9: What is the primary purpose of the SONiC Abstraction Interface (SAI)?
+  A. To manage the lifecycle of Docker containers.
+  B. To provide a standardized API for interacting with network silicon, abstracting vendor-specific details.
+  C. To facilitate inter-service communication through message queues.
+  D. To store and manage telemetry data.
+
+
+Question 10: How does SONiC handle state notifications from the hardware?
+  A. Hardware events are ignored to maintain configuration stability.
+  B. Syncd relays hardware state changes to SWSS, which then updates its state and potentially notifies other services.
+  C. SWSS directly polls the hardware for state changes.
+  D. Notifications are only sent to the Config DB.
+

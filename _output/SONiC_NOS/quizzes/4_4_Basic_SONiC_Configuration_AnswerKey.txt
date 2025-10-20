@@ -1,0 +1,12 @@
+# Answer Key for 4: Basic SONiC Configuration
+
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: C
+Question 6: C
+Question 7: C
+Question 8: C
+Question 9: B
+Question 10: B

@@ -1,0 +1,71 @@
+# Quiz for 3: Deploying SONiC
+
+Question 1: What is the primary role of ASICs in SONiC deployment?
+  A. To manage the user interface and CLI.
+  B. To provide the underlying hardware acceleration for network traffic.
+  C. To handle the bootloader functionalities.
+  D. To store system logs and configuration files.
+
+
+Question 2: Which of the following is a common vendor for ASICs used in SONiC?
+  A. Cisco
+  B. Dell
+  C. Mellanox
+  D. Juniper
+
+
+Question 3: Why is verifying the platform compatibility matrix important before deploying SONiC?
+  A. To ensure the physical dimensions of the switch match the rack.
+  B. To confirm that the specific hardware is supported by SONiC.
+  C. To determine the maximum number of users that can access the device.
+  D. To check the power consumption of the device.
+
+
+Question 4: Besides bare-metal switches, on what other environments can SONiC be deployed?
+  A. Only on proprietary hardware appliances.
+  B. On virtual machines and emulators.
+  C. Exclusively on cloud-based instances like AWS EC2.
+  D. On mobile devices and IoT gateways.
+
+
+Question 5: What is the primary function of ONIE in the context of SONiC installation?
+  A. It is the operating system that SONiC runs on.
+  B. It is the package manager used to install SONiC components.
+  C. It is a bootloader that allows for the installation of network operating systems like SONiC.
+  D. It is a network configuration tool for initial setup.
+
+
+Question 6: For large-scale rollouts of SONiC, which installation method is generally the most efficient?
+  A. USB Installation
+  B. Manual installation via console.
+  C. PXE Boot Installation
+  D. Installing from source code.
+
+
+Question 7: When deploying SONiC in a virtual environment for testing, what is a key benefit?
+  A. It allows direct interaction with physical hardware ports.
+  B. It enables the simulation of network topologies and easy creation of testbeds.
+  C. It guarantees higher performance than physical deployments.
+  D. It bypasses the need for any configuration.
+
+
+Question 8: During the initial boot process after SONiC installation, what typically happens after ONIE loads the installer?
+  A. The system immediately boots into the SONiC CLI for full configuration.
+  B. The installer partitions the disk and installs the SONiC system.
+  C. The system automatically connects to all available networks.
+  D. A graphical user interface is presented for selection.
+
+
+Question 9: Which of the following is a critical step in the initial network configuration of SONiC?
+  A. Configuring advanced firewall rules.
+  B. Assigning an IP address to the management interface.
+  C. Installing additional user applications.
+  D. Setting up custom VLAN tagging.
+
+
+Question 10: After installing SONiC, which command is commonly used to verify that all essential microservices are running?
+  A. `show services status`
+  B. `systemctl list-units`
+  C. `docker ps`
+  D. `netstat -tulnp`
+

@@ -1,0 +1,9 @@
+FUNCTION call_llm(prompt, system_prompt):
+    DEFINE API parameters
+    GET API key
+    PREPARE request headers and data
+    SEND request to OpenRouter.ai
+    HANDLE response and RETURN content
+
+FUNCTION main (example usage):
+    CALL call_llm with a sample prompt and PRINT response

@@ -1,0 +1,71 @@
+# Quiz for 5: Network Optimization for AI
+
+Question 1: Which network technology has historically been dominant in High-Performance Computing (HPC) due to its specialized features for low latency and high bandwidth?
+  A. Standard Ethernet
+  B. Wi-Fi 6
+  C. InfiniBand
+  D. Gigabit Ethernet
+
+
+Question 2: What is the primary benefit of RoCE (RDMA over Converged Ethernet) for AI workloads?
+  A. It increases CPU utilization for network tasks.
+  B. It enables direct memory access between devices, reducing latency and CPU overhead.
+  C. It simplifies network configuration by eliminating the need for switches.
+  D. It primarily improves Wi-Fi connectivity for AI model deployment.
+
+
+Question 3: DCB (Data Center Bridging) and PFC (Priority Flow Control) are crucial for making Ethernet suitable for AI workloads because they:
+  A. Increase the maximum transmission unit (MTU) size.
+  B. Provide lossless Ethernet by preventing packet loss during congestion.
+  C. Route traffic more efficiently across the internet.
+  D. Encrypt all network traffic for enhanced security.
+
+
+Question 4: In the context of AI fabrics, what does 'bisection bandwidth' refer to?
+  A. The total bandwidth available to a single node.
+  B. The maximum throughput between two halves of the network.
+  C. The bandwidth dedicated to management traffic.
+  D. The speed of the connection between a server and its storage.
+
+
+Question 5: RoCE v2 differs from RoCE v1 primarily in its ability to:
+  A. Operate only at Layer 2 (Data Link Layer).
+  B. Utilize Layer 3 (Network Layer) routing, making it more scalable across subnets.
+  C. Reduce latency by avoiding the network layer entirely.
+  D. Offer higher bandwidth by using a proprietary protocol.
+
+
+Question 6: Which network topology is commonly used for AI fabrics to ensure high bisection bandwidth and efficient scale-out for distributed training?
+  A. A simple star topology.
+  B. A mesh topology with few interconnections.
+  C. A Leaf-Spine or Fat-tree architecture.
+  D. A ring topology.
+
+
+Question 7: Why is a lossless fabric design important for AI/ML traffic, particularly when using RDMA?
+  A. To ensure all data packets are encrypted.
+  B. To prevent packet retransmissions, which would introduce latency and disrupt synchronized operations like distributed training.
+  C. To increase the overall path MTU.
+  D. To prioritize management traffic over AI workloads.
+
+
+Question 8: When selecting a network technology for AI workloads, what is a critical factor to consider besides raw speed?
+  A. The color of network cables.
+  B. Compatibility with existing infrastructure and the complexity of management compared to benchmarking results against specific AI workloads.
+  C. The number of blinking lights on the network interface card (NIC).
+  D. The vendor's policy on free coffee for IT staff.
+
+
+Question 9: Which monitoring metric is essential for understanding network congestion that could negatively impact RDMA performance in an AI cluster?
+  A. Wi-Fi signal strength.
+  B. ECN (Explicit Congestion Notification) drops or buffer utilization.
+  C. CPU temperature.
+  D. Hard drive read/write speeds.
+
+
+Question 10: What is the primary advantage of NIC offloads for AI workloads over a high-speed network?
+  A. They increase the workload on the CPU to manage network functions.
+  B. They transfer certain network processing tasks from the CPU to the NIC itself, freeing up CPU resources for AI computations.
+  C. They are primarily used for managing user authentication for network access.
+  D. They are a software-only solution and require no hardware changes.
+

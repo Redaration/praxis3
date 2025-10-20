@@ -1,0 +1,125 @@
+START
+    // PowerPoint to Video Converter with Audio Narration
+    // This script converts a PowerPoint presentation into a video with audio narration.
+
+    // Configuration
+    CURRENT_DIRECTORY_FILE = "current_directory.txt"
+    ENHANCED_NOTES_FILE = "06_Enhanced_Notes.txt"
+    OUTPUT_VIDEO_NAME = "course_video.mp4"
+    GCP_SERVICE_ACCOUNT_FILE = "gcp-service-account.json"
+    VOICE_NAME = "en-US-Neural2-F"
+    VOICE_LANGUAGE_CODE = "en-US"
+
+    // Main Function
+    FUNCTION main(max_slides):
+        Print "PowerPoint to Video Converter" banner
+
+        current_dir = get_current_directory()
+        paths = setup_directories(current_dir)
+
+        pptx_file = find_pptx_file(paths["base"])
+        IF pptx_file is not found THEN
+            Print "Error: No PowerPoint file found"
+            RETURN
+        END IF
+
+        notes_file = paths["base"] + ENHANCED_NOTES_FILE
+        slide_image_paths = extract_slides_as_images(pptx_file, paths["images"])
+        IF slide_image_paths is empty THEN
+            RETURN
+        END IF
+
+        notes_data = load_speaker_notes(notes_file)
+        IF notes_data is empty THEN
+            Print "Warning: No speaker notes found. Creating silent video."
+        END IF
+
+        IF max_slides is set THEN
+            limit slide_image_paths to max_slides
+        END IF
+
+        slide_matches = match_slides_to_notes(slide_image_paths, notes_data)
+        slide_data = create_slide_videos(slide_matches, paths["audio"])
+        IF slide_data is empty THEN
+            Print "Error: Failed to create slide data."
+            RETURN
+        END IF
+
+        output_video = paths["video"] + OUTPUT_VIDEO_NAME
+        create_final_video(slide_data, output_video)
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION get_current_directory():
+        READ CURRENT_DIRECTORY_FILE
+        RETURN directory path
+    END FUNCTION
+
+    FUNCTION setup_directories(base_dir):
+        CREATE "slide_snapshots", "audio", "video" directories if they don't exist
+        RETURN dictionary of paths
+    END FUNCTION
+
+    FUNCTION extract_slides_as_images(pptx_file, output_dir):
+        FIND existing slide snapshots in output_dir
+        SORT and RETURN list of image paths
+    END FUNCTION
+
+    FUNCTION load_speaker_notes(notes_file):
+        READ and PARSE enhanced notes JSON file
+        RETURN dictionary of notes
+    END FUNCTION
+
+
+
+    FUNCTION match_slides_to_notes(slide_image_paths, notes_data):
+        MATCH slides to notes based on their order
+        RETURN list of (slide_image_path, speaker_note) tuples
+    END FUNCTION
+
+    FUNCTION create_slide_videos(slide_matches, audio_dir):
+        tts_client = setup_text_to_speech_client()
+        FOR each slide_match:
+            generate_audio_for_slide(note_text, audio_file, tts_client)
+            determine_slide_duration from audio length
+            create_video_clip for the slide
+        RETURN list of video clips or data for ffmpeg
+    END FUNCTION
+
+    FUNCTION setup_text_to_speech_client():
+        INITIALIZE Google Cloud Text-to-Speech client
+        RETURN client
+    END FUNCTION
+
+    FUNCTION generate_audio_for_slide(text, output_file, tts_client):
+        TRY to generate audio using Google Cloud TTS
+        IF fails, FALLBACK to local TTS (pyttsx3 or macOS 'say')
+        RETURN path to audio file
+    END FUNCTION
+
+    FUNCTION create_final_video(slide_data, output_path):
+        IF using moviepy THEN
+            CONCATENATE video clips
+            WRITE final video file
+        ELSE (using ffmpeg)
+            CREATE individual video segments for each slide
+            CONCATENATE segments using ffmpeg
+        END IF
+        RETURN path to final video
+    END FUNCTION
+
+    FUNCTION rename_slides(slides_dir):
+        RENAME slide images to a standard format (e.g., "01-slide.png")
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        PARSE command-line arguments (--max-slides, --rename-slides)
+        check_dependencies()
+        IF --rename-slides is present THEN
+            rename_slides()
+        ELSE
+            main()
+        END IF
+    END IF
+END

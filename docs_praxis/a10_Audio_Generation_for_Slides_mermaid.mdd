@@ -1,0 +1,35 @@
+graph TD
+    A[Start] --> B{Read Config};
+    B --> C{Run Main Function};
+    C --> D{Get Current Directory};
+    D --> E{Setup Directories};
+    E --> F{Find PowerPoint File};
+    F --> G{Extract Slide Images};
+    G --> H{Load Speaker Notes};
+    H --> I{Match Slides to Notes};
+    I --> J{Create Slide Videos};
+    J --> K{Generate Audio for Each Slide};
+    K --> L{Use Google Cloud TTS};
+    L -- Fallback --> M{Use Local TTS};
+    M --> K;
+    K --> J;
+    J --> N{Create Final Video};
+    N --> O[End];
+
+    subgraph "Main Logic"
+        C
+        D
+        E
+        F
+        G
+        H
+        I
+        J
+        N
+    end
+
+    subgraph "Audio Generation"
+        K
+        L
+        M
+    end

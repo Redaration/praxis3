@@ -1,0 +1,30 @@
+graph TD
+    A[Start] --> B{create_title_slide}
+    B --> C{Create and Format Title Slide}
+
+    D[Start] --> E{create_content_slide}
+    E --> F{Create and Format Content Slide}
+    F --> G{Generate and Add Image}
+
+    H[Start] --> I{parse_outline}
+    I --> J{Parse and Return Outline}
+
+    K[Start] --> L{prepare_slides_data}
+    L --> M{Prepare and Return Slide Data}
+
+    N[Start] --> O{generate_slide_images_parallel}
+    O --> P{Generate and Return Slide Images}
+
+    Q[Start] --> R{generate_presentation}
+    R --> S{Generate Prompts}
+    S --> T{Create Presentation}
+    T --> U{Prepare Data}
+    U --> V{Generate Images}
+    V --> W{Create Slides}
+    W --> X[Return Presentation]
+
+    Y[Start] --> Z{main}
+    Z --> AA{Get Paths and Check Files}
+    AA --> BB{Parse Outline}
+    BB --> CC{Generate and Save Presentation}
+    CC --> DD{Generate and Add Notes}

@@ -1,0 +1,11 @@
+graph TD
+    A[Start] --> B{Parse Outline};
+    B --> C{Prepare Slide Data};
+    C --> D{Generate Images in Parallel};
+    D --> E{Create Presentation};
+    E --> F{Add Title Slide};
+    F --> G{Add Content Slides};
+    G --> H{Save PowerPoint};
+    H --> I{Generate Snapshots & Markdown};
+    I --> J{Add Speaker Notes};
+    J --> K[End];

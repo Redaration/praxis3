@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B{Test Generate Image};
+    B --> C{Define Sample Data};
+    C --> D{Create Prompt};
+    D --> E{Call Image Generator};
+    E -- Success --> F{Print Success};
+    E -- Failure --> G{Print Failure};
+    F & G --> H[End];

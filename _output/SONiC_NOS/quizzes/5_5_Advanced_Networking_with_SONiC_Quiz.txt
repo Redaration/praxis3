@@ -1,0 +1,71 @@
+# Quiz for 5: Advanced Networking with SONiC
+
+Question 1: What is the primary role of BGP in a network, according to the module content?
+  A. To provide fast convergence for interior gateway routing.
+  B. To exchange routing information between different Autonomous Systems (AS) and within large internal networks.
+  C. To manage multicast traffic forwarding using a shortest path tree.
+  D. To establish and maintain VXLAN tunnels for Layer 2 extension.
+
+
+Question 2: When configuring BGP in SONiC, which command is used to add a neighbor and specify its Autonomous System number?
+  A. `config router bgp as <asn>`
+  B. `config router bgp neighbor <neighbor_ip> remote-as <asn>`
+  C. `config router bgp neighbor <neighbor_ip> update-source <interface>`
+  D. `show ip bgp summary`
+
+
+Question 3: Which routing protocol is described as a link-state protocol suitable for interior gateway functions, known for its hierarchical design with areas?
+  A. BGP
+  B. RIPv2
+  C. OSPF
+  D. EIGRP
+
+
+Question 4: To advertise a specific network into an OSPF routing domain in SONiC, which command would you use?
+  A. `config router ospf router-id <id>`
+  B. `config router ospf area <area_id> network <network>/<prefix>`
+  C. `show ip ospf neighbor`
+  D. `config router ospf enable`
+
+
+Question 5: In SONiC, what is required before dynamic routing protocols like BGP or OSPF can be properly configured and operational?
+  A. Enabling the EVPN address family in BGP.
+  B. Ensuring the FRR service is enabled and interfaces have IP addresses.
+  C. Configuring VXLAN tunnel endpoints.
+  D. Applying QoS policies to all interfaces.
+
+
+Question 6: EVPN-VXLAN utilizes BGP primarily for which purpose in its control plane?
+  A. To negotiate VXLAN tunnel parameters like UDP port.
+  B. To distribute MAC address and IP reachability information.
+  C. To manage Quality of Service policies across the overlay.
+  D. To implement Access Control Lists for traffic filtering.
+
+
+Question 7: Which SONiC command is used to map a traditional VLAN to a VXLAN Network Identifier (VNI), integrating it into the EVPN-VXLAN overlay?
+  A. `config vxlan interface <vxlan_id> <vni>`
+  B. `config vlan <vlan_id> vxlan <vni>`
+  C. `config vxlan add <vxlan_id> <vni>`
+  D. `config router bgp activate <neighbor_ip> evpn`
+
+
+Question 8: When dealing with Quality of Service (QoS), which of the following is a fundamental concept related to managing network traffic during congestion periods?
+  A. ACL rule application
+  B. Dynamic routing protocol selection
+  C. Queuing and Scheduling
+  D. MAC address learning
+
+
+Question 9: Which command is used in SONiC to view statistics related to configured QoS queues?
+  A. `show qos policy`
+  B. `show running-config`
+  C. `show qos queue`
+  D. `show acl table`
+
+
+Question 10: Access Control Lists (ACLs) are primarily used for what purpose in network management?
+  A. To prioritize specific types of traffic over others.
+  B. To extend Layer 2 segments across a Layer 3 network.
+  C. To filter network traffic based on predefined rules and criteria.
+  D. To establish peering sessions between different Autonomous Systems.
+

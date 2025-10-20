@@ -1,0 +1,29 @@
+FUNCTION convert_pdf_to_text(pdf_path):
+    EXTRACT and RETURN text from PDF
+
+FUNCTION process_pdf_files():
+    FOR each PDF file:
+        CONVERT PDF to text
+        SAVE text to file
+        CHUNK text and add to list
+    RETURN list of text chunks
+
+FUNCTION chunk_text(text, file_name, chunk_size, overlap):
+    SPLIT text into overlapping chunks
+    RETURN list of chunks
+
+FUNCTION setup_chroma_db():
+    INITIALIZE ChromaDB and CREATE collection
+    RETURN client and collection
+
+FUNCTION add_documents_to_chroma(collection, documents):
+    ADD documents to ChromaDB collection in batches
+
+FUNCTION test_query(collection):
+    QUERY collection with a test query and PRINT results
+
+FUNCTION main():
+    documents = process_pdf_files()
+    chroma_client, collection = setup_chroma_db()
+    add_documents_to_chroma(collection, documents)
+    test_query(collection)

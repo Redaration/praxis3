@@ -1,0 +1,61 @@
+START
+    // RAG Database Creation Script for PDF Files
+    // This script creates a RAG database from PDF files.
+
+    // Configuration
+    DEFINE PDF_DIR, RAG_DIR, TXT_DIR
+
+    // Main Function
+    FUNCTION main():
+        PRINT "Cisco AI PDF RAG Database Creator" banner
+        documents = process_pdf_files()
+        chroma_client, collection = setup_chroma_db()
+        add_documents_to_chroma(collection, documents)
+        test_query(collection)
+        PRINT "RAG database creation complete!"
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION process_pdf_files():
+        GET list of PDF files from PDF_DIR
+        FOR each PDF file:
+            text_content = convert_pdf_to_text(pdf_path)
+            SAVE text_content to a .txt file
+            chunks = chunk_text(text_content)
+            ADD chunks to processed_documents list
+        RETURN processed_documents
+    END FUNCTION
+
+    FUNCTION convert_pdf_to_text(pdf_path):
+        READ PDF file
+        EXTRACT text from each page
+        RETURN extracted text
+    END FUNCTION
+
+    FUNCTION chunk_text(text, file_name):
+        SPLIT text into overlapping chunks
+        RETURN list of chunks
+    END FUNCTION
+
+    FUNCTION setup_chroma_db():
+        INITIALIZE ChromaDB client
+        CREATE a new collection
+        RETURN chroma_client and collection
+    END FUNCTION
+
+    FUNCTION add_documents_to_chroma(collection, documents):
+        PREPARE documents, ids, and metadatas
+        ADD documents to the collection in batches
+    END FUNCTION
+
+    FUNCTION test_query(collection):
+        DEFINE a test query
+        QUERY the collection
+        DISPLAY the results
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

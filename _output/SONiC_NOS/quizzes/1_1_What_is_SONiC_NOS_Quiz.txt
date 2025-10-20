@@ -1,0 +1,71 @@
+# Quiz for 1: What is SONiC NOS
+
+Question 1: What is SONiC fundamentally described as?
+  A. A proprietary network operating system for specialized hardware.
+  B. An open-source network operating system for cloud networking.
+  C. A hardware-agnostic firmware for network virtualization.
+  D. A management platform for legacy network devices.
+
+
+Question 2: A key goal of SONiC is to address vendor lock-in. How does it primarily achieve this?
+  A. By enforcing strict hardware compatibility lists.
+  B. By offering a closed-source, highly optimized solution.
+  C. By supporting a wide range of hardware and enabling network disaggregation.
+  D. By providing extensive managed services and support contracts.
+
+
+Question 3: The concept of 'network disaggregation' in SONiC refers to:
+  A. Breaking down large networks into smaller, isolated segments.
+  B. Separating network hardware from the network operating system software.
+  C. The process of decommissioning old network equipment.
+  D. Encrypting network traffic to prevent unauthorized access.
+
+
+Question 4: Which characteristic of SONiC allows for quicker implementation of new features and bug resolutions?
+  A. Its reliance on legacy protocols.
+  B. Its proprietary and closed-source nature.
+  C. Its foundation in open-source development and community collaboration.
+  D. Its limited support for hardware customization.
+
+
+Question 5: SONiC was developed to meet specific demands of which environment?
+  A. Small office/home office (SOHO) networks.
+  B. Enterprise campus networks.
+  C. Cloud-scale data centers.
+  D. Industrial automation networks.
+
+
+Question 6: Why is SONiC considered beneficial for reducing capital expenditure?
+  A. It requires expensive, specialized hardware.
+  B. It eliminates the need for network hardware altogether.
+  C. It allows for the selection of cost-effective, best-of-breed hardware components.
+  D. It mandates the purchase of bundled hardware and software from a single vendor.
+
+
+Question 7: The open-source nature of SONiC contributes to:
+  A. Increased licensing costs and restricted access to source code.
+  B. Transparency, rapid bug fixes, and a larger pool of developers.
+  C. A slower pace of innovation due to a lack of centralized control.
+  D. Dependence on a single vendor for all updates and support.
+
+
+Question 8: What benefit does SONiC offer regarding hardware flexibility?
+  A. It limits compatibility to a very narrow range of hardware.
+  B. It strictly adheres to proprietary hardware designs.
+  C. It allows users to choose and combine different hardware vendors.
+  D. It requires a specific ASIC from a single manufacturer.
+
+
+Question 9: Which of the following is a primary goal of SONiC related to development cycles?
+  A. To prolong the lifecycle of existing hardware.
+  B. To enable faster innovation cycles.
+  C. To standardize on a single hardware platform.
+  D. To reduce the complexity of network management through manual processes.
+
+
+Question 10: SONiC's design for 'cloud scale' emphasizes:
+  A. Limited routing table support and low bandwidth.
+  B. High performance, scalability, and efficient resource utilization.
+  C. Manual configuration and a resistance to automation.
+  D. Robustness primarily in small, isolated network environments.
+

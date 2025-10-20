@@ -1,0 +1,31 @@
+START
+    // LLM Access Module - OpenRouter.ai
+    // This module provides a function to connect to OpenRouter.ai and access LLM models.
+
+    // Main Function
+    FUNCTION call_llm(prompt, system_prompt):
+        DEFINE model, temperature, max_tokens
+        GET API key
+        DEFINE API URL and headers
+
+        PREPARE messages array with system and user prompts
+        PREPARE request payload (data)
+
+        PRINT "Sending request to OpenRouter.ai"
+        TRY
+            POST request to API URL with headers and data
+            RAISE exception for bad status codes
+            PARSE JSON response
+            RETURN response content
+        CATCH Exception
+            PRINT error message
+            RAISE exception
+        END TRY
+    END FUNCTION
+
+    // Example Usage
+    IF script is run directly THEN
+        response = call_llm("Explain how vector databases work...")
+        PRINT response
+    END IF
+END

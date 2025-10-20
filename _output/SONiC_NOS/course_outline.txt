@@ -1,0 +1,592 @@
+SONiC NOS Fundamentals
+
+1. Module 1: What is SONiC NOS
+1.1 SONiC Overview
+1.1.1 Definition of SONiC
+1.1.1.1 Software for Open Networking in the Cloud
+1.1.1.2 An open-source network operating system
+1.1.1.3 Developed for cloud-scale networking
+1.1.1.4 Enables disaggregated network hardware
+1.1.1.5 Built with modular microservices
+1.1.1.6 Powers data center networks
+1.1.2 Purpose and Goals
+1.1.2.1 To provide a unified NOS for diverse hardware
+1.1.2.2 To accelerate innovation in networking
+1.1.2.3 To reduce vendor lock-in through openness
+1.1.2.4 To enable automation and programmability
+1.1.2.5 To support cloud-native architectures
+1.1.2.6 To offer a cost-effective networking solution
+1.1.3 History and Contributions
+1.1.3.1 Originating from Microsoft Azure's network
+1.1.3.2 Collaborative development by community
+1.1.3.3 Driven by the need for scale and agility
+1.1.3.4 Evolution of its architecture over time
+1.1.3.5 Key milestones in its development
+1.1.3.6 Significant technological contributions
+1.2 Why SONiC?
+1.2.1 Network Disaggregation
+1.2.1.1 Decoupling network hardware and software
+1.2.1.2 Flexibility in choosing hardware vendors
+1.2.1.3 Ability to mix and match components
+1.2.1.4 Optimizing hardware for specific workloads
+1.2.1.5 Reducing capital expenditure
+1.2.1.6 Enabling hardware innovation independently
+1.2.2 Open Source Benefits
+1.2.2.1 Transparency and community collaboration
+1.2.2.2 Faster bug fixes and feature development
+1.2.2.3 No vendor licensing costs for the NOS
+1.2.2.4 Customizable and extensible by users
+1.2.2.5 Access to source code for deeper understanding
+1.2.2.6 Fosters a wider ecosystem of tools
+1.2.3 Cloud Scale Advantages
+1.2.3.1 Designed for massive network deployments
+1.2.3.2 High performance and low latency
+1.2.3.3 Efficient resource utilization
+1.2.3.4 Automation capabilities for operational efficiency
+1.2.3.5 Resilient and fault-tolerant design
+1.2.3.6 Supports dynamic changes in network demand
+
+2. Module 2: SONiC Architecture
+2.1 SONiC Components
+2.1.1 SWSS (State Synchronization Service)
+2.1.1.1 Manages the state of the entire network
+2.1.1.2 Synchronizes configuration across modules.
+2.1.1.3 Acts as a central database manager.
+2.1.1.4 Receives updates from applications.
+2.1.1.5 Pushes changes to the lower layers.
+2.1.1.6 Ensures consistency across the system.
+2.1.2 Syncd (Synchronization Daemon)
+2.1.2.1 Daemon responsible for state synchronization.
+2.1.2.2 Communicates with hardware abstraction layer.
+2.1.2.3 Updates the ASIC based on configuration.
+2.1.2.4 Receives state from SWSS.
+2.1.2.5 Translates logical state to hardware commands.
+2.1.2.6 Handles hardware-specific programming.
+2.1.3 SAI (Switch Abstraction Interface)
+2.1.3.1 Standardized API for network ASICs.
+2.1.3.2 Provides a hardware-agnostic interface.
+2.1.3.3 Abstracts ASIC-specific programming details.
+2.1.3.4 Enables SONiC to run on various hardware.
+2.1.3.5 Defines common data plane objects.
+2.1.3.6 Developed under the OCP initiative.
+2.1.4 Other Key Components (e.g., FRR, CRM, LDA)
+2.1.4.1 FRR (Free Range Routing) for routing protocols.
+2.1.4.2 CRM (Containerized Resource Management) for resource monitoring.
+2.1.4.3 LDA (L2 Discovery Agent) for L2 protocols.
+2.1.4.4 Ppsd (Packet Per Second Daemon) for performance.
+2.1.4.5 L3d (L3 Daemon) for L3 forwarding.
+2.1.4.6 Various other microservices for specific functions.
+2.2 Architecture Overview
+2.2.1 Layered Design
+2.2.1.1 Application Layer (Routing, Switching protocols)
+2.2.1.2 Management Layer (Configuration, Monitoring)
+2.2.1.3 Abstraction Layer (SAI)
+2.2.1.4 Hardware Layer (ASIC)
+2.2.1.5 Separation of concerns for modularity
+2.2.1.6 Clear interfaces between layers
+2.2.2 Microservices Approach
+2.2.2.1 Each network function is a containerized service.
+2.2.2.2 Services communicate via inter-process communication (IPC).
+2.2.2.3 High degree of modularity and isolation.
+2.2.2.4 Easier to develop, test, and deploy individual components.
+2.2.2.5 Failures in one service have limited impact.
+2.2.2.6 Scalability of individual services.
+2.3 Containerized Microservices
+2.3.1 Docker for Containerization
+2.3.1.1 SONiC utilizes Docker for packaging.
+2.3.1.2 Each microservice runs in its own container.
+2.3.1.3 Ensures consistent runtime environment.
+2.3.1.4 Simplifies dependency management.
+2.3.1.5 Facilitates easy deployment and updates.
+2.3.1.6 Improves resource isolation.
+2.3.2 Orchestration (e.g., Kubernetes concepts)
+2.3.2.1 Although not a full K8s deployment, it uses similar principles.
+2.3.2.2 Management of container lifecycles.
+2.3.2.3 Service discovery and communication.
+2.3.2.4 Health monitoring of services.
+2.3.2.5 Rollback capabilities for updates.
+2.3.2.6 Resource allocation for containers.
+2.3.3 Inter-Service Communication
+2.3.3.1 Redis Pub/Sub for asynchronous messaging.
+2.3.3.2 gRPC for synchronous requests.
+2.3.3.3 IPC mechanisms for direct communication.
+2.3.3.4 Using message queues for decoupling.
+2.3.3.5 Event-driven architecture.
+2.3.3.6 Defined protocols for interaction.
+2.4 SONiC Communication Flows
+2.4.1 Configuration Change Flow
+2.4.1.1 User interacts via CLI or API.
+2.4.1.2 Configuration written to Config DB (Redis).
+2.4.1.3 SWSS processes the change.
+2.4.1.4 SWSS sends commands to Syncd.
+2.4.1.5 Syncd programs the ASIC via SAI.
+2.4.1.6 State is updated and synchronized.
+2.4.2 Data Plane Flow
+2.4.2.1 Packets arrive at the ASIC.
+2.4.2.2 ASIC performs lookup based on programmed tables.
+2.4.2.3 Forwarding decisions made by hardware.
+2.4.2.4 Packets egress out of the ASIC.
+2.4.2.5 Control plane protocols interact with data plane state.
+2.4.2.6 Packet processing occurs at hardware speed.
+2.4.3 Monitoring and Telemetry Flow
+2.4.3.1 SONiC daemons collect operational data.
+2.4.3.2 Data is exposed via APIs or exported.
+2.4.3.3 Telemetry agents gather metrics.
+2.4.3.4 SNMP traps or streaming telemetry.
+2.4.3.5 Data is sent to monitoring systems.
+2.4.3.6 Performance and health insights generated.
+2.4.4 Routing Protocol Updates
+2.4.4.1 FRR process receives updates.
+2.4.4.2 Updates are communicated to SWSS.
+2.4.4.3 SWSS updates the routing table in Config DB.
+2.4.4.4 Syncd is notified to update the ASIC.
+2.4.4.5 Routing table changes reflected in hardware.
+2.4.4.6 Network reachability is updated.
+
+3. Module 3: Deploying SONiC
+3.1 Hardware Considerations
+3.1.1 ASIC Support
+3.1.1.1 SONiC supports various merchant silicon ASICs.
+3.1.1.2 Key vendors include Broadcom, Mellanox, Intel.
+3.1.1.3 Compatibility matrix is crucial.
+3.1.1.4 ASIC capabilities dictate features.
+3.1.1.5 Low-level drivers are specific to ASICs.
+3.1.1.6 Firmware versions of ASICs matter.
+3.1.2 Supported Platforms
+3.1.2.1 Switches from various ODMs and OEMs.
+3.1.2.2 Open Compute Project (OCP) hardware.
+3.1.2.3 Community-tested and vendor-supported platforms.
+3.1.2.4 Virtualization platforms for testing.
+3.1.2.5 Choosing hardware that meets performance needs.
+3.1.2.6 Verified hardware list is important.
+3.1.3 Image Selection
+3.1.3.1 SONiC images are specific to hardware platforms.
+3.1.3.2 Different releases offer varied features.
+3.1.3.3 Choosing between stable or development releases.
+3.1.3.4 Understanding the supported features in an image.
+3.1.3.5 Verifying image integrity.
+3.1.3.6 Finding the correct image for your hardware.
+3.2 Installation Methods
+3.2.1 ONIE (Open Network Install Environment)
+3.2.1.1 Standard network boot loader for white-box switches.
+3.2.1.2 SONiC can be installed via ONIE.
+3.2.1.3 Auto-discovery of installation source.
+3.2.1.4 Typically uses DHCP and TFTP/HTTP.
+3.2.1.5 Pre-installs SONiC image on the device.
+3.2.1.6 Common method for initial factory installs.
+3.2.2 USB Drive Installation
+3.2.2.1 Bootable USB drive with SONiC image.
+3.2.2.2 Practical for smaller deployments or upgrades.
+3.2.2.3 Requires physical access to the device.
+3.2.2.4 May involve modifying boot order.
+3.2.2.5 Simple and direct method.
+3.2.2.6 Often used in lab environments.
+3.2.3 PXE Boot
+3.2.3.1 Network booting using Preboot Execution Environment.
+3.2.3.2 Requires DHCP, TFTP, and potentially NFS/HTTP servers.
+3.2.3.3 Automates deployment across multiple devices.
+3.2.3.4 Centralized management of images.
+3.2.3.5 Scalable deployment solution.
+3.2.3.6 Common in large data centers.
+3.2.4 Virtual Environments
+3.2.4.1 SONiC can be deployed on VMs.
+3.2.4.2 KVM, VMware, or other hypervisors.
+3.2.4.3 Useful for testing and development.
+3.2.4.4 Simulates network behavior without physical hardware.
+3.2.4.5 Emulates network interfaces.
+3.2.4.6 Allows for rapid experimentation.
+3.3 Initial Setup and Boot Process
+3.3.1 First Boot Experience
+3.3.1.1 Device boots into ONIE or the pre-installed NOS.
+3.3.1.2 Potential for initial network configuration (DHCP).
+3.3.1.3 Access via console port is often required.
+3.3.1.4 Default username and password.
+3.3.1.5 Self-discovery of network interfaces.
+3.3.1.6 Basic system readiness checks.
+3.3.2 Configuration Database (Config DB)
+3.3.2.1 Redis-based database holding the desired state.
+3.3.2.2 Stores all configuration parameters.
+3.3.2.3 Service daemons read from and write to Config DB.
+3.3.2.4 Key-value store structure.
+3.3.2.5 Central source of truth for configuration.
+3.3.2.6 Persistence of configuration.
+3.3.3 Starting Essential Services
+3.3.3.1 Docker orchestrator starts core containers.
+3.3.3.2 SWSS, Syncd, and essential daemons initialize.
+3.3.3.3 Network interfaces brought up.
+3.3.3.4 Readiness for further configuration.
+3.3.3.5 Logging services begin operation.
+3.3.3.6 Initial hardware detection complete.
+3.3.4 Network Connectivity Establishment
+3.3.4.1 DHCP client attempts to get an IP address.
+3.3.4.2 Management interface gets configured.
+3.3.4.3 Default gateway might be set.
+3.3.4.4 Allows remote access for management.
+3.3.4.5 Essential for further provisioning.
+3.3.4.6 Establishing communication with network infrastructure.
+
+4. Module 4: Basic SONiC Configuration
+4.1 Command Line Interface (CLI) Basics
+4.1.1 Accessing the CLI
+4.1.1.1 Via SSH or console connection.
+4.1.1.2 Default user credentials.
+4.1.1.3 Terminal emulator setup.
+4.1.1.4 Establishing secure remote access.
+4.1.1.5 Verifying connectivity to the device.
+4.1.1.6 Ensuring proper shell environment.
+4.1.2 Navigation and Help
+4.1.2.1 Hierarchical command structure.
+4.1.2.2 Tab completion for commands and parameters.
+4.1.2.3 "?" for command assistance.
+4.1.2.4 "show" commands to view status.
+4.1.2.5 "config" commands for changes.
+4.1.2.6 Understanding command context.
+4.1.3 Viewing Configuration
+4.1.3.1 "show running configuration" command.
+4.1.3.2 "show config BGP" to see specific sections.
+4.1.3.3 Accessing Config DB details.
+4.1.3.4 Reviewing applied settings.
+4.1.3.5 Verifying current operational state.
+4.1.3.6 Validating configuration accuracy.
+4.1.4 Applying Configuration Changes
+4.1.4.1 Using "config" commands.
+4.1.4.2 Changes are written to Config DB.
+4.1.4.3 Immediate or pending application.
+4.1.4.4 Need to commit changes.
+4.1.4.5 Understanding operational impact.
+4.1.4.6 Reverting changes if necessary.
+4.2 Interface Configuration
+4.2.1 Ethernet Interface Configuration
+4.2.1.1 Naming conventions for interfaces.
+4.2.1.2 Enabling/disabling interfaces.
+4.2.1.3 Setting interface speed and duplex.
+4.2.1.4 Assigning descriptions to interfaces.
+4.2.1.5 Verifying interface status.
+4.2.1.6 Accessing interface statistics.
+4.2.2 PortChannel (LAG) Configuration
+4.2.2.1 Creating a PortChannel interface.
+4.2.2.2 Adding member interfaces to a PortChannel.
+4.2.2.3 Configuring aggregation protocols (LACP).
+4.2.2.4 Verifying PortChannel status.
+4.2.2.5 Troubleshooting link aggregation.
+4.2.2.6 Understanding load balancing.
+4.3 VLANs and Layer 2 Switching
+4.3.1 VLAN Creation and Management
+4.3.1.1 Defining VLAN IDs and names.
+4.3.1.2 Associating ports with specific VLANs.
+4.3.1.3 Configuring trunk ports.
+4.3.1.4 Setting native VLANs on trunks.
+4.3.1.5 Viewing VLAN configurations.
+4.3.1.6 Verifying port-to-VLAN mappings.
+4.3.2 Layer 2 Switching Concepts
+4.3.2.1 MAC address learning process.
+4.3.2.2 Forwarding and filtering of frames.
+4.3.2.3 Spanning Tree Protocol (STP) overview.
+4.3.2.4 Handling broadcast traffic.
+4.3.2.5 Understanding VLAN isolation.
+4.3.2.6 Bridging mechanisms.
+4.4 IP Addressing and Static Routing
+4.4.1 IP Address Assignment
+4.4.1.1 Assigning IPv4 addresses to interfaces.
+4.4.1.2 Subnet mask configuration.
+4.4.1.3 Verifying IP address assignments.
+4.4.1.4 Loopback interface configuration.
+4.4.1.5 IP address conflict detection.
+4.4.1.6 Understanding IP address scope.
+4.4.2 Static Route Configuration
+4.4.2.1 Defining next-hop IP address for routes.
+4.4.2.2 Specifying destination network and mask.
+4.4.2.3 Configuring default routes.
+4.4.2.4 Verifying static routes in the routing table.
+4.4.2.5 Administrative distance for static routes.
+4.4.2.6 Use cases for static routing.
+
+5. Module 5: Advanced Networking with SONiC
+5.1 Dynamic Routing Protocols
+5.1.1 BGP (Border Gateway Protocol)
+5.1.1.1 Configuring BGP neighbors and AS numbers.
+5.1.1.2 Basic BGP peering and route advertisement.
+5.1.1.3 Understanding BGP attributes.
+5.1.1.4 Verifying BGP neighbor status.
+5.1.1.5 Troubleshooting BGP sessions.
+5.1.1.6 Influence on traffic engineering.
+5.1.2 OSPF (Open Shortest Path First)
+5.1.2.1 Configuring OSPF areas and interfaces.
+5.1.2.2 OSPF neighbor discovery and adjacency.
+5.1.2.3 Understanding OSPF LSAs.
+5.1.2.4 Verifying OSPF state.
+5.1.2.5 Analyzing OSPF route propagation.
+5.1.2.6 Use in enterprise and data center core.
+5.2 EVPN and VXLAN Overlays
+5.2.1 VXLAN (Virtual Extensible LAN)
+5.2.1.1 Overview of VXLAN encapsulation.
+5.2.1.2 VNI (VXLAN Network Identifier) configuration.
+5.2.1.3 Underlay network requirements.
+5.2.1.4 Tunnel endpoint configuration.
+5.2.1.5 Use for network segmentation.
+5.2.1.6 Overcoming VLAN scaling limitations.
+5.2.2 EVPN (Ethernet VPN)
+5.2.2.1 EVPN control plane for VXLAN.
+5.2.2.2 MAC address advertisement via BGP.
+5.2.2.3 ARP suppression.
+5.2.2.4 Multi-homing capabilities.
+5.2.2.5 Simplifying L2 extension.
+5.2.2.6 Integration with VXLAN.
+5.3 Quality of Service (QoS)
+5.3.1 Classification and Marking
+5.3.1.1 Defining traffic classes based on criteria.
+5.3.1.2 Trusting or setting QoS markings (DSCP).
+5.3.1.3 Using ACLs for classification.
+5.3.1.4 Ingress and egress QoS policies.
+5.3.1.5 Packet marking techniques.
+5.3.1.6 Importance for real-time traffic.
+5.3.2 Queuing and Scheduling
+5.3.2.1 Creating queues for different traffic classes.
+5.3.2.2 Configuring scheduling algorithms (e.g., WRR).
+5.3.2.3 Setting queue depths and bandwidth allocation.
+5.3.2.4 Priority queuing.
+5.3.2.5 Preventing congestion.
+5.3.2.6 Buffering mechanisms.
+5.3.3 Policing and Shaping
+5.3.3.1 Policing to drop excess traffic.
+5.3.3.2 Shaping to smooth out traffic bursts.
+5.3.3.3 Metering traffic rates.
+5.3.3.4 Defining traffic rate limits.
+5.3.3.5 Applying policies to interfaces.
+5.3.3.6 Traffic rate enforcement.
+5.4 Access Control Lists (ACLs)
+5.4.1 Basic ACL Configuration
+5.4.1.1 Defining permit/deny rules.
+5.4.1.2 Specifying source and destination IP addresses/networks.
+5.4.1.3 Configuring protocol and port matching.
+5.4.1.4 Applying ACLs to interfaces (ingress/egress).
+5.4.1.5 Verifying ACL entries.
+5.4.1.6 Understanding ACL processing order.
+5.4.2 Advanced ACL Features
+5.4.2.1 Extended ACLs for more granular control.
+5.4.2.2 Time-based ACLs.
+5.4.2.3 ACL logging.
+5.4.2.4 Stateful firewalling concepts.
+5.4.2.5 Applying ACLs for security policy enforcement.
+5.4.2.6 Managing large ACLs efficiently.
+
+6. Module 6: SONiC Management and Monitoring
+6.1 Configuration Management
+6.1.1 Config DB Operations
+6.1.1.1 Understanding the role of Redis Config DB.
+6.1.1.2 Direct interaction with Config DB using commands.
+6.1.1.3 Applying configurations that are stored here.
+6.1.1.4 Ensuring configuration persistence.
+6.1.1.5 Auditing changes in Config DB.
+6.1.1.6 Retrieving specific configuration keys.
+6.1.2 Running Configuration vs. Saved Configuration
+6.1.2.1 Running config is the live configuration state.
+6.1.2.2 Saved configuration is what persists across reboots.
+6.1.2.3 How changes are applied and made persistent.
+6.1.2.4 Commands to save configuration.
+6.1.2.5 Importance of regular configuration backups.
+6.1.2.6 Understanding the commit process.
+6.1.3 Configuration Backup and Restore
+6.1.3.1 Procedures for exporting configuration.
+6.1.3.2 Importing configuration to restore.
+6.1.3.3 Using scripting for automated backups.
+6.1.3.4 Secure storage of configuration files.
+6.1.3.5 Considerations for disaster recovery.
+6.1.3.6 Verifying restored configurations.
+6.2 Logging and Syslog
+6.2.1 SONiC Logging Mechanisms
+6.2.1.1 Different levels of logging (debug, info, warn, error).
+6.2.1.2 Daemon-specific logs.
+6.2.1.3 Centralized logging within SONiC.
+6.2.1.4 Viewing logs via CLI.
+6.2.1.5 Log rotation and management.
+6.2.1.6 Standard output of containers.
+6.2.2 Syslog Configuration
+6.2.2.1 Configuring the SONiC device to send logs.
+6.2.2.2 Specifying the syslog server IP address and port.
+6.2.2.3 Defining the logging facility and severity level.
+6.2.2.4 Verifying log forwarding.
+6.2.2.5 Secure transport of logs (e.g., TLS).
+6.2.2.6 Remote log aggregation.
+6.3 SNMP and Telemetry
+6.3.1 SNMP (Simple Network Management Protocol)
+6.3.1.1 Enabling SNMP agent on SONiC.
+6.3.1.2 Configuring SNMP community strings.
+6.3.1.3 MIBs (Management Information Bases) relevant to SONiC.
+6.3.1.4 Polling for device information.
+6.3.1.5 Receiving SNMP traps for alerts.
+6.3.1.6 Integrating with NMS systems.
+6.3.2 Streaming Telemetry
+6.3.2.1 Overview of streaming telemetry.
+6.3.2.2 Protocols like gNMI, Netconf, RESTCONF.
+6.3.2.3 Sensors and data paths for metrics.
+6.3.2.4 Configuring telemetry exporters.
+6.3.2.5 Real-time monitoring capabilities.
+6.3.2.6 Use cases and benefits over SNMP.
+6.4 Software Upgrades and Downgrades
+6.4.1 Upgrade Procedures
+6.4.1.1 Planning and preparation steps.
+6.4.1.2 Downloading the new SONiC image.
+6.4.1.3 Using the appropriate tools for upgrade.
+6.4.1.4 In-service software upgrade (ISSU) concepts.
+6.4.1.5 Verifying the upgrade.
+6.4.1.6 Best practices for zero-downtime upgrades.
+6.4.2 Downgrade Procedures
+6.4.2.1 Reasons for downgrading.
+6.4.2.2 Challenges and considerations.
+6.4.2.3 Steps to revert to a previous version.
+6.4.2.4 Data and configuration compatibility.
+6.4.2.5 Testing downgrade scenarios.
+6.4.2.6 Importance of maintaining older images.
+6.4.3 Image Management
+6.4.3.1 Storing and organizing SONiC images.
+6.4.3.2 Version control and release notes.
+6.4.3.3 Integrity checking of images.
+6.4.3.4 Using repository for image distribution.
+6.4.3.5 Lifecycle management of software versions.
+6.4.3.6 Ensuring compliance with supported versions.
+
+7. Module 7: Automation and Programmability
+7.1 REST API and gRPC
+7.1.1 REST APIs
+7.1.1.1 Accessing network configuration and status via HTTP.
+7.1.1.2 Use of JSON or XML for data representation.
+7.1.1.3 GET, POST, PUT, DELETE operations.
+7.1.1.4 Understanding the SONiC REST API endpoints.
+7.1.1.5 Testing API calls using tools like curl.
+7.1.1.6 Benefits for integration with orchestration systems.
+7.1.2 gRPC (gRPC Network Management Interface)
+7.1.2.1 High-performance RPC framework.
+7.1.2.2 Uses Protocol Buffers for serialization.
+7.1.2.3 Efficient for real-time data streaming.
+7.1.2.4 Client-server communication model.
+7.1.2.5 Native integration with SONiC services.
+7.1.2.6 Use cases in modern network automation.
+7.2 YANG Models
+7.2.1 Introduction to YANG
+7.2.1.1 Data modeling language for network configuration.
+7.2.1.2 Hierarchical structure for defining data.
+7.2.1.3 Defining configuration, state, RPCs, notifications.
+7.2.1.4 Enables vendor-neutral network programming.
+7.2.1.5 Standard for network configuration.
+7.2.1.6 Foundation for NETCONF and RESTCONF.
+7.2.2 SONiC YANG Model Usage
+7.2.2.1 How SONiC exposes its configuration via YANG.
+7.2.2.2 Consuming YANG models for automation.
+7.2.2.3 Mapping YANG to the Config DB.
+7.2.2.4 Benefits for consistent configuration.
+7.2.2.5 Developing tools that use YANG.
+7.2.2.6 Understanding standard vs. vendor-specific models.
+7.3 Ansible Integration for Configuration Management
+7.3.1 Ansible Fundamentals
+7.3.1.1 Agentless automation tool.
+7.3.1.2 Playbooks for defining tasks.
+7.3.1.3 Inventory for managing devices.
+7.3.1.4 Modules for interacting with devices.
+7.3.1.5 Idempotency in Ansible.
+7.3.1.6 Use for configuration deployment and orchestration.
+7.3.2 SONiC Ansible Modules
+7.3.2.1 Utilizing existing SONiC Ansible modules.
+7.3.2.2 Examples of playbooks for SONiC configuration.
+7.3.2.3 Managing interfaces, VLANs, routing with Ansible.
+7.3.2.4 Developing custom Ansible modules for SONiC.
+7.3.2.5 Automating deployment and changes.
+7.3.2.6 Best practices for Ansible and SONiC.
+7.4 Python Scripting for SONiC
+7.4.1 Python Environment on SONiC
+7.4.1.1 Available Python version and libraries.
+7.4.1.2 Executing Python scripts on the device.
+7.4.1.3 Using the SONiC Python API or libraries.
+7.4.1.4 Interacting with the Config DB.
+7.4.1.5 Automating tasks programmatically.
+7.4.1.6 Developing custom tools.
+7.4.2 Utilizing APIs and SDKs
+7.4.2.1 SDKs for interacting with specific SONiC components.
+7.4.2.2 Custom scripts for monitoring and management.
+7.4.2.3 Integrating Python scripts with other automation tools.
+7.4.2.4 Error handling and logging in scripts.
+7.4.2.5 Simplifying complex operations.
+7.4.2.6 Extending SONiC's capabilities.
+
+8. Module 8: Troubleshooting SONiC
+8.1 Common Troubleshooting Commands
+8.1.1 Interface Status and Counters
+8.1.1.1 "show interfaces status" for link status.
+8.1.1.2 "show interfaces counters" for errors.
+8.1.1.3 "show interfaces description" for LACP status.
+8.1.1.4 Verifying physical and logical interface state.
+8.1.1.5 Identifying dropped packets.
+8.1.1.6 Checking duplex and speed mismatches.
+8.1.2 Routing Table Verification
+8.1.2.1 "show ip route" for IPv4 routing table.
+8.1.2.2 "show ipv6 route" for IPv6 routing table.
+8.1.2.3 Verifying reachability to destinations.
+8.1.2.4 Identifying route flapping.
+8.1.2.5 Checking BGP and OSPF table entries.
+8.1.2.6 Understanding the next-hop resolution.
+8.1.3 L2 Connectivity Checks
+8.1.3.1 "show vlan" to view VLAN configurations.
+8.1.3.2 "show mac address-table" for MAC address learning.
+8.1.3.3 "show spanning-tree" for STP status.
+8.1.3.4 Verifying port-to-VLAN assignments.
+8.1.3.5 Troubleshooting MAC flaps.
+8.1.3.6 Checking trunk configuration.
+8.2 Log Analysis
+8.2.1 Interpreting System Logs
+8.2.1.1 Filtering logs by severity or time.
+8.2.1.2 Identifying error messages and warnings.
+8.2.1.3 Correlating log entries with events.
+8.2.1.4 Understanding daemon-specific logs.
+8.2.1.5 Using logs for root cause analysis.
+8.2.1.6 Managing log verbosity.
+8.2.2 Debugging Daemon Issues
+8.2.2.1 Enabling debug logging for specific daemons.
+8.2.2.2 Monitoring daemon health and restarts.
+8.2.2.3 Examining Redis DB for service status.
+8.2.2.4 Checking container logs.
+8.2.2.5 Restarting problematic daemons.
+8.2.2.6 Identifying service dependencies.
+8.3 Debugging Network Issues
+8.3.1 Ping and Traceroute
+8.3.1.1 Basic connectivity checks.
+8.3.1.2 Identifying the point of failure.
+8.3.1.3 Using IP and ICMP options.
+8.3.1.4 Troubleshooting connectivity to endpoints.
+8.3.1.5 Layer 3 path discovery.
+8.3.1.6 Limitations of ping/traceroute.
+8.3.2 Checking Control Plane States
+8.3.2.1 Verifying BGP neighbor states.
+8.3.2.2 Checking OSPF adjacency status.
+8.3.2.3 Confirming ARP/ND table entries.
+8.3.2.4 Ensuring routing protocols are functioning.
+8.3.2.5 Validating session establishment.
+8.3.2.6 Troubleshooting protocol convergence.
+8.3.3 Data Plane Troubleshooting
+8.3.3.1 Verifying forwarding tables in the ASIC.
+8.3.3.2 Checking ACL hit counts.
+8.3.3.3 Analyzing QoS queue drops.
+8.3.3.4 Investigating VXLAN tunnel status.
+8.3.3.5 Ensuring correct hardware programming.
+8.3.3.6 Data plane sanity checks.
+8.4 Packet Capture and Analysis
+8.4.1 Capturing Packets on SONiC
+8.4.1.1 Using tcpdump utility.
+8.4.1.2 Specifying interfaces and filters.
+8.4.1.3 Capturing traffic on specific ports.
+8.4.1.4 Saving capture files to disk.
+8.4.1.5 Limitations of CPU-based capture.
+8.4.1.6 Advanced capture options.
+8.4.2 Packet Analysis Tools (e.g., Wireshark)
+8.4.2.1 Importing captured files into Wireshark.
+8.4.2.2 Filtering and following conversations.
+8.4.2.3 Analyzing packet headers and payload.
+8.4.2.4 Identifying protocol issues.
+8.4.2.5 Understanding packet flow and timing.
+8.4.2.6 Diagnosing network performance problems.
+8.4.3 Traffic Mirroring (SPAN/RSPAN)
+8.4.3.1 Configuring SPAN sessions.
+8.4.3.2 Mirroring specific ports or VLANs.
+8.4.3.3 Sending mirrored traffic to a monitoring port.
+8.4.3.4 Use cases for real-time traffic inspection.
+8.4.3.5 Limitations of SPAN configuration.
+8.4.3.6 Remote SPAN considerations.

@@ -1,0 +1,18 @@
+graph TD
+    A[Start] --> B{Parse CLI Args};
+    B --> C{Check Dependencies};
+    B -- --rename-slides --> D[Rename Slides];
+    C --> E{Run Main Process};
+    E --> F[Get Current Directory];
+    F --> G[Setup Subdirectories];
+    G --> H[Find PPTX File];
+    H --> I[Extract Slide Images];
+    I --> J[Load Speaker Notes];
+    J --> K[Match Slides to Notes];
+    K --> L{max_slides?};
+    L -- Yes --> M[Limit Slide Count];
+    M --> N[Create Slide Videos];
+    L -- No --> N;
+    N --> O[Create Final Video];
+    O --> P[End];
+    D --> P;

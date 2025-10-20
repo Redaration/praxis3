@@ -1,0 +1,12 @@
+# Answer Key for 5: Network Optimization for AI
+
+Question 1: C
+Question 2: B
+Question 3: B
+Question 4: B
+Question 5: B
+Question 6: C
+Question 7: B
+Question 8: C
+Question 9: B
+Question 10: B

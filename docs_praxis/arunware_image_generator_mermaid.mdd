@@ -1,0 +1,18 @@
+graph TD
+    A[Start] --> B{Generate Image};
+    B --> C{Async Generate & Download};
+    C --> D{Initialize Runware};
+    D --> E{Create Request};
+    E --> F{Inference};
+    F --> G{Download Image};
+    G --> H{Save Image};
+    H --> I{Disconnect};
+    I --> J[End];
+
+    subgraph "Parallel Generation"
+        K[Generate Images Parallel] --> L{Async Parallel Generation};
+        L --> M{Prepare All Requests};
+        M --> N{Gather All Results};
+        N --> O{Download All Images};
+        O --> P{Disconnect};
+    end

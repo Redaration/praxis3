@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B{Get Python Files};
+    B --> C{For Each File};
+    C --> D{Check Prefix};
+    D -- No Prefix --> E{Rename File};
+    E --> C;
+    D -- Has Prefix --> C;
+    C -- Loop End --> F[End];

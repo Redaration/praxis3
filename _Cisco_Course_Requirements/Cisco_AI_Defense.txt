@@ -1,0 +1,69 @@
+Cisco AI Defense Fundamentals
+Class Size:
+Who Should Attend
+* Security Architects
+* Network Security Engineers
+* SOC Analysts
+* Incident Responders
+* IT Security Managers
+Course Description
+This course provides a comprehensive overview of Cisco AI Defense solutions, focusing on how artificial intelligence and machine learning are leveraged to enhance cybersecurity posture. The goal of this course is to understand the principles behind AI-driven security, the components of Cisco AI Defense, and how to deploy, configure, and manage these solutions to detect, prevent, and respond to advanced threats. This course will also include hands-on labs where you will configure and administer key Cisco AI Defense features.
+
+Learning Objectives
+* Cisco AI Defense Overview, Use Cases, and Business Drivers
+* Principles of AI/ML in Cybersecurity
+* Cisco AI Defense System Architecture and Components
+* Deploy Cisco AI Defense solutions in various environments
+* Configure and fine-tune AI-driven threat detection and prevention
+* Administer and manage Cisco AI Defense platforms
+* Monitor security events and AI-generated alerts
+* Implement automated responses and orchestration with Cisco AI Defense
+* Troubleshoot common issues and optimize performance
+Course Outline
+Module 1: Introduction to AI in Cybersecurity
+* Evolution of Cyber Threats and AI's Role
+* Fundamentals of Artificial Intelligence and Machine Learning
+* Benefits and Challenges of AI in Security
+* Cisco's Vision for AI-Driven Security
+Module 2: Cisco AI Defense Architecture
+* Key Components of Cisco AI Defense (e.g., SecureX, Talos, Cognitive Threat Analytics)
+* Integration with Cisco Security Portfolio
+* Data Collection and Analysis for AI Models
+* Cloud-Native vs. On-Premise Deployments
+Module 3: Deploying Cisco AI Defense Solutions
+* Planning and Sizing Considerations
+* Installation and Initial Configuration
+* Network Integration and Data Flow
+* Licensing and Subscription Models
+Module 4: AI-Driven Threat Detection
+* Behavioral Analytics and Anomaly Detection
+* Machine Learning for Malware Analysis
+* AI for Network Intrusion Detection
+* User and Entity Behavior Analytics (UEBA)
+Module 5: AI-Powered Threat Prevention and Response
+* Automated Threat Blocking and Containment
+* Orchestration and Automation with SecureX
+* Incident Prioritization and Contextualization
+* Threat Intelligence Integration (Talos)
+Module 6: Managing and Monitoring Cisco AI Defense
+* Dashboard and Reporting Features
+* Alert Management and Triage
+* Policy Configuration and Optimization
+* Performance Monitoring and Health Checks
+Module 7: Advanced Topics and Best Practices
+* Customizing AI Models (where applicable)
+* Integration with Third-Party Tools
+* Compliance and Regulatory Considerations
+* Future Trends in AI Security
+Module 8: Troubleshooting Cisco AI Defense
+* Common Troubleshooting Scenarios
+* Log Analysis and Diagnostics
+* Performance Tuning and Optimization
+* Best Practices for Support and Maintenance
+Lab 1: Environment Setup and Initial Deployment of a Cisco AI Defense Component
+Lab 2: Configuring AI-Driven Network Anomaly Detection
+Lab 3: Analyzing AI-Generated Security Alerts and Incidents
+Lab 4: Implementing Automated Threat Response Actions
+Lab 5: Monitoring and Reporting on Cisco AI Defense Performance
+Lab 6: Integrating Cisco AI Defense with Existing Security Tools
+Lab 7: Troubleshooting a Simulated Security Incident with AI Defense

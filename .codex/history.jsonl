@@ -1,0 +1,11 @@
+{"session_id":"0199fdf0-5aa9-73a1-97af-7a759d33c95f","ts":1760902027,"text":"Review the Python files, tell me to come in, to install all the needed Python modules."}
+{"session_id":"0199fdf0-5aa9-73a1-97af-7a759d33c95f","ts":1760902658,"text":"how to reread .env file"}
+{"session_id":"0199fe01-1ca3-7a63-9329-e12b36eb7f27","ts":1760903118,"text":"show .env variables"}
+{"session_id":"0199fe01-1ca3-7a63-9329-e12b36eb7f27","ts":1760903156,"text":"how can i view env vars being used"}
+{"session_id":"0199fe01-1ca3-7a63-9329-e12b36eb7f27","ts":1760903223,"text":"when i do printenv is to not see: - OPENROUTER_API_KEY\n  - RUNWARE_API_KEY"}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967539,"text":"In this directory, I have a bunch of files that I want to add to an existing github repository. Tell me step by step how I do that."}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967564,"text":"I also have GH installed, does that help?"}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967635,"text":"how do i create a repo from the cli"}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967744,"text":"how tosetuo git ignore"}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967944,"text":"I did the command.  gh repo create praxis3 --public -g"}
+{"session_id":"019a01d7-6ba8-7550-9402-2e3eb70b3561","ts":1760967991,"text":"(venv) brandon@yohn-praxis-2025:~$ git status\nfatal: not a git repository (or any of the parent directories): .git"}

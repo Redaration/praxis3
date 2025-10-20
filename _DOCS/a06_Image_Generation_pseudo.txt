@@ -1,0 +1,82 @@
+START
+    DEFINE constants for image dimensions and directories.
+    DEFINE configuration for prompt style, focus, and color scheme.
+
+    FUNCTION setup_environment():
+        IMPORT `call_llm` function from `a02_LLM_Access.py`.
+        GET the current working directory from "current_directory.txt".
+        CREATE the image output directory if it doesn't exist.
+
+    FUNCTION get_current_directory():
+        READ "current_directory.txt" to get the base directory path.
+        RETURN directory path.
+
+    FUNCTION extract_slide_info(outline_data, max_slides):
+        INITIALIZE an empty list for slide information.
+        IF outline has "title" and "modules":
+            ITERATE through modules and topics to extract title and content for each slide.
+        ELSE (legacy format):
+            ITERATE through modules, topics, and subtopics to extract titles and content.
+        IF max_slides is set, truncate the list of slides.
+        RETURN the list of slide information.
+
+    FUNCTION clean_json_response(response):
+        EXTRACT JSON content from markdown code blocks (if present).
+        REMOVE any leading non-JSON text.
+        RETURN the cleaned JSON string.
+
+    FUNCTION save_prompts_to_file(prompts_json, output_filename):
+        GET the current directory.
+        CONSTRUCT the full output path.
+        WRITE the JSON string to the specified file.
+        RETURN the output path.
+
+    FUNCTION create_fallback_prompt(slide_title):
+        CREATE a generic, structured prompt using the slide title and predefined style configuration.
+        RETURN the fallback prompt string.
+
+    FUNCTION generate_all_image_prompts(outline_data, max_slides):
+        EXTRACT slide information from the outline.
+        BUILD a system prompt instructing the LLM to act as an image prompt engineer.
+        BUILD a user prompt containing all slide titles and content in JSON format.
+        CALL the LLM with the system and user prompts to get enhanced image prompts for all slides in one batch.
+        SAVE the raw response from the LLM.
+        PARSE the JSON response.
+        IF parsing or the LLM call fails:
+            GENERATE fallback prompts for each slide.
+        STORE the generated prompts in a cache.
+        RETURN the dictionary of slide titles to prompts.
+
+    FUNCTION get_enhanced_prompt(slide_title, slide_content):
+        CHECK the cache for a pre-generated prompt for the given slide title.
+        IF found, RETURN the cached prompt.
+        ELSE, CREATE and RETURN a fallback prompt.
+
+    FUNCTION sanitize_filename(name):
+        REMOVE invalid characters from the name.
+        TRUNCATE the name to a maximum length.
+        RETURN the sanitized filename.
+
+    FUNCTION generate_image_for_slide(slide_title, slide_content):
+        GET the enhanced prompt for the slide.
+        SANITIZE the slide title to create a safe filename.
+        CALL the `generate_image` function from `arunware_image_generator.py` with the prompt.
+        RETURN the path to the generated image, or None on failure.
+
+    FUNCTION generate_slide_images_parallel(slides_data):
+        FOR each slide in the slides_data:
+            CONSTRUCT a numbered filename (e.g., "01_slide.png").
+            IF the image file does not already exist:
+                GET the enhanced prompt for the slide.
+                CALL the image generation function to create the image.
+            STORE the image path (either existing or newly created).
+        RETURN a dictionary mapping slide titles to image paths.
+
+    FUNCTION main():
+        PRINT a message indicating the script should be run from `a05_CREATE_POWERPOINT.py`.
+
+    ENTRY POINT:
+        CALL setup_environment().
+        IF the script is run directly:
+            CALL main().
+END

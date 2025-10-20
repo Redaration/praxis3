@@ -1,0 +1,71 @@
+# Quiz for 8: Troubleshooting SONiC
+
+Question 1: Which command is most useful for quickly identifying if a network interface is operational or degraded?
+  A. `show ip route`
+  B. `show interfaces status`
+  C. `show system resources`
+  D. `arp -an`
+
+
+Question 2: When troubleshooting routing issues on a SONiC device, what command would you use to check the state of your OSPF neighbors?
+  A. `show ip bgp summary`
+  B. `show route all`
+  C. `show ip ospf neighbor`
+  D. `ping`
+
+
+Question 3: You are experiencing slow network performance. Which of these commands would be most relevant to check for excessive traffic errors or dropped packets on an interface?
+  A. `ip link show`
+  B. `show interfaces counters`
+  C. `traceroute`
+  D. `docker ps`
+
+
+Question 4: To understand the CPU and memory utilization on your SONiC switch, which command would you use?
+  A. `show system info`
+  B. `show interfaces status`
+  C. `show system resources`
+  D. `tcpdump`
+
+
+Question 5: When analyzing logs for a specific issue, like an interface going down, what is a key action to take?
+  A. Only look for the keyword 'down' in logs.
+  B. Immediately restart the switch.
+  C. Check logs related to SAI/SWSS and interface events.
+  D. Increase the system's log retention period.
+
+
+Question 6: A systematic troubleshooting approach for network issues typically starts with:
+  A. Analyzing advanced packet captures.
+  B. Restarting all network services.
+  C. Defining the problem clearly and isolating its scope.
+  D. Immediately changing the BGP configuration.
+
+
+Question 7: Which tool is primarily used for capturing network packets directly on a SONiC device for later analysis?
+  A. Wireshark
+  B. `ethtool`
+  C. `tcpdump`
+  D. `traceroute`
+
+
+Question 8: When examining a packet capture file (`.pcap`) using Wireshark, what aspect of the traffic is essential to analyze to understand network performance problems?
+  A. The capture file's creation timestamp.
+  B. The protocol version used by the sender.
+  C. Packet retransmissions, errors, and latency.
+  D. The MAC address of the capture device.
+
+
+Question 9: To debug issues at the hardware abstraction layer (HAL) in SONiC, which CLI tool would be most relevant?
+  A. `swss-cli`
+  B. `docker logs`
+  C. `sai-cli`
+  D. `show interfaces counters`
+
+
+Question 10: A layered troubleshooting approach suggests starting an investigation from which OSI layer?
+  A. Layer 7 (Application)
+  B. Layer 1 (Physical)
+  C. Layer 3 (Network)
+  D. Layer 4 (Transport)
+

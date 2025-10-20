@@ -1,0 +1,27 @@
+START
+    // Course Outline Generator
+    // This script generates a course outline from a course description file.
+
+    // Initialization
+    IMPORT call_llm function
+    DEFINE a static SYSTEM_PROMPT for curriculum design
+
+    // Main Function
+    FUNCTION main():
+        PRINT "COURSE OUTLINE GENERATOR" banner
+        GET list of course description files
+        PROMPT user to select a file
+        READ the selected file content
+
+        CREATE user_prompt with the course description
+        CALL the LLM with the system and user prompts
+        PRINT the generated outline
+
+        SAVE the outline to "course_outline.txt"
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

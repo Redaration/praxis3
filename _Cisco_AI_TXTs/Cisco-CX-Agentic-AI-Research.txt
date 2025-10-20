@@ -1,0 +1,994 @@
+
+--- Page 1 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+1
+© 2025 Cisco and/or its affiliates. All rights reserved.
+How agentic AI will transform 
+customer experience
+THE RACE TO AN AGENTIC FUTURE:
+--- Page 2 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+2
+Contents
+3 Foreword
+5 Research methodology
+6 Introduction: Agentic AI-led customer 
+experience is coming at speed
+9 Customer experience has become 
+mission-critical
+10 Organizations are already feeling the benefits 
+of AI deployment within customer experience
+11 Customers are excited about the potential 
+benefits of Agentic AI
+12 A wide range of use cases across the 
+technology lifecycle
+13 Human connection will remain a critical 
+component of customer experience
+16 Robust governance and ethical practices are 
+non-negotiable in Agentic AI deployment
+18 Successful Agentic AI deployment can 
+transform relationships and drive revenue for 
+technology partners
+19 Excitement grows about a future where Agentic 
+AI-led customer experience becomes the new 
+standard
+20 Agentic AI-led customer experience is now an 
+urgent priority for B2B technology businesses
+21 About Cisco Customer Experience (CX)
+--- Page 3 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+3
+© 2025 Cisco and/or its affiliates. All rights reserved. 3
+Imagine a world where no customer needs to 
+restate their issues, where issues are resolved 
+before they are experienced, and where every 
+interaction feels tailored to individual needs, 
+preferences and business outcomes. It’s not 
+just a better experience, it’s a transformational 
+one, going from frustration to delight.
+For Enterprises, the integration of agentic AI 
+into customer experience workflows solves 
+problems we have been circling around 
+for years. Persistent customer pain points, 
+like redundant conversations with contact 
+center agents, network configuration delays, 
+and manual collection of infrastructure 
+requirements and design documentation, 
+become a thing of the past.
+It’s no surprise then that this research 
+uncovers overwhelming appetite and 
+excitement for agentic AI-led customer 
+experience. What is surprising, is the 
+velocity! Business and technical decision 
+makers are expecting their technology 
+partners to pivot to an agentic future faster 
+than anyone anticipated.
+The numbers speak for themselves: 
+customers expect 56% of their interactions 
+to be handled by agentic AI within just 12 
+months; and a staggering 68% within the 
+next three years.
+For many technology businesses, such 
+a rapid shift towards agentic AI presents 
+a monumental challenge. The technical 
+complexity is daunting, and then if you layer 
+on ethical considerations and the cultural 
+transformation required to integrate AI into 
+workflows at scale, it raises the stakes 
+even higher. You have innovation, precision, 
+responsibility, and focus on outcomes that 
+need to come together. 
+While agentic AI promises unparalleled 
+efficiency, human connection remains 
+irreplaceable. Complex problem solving, 
+ethical judgement and empathy are uniquely 
+human, that no algorithm can replace, at 
+least not any time soon. We are all seeking 
+that balance or harmony between agentic 
+AI’s power and the human touch and     
+intelligence that makes customer interactions 
+truly meaningful.
+Customer experience is entering a new era with agentic AI as the 
+transformative force leading the way. Agentic AI will fundamentally 
+change the very nature of services, enabling customer experience 
+teams to make every interaction personalized, proactive, and predictive 
+across every customer touchpoint. We can now deliver on our ultimate 
+goal: making every customer feel like they are the only customer!
+Foreword
+BY LIZ CENTONI, EVP & CHIEF CUSTOMER 
+EXPERIENCE OFFICER, CISCO
+
+--- Page 4 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+4
+Foreword
+BY LIZ CENTONI, EVP & CHIEF CUSTOMER 
+EXPERIENCE OFFICER, CISCO
+As with any major transformation program, 
+the journey to agentic AI-led customer 
+experience will undoubtedly pose challenges 
+and present risks for vendors. For those 
+companies that embrace this transformation 
+head-on, the payoff is not just improved 
+customer experience metrics, it’s in market 
+leadership in the AI era. It will reshape 
+customer experience into a strategic 
+differentiator, creating loyalty at scale.
+At Cisco Customer Experience, we are 
+defining this future. By combining cutting-
+edge agentic AI with Cisco’s wealth of data, 
+and four decades of human expertise, we 
+are forging a new standard for customer 
+experience - one that’s personalized, 
+proactive, predictive, and profoundly 
+human. The winners will be the ones who 
+balance speed, innovation and trust. We are 
+ready to lead that charge!
+--- Page 5 ---
+© 2025 Cisco and/or its affiliates. All rights reserved. 5
+Research methodology
+To better understand customer attitudes 
+towards, and appetite for, widespread 
+deployment of agentic AI within customer 
+experience, Cisco has undertaken 
+comprehensive global research, from 
+board-level directors and CIOs, through to 
+senior and mid-level IT management.
+Research conducted in 
+April 2025 by Sandpiper 
+Research & Insights.
+This research comprised of:
+7 ,950 
+businesses
+Interviews with 7,950 business and technical 
+decision makers, in organizations with a 
+turnover of at least $10 million. 55% of 
+respondents work in organizations with a 
+turnover of at least $100 million.
+30 
+markets
+Interviews were conducted in 30 markets - Australia, 
+Brazil, Canada, China, France, Germany, Hong Kong, 
+India, Indonesia, Italy, Japan, Malaysia, Mexico, 
+Netherlands, New Zealand, Philippines, Poland, Saudi, 
+Singapore, South Africa, South Korea, Spain, Sweden, 
+Switzerland, Taiwan, Thailand, United Arab Emirates, 
+United Kingdom, United States and Vietnam.
+Respondents worked across a range of industries, 
+including IT, manufacturing, financial services, 
+retail, business services, engineering, construction, 
+healthcare, transportation, and media and 
+communications.
+All respondents worked within job roles where they 
+are interacting with customer experience services and 
+support provided by B2B technology businesses.
+--- Page 6 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+6
+Agentic AI-led customer 
+experience is coming at speed
+Its arrival couldn’t come at a better time. As 
+levels of IT complexity spiral, companies in 
+every industry are facing an ever-tougher 
+challenge to keep their IT environments 
+and operations resilient and secure; to 
+accelerate their most important strategic digital 
+transformation projects; and to maximize value 
+from their technology investments.  
+As a result, organizations are leaning on 
+their technology partners more than ever, 
+and customer experience has never been         
+more critical.
+Agentic AI is set to be the most transformative technology to 
+impact customer experience in decades, arguably since the 
+beginning of this century and the shift to digital channels.
+INTRODUCTION
+--- Page 7 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+7
+Agentic AI can provide the platform for 
+B2B technology businesses to respond to 
+evolving customer needs in ways previously 
+unimaginable, helping organizations to 
+overcome their most pressing strategic 
+challenges across the technology lifecycle. 
+Agentic AI is a category of artificial intelligence 
+that leverages AI Agents and a contextualized 
+interconnection among them. Agentic AI 
+requires agency, meaning the AI Agents are 
+capable of having memory, are task aware and 
+possess the ability to take actions - or choose 
+what actions to take - to achieve a particular 
+outcome through the ability to learn from 
+their environment and reason, with minimal      
+human oversight.
+The research paints a clear picture. There 
+is now an overwhelming sense of optimism 
+surrounding agentic AI and its potential to 
+set a new standard for customer experience. 
+Business and technical decision makers 
+around the world recognize how this emerging 
+technology can dramatically enhance the 
+support and services they receive from their 
+technology partners and, in turn, deliver 
+tangible benefits to their own organizations.
+Across the technology lifecycle, from 
+strategy and planning, and design and 
+deployment, through to adoption, operations 
+and contract renewals, there is a seemingly 
+endless set of use cases and workflows 
+where agentic AI is expected to increase 
+productivity, drive time and cost savings, and 
+deliver more personalized, proactive and 
+predictive experiences than ever before.
+But not only is there great excitement about 
+the potential of agentic AI within customer 
+experience; there is also now a serious 
+sense of urgency. Customers are looking 
+for their technology partners to dramatically 
+accelerate their agentic AI programs, 
+and they’re expecting more than half of 
+interactions with partners to be handled by 
+agentic AI within the next 12 months.
+This sudden acceleration of appetite may 
+come as a shock to some technology 
+vendors, and for those still in the early stages 
+of thinking about agentic, it represents a 
+major challenge. However, this growing 
+urgency is not something they can ignore.
+93% 88%
+of respondents believe agentic 
+AI will enable B2B technology 
+businesses to deliver more 
+personalized, proactive, and 
+predictive services.
+feel confident that agentic 
+AI-led customer experience 
+provided by B2B technology 
+businesses will help their 
+organization achieve its goals.
+--- Page 8 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+8
+89%
+of respondents believe that 
+B2B technology partners must 
+combine human empathy 
+and connection with agentic 
+AI efficiency to optimize  
+customer experience.
+As the race to harness the capabilities of agentic AI intensifies, technology 
+businesses must not overlook the need to approach its deployment in 
+a responsible and ethical way. This research highlights respondents’  
+concerns around the technical deployment of agentic AI, and technology 
+businesses need to pay attention. This means putting in place the right 
+governance structures to ensure the security and privacy of sensitive 
+customer data, and to eliminate data bias and avoid unfair or discriminatory 
+outcomes. These structures can also help ensure that there is human 
+oversight where needed, for example, when multiple agents are making 
+decisions that could impact human rights or human safety. The risks 
+for businesses that fail to implement robust governance structures will          
+be catastrophic.
+The other important consideration in this pivot to agentic AI-led customer 
+experience is the continuing need for human connection. This research 
+reveals the extent to which customers value the human relationships 
+they have with their technology partners, and the critical moments where 
+they continue to favor human interaction. Technology businesses need to 
+ensure frictionless experiences, where human workers and AI agents are 
+operating effectively and harmoniously alongside each other.
+We are entering a new era in customer experience. For B2B technology 
+businesses, this is a defining moment. 
+Those vendors that succeed in implementing agentic AI-led customer 
+experience in an effective and ethical way, and meet the timelines 
+set by their customers, will drive significant competitive advantage. 
+Enhanced customer loyalty and trust, the ability to scale services at 
+speed, and increased customer spend, are just some of the benefits 
+that technology businesses are set to enjoy. 
+Ultimately, when deployed strategically, agentic AI has the potential 
+to transform relationships, positioning vendors as essential, strategic 
+partners to their customers for many years to come.
+--- Page 9 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+9
+Customer experience has 
+become mission-critical
+Organizations are relying on their technology partners more than ever 
+before. As IT complexity skyrockets – driven by accelerated digital 
+transformation, the ongoing shift to cloud and hybrid computing, the 
+race to harness the capabilities of AI-driven technologies, and a rapidly 
+evolving regulatory landscape – respondents report that they are leaning 
+more heavily on partners to help navigate these challenges.
+Across the board, customer experience is now regarded as essential, 
+and 72% of respondents describe the support and services provided by 
+vendors as ‘very important’ .
+In today’s environment, organizations aren’t simply looking for technology 
+partners to help with troubleshooting and maintaining uptime of systems 
+and applications. These partners have a key role to play throughout the 
+whole technology lifecycle, from strategy and planning, and design and 
+deployment, through to adoption, operations, and contract renewals.
+Respondents point to a wide range of areas where technology partners 
+can unlock value for their organizations, including maximizing investments 
+in technology, supporting innovation, and delivering tailored solutions 
+which directly align with key business challenges.
+CUSTOMER VIEW
+Top six ways in which 
+B2B technology partners 
+can deliver value through 
+customer experience
+92%
+of respondents state that the 
+customer experience support 
+and services provided by 
+B2B technology partners are 
+becoming more critical as IT 
+complexity increases within 
+their organizations.
+1. Help to get a deeper 
+understanding of technology
+2. Help to maximize investments in 
+technology
+3. Provide strategic counsel from 
+experts in each technology domain
+4. Reduce downtime, issue resolution 
+time, and improve operational efficiency
+5. Deliver personalized solutions tailored 
+to specific needs of the customer
+6. Provide updates on the latest 
+technology trends and best practices
+--- Page 10 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+10
+Organizations are already feeling 
+the benefits of AI deployment 
+within customer experience
+In response to this growing demand for 
+enhanced customer experience, technology 
+businesses have already started to introduce 
+AI-powered technologies to improve their 
+support and services.
+The research reveals not only that customers 
+are aware of this shift, but the extent to 
+which they are already engaging with these           
+AI-driven services and experiencing     
+notable benefits.  
+More than two thirds (68%) of respondents 
+have used at least one AI-powered customer 
+experience service provided by a B2B 
+technology partner, and at every stage of the 
+technology lifecycle, more than 50% have 
+encountered an AI-powered service. 
+Most commonly, they are consuming AI-
+driven insights and analytics, or engaging with 
+chatbots and virtual assistants. More than a 
+third have also used AI-powered workflow 
+automation, automated troubleshooting and 
+diagnostics, and predictive analytics for       
+issue resolution.
+Significantly, more than 80% of those 
+respondents that have engaged with AI-
+powered support and services from their B2B 
+technology partners report that they have had 
+positive experiences; compared with only 4% 
+who have been left feeling disappointed. 
+Top use cases for AI-powered 
+customer experience to date
+1. AI-driven customer insights 
+and analytics
+2. Chatbots and virtual  
+assistants for support
+3. Chatbots and virtual assistants 
+for customer success
+4. Chatbots and virtual assistants 
+for professional services
+5. Workflow automation
+6. Automated troubleshooting 
+and diagnostics
+7. Predictive analytics for 
+issue resolution
+8. Automated support ticket / 
+support case systems
+9. Documentation 
+generation
+10. Recommendations for  
+next best action
+--- Page 11 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+11
+Customers are excited about the 
+potential benefits of agentic AI
+On the back of their positive experiences with AI-powered support and 
+services, customers are now eager for their technology partners to drive 
+further improvements in customer experience through wider and more 
+sophisticated deployment of AI technologies.
+In particular, they are aware that some technology businesses are 
+now looking to enhance their customer experience offerings through 
+deployment of agentic AI.
+Most respondents are already familiar with agentic AI, with 33% reporting 
+that they have a deep understanding of the technology and its applications, 
+and 46% stating that they have a good grasp of the basics.
+Business and technical decision makers recognize that agentic AI 
+represents the next wave of innovation within AI, and many will be 
+involved in initiatives to design and deploy agentic AI technologies 
+within their own organizations. As a result, they’re easily able to 
+understand its game-changing potential.
+Across every region and every industry, respondents believe that 
+agentic AI has the potential to transform customer experience over the 
+coming years.
+The top perceived 
+benefits for customers 
+of agentic AI-led 
+customer experience
+93%
+of respondents believe agentic 
+AI will enable B2B technology 
+vendors to deliver more 
+personalized, proactive, and 
+predictive services.
+88%
+are confident that agentic 
+AI-led customer experience 
+will help their organization to 
+achieve its goals.
+1. Increased IT productivity
+2. Cost savings
+3. Greater accuracy in support  
+and services
+4. More proactive customer 
+experience services and support
+5. Increased up-time
+6. Time savings
+7. Ability to scale customer 
+experience services and support
+8. More personalized customer 
+experience services and support
+--- Page 12 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+12
+A wide range of use cases 
+across the technology lifecycle
+Respondents believe that agentic AI is set to 
+play a critical role throughout the technology 
+lifecycle, with more than 80% pointing to 
+potential benefits at every stage.
+Customer and technical support, technology 
+strategy and planning, and operations are 
+viewed as the greatest opportunities for agentic 
+AI to deliver value, but significant numbers 
+of respondents also see opportunities within 
+design and deployment, contract renewals    
+and adoption. 
+Looking at a more granular level at deployment 
+of agentic AI at each stage of the technology 
+lifecycle, IT productivity is seen as the 
+number one benefit for customers across the 
+board, followed closely by time savings, and           
+cost savings.  
+The research also indicates that agentic AI-led 
+support and services can drive wider benefits at 
+specific stages of the technology lifecycle. For 
+instance, greater accuracy is cited as a potential 
+advantage for customers during design and 
+deployment, while in operations, technologists 
+believe that agentic AI can lead to technology 
+partners delivering more proactive support.
+As you would expect with such a generational 
+technology, respondents believe that agentic 
+AI has the potential to deliver transformation 
+for customers across a wide range of use 
+cases and workflows.
+Above all else, they point to opportunities to 
+improve data analytics and insights for better 
+decision making; aid troubleshooting and 
+issue resolution; align technology investment 
+with digital transformation goals; and support 
+with adoption and training on the rollout of           
+new technologies.
+1. Enhancing data analytics 
+and insights for smarter 
+decision-making
+2. Accelerating troubleshooting 
+and issue resolution
+3. Aligning technology 
+investment strategy with 
+digital transformation goals
+Top five use cases for agentic AI-led customer 
+experience to deliver value to customers
+4. Supporting adoption 
+and training for new 
+technology rollouts
+5. Optimizing the use of 
+product features
+55%
+of respondents expect the introduction 
+of agentic AI to significantly improve 
+vendor performance in support ticket / 
+case resolution times.
+12
+--- Page 13 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+13
+Human connection will 
+remain a critical component 
+of customer experience
+They feel that personal relationships 
+are vital for vendors to build trust and 
+demonstrate reliability, drive customer 
+satisfaction, optimize communication, 
+and resolve issues in a timely way.
+ 
+Despite their enthusiasm for agentic 
+AI, customers still want to maintain             
+human interaction with their B2B     
+technology partners. 
+Respondents believe that human 
+relationships are, and will continue to be, 
+hugely important in how their organizations 
+engage with technology partners 
+throughout the technology lifecycle.
+
+--- Page 14 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+14
+The research highlights specific times where 
+there will be a continuing need for human 
+interaction with technology partners. These 
+include complex problem-solving, tasks that 
+require a high level of customization, regulatory 
+compliance oversight, and issues which require 
+serious ethical consideration. 
+Customers want their technology partners 
+to maximize the many benefits that agentic 
+AI can drive across their support and 
+services, but they don’t want this to come 
+at the expense of meaningful and rewarding 
+personal relationships. In their haste to 
+transition to an agentic future, technology 
+vendors must not neglect the critical need to 
+maintain human empathy and engagement. 
+Interestingly, respondents anticipate that 
+the balance between agentic AI-led support 
+and services, and human engagement, will 
+change over time. 72% predict that the role of 
+human interaction in customer experience will 
+diminish as AI technology advances over the 
+coming years.
+This in turn will enable human workers to 
+maximize their impact. Working in concert with 
+AI Agents, customer experience professionals 
+will be able to focus on higher value tasks, 
+utilizing their expertise, experience and 
+unique capabilities to forge deeper, strategic 
+relationships with customers. 
+Respondents see advantages to this shift, 
+recognizing that agentic AI can address 
+some of the shortcomings that they currently 
+encounter in their everyday interactions with 
+B2B technology businesses.
+Most notably, respondents point to frequent 
+personnel churn within customer experience 
+teams as their biggest frustration with vendors. 
+60% report that they are constantly or often 
+having to deal with this type of churn which 
+can be hugely disruptive, exposing gaps in 
+knowledge amongst new team members and 
+slowing down delivery of projects.in knowledge 
+amongst new team members and slowing 
+down delivery of projects. 
+89%
+state that technology businesses 
+must combine human empathy and 
+connection with agentic AI efficiency 
+to optimize customer experience.
+76%
+believe that agentic AI is currently 
+unable to replicate human empathy in 
+customer experience.
+1. Increased trust and  
+reliability
+2. Enhanced customer 
+satisfaction
+3. Improved communication
+4. Faster resolution of issues
+How human relationships with B2B technology 
+vendors deliver value for customers
+5. A deep understanding of the 
+customer’s business needs
+6. Strong network and 
+contacts
+7. Access to technical expertise
+8. Personalized services
+96%
+of respondents consider human 
+relationships to be very important 
+when interacting with their B2B 
+technology partners. 
+--- Page 15 ---
+Ten key characteristics 
+for AI Agents within 
+customer experience
+1. Security and privacy: Ensures data 
+protection and regulatory compliance
+2. Proactive problem-solving: Identifies and 
+addresses issues before they escalate
+3. Able to work alongside humans:  
+Seamlessly integrates with human teams 
+to enhance collaboration and efficiency
+4. Provides real-time insights:  Offers 
+immediate data and analytics to inform 
+decision-making
+5. Adaptability: Learns and evolves based 
+on new information and changing 
+circumstances
+6. Scalability: Can handle increasing volumes 
+of interactions without compromising quality
+7. Personalization:  Tailors responses and 
+solutions to individual customer needs
+8. Multi-lingual: Ability to communicate in 
+multiple languages to support diverse 
+customer bases
+9. Summarizes interactions:  Capable of 
+summarizing customer interactions for  
+quick reference and follow-up
+10. Analyzes sentiment:  Detects and 
+interprets customer emotions to improve 
+service and engagement
+© 2025 Cisco and/or its affiliates. All rights reserved. 15
+Other challenges within these relationships 
+include miscommunication between parties, 
+customers having limited access to required 
+expertise, and inconsistencies in the  
+quality-of-service delivery.  
+The need for close cooperation between 
+humans and AI agents is highlighted 
+throughout the research. Respondents 
+stress that AI agents need to be able to work 
+alongside and provide frictionless handovers 
+to human colleagues. And the same applies 
+when people hand off to AI agents.
+Respondents have clear ideas about the 
+characteristics and capabilities that AI agents 
+deployed by B2B technology vendors should 
+possess. They want Agents to be able 
+to handle data securely and compliantly,       
+and to proactively identify and solve 
+issues in a timely way. Other key attributes 
+include adapting to new information 
+and changing circumstances, providing 
+personalized responses based on individual         
+customer needs, and communicating in 
+multiple languages.
+1. Personnel churn and having to 
+deal with frequent changes in 
+customer experience teams
+2. Miscommunication or 
+misunderstandings
+3. Limited access to specific 
+expertise
+4. Availability of customer 
+experience team members
+The biggest challenges in human relationships 
+with B2B technology businesses
+5. Knowledge gaps within 
+customer experience  
+teams
+6. Inconsistent service  
+quality
+7. The need to repeat information 
+due to lack of notetaking
+--- Page 16 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+16
+Robust governance and ethical 
+practices are non-negotiable 
+in agentic AI deployment
+For all the excitement which surrounds 
+the use of agentic AI, there is of course 
+widespread recognition that AI-powered 
+technologies must be used in a responsible 
+and ethical way.
+This is certainly the case when it comes 
+to B2B technology vendors deploying 
+agentic AI within their customer experience 
+functions. The research identifies several 
+concerns that customers have around 
+the technical deployment of agentic AI. 
+Most of all, customers want to know that 
+their technology partners have the right 
+governance and guardrails in place to ensure 
+the security and privacy of sensitive customer 
+data, and to protect it from unauthorized 
+access or breaches. They also highlight the 
+importance of accuracy within technical 
+agentic AI deployment, so that agents 
+are always delivering precise and relevant 
+responses, solutions, and recommendations. 
+
+--- Page 17 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+17
+1. Security and privacy of 
+customer data
+2. Advanced AI technology 
+and tools
+3. Customer-centric AI design
+4. Appropriately skilled staff to 
+program models
+5. Continuous improvement 
+and innovation
+Ten factors for B2B technology 
+businesses to address when deploying 
+agentic AI in customer experience
+6. Robust governance arrangements 
+to ensure ethical and fair use of AI
+7. Transparent communication  
+and reporting
+8. Scalability and flexibility
+9. Comprehensive training programs 
+for customers
+10. Seamless integration with existing 
+systems
+68%
+of respondents believe that the 
+development of agentic AI poses 
+ethical or safety concerns.
+Other critical factors that customers want 
+technology partners to address in the future 
+within their AI deployments include the 
+elimination of data bias, to ensure agentic AI 
+does not perpetuate or amplify existing biases 
+in data and lead to unfair or discriminatory 
+outcomes; and the need for trust that agentic 
+AI can be relied upon to make fair decisions.
+Almost all respondents (99%) state that 
+it’s important for technology partners to 
+demonstrate robust governance arrangements 
+to deliver ethical and fair use of agentic AI. 
+It’s not enough for organizations to be doing 
+all the right things when it comes to their 
+deployment of agentic AI; they need to display 
+and communicate what they are doing with 
+complete transparency.
+The current sense of optimism and 
+excitement surrounding agentic AI-led 
+customer experience could soon dissipate if 
+customers sense that technology businesses 
+aren’t taking a responsible approach. 
+Indeed, 81% of respondents feel that vendors 
+need to share their vision for AI-led customer 
+experience to bring customers along on the 
+journey, and 79% believe that they should be 
+doing more to communicate this vision.
+It’s therefore alarming that a quarter (25%) of 
+respondents report that they don’t currently 
+have detailed knowledge of how their B2B 
+technology partners plan to use agentic AI to 
+enhance customer experience.
+
+--- Page 18 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+18
+Successful agentic AI 
+deployment can transform 
+relationships and drive revenue 
+for technology partners
+Respondents believe that the introduction of agentic AI into customer 
+experience support and services will also deliver game-changing impact 
+for their B2B technology partners.
+Technology businesses who successfully and ethically deploy agentic AI 
+across the technology lifecycle will enjoy a range of benefits including 
+access to data-driven insights, improved scalability within their support 
+and services, and greater customer loyalty. The majority (52%) of 
+respondents predict that effective AI deployment will also lead to higher 
+customer spend and increased revenues.
+Crucially, the introduction of agentic AI will enable technology 
+businesses to achieve one of their most important long-term objectives, 
+with 86% of respondents stating that agentic AI can help them to 
+become essential partners to - and intrinsic to the ongoing success of - 
+their customers.
+On the other hand, vendors who are left behind in their agentic AI 
+deployment, or those who fail to deploy agentic AI in an effective, secure 
+and ethical manner, are likely to encounter negative consequences. 
+Respondents cite missed opportunities to create new revenue streams, a 
+deterioration in customer relationships, reputational damage, and higher 
+levels of customer churn as some of the ways in which vendors will suffer.
+Most likely benefits for technology 
+partners who successfully      
+deploy agentic AI within     
+customer experience
+74%
+of respondents state that 
+customers are more likely to 
+trust B2B technology vendors 
+that use agentic AI to improve 
+their service offerings.
+81%
+expect vendors that 
+strategically deploy agentic AI 
+to gain a competitive edge.
+77%
+warn that vendors that do not 
+prioritize customer needs in 
+their agentic AI deployment 
+risk damaging their reputation.
+1. Improved operational efficiency 
+within vendor organization
+2. Ability to scale up customer 
+experience with ease
+3. Access to improved data 
+insights to streamline customer 
+experience
+4. Increased customer spend / 
+revenue
+5. Higher levels of customer trust as 
+a result of robust security
+6. Accelerated time-to-market as 
+agentic AI will streamline contract 
+and onboarding processes
+7. Enhanced customer loyalty
+--- Page 19 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+19
+Excitement grows about 
+a future where agentic 
+AI-led customer experience 
+becomes the new standard
+Overall, the research paints a hugely optimistic 
+picture, where widescale deployment of 
+agentic AI sets a new standard for customer 
+experience across the technology industry.
+Customers predict that agentic AI will play an 
+increasingly prominent role in their interactions 
+with technology vendors over the coming 
+years, and they are hugely upbeat about what 
+this will bring. 
+Significantly, respondents expect the shift 
+to agentic AI-led customer experience 
+to advance at a rapid rate. They predict 
+that 56% of their customer experience 
+interactions with technology partners will 
+be handled by agentic AI within the next 12 
+months, and 68% within the next three years. 
+This means that by 2028, customers are 
+looking for more than two thirds of their 
+engagement with partners to be through 
+agentic AI.  
+This phenomenal appetite for agentic        
+AI-led customer experience will come as a 
+major shock to many technology vendors 
+who are only just beginning to explore the      
+potential for agentic AI within their support 
+and services. 
+88%
+of respondents feel confident 
+that the agentic AI-led customer 
+experience provided by their 
+technology partners will help their 
+organization achieve its goals.
+A timeline for 
+agentic AI-led 
+customer experience
+56%
+68%
+79%
+Within 
+12 months
+Within 
+3 years
+Within 
+10 years
+TIMEFRAME
+PERCENTAGE OF PARTNER 
+INTERACTIONS EXPECTED TO 
+BE HANDLED BY AGENTIC AI
+--- Page 20 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+20
+Agentic AI-led customer experience 
+is now an urgent priority for B2B 
+tecnology businesses
+This research illustrates how the emergence 
+of agentic AI-led customer experience 
+presents a bona fide win-win situation for both 
+technology vendors and their customers. At 
+a time when organizations are relying on the 
+support and services of technology partners 
+more than ever, agentic AI can be the catalyst 
+for a new standard in customer experience.
+By deploying agentic AI, technology 
+businesses can provide customers with 
+more personalized, proactive and predictive 
+experiences across the technology lifecycle. 
+And this in turn will lead to faster resolution 
+times, greater IT productivity and significant 
+time and cost savings. Crucially, agentic 
+AI-led customer experience will enable 
+organizations to keep their environments 
+resilient and secure, to accelerate their 
+strategic innovation programs, and to 
+maximize their investments in technology.
+The upsides of agentic AI-led customer 
+experience for B2B technology businesses 
+are immense: the ability to scale support 
+and services at speed; access to valuable 
+new data and insights; and most importantly, 
+stickier, more strategic and profitable 
+relationships with customers. 
+As this research shows, agentic AI is not a 
+‘future’ technology; it’s here now and already 
+being deployed by forward-thinking B2B 
+technology businesses across their customer 
+experience support and services. Excitement 
+is sky high, but so too are expectations. 
+Customers want more than half of all 
+interactions with their technology partners 
+to be agentic AI-powered within the next 12 
+months; and more than two thirds by 2028.
+81%
+of respondents believe that agentic 
+AI will enable B2B technology 
+vendors to transform the way that 
+they support customers.
+For technology businesses, the time to act 
+is now. They need to develop strategies for 
+agentic AI-led customer experience which fully 
+harness the capabilities of this groundbreaking 
+technology, while also establishing guardrails 
+to ensure ethical and responsible deployment. 
+Technology partners must also strike the 
+right balance between agentic AI efficiency 
+and human empathy and connection within 
+customer experience.
+This is the challenge for the B2B technology 
+industry, and vendors simply cannot afford to 
+fall behind. To succeed in an agentic future, 
+technology businesses need to innovate at 
+speed to build bespoke, world-class solutions 
+for customer experience, and ensure they 
+have the wealth of high-quality data and 
+human expertise to support agentic AI models.
+Agentic AI is redefining customer experience, 
+and businesses who lead the way in this 
+transformation will undoubtedly reap            
+the rewards. 
+--- Page 21 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+21
+© 2025 Cisco and/or its affiliates. All rights reserved.
+Cisco is uniquely positioned to deliver the 
+future of customer experience for the AI 
+era. We’re combining bespoke, cutting-
+edge agentic AI innovation, with Cisco’s 
+wealth of data and human expertise, to set 
+a new standard in customer experience.  
+We’re building agentic AI from the ground-
+up, innovating from within to deliver 
+bespoke agentic AI-driven functionality 
+across the technology lifecycle.   
+Cisco is creating an intelligent, proactive 
+ecosystem where systems auto-repair 
+and optimize for performance and security 
+in real-time, before customers even need 
+to engage. In doing so, we’re delivering 
+an agentic future for customer experience 
+- one that’s personalized, proactive, 
+predictive, and profoundly human.
+About Cisco Customer 
+Experience (CX)
+
+--- Page 22 ---
+© 2025 Cisco and/or its affiliates. All rights reserved.
+22
+Americas Headquarters  
+Cisco Systems, Inc. 
+San Jose, CA
+Cisco has more than 200 offices worldwide. Addresses, phone numbers, and fax numbers are listed on the Cisco Website at  
+www.cisco.com/go/offices
+Cisco and the Cisco logo are trademarks of registered trademarks of Cisco and/or its affiliates in the U.S. and other countries. To view 
+a list of Cisco trademarks, go to www.cisco.com/go/trademarks . Third-party trademarks mentioned are the property of their respective 
+owners. To use of the word partner does not imply a partnership relationship between Cisco and any other company. (1110R)
+Asia Pacific Headquarters 
+Cisco Systems (USA) Pte. Ltd.  
+Singapore
+Europe Headquarters  
+Cisco Systems International  
+BV Amsterdam, The Netherlands

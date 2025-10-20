@@ -1,0 +1,71 @@
+# Quiz for 7: Managing AI/ML Workflows on HyperFabric
+
+Question 1: Which Kubernetes resource is most appropriate for deploying stateless AI services that need to scale horizontally?
+  A. Job
+  B. StatefulSet
+  C. Deployment
+  D. PersistentVolumeClaim
+
+
+Question 2: When containerizing an AI/ML application, why is optimizing container image size important, especially in a Kubernetes environment?
+  A. Larger images allow for more complex libraries, which are always better.
+  B. Smaller images lead to faster pull times and reduced storage/network costs.
+  C. Image size has no significant impact on deployment speed or resource utilization.
+  D. Only security scanning benefits from smaller image sizes.
+
+
+Question 3: What is the primary benefit of using the NGC Catalog for AI/ML workloads on HyperFabric?
+  A. It provides a platform for users to upload their own trained models.
+  B. It offers pre-optimized AI software containers and pre-trained models.
+  C. It is solely for managing Kubernetes manifests.
+  D. It exclusively hosts documentation for AI frameworks.
+
+
+Question 4: In the context of distributed training, what is the purpose of pod anti-affinity?
+  A. To ensure all training pods run on the same node for faster communication.
+  B. To prevent pods from being scheduled on the same node, promoting better resource distribution and fault tolerance.
+  C. To bind pods to specific CPUs for consistent performance.
+  D. To automatically restart failed training pods.
+
+
+Question 5: Which MLOps concept directly addresses bridging the gap between the development and operational phases of machine learning models?
+  A. Model Registries
+  B. Experiment Tracking
+  C. Feature Stores
+  D. MLOps (Machine Learning Operations)
+
+
+Question 6: What benefit does GitOps bring to MLOps practices on Kubernetes?
+  A. It eliminates the need for containerization.
+  B. It ensures ML pipelines are managed as infrastructure-as-code, with Git as the single source of truth for desired state.
+  C. It automatically selects the best model for deployment.
+  D. It is primarily used for hyperparameter tuning.
+
+
+Question 7: Why is efficient data loading with high-speed storage crucial for optimizing model training on HyperFabric?
+  A. It has minimal impact as the GPU is the main bottleneck.
+  B. It prevents the CPU from becoming a bottleneck during data preprocessing and feeding.
+  C. It increases the number of hyperparameters that can be tuned.
+  D. It is only relevant for inference tasks, not training.
+
+
+Question 8: Which tool is commonly used on Kubernetes for visualizing collected metrics, enabling the monitoring of AI/ML pipeline performance?
+  A. Prometheus
+  B. Elasticsearch
+  C. Grafana
+  D. Fluentd
+
+
+Question 9: When monitoring distributed training, identifying 'straggler nodes' is important because they:
+  A. Are the nodes performing the best and should be replicated.
+  B. Potentially slow down the entire training process due to processing delays.
+  C. Indicate issues with network connectivity only.
+  D. Are responsible for model checkpointing.
+
+
+Question 10: What is a key challenge in monitoring model performance in production, specifically related to the data the model receives over time?
+  A. Model staleness
+  B. Inaccurate hyperparameter tuning
+  C. Data drift
+  D. Insufficient GPU memory
+

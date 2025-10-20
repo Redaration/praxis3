@@ -1,0 +1,71 @@
+# Quiz for 2: Cisco HyperFabric for AI Architecture
+
+Question 1: What is the primary characteristic of Cisco HyperFabric compute nodes purpose-built for AI/ML workloads?
+  A. Emphasis on high-capacity hard drives for large datasets.
+  B. High-density GPU configurations and powerful CPUs with ample memory.
+  C. Focus on traditional server architectures with standard networking.
+  D. Integration with older, less powerful processors for cost savings.
+
+
+Question 2: Which network technologies are commonly supported by the Cisco HyperFabric network fabric to ensure high-bandwidth and low-latency interconnects?
+  A. Wi-Fi 6 and Bluetooth
+  B. Ethernet and InfiniBand with RDMA support
+  C. DSL and Cable modem technology
+  D. Token Ring and FDDI
+
+
+Question 3: What type of storage solutions are typically employed in Cisco HyperFabric to handle large datasets and provide speed for AI/ML tasks?
+  A. Magnetic tape archives and optical drives.
+  B. Slow, rotational hard disk drives (HDDs) with limited parallelism.
+  C. High-performance parallel file systems with NVMe-based storage.
+  D. USB flash drives and SD cards for distributed storage.
+
+
+Question 4: How does Kubernetes contribute to the Cisco HyperFabric architecture?
+  A. It serves as the primary database for storing AI model parameters.
+  B. It manages the physical cooling systems of the data center.
+  C. It acts as the orchestration layer for containerized AI workloads, enabling automated deployment and scaling.
+  D. It is solely responsible for the low-level hardware diagnostics.
+
+
+Question 5: Which of the following best describes NVIDIA AI Enterprise in the context of HyperFabric integration?
+  A. A hardware monitoring tool for GPU temperatures.
+  B. A comprehensive software suite of AI and data analytics tools optimized for NVIDIA hardware.
+  C. A network security protocol.
+  D. A backup solution for AI model checkpoints.
+
+
+Question 6: What is a key benefit of integrating NVIDIA AI Enterprise with the Cisco HyperFabric architecture?
+  A. Reduced processing power and slower AI model training.
+  B. Increased complexity in software deployment and management.
+  C. Faster deployment of AI environments and improved performance of AI workloads.
+  D. Reliance on manual configuration for all software components.
+
+
+Question 7: When considering the support for AI/ML frameworks within HyperFabric, what is a defining characteristic of PyTorch?
+  A. It is primarily used for traditional business intelligence reporting.
+  B. It is known for its static computation graphs and limited Python integration.
+  C. It is an open-source framework from Facebook, recognized for dynamic computation graphs and being Pythonic.
+  D. It exclusively supports CPU-based processing and lacks GPU acceleration.
+
+
+Question 8: What role does the network fabric play in facilitating data flow for AI training within HyperFabric?
+  A. It primarily handles user authentication for accessing data.
+  B. It ensures high-speed interconnects, RDMA support, and intelligent traffic management for efficient data movement.
+  C. Its main function is to archive historical training data.
+  D. It is responsible for encrypting data at rest on storage devices.
+
+
+Question 9: Why are NVIDIA NGC containers beneficial for AI/ML applications within a HyperFabric environment?
+  A. They are complex to set up and require manual compilation of all libraries.
+  B. They offer curated, optimized containers with pre-installed frameworks and libraries, specifically optimized for NVIDIA hardware.
+  C. They are designed for standalone desktop applications and do not integrate with orchestrated environments.
+  D. They provide a generic operating system image without any AI-specific software.
+
+
+Question 10: What aspect of data access for inference is crucial in a HyperFabric architecture?
+  A. Storing all inference data on slow, sequential access media.
+  B. Limiting data access to only one compute node at a time.
+  C. Ensuring low-latency access to model parameters and efficient retrieval of input data.
+  D. Relying solely on manual data fetching for each inference request.
+

@@ -1,0 +1,17 @@
+FUNCTION query_rag_database(query_text, num_results):
+    INITIALIZE and GET collection from ChromaDB
+    IF collection is empty, PRINT error and return None
+    QUERY collection and RETURN results
+
+FUNCTION display_results(results, query_text):
+    IF no results, PRINT message and RETURN
+    PRINT query and formatted results
+
+FUNCTION main():
+    PRINT welcome message
+    LOOP:
+        GET user query
+        IF exit command, BREAK
+        IF query is not empty:
+            results = query_rag_database(query)
+            IF results, display_results(results, query)

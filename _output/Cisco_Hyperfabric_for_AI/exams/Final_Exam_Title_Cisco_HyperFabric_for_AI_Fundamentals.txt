@@ -1,0 +1,351 @@
+# Final Exam: Title: Cisco HyperFabric for AI Fundamentals
+
+Question 1: Which of the following best describes the primary challenge in AI/ML infrastructure highlighted in Module 1?
+  A. Insufficient data storage capacity
+  B. Lack of skilled AI professionals
+  C. Complexity and inefficiency in handling growing AI demands
+  D. High cost of AI software licenses
+
+
+Question 2: According to Cisco's approach in Module 1, what is a key pillar of their AI strategy?
+  A. Focusing solely on AI software development
+  B. Leveraging existing networking expertise for AI-optimized infrastructure
+  C. Relying entirely on third-party hardware vendors
+  D. Exclusively supporting open-source AI frameworks
+
+
+Question 3: What is a primary value proposition of Cisco HyperFabric for AI?
+  A. Decreased compute performance
+  B. Simplified management of complex AI environments
+  C. Elimination of the need for GPU hardware
+  D. Reduced data storage requirements
+
+
+Question 4: Which of the following is a key use case for Cisco HyperFabric for AI mentioned in Module 1?
+  A. Basic web hosting
+  B. Accelerated model training
+  C. Desktop virtualization
+  D. Traditional database management
+
+
+Question 5: What significant business benefit can industries gain from implementing Cisco HyperFabric for AI?
+  A. Longer time-to-market for AI projects
+  B. Reduced operational costs through efficiency
+  C. Increased network latency for data transfer
+  D. Lowered demand for skilled IT personnel
+
+
+Question 6: In the Cisco HyperFabric for AI architecture (Module 2), what component is responsible for the orchestration layer?
+  A. GPU nodes
+  B. Storage solutions
+  C. Kubernetes
+  D. NVIDIA AI Enterprise software
+
+
+Question 7: How does Cisco HyperFabric integrate with NVIDIA AI Enterprise?
+  A. By replacing NVIDIA AI Enterprise entirely
+  B. By providing a streamlined deployment and management platform for NVIDIA AI Enterprise
+  C. By only supporting NVIDIA hardware without software integration
+  D. By operating independently and not interacting with NVIDIA AI Enterprise
+
+
+Question 8: Which technology is often containerized within Cisco HyperFabric for AI to manage applications?
+  A. Virtual Machines (VMs)
+  B. Bare-metal servers
+  C. Docker containers
+  D. Mainframe systems
+
+
+Question 9: What role does the Cisco HyperFabric network fabric play in data flow for AI workloads?
+  A. It limits data movement to only essential components.
+  B. It enables high-speed, low-latency data transfer between compute, storage, and GPUs.
+  C. It is solely responsible for data ingestion from external sources.
+  D. It acts as a passive data storage medium.
+
+
+Question 10: What is a key consideration when planning and sizing for AI workloads using Cisco HyperFabric (Module 3)?
+  A. Minimizing the number of GPUs used
+  B. Accurately assessing compute, network, and storage requirements
+  C. Using the smallest possible network bandwidth
+  D. Avoiding any software stack considerations
+
+
+Question 11: Which of the following is part of the pre-installation checklist for Cisco HyperFabric?
+  A. Deleting all existing user data
+  B. Ensuring hardware compatibility and network readiness
+  C. Disabling all security protocols
+  D. Installing only the core operating system
+
+
+Question 12: What is a best practice for network configuration in Cisco HyperFabric?
+  A. Utilizing the slowest available network speeds
+  B. Ensuring proper VLAN segmentation and Quality of Service (QoS)
+  C. Disabling all firewall rules
+  D. Using standard Ethernet protocols only
+
+
+Question 13: What is the purpose of validated designs and reference architectures in Cisco HyperFabric deployment?
+  A. To provide generic, untested configurations
+  B. To offer pre-defined, tested, and optimized solutions for specific AI use cases
+  C. To limit customization options for users
+  D. To document potential failure points
+
+
+Question 14: Which NVIDIA technology allows for GPU virtualization and partitioning, enabling multiple AI workloads to share a single GPU?
+  A. CUDA Toolkit
+  B. TensorRT
+  C. Multi-Instance GPU (MIG)
+  D. cuDNN
+
+
+Question 15: How does Kubernetes assist in managing AI/ML workloads on HyperFabric?
+  A. By exclusively managing physical hardware resources
+  B. By orchestrating containerized applications, including those using GPUs
+  C. By providing a direct interface to the GPU memory
+  D. By bypassing the need for any containerization
+
+
+Question 16: What is a key aspect of GPU scheduling strategies in Kubernetes for AI/ML?
+  A. Allocating GPUs randomly to pods
+  B. Ensuring efficient allocation and utilization of GPU resources
+  C. Deprioritizing pods that request GPU resources
+  D. Limiting the number of GPUs a pod can access
+
+
+Question 17: Which area is crucial for performance tuning of compute resources in AI/ML workflows?
+  A. Decreasing CPU clock speeds
+  B. Optimizing GPU utilization and CPU/memory performance
+  C. Disabling network interfaces
+  D. Limiting data access to storage
+
+
+Question 18: What type of high-performance networking technology is discussed for AI/ML traffic in Module 5?
+  A. 10 Mbps Ethernet
+  B. InfiniBand and High-Speed Ethernet (100GbE+)
+  C. Wi-Fi 5
+  D. Bluetooth
+
+
+Question 19: What is a crucial element of network fabric design for AI/ML traffic in Cisco HyperFabric?
+  A. Implementing strict bandwidth limitations for all traffic
+  B. Designing for low latency, high bandwidth, and efficient traffic management
+  C. Using only single-tier network topologies
+  D. Avoiding any form of network segmentation
+
+
+Question 20: What does RoCE (RDMA over Converged Ethernet) enable for AI/ML workflows?
+  A. Higher CPU utilization
+  B. Lower network latency and efficient data transfer over Ethernet
+  C. Increased storage capacity
+  D. Simplified application deployment
+
+
+Question 21: What are key network metrics to monitor for AI workloads?
+  A. CPU temperature and fan speed
+  B. Network latency, bandwidth utilization, and packet loss
+  C. Hard drive read/write speeds
+  D. Software version numbers
+
+
+Question 22: What are characteristics of AI/ML data access patterns that influence storage solutions?
+  A. Sequential, small read operations
+  B. Random, large read/write operations and high concurrency
+  C. Infrequent data access
+  D. Limited data volume
+
+
+Question 23: What is a common type of storage solution used for high-performance AI/ML data access?
+  A. Traditional single hard drives
+  B. Network Attached Storage (NAS) with low throughput
+  C. Parallel File Systems (e.g., Lustre, GPFS)
+  D. USB flash drives
+
+
+Question 24: Why is data versioning and provenance important in AI/ML data management?
+  A. To obscure the origin of data
+  B. To track data changes, ensure reproducibility, and audit data lineage
+  C. To reduce storage space by deleting old data
+  D. To increase data access complexity
+
+
+Question 25: What is the primary benefit of integrating distributed file systems (DFS) with AI workloads on HyperFabric?
+  A. To centralize all data on a single server
+  B. To provide scalable, high-performance data access for distributed training and inference
+  C. To limit concurrent data access
+  D. To increase data latency
+
+
+Question 26: How is data security typically addressed in Cisco HyperFabric for AI, concerning data at rest?
+  A. By relying solely on physical security of the data center
+  B. Through encryption and secure storage mechanisms
+  C. By disabling all access controls
+  D. By storing data in plain text
+
+
+Question 27: What is a key step in deploying AI/ML applications on HyperFabric?
+  A. Deploying applications directly on bare-metal servers
+  B. Containerizing AI applications and defining their resource requirements
+  C. Avoiding any form of configuration management
+  D. Running applications without any dependencies
+
+
+Question 28: What does MLOps aim to achieve in the context of AI/ML workflows on HyperFabric?
+  A. To slow down the machine learning model lifecycle
+  B. To streamline and automate the machine learning model lifecycle, from development to deployment and monitoring
+  C. To eliminate the need for collaboration between data scientists and operations teams
+  D. To focus solely on model training, ignoring deployment
+
+
+Question 29: What is a common practice for building CI/CD pipelines for ML on HyperFabric?
+  A. Manual code deployments and infrequent updates
+  B. Automating the build, test, and deployment of ML models
+  C. Disabling all testing processes
+  D. Using only legacy deployment methods
+
+
+Question 30: What is crucial for optimizing training on Cisco HyperFabric?
+  A. Using only a single GPU for training
+  B. Efficiently distributing the training workload across multiple nodes and GPUs
+  C. Limiting the dataset size
+  D. Running training jobs without monitoring
+
+
+Question 31: What are key performance indicators (KPIs) for monitoring AI pipelines?
+  A. Server uptime only
+  B. Training time, inference latency, accuracy, and resource utilization
+  C. Network cable length
+  D. Number of physical servers
+
+
+Question 32: What is a benefit of using Cisco HyperFabric's unified monitoring capabilities?
+  A. It isolates monitoring data to individual components only.
+  B. It provides a single pane of glass for observing the entire AI infrastructure.
+  C. It requires manual data collection from each device.
+  D. It does not track any performance metrics.
+
+
+Question 33: What is the primary function of the management plane in Cisco HyperFabric?
+  A. To execute AI training workloads directly
+  B. To provide centralized control, configuration, and monitoring of the AI infrastructure
+  C. To store large AI datasets
+  D. To act as a network switch
+
+
+Question 34: What kind of data is typically collected for performance monitoring and telemetry in HyperFabric?
+  A. Only user login attempts
+  B. Time-series metrics related to compute, network, storage, and GPU utilization
+  C. Randomly generated numbers
+  D. Operating system configuration files
+
+
+Question 35: Why is log aggregation important for troubleshooting AI infrastructure?
+  A. To delete unnecessary log files
+  B. To centralize logs from various components for easier analysis and correlation
+  C. To increase the complexity of troubleshooting
+  D. To prevent any system from generating logs
+
+
+Question 36: In a scenario where a Compute Node Failure occurs, what is a crucial first step in troubleshooting?
+  A. Immediately replace all network cables
+  B. Isolate the failed node and check its status and logs
+  C. Reboot the entire cluster without investigation
+  D. Ignore the failure and hope it resolves itself
+
+
+Question 37: What is a common cause for GPU not being detected or underutilized?
+  A. Overly aggressive resource allocation
+  B. Incorrect driver installation or configuration, or software scheduling issues
+  C. Excessive network bandwidth
+  D. Insufficient storage capacity
+
+
+Question 38: What should be done to optimize GPU utilization in AI training?
+  A. Reduce the batch size to a very small number
+  B. Ensure the workload is data-bound and not limited by other resources
+  C. Disable GPU acceleration
+  D. Use the slowest available GPU
+
+
+Question 39: Which networking technology is specifically designed for low-latency, high-throughput communication, beneficial for distributed AI training?
+  A. Gigabit Ethernet
+  B. Wi-Fi 6
+  C. InfiniBand
+  D. Bluetooth Low Energy
+
+
+Question 40: What is a key component of NVIDIA AI Enterprise that facilitates the deployment of AI/ML frameworks?
+  A. Hardware management tools
+  B. Pre-built AI/ML containers and SDKs
+  C. Operating system kernel
+  D. Virtualization software only
+
+
+Question 41: Which statement best describes the role of Kubernetes in managing AI resources like GPUs?
+  A. Kubernetes treats GPUs as generic compute resources.
+  B. Kubernetes requires custom schedulers to effectively allocate and manage GPU resources for AI workloads.
+  C. Kubernetes bypasses the need for GPU drivers.
+  D. Kubernetes is solely for managing storage.
+
+
+Question 42: What is a fundamental challenge in AI/ML infrastructure that Cisco HyperFabric aims to address?
+  A. Over-provisioning of network resources
+  B. Insufficient compute power for training massive models
+  C. Data bottlenecks and network inefficiencies hindering AI workflows
+  D. Lack of cloud integration options
+
+
+Question 43: How does Cisco leverage its networking expertise in the HyperFabric for AI solution?
+  A. By providing basic network connectivity only.
+  B. By ensuring high-performance, low-latency networking optimized for AI traffic patterns.
+  C. By disabling advanced network features.
+  D. By outsourcing all network management.
+
+
+Question 44: What level of integration does Cisco HyperFabric provide with NVIDIA AI Enterprise to enhance AI/ML capabilities?
+  A. Basic software compatibility
+  B. Deep integration for streamlined deployment and management
+  C. No integration, they are separate solutions
+  D. Limited integration, only supporting hardware
+
+
+Question 45: What is a critical aspect of data flow within HyperFabric for efficient AI training?
+  A. Maximizing data transfer latency
+  B. Ensuring high-speed and low-latency data movement between compute nodes and storage.
+  C. Restricting data access to a single node.
+  D. Storing all data on the compute nodes exclusively.
+
+
+Question 46: What is the role of containerization in managing AI/ML applications within HyperFabric?
+  A. It increases application complexity and dependencies.
+  B. It isolates applications and their dependencies, simplifying deployment and management.
+  C. It eliminates the need for Kubernetes.
+  D. It restricts access to GPU resources.
+
+
+Question 47: Which of the following is a critical factor for storage solutions in AI/ML environments?
+  A. Low read/write IOPS
+  B. High throughput and low latency access to large datasets
+  C. Limited parallel access capabilities
+  D. Slow data transfer speeds
+
+
+Question 48: What is a key benefit of MLOps practices on HyperFabric?
+  A. Slowing down model deployment cycles
+  B. Automating and accelerating the end-to-end machine learning lifecycle.
+  C. Reducing the need for monitoring.
+  D. Increasing the complexity of model versioning.
+
+
+Question 49: When troubleshooting network connectivity issues in HyperFabric for AI, what should be examined first?
+  A. Application code for bugs
+  B. Network device configurations, cable integrity, and interface status.
+  C. CPU utilization metrics.
+  D. Storage disk space.
+
+
+Question 50: What is the primary purpose of Cisco's unified management interface for HyperFabric?
+  A. To provide fragmented views of individual components.
+  B. To offer a centralized platform for managing and monitoring the entire AI infrastructure.
+  C. To exclusively manage network configurations.
+  D. To be used only for hardware installation.
+

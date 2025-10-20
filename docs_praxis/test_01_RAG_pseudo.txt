@@ -1,0 +1,41 @@
+START
+    // RAG Database Query Interface
+    // This script provides an interactive interface to query the RAG database.
+
+    // Main Function
+    FUNCTION main():
+        PRINT "Cisco AI PDF RAG Database Query Interface" banner
+        LOOP indefinitely:
+            GET user query
+            IF query is an exit command THEN
+                BREAK loop
+            END IF
+
+            results = query_rag_database(query)
+            IF results are returned THEN
+                display_results(results, query)
+            END IF
+        END LOOP
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION query_rag_database(query_text, num_results):
+        INITIALIZE ChromaDB client
+        GET the collection
+        QUERY the collection with the user's text
+        RETURN the results
+    END FUNCTION
+
+    FUNCTION display_results(results, query_text):
+        PRINT the query
+        FOR each result:
+            PRINT the document ID and relevance score
+            PRINT a preview of the document content
+        END FOR
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

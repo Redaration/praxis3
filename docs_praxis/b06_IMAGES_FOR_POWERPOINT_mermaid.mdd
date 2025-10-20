@@ -1,0 +1,13 @@
+graph TD
+    A[Start] --> B{Process Presentation};
+    B --> C{For Each Slide};
+    C --> D{Extract Content};
+    D --> E{Generate Image};
+    E -- API Call --> F{Runware API};
+    F -- Success --> G{Save Image};
+    F -- Failure --> H{Create Placeholder};
+    H --> G;
+    G --> I{Add Image to Slide};
+    I --> C;
+    C -- Loop End --> J{Save Presentation};
+    J --> K[End];

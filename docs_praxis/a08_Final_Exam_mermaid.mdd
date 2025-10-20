@@ -1,0 +1,9 @@
+graph TD
+    A[Start] --> B{Parse Outline};
+    B --> C{Get All Course Content};
+    C --> D{Generate Final Exam};
+    D --> E{Call LLM};
+    E --> F{Parse JSON Response};
+    F --> G{Format Exam & Key};
+    G --> H{Save Exam & Key Files};
+    H --> I[End];

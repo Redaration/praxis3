@@ -1,0 +1,71 @@
+# Quiz for 7: Automation and Programmability
+
+Question 1: What is the primary purpose of the SONiC Management APIs?
+  A. To provide a graphical user interface for network management.
+  B. To expose network configuration and operational data for programmatic access.
+  C. To exclusively facilitate secure shell (SSH) connections to SONiC devices.
+  D. To generate detailed network topology diagrams.
+
+
+Question 2: For high-performance, streaming telemetry in SONiC, which API is primarily recommended?
+  A. REST API
+  B. NETCONF
+  C. gRPC
+  D. SNMP
+
+
+Question 3: When using the REST API to interact with SONiC, what is the typical data format for requests and responses?
+  A. XML
+  B. YAML
+  C. CSV
+  D. JSON
+
+
+Question 4: What is the function of YANG in the context of SONiC?
+  A. A protocol for directly controlling network devices via a command-line interface.
+  B. A data modeling language used to define the structure of network configuration and state data.
+  C. A tool for visualizing network traffic flow.
+  D. An authentication method for accessing network devices.
+
+
+Question 5: SONiC's adoption of YANG models primarily contributes to which of the following?
+  A. Decreased network performance.
+  B. A vendor-specific, proprietary configuration language.
+  C. Consistent configuration management and interoperability with other YANG-compliant systems.
+  D. The elimination of the need for any command-line interaction.
+
+
+Question 6: What is a key characteristic of Ansible's architecture that makes it suitable for network automation?
+  A. It requires agents to be installed on every managed network device.
+  B. It relies on a complex client-server architecture with extensive setup on each device.
+  C. It has an agentless architecture, typically using SSH for communication.
+  D. It exclusively uses graphical interfaces for all configuration tasks.
+
+
+Question 7: When configuring Ansible to manage SONiC devices, what parameter is used in the inventory file to specify that the target is a SONiC device?
+  A. `ansible_os`: `sonic`
+  B. `ansible_network_os`: `sonic`
+  C. `connection`: `sonic`
+  D. `device_type`: `SONiC`
+
+
+Question 8: Which of the following is a benefit of using Python for SONiC automation, particularly when interacting with APIs?
+  A. Python is only suitable for basic command-line interactions.
+  B. Python's primary use is hardware configuration, not data retrieval.
+  C. Python's ability to interact with APIs (REST, gRPC) provides a robust and structured automation approach.
+  D. Python requires specialized hardware interfaces for network communication.
+
+
+Question 9: While interacting with SONiC via the CLI using Python, what is a potential drawback mentioned?
+  A. It offers too much flexibility, leading to inconsistent configurations.
+  B. The method can be fragile if the CLI output structure changes.
+  C. It requires the API to be explicitly enabled and configured.
+  D. It is generally slower than using gRPC for data retrieval.
+
+
+Question 10: What is the advantage of using gRPC over REST API for certain network automation tasks in SONiC, according to the module?
+  A. gRPC has a significantly lower learning curve and is easier to implement for basic tasks.
+  B. gRPC is primarily used for static configuration pushes, while REST is for streaming data.
+  C. gRPC is ideal for high-performance, streaming telemetry, and offers efficient data streaming.
+  D. gRPC uses JSON for data exchange, making it more human-readable than REST's typical formats.
+

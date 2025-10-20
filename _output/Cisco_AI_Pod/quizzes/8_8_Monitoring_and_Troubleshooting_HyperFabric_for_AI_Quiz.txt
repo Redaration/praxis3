@@ -1,0 +1,71 @@
+# Quiz for 8: Monitoring and Troubleshooting HyperFabric for AI
+
+Question 1: Which aspect of the HyperFabric Unified Management Interface is primarily designed for rapid visual assessment of the cluster's overall health and performance?
+  A. Command-Line Interface (CLI) Tools
+  B. REST API for Automation
+  C. Centralized Dashboard Views
+  D. Alerting and Notification System
+
+
+Question 2: When troubleshooting application crashes in HyperFabric, which of the following is generally the *first* step you should take?
+  A. Investigate segmentation faults or memory leaks.
+  B. Review application logs for error messages.
+  C. Check container image integrity.
+  D. Verify GPU allocation in Pods.
+
+
+Question 3: Which CLI tool is explicitly mentioned for managing Kubernetes resources within the HyperFabric environment?
+  A. `docker`
+  B. `ssh`
+  C. `kubectl`
+  D. `ansible`
+
+
+Question 4: The ability to programmatically access cluster state and integrate with other management tools highlights the primary benefit of which HyperFabric component?
+  A. Alerting and Notification System
+  B. Centralized Dashboard Views
+  C. REST API for Automation
+  D. CLI Tools
+
+
+Question 5: If a HyperFabric node is reported as 'Not Ready', what is a crucial step in diagnosing the issue?
+  A. Check application error logs.
+  B. Verify Kubelet status on the node.
+  C. Analyze network traffic between pods.
+  D. Review Kubernetes scheduling policies.
+
+
+Question 6: Which of the following is NOT listed as a type of system metric collected for performance monitoring in HyperFabric?
+  A. CPU and memory utilization
+  B. GPU temperature and power consumption
+  C. Application-specific business logic metrics
+  D. Network interface statistics
+
+
+Question 7: To effectively identify deviations from normal operating parameters, HyperFabric relies on establishing what?
+  A. Anomaly detection algorithms
+  B. Baselines
+  C. Alert severity levels
+  D. Log retention policies
+
+
+Question 8: When dealing with a Pod scheduling failure in HyperFabric, what is a common reason, besides resource insufficiency, that could prevent scheduling?
+  A. Application crash logs
+  B. Node affinity/anti-affinity constraints
+  C. GPU driver errors
+  D. Network latency
+
+
+Question 9: HyperFabric's centralized logging system aims to aggregate logs. What is a typical tool used as a 'log shipper' for this purpose?
+  A. Elasticsearch
+  B. Fluentd
+  C. Kubernetes API server
+  D. `nvidia-smi`
+
+
+Question 10: According to the best practices, when troubleshooting an issue, what is recommended as a systematic approach?
+  A. Start by testing complex custom solutions.
+  B. Randomly check various components until the problem is found.
+  C. Begin with the most likely causes and check connectivity first.
+  D. Immediately consult external support resources without internal investigation.
+

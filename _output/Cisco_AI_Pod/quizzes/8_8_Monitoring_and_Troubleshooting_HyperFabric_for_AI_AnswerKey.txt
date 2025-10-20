@@ -1,0 +1,12 @@
+# Answer Key for 8: Monitoring and Troubleshooting HyperFabric for AI
+
+Question 1: C
+Question 2: B
+Question 3: C
+Question 4: C
+Question 5: B
+Question 6: C
+Question 7: B
+Question 8: B
+Question 9: B
+Question 10: C

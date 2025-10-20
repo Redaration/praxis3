@@ -1,0 +1,71 @@
+# Quiz for 1: Introduction to Cisco HyperFabric for AI
+
+Question 1: Which factor is identified as a primary driver of the increasing demand for AI/ML infrastructure?
+  A. Decreasing data generation
+  B. Simplification of model complexity
+  C. Escalating model complexity and data volume
+  D. Reduced need for rapid iteration
+
+
+Question 2: What is a common infrastructure bottleneck hindering AI/ML projects, according to the module?
+  A. Over-provisioned compute resources
+  B. Efficient network communication
+  C. Fully optimized storage throughput
+  D. Lack of specialized AI solutions
+
+
+Question 3: The module suggests that infrastructure bottlenecks can lead to which negative impact on AI/ML projects?
+  A. Accelerated project timelines
+  B. Improved resource utilization
+  C. Delayed project timelines and suboptimal performance
+  D. Reduced operational costs
+
+
+Question 4: What is a key characteristic of Cisco's approach to AI/ML infrastructure solutions?
+  A. Focusing solely on hardware components
+  B. Promoting fragmented, best-of-breed integrations
+  C. Offering an integrated, holistic approach with end-to-end support
+  D. Prioritizing complex, custom deployments
+
+
+Question 5: Which of the following is a primary value driver for Cisco HyperFabric for AI?
+  A. Increasing infrastructure complexity
+  B. Hindering AI/ML development cycles
+  C. Accelerating AI/ML development and improving model training times
+  D. Focusing on batch processing over real-time applications
+
+
+Question 6: According to the module, what is Cisco HyperFabric for AI?
+  A. A purely software-based AI platform
+  B. A specialized network switch for AI clusters
+  C. An integrated hardware and software solution designed for AI/ML workloads
+  D. A cloud-based AI development environment
+
+
+Question 7: Which of these is listed as a target use case for Cisco HyperFabric for AI?
+  A. Traditional enterprise resource planning (ERP)
+  B. Legacy financial reporting systems
+  C. Large Language Model (LLM) training and Computer Vision development
+  D. Basic website hosting
+
+
+Question 8: How does Cisco HyperFabric for AI aim to improve AI model training?
+  A. By increasing model complexity beyond current capabilities
+  B. By enabling faster iteration cycles and supporting larger models
+  C. By reducing GPU utilization for cost savings
+  D. By delaying time to insight
+
+
+Question 9: In the context of AI inference, what benefit does Cisco HyperFabric for AI offer?
+  A. Increased latency for real-time applications
+  B. Reduced throughput for batch inference
+  C. Consistent performance and lower latency for real-time applications
+  D. Support only for edge AI deployment
+
+
+Question 10: Which aspect of MLOps pipelines does Cisco HyperFabric for AI aim to streamline?
+  A. Manual model deployment and infrequent retraining
+  B. Decentralized monitoring of ML workloads
+  C. Simplified deployment, automated retraining, and centralized monitoring
+  D. Version control exclusively for data
+

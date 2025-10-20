@@ -1,0 +1,55 @@
+START
+    // PowerPoint Generator from Course Outline
+    // This script creates a PowerPoint presentation from a course outline.
+
+    // Initialization
+    IMPORT necessary libraries and custom modules
+    DEFINE constants for file paths and slide generation
+
+    // Main Function
+    FUNCTION main():
+        PRINT "Course PowerPoint Generator" banner
+        DETERMINE file paths based on current directory
+        CHECK for a template file
+        PARSE the course outline file
+
+        PREPARE slide data for all slides
+        GENERATE all slide images in parallel
+        CREATE a new presentation or use a template
+        ADD a title slide
+        ADD content slides with pre-generated images
+        SAVE the presentation
+
+        GENERATE slide snapshots for Markdown export
+        GENERATE and save a Markdown version of the presentation
+        ADD speaker notes to the presentation
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION parse_outline(file_path):
+        READ and PARSE the outline file
+        RETURN a nested dictionary and the course title
+    END FUNCTION
+
+    FUNCTION prepare_slides_data(outline_data, max_slides):
+        PREPARE data for each slide (title, content, color)
+        RETURN list of slide data dictionaries
+    END FUNCTION
+
+    FUNCTION generate_slide_images_parallel(slides_data, batch_size):
+        GENERATE all enhanced prompts in a single batch
+        GENERATE images from prompts in parallel batches
+        RETURN dictionary of slide titles to image paths
+    END FUNCTION
+
+    FUNCTION add_slides_to_presentation(prs, slides_data, image_paths_by_title):
+        FOR each slide_data:
+            CREATE a content slide with the pre-generated image
+        END FOR
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

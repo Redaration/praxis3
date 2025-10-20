@@ -1,0 +1,8 @@
+graph TD
+    A[Start] --> B{Create Snapshot};
+    B --> C{Create Base Image};
+    C --> D{Draw Title};
+    D --> E{Add AI Image};
+    E --> F{Draw Content};
+    F --> G{Save Snapshot};
+    G --> H[End];

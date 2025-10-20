@@ -1,0 +1,71 @@
+# Quiz for 2: Cisco HyperFabric for AI Architecture
+
+Question 1: What is the primary role of GPU-accelerated servers within the Cisco HyperFabric for AI Compute Layer?
+  A. Managing network routing and traffic.
+  B. Performing computationally intensive AI model training and inference.
+  C. Providing high-speed storage solutions.
+  D. Orchestrating Kubernetes clusters.
+
+
+Question 2: Why are RDMA-capable interfaces (like RoCE) crucial in the Network Layer of Cisco HyperFabric for AI?
+  A. To increase network segmentation and security.
+  B. To enable higher network latency for critical data.
+  C. To bypass the CPU for faster data transfer between nodes, reducing latency.
+  D. To manage Quality of Service (QoS) policies more effectively.
+
+
+Question 3: In the Storage Layer, what is a key characteristic of high-performance parallel file systems as used in HyperFabric for AI?
+  A. They prioritize data resilience over access speed.
+  B. They are designed for single-user access and limited scalability.
+  C. They provide high throughput and IOPS for concurrent access by many nodes.
+  D. They rely solely on NVMe-based storage for all data operations.
+
+
+Question 4: Which element in the Management and Orchestration layer is responsible for automating the deployment and management of complex AI applications on Kubernetes?
+  A. Centralized management panel
+  B. Kubernetes Operators
+  C. Infrastructure provisioning tools
+  D. API-driven automation
+
+
+Question 5: How does NVIDIA AI Enterprise (NVAIE) simplify the adoption of AI within the HyperFabric architecture?
+  A. By providing a hardware-only solution with minimal software.
+  B. By offering a comprehensive, optimized software stack that includes frameworks and libraries.
+  C. By exclusively supporting custom-built AI models without pre-built components.
+  D. By requiring users to integrate all AI software components manually.
+
+
+Question 6: Which NVIDIA AI Enterprise component is designed to accelerate the inference phase of AI models by optimizing them for deployment?
+  A. CUDA Toolkit
+  B. NGC Catalog
+  C. TensorRT
+  D. RAPIDS suite
+
+
+Question 7: Within the HyperFabric software stack, how does Kubernetes facilitate the management of AI workloads?
+  A. By directly managing hardware resources like GPUs on individual nodes.
+  B. By providing orchestration capabilities for containerized applications, including scaling and deployment.
+  C. By handling the ingestion and pre-processing of raw data before it reaches the compute layer.
+  D. By offering a proprietary operating system optimized for AI.
+
+
+Question 8: When discussing data flow for training in HyperFabric, what is the significance of 'Pre-fetching data for GPUs'?
+  A. It ensures data is validated and cleaned before being sent to storage.
+  B. It aims to keep the GPUs constantly fed with data, minimizing idle time during model training.
+  C. It describes the process of saving model checkpoints after training.
+  D. It refers to the communication between multiple GPUs during training.
+
+
+Question 9: What is the primary benefit of using StatefulSets in Kubernetes within the context of HyperFabric for AI?
+  A. To manage stateless web applications.
+  B. To handle ephemeral, short-lived compute tasks.
+  C. To manage applications requiring stable network identifiers and persistent storage.
+  D. To facilitate horizontal scaling based on CPU usage.
+
+
+Question 10: Which aspect of the Inter-Component Communication in HyperFabric is crucial for efficient multi-node, multi-GPU training performance?
+  A. Management plane to worker node communication.
+  B. API calls for orchestration.
+  C. GPU-to-GPU communication, often facilitated by libraries like NCCL.
+  D. Networked access to models for inference.
+

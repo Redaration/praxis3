@@ -1,0 +1,22 @@
+graph TD
+    A[Start] --> B{generate_all_speaker_notes}
+    B --> C{Prepare Slide Content}
+    C --> D{Create Prompt}
+    D --> E{Call LLM}
+    E --> F{Parse and Return Notes}
+
+    G[Start] --> H{add_speaker_notes_to_presentation}
+    H --> I{Load Presentation}
+    I --> J{For each slide}
+    J --> K{Add Notes}
+    K --> J
+    J --> L{Save Presentation}
+
+    M[Start] --> N{process_presentation_with_notes}
+    N --> O{Generate Notes}
+    O --> P{Add Notes to Presentation}
+
+    Q[Start] --> R{main}
+    R --> S{Get Paths and Check Files}
+    S --> T{Parse Outline}
+    T --> U{process_presentation_with_notes}

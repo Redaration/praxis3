@@ -1,0 +1,12 @@
+# Answer Key for 1: Introduction to Cisco HyperFabric for AI
+
+Question 1: C
+Question 2: D
+Question 3: C
+Question 4: C
+Question 5: C
+Question 6: C
+Question 7: C
+Question 8: B
+Question 9: C
+Question 10: C

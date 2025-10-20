@@ -1,0 +1,30 @@
+FUNCTION create_title_slide(prs, title_text):
+    CREATE and FORMAT title slide
+
+FUNCTION create_content_slide(prs, title_text, bullet_points, title_color, generate_images):
+    CREATE and FORMAT content slide
+    IF generate_images, GENERATE and ADD image
+
+FUNCTION parse_outline(file_path):
+    PARSE and RETURN course outline from text file
+
+FUNCTION prepare_slides_data(outline_data, max_slides):
+    PREPARE and RETURN list of slide data from outline
+
+FUNCTION generate_slide_images_parallel(slides_data, batch_size):
+    GENERATE and RETURN dictionary of slide images in parallel
+
+FUNCTION generate_presentation(outline_data, template_path, course_title):
+    GENERATE image prompts
+    CREATE presentation
+    PREPARE slide data
+    GENERATE slide images in parallel
+    CREATE slides and ADD images
+    RETURN presentation
+
+FUNCTION main():
+    PRINT welcome message
+    GET paths and CHECK for files
+    PARSE outline
+    GENERATE and SAVE presentation
+    IF speaker notes module available, GENERATE and ADD notes

@@ -1,0 +1,49 @@
+START
+    // Speaker Notes Generation Module
+    // This module generates speaker notes for PowerPoint slides.
+
+    // Initialization
+    IMPORT necessary libraries and custom modules
+
+    // Main Function
+    FUNCTION process_presentation_with_notes(outline_data, pptx_file, max_slides):
+        IF outline_data is not provided THEN
+            EXTRACT slide content directly from the PowerPoint file
+        ELSE
+            GENERATE slides_info from the outline_data
+        END IF
+
+        all_notes = generate_all_speaker_notes(slides_info, max_slides)
+        IF all_notes is not empty THEN
+            add_speaker_notes_to_presentation(pptx_file, all_notes)
+            RETURN True
+        ELSE
+            RETURN False
+        END IF
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION generate_all_speaker_notes(slides_info, max_slides):
+        PREPARE a single batch prompt for all slides
+        CALL the LLM to generate speaker notes for all slides
+        PARSE the JSON response and cache the notes
+        RETURN dictionary of slide titles to speaker notes
+    END FUNCTION
+
+    FUNCTION add_speaker_notes_to_presentation(pptx_file, slide_notes_dict):
+        LOAD the presentation
+        FOR each slide:
+            FIND the slide title
+            IF notes exist for the title THEN
+                ADD the notes to the slide's notes page
+            END IF
+        END FOR
+        SAVE the presentation
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        PARSE the outline file
+        process_presentation_with_notes()
+    END IF
+END

@@ -1,0 +1,12 @@
+graph TD
+    A[Start] --> B{main}
+    B --> C{Print Welcome}
+    C --> D{Initialize system_prompt}
+    D --> E{Loop}
+    E --> F{Get Input}
+    F --> G{Handle Commands}
+    G --> H{Valid Question?}
+    H -- Yes --> I{Call LLM}
+    I --> J{Print Response}
+    J --> E
+    H -- No --> E

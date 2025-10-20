@@ -1,0 +1,111 @@
+START
+    // Image Generation Module for Course Presentations
+    // This module handles image prompt generation and image creation for presentation slides.
+
+    // Configuration
+    IMAGE_WIDTH = 512
+    IMAGE_HEIGHT = 1024
+    DEFAULT_IMAGE_DIR = "slide_images"
+    config = {
+        "image_dir": DEFAULT_IMAGE_DIR,
+        "prompt_style": "professional business",
+        "focus": "people and technology concepts with an exciting and modern design",
+        "color_scheme": "modern corporate look"
+    }
+
+    // Initialization
+    FUNCTION setup_environment():
+        IMPORT LLM module dynamically
+        SETUP output directory
+        CREATE image directory if it doesn't exist
+    END FUNCTION
+
+    FUNCTION get_current_directory():
+        READ "current_directory.txt"
+        RETURN directory path
+    END FUNCTION
+
+    // Core Logic
+    FUNCTION generate_all_image_prompts(outline_data, max_slides):
+        PRINT "Preparing slide content for batch prompt generation..."
+        slides_info = extract_slide_info(outline_data, max_slides)
+
+        system_prompt = "You are an expert AI image prompt engineer..."
+        user_prompt = "Generate unique image prompts for each of these presentation slides: [slides_json]"
+
+        TRY
+            enhanced_prompts_json = call_llm(user_prompt, system_prompt)
+            save_prompts_to_file(enhanced_prompts_json)
+            prompt_cache = parse_json(enhanced_prompts_json)
+        CATCH Exception
+            PRINT "Error generating enhanced prompts"
+            prompt_cache = create_fallback_prompts(slides_info)
+        END TRY
+
+        RETURN prompt_cache
+    END FUNCTION
+
+    FUNCTION generate_slide_images_parallel(slides_data, batch_size):
+        PRINT "Preparing to generate images for slides"
+        image_paths_by_title = {}
+        existing_files = get_existing_images()
+
+        FOR each slide in slides_data:
+            image_filename = create_numeric_filename(slide_number)
+            output_path = image_dir + image_filename
+
+            IF image already exists THEN
+                PRINT "Image already exists"
+            ELSE
+                prompt = get_enhanced_prompt(slide["title"], slide["content"])
+                PRINT "Generating image for slide"
+                TRY
+                    generate_image(prompt, output_path)
+                CATCH Exception
+                    PRINT "Error generating image"
+                END TRY
+            END IF
+
+            IF image exists THEN
+                image_paths_by_title[slide["title"]] = output_path
+            END IF
+        END FOR
+
+        RETURN image_paths_by_title
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION extract_slide_info(outline_data, max_slides):
+        EXTRACT slide titles and content from the outline
+        RETURN list of slide dictionaries
+    END FUNCTION
+
+    FUNCTION get_enhanced_prompt(slide_title, slide_content):
+        IF slide_title in prompt_cache THEN
+            RETURN prompt_cache[slide_title]
+        ELSE
+            RETURN create_fallback_prompt(slide_title)
+        END IF
+    END FUNCTION
+
+    FUNCTION generate_image_for_slide(slide_title, slide_content):
+        prompt = get_enhanced_prompt(slide_title, slide_content)
+        safe_title = sanitize_filename(slide_title)
+        image_path = image_dir + "slide_" + safe_title + ".png"
+
+        TRY
+            image_files = generate_image(prompt, image_path)
+            RETURN first image path
+        CATCH Exception
+            PRINT "Error generating image"
+            RETURN None
+        END TRY
+    END FUNCTION
+
+    // Main Execution
+    IF script is run directly THEN
+        main()
+    END IF
+
+    setup_environment()
+END

@@ -1,0 +1,12 @@
+# Answer Key for 3: Deploying Cisco HyperFabric for AI
+
+Question 1: D
+Question 2: B
+Question 3: B
+Question 4: C
+Question 5: C
+Question 6: B
+Question 7: B
+Question 8: B
+Question 9: B
+Question 10: C

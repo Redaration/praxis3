@@ -1,0 +1,71 @@
+# Quiz for 7: Managing AI/ML Workflows on HyperFabric
+
+Question 1: When containerizing an AI application for deployment on HyperFabric, which practice is crucial for optimizing image size and build time?
+  A. Including all possible dependencies upfront
+  B. Using minimal base images and multi-stage builds
+  C. Copying the entire project directory into the container
+  D. Relying solely on runtime dependency resolution
+
+
+Question 2: For deploying a stateless AI inference service on HyperFabric, which Kubernetes resource type is most appropriate?
+  A. StatefulSet
+  B. Job
+  C. CronJob
+  D. Deployment
+
+
+Question 3: When configuring resource requirements for an AI workload on HyperFabric, why is it important to specify resource requests and limits?
+  A. To ensure the application always uses the maximum available resources
+  B. To prevent other applications from consuming resources
+  C. For efficient scheduling by Kubernetes and to prevent resource hogging
+  D. To guarantee a fixed amount of GPU memory regardless of the workload
+
+
+Question 4: According to HyperFabric's best practices, how should sensitive information like API keys be managed?
+  A. Stored in ConfigMaps and mounted as volumes
+  B. Baked directly into the Dockerfile
+  C. Managed using Kubernetes Secrets and injected as environment variables or volumes
+  D. Stored in plain text configuration files
+
+
+Question 5: What is the primary benefit of using Kubernetes StatefulSets for AI/ML workloads on HyperFabric?
+  A. They are ideal for easily scaling stateless web services.
+  B. They provide stable network identities and persistent storage for stateful applications.
+  C. They are designed for executing one-off batch processing tasks.
+  D. They enable scheduled execution of tasks at specific times.
+
+
+Question 6: Which MLOps concept directly addresses the need for tracking model performance, dependencies, and parameters during experimentation?
+  A. Data versioning
+  B. Feature stores
+  C. Experiment tracking
+  D. Model registries
+
+
+Question 7: When building CI/CD pipelines for ML on HyperFabric, what is a common and crucial stage after model training and evaluation?
+  A. Data preprocessing refinement
+  B. Deployment to inference endpoints
+  C. Code refactoring
+  D. Infrastructure scaling
+
+
+Question 8: In distributed training, what is the core idea behind Data Parallelism?
+  A. Splitting a large model across multiple devices.
+  B. Replicating the model on each worker and distributing the data among them.
+  C. Combining data and model parallelism techniques.
+  D. Sending data sequentially to a single, powerful processing unit.
+
+
+Question 9: Which of the following is a key performance indicator (KPI) for monitoring AI pipeline inference, focusing on user experience?
+  A. Training Time
+  B. GPU Utilization
+  C. Inference Latency
+  D. Throughput
+
+
+Question 10: When troubleshooting a performance bottleneck in an AI pipeline on HyperFabric, analyzing which aspect helps determine if the issue lies within the ML framework or application code?
+  A. Network bandwidth utilization
+  B. Container resource usage
+  C. ML-specific metrics and experiment tracking logs
+  D. Kubernetes cluster health
+

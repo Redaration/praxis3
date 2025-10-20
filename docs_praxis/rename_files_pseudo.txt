@@ -1,0 +1,22 @@
+START
+    // Rename Files Script
+    // This script renames all Python files in a directory to have a specified prefix.
+
+    // Main Function
+    FUNCTION rename_files_with_prefix(directory, prefix):
+        GET list of Python files in the directory
+        REMOVE this script from the list
+        CONFIRM with the user before renaming
+
+        FOR each file in the list:
+            IF the file does not already have the prefix THEN
+                RENAME the file
+            END IF
+        END FOR
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        rename_files_with_prefix(current_directory, "a")
+    END IF
+END

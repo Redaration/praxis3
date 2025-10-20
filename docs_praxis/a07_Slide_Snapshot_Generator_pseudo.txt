@@ -1,0 +1,38 @@
+START
+    // Slide Snapshot Generator
+    // This module creates enhanced slide snapshots for Markdown exports.
+
+    // Constants
+    DEFINE image dimensions, font sizes, colors, and padding
+
+    // Main Function
+    FUNCTION create_slide_snapshot(title, content, ai_image_path, output_path, template_path):
+        CREATE a base image (from template or blank)
+        CREATE a drawing context
+        LOAD fonts
+        DRAW the title at the top
+
+        IF an AI-generated image is available THEN
+            RESIZE and PASTE the image onto the slide
+        END IF
+
+        DRAW the content bullet points with text wrapping
+        SAVE the resulting image
+        RETURN the path to the snapshot
+    END FUNCTION
+
+    FUNCTION generate_snapshots_for_presentation(slides_data, ai_image_paths, output_dir, template_path):
+        FOR each slide_data:
+            GET the AI image path
+            GENERATE a safe filename
+            create_slide_snapshot()
+            ADD the snapshot path to a dictionary
+        END FOR
+        RETURN the dictionary of snapshot paths
+    END FUNCTION
+
+    // Example Usage
+    IF script is run directly THEN
+        create_slide_snapshot() for a test case
+    END IF
+END

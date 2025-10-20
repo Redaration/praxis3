@@ -1,0 +1,73 @@
+START
+    DEFINE constants for file names, directories, and API settings.
+    
+    FUNCTION get_current_directory():
+        READ "current_directory.txt" to get the base directory path.
+        RETURN directory path.
+    
+    FUNCTION setup_directories(base_dir):
+        CREATE "slide_snapshots", "audio", and "video" subdirectories within the base directory if they don't exist.
+        RETURN a dictionary of paths.
+
+    FUNCTION extract_slides_as_images(output_dir):
+        FIND all PNG or JPG files starting with "snapshot_" in the "slide_snapshots" directory.
+        SORT the found image files numerically based on their filenames.
+        RETURN a list of full paths to the slide images.
+
+    FUNCTION load_speaker_notes(notes_file):
+        READ "06_Enhanced_Notes.txt".
+        PARSE the content as JSON.
+        RETURN a dictionary of speaker notes.
+
+    FUNCTION match_slides_to_notes(slide_image_paths, notes_data):
+        MATCH each slide image to its corresponding speaker note based on their order.
+        RETURN a list of (slide_image_path, speaker_note) tuples.
+
+    FUNCTION setup_text_to_speech_client():
+        INITIALIZE Google Cloud Text-to-Speech client using service account credentials.
+        RETURN the client object.
+
+    FUNCTION generate_audio_for_slide(text, output_file, tts_client):
+        IF text is not empty:
+            CALL Google Cloud TTS API to synthesize audio from the text.
+            SAVE the audio to output_file.
+            IF Google Cloud TTS fails:
+                ATTEMPT to use local `pyttsx3` library for TTS.
+                IF `pyttsx3` fails:
+                    ATTEMPT to use macOS `say` command for TTS.
+            RETURN the path to the generated audio file.
+        ELSE:
+            RETURN None.
+
+    FUNCTION create_slide_videos(slide_matches, audio_dir):
+        INITIALIZE TTS client.
+        FOR each (slide_path, note_text) in slide_matches:
+            GENERATE audio for the note_text.
+            DETERMINE the duration of the audio clip.
+            CREATE a video clip for the slide image with the generated audio.
+            STORE the video clip data.
+        RETURN a list of slide video data.
+
+    FUNCTION create_final_video(slide_data, output_path):
+        CONCATENATE all individual slide video clips into a single video file.
+        SAVE the final video to output_path.
+        
+    FUNCTION main(max_slides):
+        GET the current directory.
+        SETUP the necessary subdirectories.
+        FIND the PowerPoint file in the current directory.
+        EXTRACT slide images from the "slide_snapshots" directory.
+        LOAD speaker notes.
+        MATCH slides to notes.
+        IF max_slides is provided, limit the number of slides.
+        CREATE individual video clips for each slide with audio.
+        CREATE the final concatenated video.
+
+    ENTRY POINT:
+        PARSE command-line arguments for --max-slides and --rename-slides.
+        CHECK for required software dependencies.
+        IF --rename-slides is used:
+            CALL rename_slides function.
+        ELSE:
+            CALL main function.
+END

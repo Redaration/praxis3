@@ -1,0 +1,8 @@
+FUNCTION test_generate_slide_image():
+    DEFINE slide content and output path
+    CREATE prompt from slide content
+    CALL generate_image
+    PRINT success or failure message
+
+FUNCTION main():
+    CALL test_generate_slide_image

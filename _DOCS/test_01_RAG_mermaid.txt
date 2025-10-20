@@ -1,0 +1,26 @@
+graph TD
+    A[Start] --> B{query_rag_database}
+    B --> C{Initialize and Get Collection}
+    C --> D{Collection Empty?}
+    D -- Yes --> E[Print Error and Return]
+    D -- No --> F{Query Collection}
+    F --> G[Return Results]
+
+    H[Start] --> I{display_results}
+    I --> J{No Results?}
+    J -- Yes --> K[Print Message and Return]
+    J -- No --> L{Print Query and Results}
+
+    M[Start] --> N{main}
+    N --> O[Print Welcome]
+    O --> P{Loop}
+    P --> Q{Get Query}
+    Q --> R{Exit?}
+    R -- Yes --> S[Break]
+    R -- No --> T{Query Not Empty?}
+    T -- No --> P
+    T -- Yes --> U{query_rag_database}
+    U --> V{Results?}
+    V -- Yes --> W{display_results}
+    W --> P
+    V -- No --> P

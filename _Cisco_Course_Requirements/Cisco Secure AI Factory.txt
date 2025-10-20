@@ -1,0 +1,70 @@
+﻿Cisco Secure AI Factory Fundamentals
+Class Size:
+Who Should Attend
+* Security Architects
+* AI/ML Engineers
+* Data Scientists
+* Network Security Engineers
+* SOC Analysts
+* Incident Responders
+* DevOps Engineers
+Course Description
+This course provides a comprehensive overview of the Cisco Secure AI Factory with NVIDIA, an integrated architecture designed to simplify the deployment, management, and security of AI infrastructure at any scale. The goal of this course is to understand how security is embedded at every layer of the AI stack, from applications to infrastructure, leveraging Cisco's security solutions and NVIDIA's AI platform to deliver secure, scalable, and high-performance AI environments. This course will include hands-on labs where you will configure and administer key security features within the Cisco Secure AI Factory.
+Learning Objectives
+* Cisco Secure AI Factory Overview, Use Cases, and Business Drivers
+* Understand the importance of security across the entire AI lifecycle
+* Cisco Secure AI Factory Architecture and Core Components
+* Deploy and secure AI infrastructure using validated designs
+* Configure and manage security solutions like Cisco AI Defense and Hypershield
+* Implement real-time threat detection and runtime protection for AI workloads
+* Monitor and troubleshoot security events in an AI Factory environment
+* Integrate security into AI/ML development and deployment workflows (MLSecOps)
+* Ensure compliance and data privacy for AI applications
+Course Outline
+Module 1: Introduction to Secure AI Factories
+* The Evolving Threat Landscape for AI
+* Why Security is Paramount for AI Adoption
+* Cisco Secure AI Factory with NVIDIA: Vision and Value Proposition
+* Key Use Cases and Industry Applications
+Module 2: Cisco Secure AI Factory Architecture
+* Core Architectural Principles: Security at Every Layer
+* Integration of Cisco Security Solutions (AI Defense, Hypershield, Firewalls)
+* NVIDIA AI Enterprise and BlueField DPUs in the Secure AI Factory
+* Data Flow, Policy Enforcement, and Unified Management
+Module 3: Deploying Secure AI Infrastructure
+* Planning and Design Considerations for Secure AI Workloads
+* Ready-to-Deploy vs. Build-Your-Own Deployment Options
+* Initial Setup and Configuration of Secure AI Factory Components
+* Network Segmentation and Zero Trust Principles for AI
+Module 4: Securing the AI Application Lifecycle (Cisco AI Defense)
+* AI Application Security Risks (Prompt Injection, Data Privacy, Toxicity)
+* Integrating Cisco AI Defense into CI/CD Workflows
+* Automated Vulnerability Testing for AI Models
+* Runtime Security and Policy Enforcement for AI Applications
+Module 5: Pervasive Infrastructure Security (Cisco Hypershield)
+* Microsegmentation and Distributed Security Enforcement
+* Hypershield Integration with NVIDIA BlueField DPUs
+* Real-time Threat Detection at Network, Server, and Application Layers
+* Preventing Lateral Movement and Containing Threats
+Module 6: Unified Security Management and Compliance
+* Centralized Visibility and Control with Cisco Security Cloud
+* Consistent Policy Enforcement Across Hybrid Environments
+* Logging, Auditing, and Reporting for AI Security
+* Compliance with AI Security Standards (NIST, OWASP LLM Top 10, MITRE ATLAS)
+Module 7: Operationalizing Security for AI (MLSecOps)
+* Integrating Security into MLOps Pipelines
+* Automated Remediation and Incident Response for AI Threats
+* Collaboration Between Security, AI, and DevOps Teams
+* Best Practices for Secure AI Operations
+Module 8: Monitoring and Troubleshooting Secure AI Factory
+* AI-Driven Monitoring and Predictive Analytics for Security
+* Analyzing Security Logs and Alerts from AI Workloads
+* Troubleshooting Security Policy Enforcement Issues
+* Optimizing Security Performance and Resource Utilization
+Lab 1: Initial Deployment and Configuration of a Secure AI Factory Component
+Lab 2: Implementing Cisco AI Defense for AI Application Security
+Lab 3: Configuring Microsegmentation with Cisco Hypershield
+Lab 4: Analyzing Security Alerts and Responding to Simulated AI Threats
+Lab 5: Integrating Security into an AI Model Deployment Pipeline
+Lab 6: Monitoring Secure AI Factory Health and Performance
+Lab 7: Troubleshooting a Security Incident within the AI Factory

@@ -1,0 +1,344 @@
+# Final Exam: Title: SONiC NOS Fundamentals
+
+Question 1: What does SONiC stand for?
+  A. Software-defined Open Network Communication Infrastructure
+  B. Software for Open Networking in the Cloud
+  C. Sonic Open Network Software
+  D. Standardized Open Network Computing
+
+
+Question 2: Which of the following is NOT a primary goal of SONiC?
+  A. Vendor neutrality
+  B. Simplified hardware management
+  C. Proprietary feature development
+  D. Open and community-driven development
+
+
+Question 3: Who originally developed SONiC?
+  A. Cisco
+  B. Juniper Networks
+  C. Arista Networks
+  D. Microsoft
+
+
+Question 4: What is the main purpose of the SONiC System Services (SWSS)?
+  A. To manage hardware ASIC configurations
+  B. To provide a unified interface for network applications
+  C. To act as the primary network routing engine
+  D. To handle user authentication and authorization
+
+
+Question 5: The Synchronizer Daemon (Syncd) in SONiC is responsible for:
+  A. Orchestrating Docker containers
+  B. Synchronizing the Config DB with the running state
+  C. Performing BGP route calculations
+  D. Capturing network traffic
+
+
+Question 6: What is the role of the SONiC Abstraction Interface (SAI)?
+  A. Defines how applications interact with the CLI
+  B. Provides a hardware-agnostic API for network programming
+  C. Manages the logging and monitoring services
+  D. Facilitates communication between microservices
+
+
+Question 7: Where is the network configuration primarily stored in SONiC?
+  A. Running configuration files on disk
+  B. Redis-based Configuration Database
+  C. Directly in the SWSS service
+  D. In individual container configuration files
+
+
+Question 8: Which component is responsible for managing routing protocols like FRR in SONiC?
+  A. Orchagent
+  B. Syncd
+  C. FDB Agent
+  D. FRR application container
+
+
+Question 9: SONiC's architecture is characterized by:
+  A. A monolithic, single-process design
+  B. A microservices-based design using containers
+  C. A kernel-module-centric approach
+  D. A client-server architecture with a central controller
+
+
+Question 10: Containerization in SONiC, primarily using Docker, provides which benefit?
+  A. Tighter coupling between services
+  B. Enhanced resource sharing at the expense of isolation
+  C. Isolation, dependency management, and simplified upgrades
+  D. Elimination of the need for a Linux kernel
+
+
+Question 11: How does SONiC facilitate network programmability?
+  A. By relying solely on proprietary CLI commands
+  B. Through APIs like REST and gRPC, and YANG models
+  C. By exposing kernel-level network parameters directly
+  D. By limiting configuration to manual CLI interactions
+
+
+Question 12: What is the typical flow when a configuration is updated in SONiC?
+  A. CLI command -> Orchagent -> Config DB -> Syncd -> SAI
+  B. Config DB -> CLI command -> Syncd -> Orchagent -> SAI
+  C. Syncd -> Config DB -> Orchagent -> SAI -> CLI command
+  D. SAI -> Orchagent -> Config DB -> Syncd -> CLI command
+
+
+Question 13: Which installation method relies on a pre-boot execution environment?
+  A. USB Installation
+  B. ONIE
+  C. PXE Boot Installation
+  D. Virtual Environment Installation
+
+
+Question 14: ONIE (Open Network Install Environment) is responsible for:
+  A. Running the core SONiC operating system services
+  B. Providing a bootloader and installer for network operating systems
+  C. Managing the BGP routing table
+  D. Configuring the network interfaces
+
+
+Question 15: During the initial setup of SONiC, what is a critical step after the first boot?
+  A. Uninstalling all containerized applications
+  B. Configuring essential network settings like IP address and gateway
+  C. Manually compiling the Linux kernel
+  D. Disabling the Config DB service
+
+
+Question 16: What is the common command prefix for configuration-related tasks in SONiC's CLI?
+  A. `show`
+  B. `config`
+  C. `debug`
+  D. `system`
+
+
+Question 17: To configure a Link Aggregation Group (LAG) or PortChannel in SONiC, which command is typically used?
+  A. `config interface ethernet <port> description <desc>`
+  B. `config portchannel add <lag_name> <member_ports>`
+  C. `config vlan add <vlan_id>`
+  D. `config route add <prefix> <next_hop>`
+
+
+Question 18: In SONiC, how are VLANs typically assigned to physical ports for access mode?
+  A. By configuring the port as a trunk port with the VLAN
+  B. By using the `config vlan member add <vlan_id> <port>` command
+  C. By configuring the IP address on the VLAN interface
+  D. By adding the port to a PortChannel that is assigned to the VLAN
+
+
+Question 19: Which command is used to configure a static route in SONiC?
+  A. `config interface ip add ...`
+  B. `config route add ...`
+  C. `config vlan ip add ...`
+  D. `config lacp ...`
+
+
+Question 20: What is the default routing daemon commonly used in SONiC for dynamic routing?
+  A. Quagga
+  B. VyOS
+  C. FRR (Free Range Routing)
+  D. Cisco IOS
+
+
+Question 21: To enable BGP peering with a neighbor in SONiC, you would typically configure:
+  A. VLANs and PortChannels
+  B. IP addresses and static routes
+  C. BGP neighbor statements with AS numbers and peer IP addresses
+  D. ACLs and QoS policies
+
+
+Question 22: EVPN-VXLAN is a technology used for:
+  A. Enhancing Layer 2 security through MACsec
+  B. Creating scalable Layer 2 overlay networks over Layer 3 fabrics
+  C. Providing advanced Quality of Service features
+  D. Simplifying static routing configurations
+
+
+Question 23: In EVPN-VXLAN, VXLAN is used to:
+  A. Establish BGP control plane peering
+  B. Encapsulate Layer 2 frames within Layer 3 UDP packets
+  C. Define IP routing policies
+  D. Assign QoS priorities to traffic
+
+
+Question 24: Which protocol is typically used as the control plane for EVPN-VXLAN?
+  A. OSPF
+  B. IS-IS
+  C. BGP
+  D. RIP
+
+
+Question 25: Attaching a VLAN to a Virtual Network Identifier (VNI) in SONiC is crucial for:
+  A. Configuring link aggregation
+  B. Defining the mapping between Layer 2 segments and VXLAN tunnels
+  C. Applying access control lists
+  D. Setting up static routes
+
+
+Question 26: Quality of Service (QoS) in SONiC is primarily used to:
+  A. Increase the overall bandwidth of the network
+  B. Prioritize, shape, and police network traffic
+  C. Automatically assign IP addresses to devices
+  D. Segment the network into different broadcast domains
+
+
+Question 27: Access Control Lists (ACLs) in SONiC are used to:
+  A. Dynamically learn MAC addresses
+  B. Filter network traffic based on defined criteria
+  C. Automatically configure routing protocols
+  D. Monitor network link status
+
+
+Question 28: Which type of ACL in SONiC filters traffic based on MAC addresses?
+  A. L3/L4 ACL
+  B. Port ACL
+  C. MAC ACL
+  D. Ingress ACL
+
+
+Question 29: The SONiC Configuration Database (Config DB) stores configuration that is:
+  A. Currently active on the interfaces
+  B. Pending execution and not yet applied
+  C. A snapshot of the running state
+  D. Lost upon system reboot
+
+
+Question 30: What is the relationship between the running configuration and the Config DB in SONiC?
+  A. They are always identical
+  B. The Config DB holds the desired state, which Syncd applies to the running state
+  C. The running configuration is always pushed to the Config DB
+  D. The Config DB is a read-only copy of the running configuration
+
+
+Question 31: To back up the SONiC configuration, a common method is to:
+  A. Manually copy all configuration files from the filesystem
+  B. Export the configuration from the Config DB
+  C. Reboot the system to create a backup
+  D. Use the `show config startup` command only
+
+
+Question 32: SONiC's logging mechanism primarily relies on:
+  A. Writing logs directly to the kernel ring buffer
+  B. Centralized logging servers via syslog protocol
+  C. A systemd-journald based approach, with potential forwarding
+  D. Proprietary logging daemons for each service
+
+
+Question 33: Which protocol is commonly used for network telemetry in SONiC?
+  A. SNMP v1
+  B. TFTP
+  C. gNMI (gRPC Network Management Interface)
+  D. FTP
+
+
+Question 34: A typical SONiC software upgrade process involves:
+  A. Updating individual container images one by one
+  B. Replacing the entire operating system image and rebooting
+  C. Modifying kernel parameters only
+  D. Downloading new firmware directly to the ASIC
+
+
+Question 35: Before performing a SONiC software upgrade, what is a recommended pre-upgrade check?
+  A. Deleting all existing configuration
+  B. Ensuring sufficient disk space and backing up the current configuration
+  C. Disabling all network interfaces
+  D. Uninstalling all applications
+
+
+Question 36: SONiC's programmability is enhanced by its support for:
+  A. Only proprietary binary APIs
+  B. Standardized APIs like REST and gRPC, and YANG models
+  C. A network-specific scripting language
+  D. Direct manipulation of low-level hardware registers
+
+
+Question 37: What is YANG used for in the context of SONiC?
+  A. A protocol for transporting network data
+  B. A data modeling language for network configurations and state
+  C. A command-line interface parser
+  D. A container orchestration tool
+
+
+Question 38: Which automation tool is commonly integrated with SONiC for configuration management?
+  A. Chef
+  B. Puppet
+  C. Ansible
+  D. SaltStack
+
+
+Question 39: Python scripting can be used with SONiC for automation by:
+  A. Directly modifying the Linux kernel code
+  B. Interacting with SONiC via CLI commands or its APIs
+  C. Rewriting the entire SONiC operating system
+  D. Replacing the hardware ASIC with a software emulator
+
+
+Question 40: Which command is useful for troubleshooting interface status in SONiC?
+  A. `show route`
+  B. `show ip interface brief`
+  C. `show logs`
+  D. `show system info`
+
+
+Question 41: When analyzing logs in SONiC for troubleshooting, what should one look for?
+  A. Only informational messages
+  B. Error messages, warnings, and critical events
+  C. Successful connection logs only
+  D. Logs related to remote syslog configuration
+
+
+Question 42: A systematic approach to debugging network issues often involves:
+  A. Randomly changing configurations until the issue is resolved
+  B. Isolating the problem to a specific layer or component
+  C. Assuming the hardware is faulty without further testing
+  D. Restarting all network services simultaneously
+
+
+Question 43: What is a primary tool for capturing network packets on SONiC?
+  A. `ping`
+  B. `traceroute`
+  C. `tcpdump`
+  D. `ssh`
+
+
+Question 44: The SONiC ASIC support is facilitated through which abstraction layer?
+  A. SWSS
+  B. Config DB
+  C. SAI (SONiC Abstraction Interface)
+  D. Orchagent
+
+
+Question 45: Which component is responsible for translating the desired state from the Config DB into hardware configurations via SAI?
+  A. Syncd
+  B. FRR
+  C. orchagent
+  D. gNMI
+
+
+Question 46: To view the current BGP neighbor status in SONiC, what command would you likely use?
+  A. `show vlan`
+  B. `show ip route bgp`
+  C. `show bgp summary`
+  D. `show lldp`
+
+
+Question 47: What is the primary function of the `config database` CLI command?
+  A. To display the running configuration
+  B. To create new VLANs
+  C. To interact with the Redis-based configuration store
+  D. To restart network services
+
+
+Question 48: Consider a scenario where a port is down and not passing traffic. Which troubleshooting steps are most relevant initially?
+  A. Check BGP neighbor status and routing tables
+  B. Examine interface status, logs, and physical cabling
+  C. Analyze VXLAN tunnel encapsulation
+  D. Review QoS policies
+
+
+Question 49: Which of the following is a key hardware consideration when deploying SONiC?
+  A. CPU architecture of the management plane
+  B. Supported ASIC and its capabilities
+  C. Availability of a secondary power supply
+  D. Network interface card type in the end-user devices
+

@@ -1,0 +1,9 @@
+FUNCTION main():
+    PRINT welcome message and options
+    INITIALIZE system_prompt
+    LOOP:
+        GET user input
+        HANDLE commands (/system, /clear, /show, /exit)
+        IF valid question:
+            CALL LLM with question and system_prompt
+            PRINT response

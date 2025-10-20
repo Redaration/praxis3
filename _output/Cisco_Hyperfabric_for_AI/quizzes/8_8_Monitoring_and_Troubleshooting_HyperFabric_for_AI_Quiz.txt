@@ -1,0 +1,71 @@
+# Quiz for 8: Monitoring and Troubleshooting HyperFabric for AI
+
+Question 1: What is the primary function of the Unified Management Interface in HyperFabric for AI?
+  A. To exclusively manage network switch configurations.
+  B. To provide a centralized point for cluster health, resource management, and operations.
+  C. To only display real-time GPU utilization metrics.
+  D. To act as a dedicated software development kit for AI applications.
+
+
+Question 2: Which of the following is a key capability of the Unified Management Interface related to resource management?
+  A. Only viewing the number of compute nodes available.
+  B. Managing network switch configurations and firmware updates.
+  C. Providing insights into GPU allocation, utilization, and capacity planning.
+  D. Aggregating logs from external network devices only.
+
+
+Question 3: When examining the 'Monitoring and Analytics' section of the Unified Management Interface, what type of data analysis is typically supported?
+  A. Only real-time performance dashboards.
+  B. Log aggregation and searching, event correlation, and predictive analytics.
+  C. Configuration management of storage systems.
+  D. User interface customization and API access.
+
+
+Question 4: Which data collection method is characterized by devices continuously pushing data, offering lower overhead and real-time visibility?
+  A. SNMP polling MIBs.
+  B. Agent-based metrics.
+  C. Streaming Telemetry (e.g., gRPC, Netconf).
+  D. API-based data collection.
+
+
+Question 5: When monitoring compute nodes, which metric is crucial for understanding the processing load?
+  A. Disk I/O and IOPS.
+  B. CPU utilization and load.
+  C. Network interface statistics.
+  D. GPU memory usage.
+
+
+Question 6: In the context of network fabric metrics, what indicates potential congestion or flow control issues?
+  A. Port status and speed.
+  B. Packet counters.
+  C. Buffer utilization and PFC pause frames.
+  D. Latency measurements.
+
+
+Question 7: What is the primary purpose of time-series databases in performance monitoring?
+  A. To store configuration files and user access control lists.
+  B. To efficiently store timestamped metrics data optimized for time-based queries.
+  C. To manage and deploy AI workloads.
+  D. To provide a user interface for cluster health overviews.
+
+
+Question 8: Which of the following is a key benefit of structured logging in AI infrastructure?
+  A. It increases log file sizes significantly.
+  B. It makes logs easier to parse and analyze for troubleshooting.
+  C. It eliminates the need for log aggregation.
+  D. It is only relevant for network device logs.
+
+
+Question 9: In a 'Compute Node Failure' troubleshooting scenario, what is a common initial diagnostic step?
+  A. Analyzing application logs for errors.
+  B. Checking BMC (Baseboard Management Controller) and console logs.
+  C. Profiling GPU utilization.
+  D. Tuning network switch configurations.
+
+
+Question 10: When troubleshooting 'GPU Not Detected or Underutilized', what tool or metric is essential for diagnosing the issue?
+  A. Ping and traceroute.
+  B. Storage IOPS and latency.
+  C. NVIDIA-SMI output and Kubernetes device plugin configuration.
+  D. File system utilization.
+

@@ -1,0 +1,66 @@
+﻿SONiC NOS Fundamentals
+Class Size:
+Who Should Attend
+* Network Architects
+* Solution Architects
+* Network Engineers
+* System Administrators
+* Cloud Engineers
+Course Description
+This course provides a comprehensive overview of SONiC (Software for Open Networking in the Cloud) Network Operating System, and the open-source tools necessary for implementing and managing modern network infrastructure. The goal of this course is to understand how SONiC works, its architecture, and how it can be deployed, configured, and administered in various network environments. This course will also include hands-on labs where you will configure and administer key SONiC features.
+Learning Objectives
+* SONiC NOS Overview, Use Cases, and Business Drivers
+* SONiC System Architecture and Components
+* Deploy SONiC NOS on compatible hardware/virtual environments
+* Configure basic and advanced networking features in SONiC
+* Administer and manage SONiC devices
+* Monitor SONiC network workloads and performance
+* Implement automation and programmability with SONiC
+* Troubleshoot common SONiC issues
+* Understand SONiC's role in disaggregated networking
+Course Outline
+Module 1: What is SONiC NOS
+* SONiC Overview
+* Purpose, History, and Contributions
+* Why SONiC? (Disaggregation, Open Source, Cloud Scale)
+Module 2: SONiC Architecture
+* SONiC Components (SWSS, Syncd, SAI, etc.)
+* Architecture Overview
+* Containerized Microservices Approach
+* SONiC Communication Flows
+Module 3: Deploying SONiC
+* Hardware Considerations (ASIC support, platforms)
+* Installation Methods (ONIE, USB, PXE)
+* Initial Setup and Boot Process
+Module 4: Basic SONiC Configuration
+* Command Line Interface (CLI) Basics
+* Interface Configuration (Ethernet, PortChannel)
+* VLANs and Layer 2 Switching
+* IP Addressing and Static Routing
+Module 5: Advanced Networking with SONiC
+* Dynamic Routing Protocols (BGP, OSPF)
+* EVPN and VXLAN Overlays
+* Quality of Service (QoS)
+* Access Control Lists (ACLs)
+Module 6: SONiC Management and Monitoring
+* Configuration Management (Config DB, Running Config)
+* Logging and Syslog
+* SNMP and Telemetry
+* Software Upgrades and Downgrades
+Module 7: Automation and Programmability
+* REST API and gRPC
+* YANG Models
+* Ansible Integration for Configuration Management
+* Python Scripting for SONiC
+Module 8: Troubleshooting SONiC
+* Common Troubleshooting Commands
+* Log Analysis
+* Debugging Network Issues
+* Packet Capture and Analysis
+Lab 1: Environment Setup and Initial SONiC Deployment
+Lab 2: Basic Interface and VLAN Configuration
+Lab 3: Implementing Static and Dynamic IP Routing (BGP)
+Lab 4: Configuring EVPN VXLAN Overlay
+Lab 5: Monitoring SONiC Devices with Telemetry
+Lab 6: Automating SONiC Configuration with Ansible
+Lab 7: Troubleshooting Common Network Issues in SONiC

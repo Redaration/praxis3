@@ -1,0 +1,14 @@
+graph TD
+    A[Start] --> B{Main Loop};
+    B --> C{Get User Input};
+    C --> D{Check for Commands};
+    D -- '/exit' --> E[End];
+    D -- '/system' --> F{Set System Prompt};
+    F --> B;
+    D -- '/clear' --> G{Clear System Prompt};
+    G --> B;
+    D -- '/show' --> H{Show System Prompt};
+    H --> B;
+    D -- 'question' --> I{Call LLM};
+    I --> J{Print Response};
+    J --> B;

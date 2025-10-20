@@ -1,0 +1,11 @@
+graph TD
+    A[Start] --> B{rename_files_with_prefix}
+    B --> C{Get Python files}
+    C --> D{For each file}
+    D --> E{Lacks prefix?}
+    E -- Yes --> F{Rename file}
+    F --> D
+    E -- No --> D
+
+    G[Start] --> H{main}
+    H --> I{rename_files_with_prefix}

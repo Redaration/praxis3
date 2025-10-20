@@ -1,0 +1,51 @@
+START
+    // PowerPoint Image Generator
+    // This script generates and inserts placeholder images into a PowerPoint presentation.
+
+    // Initialization
+    DEFINE constants for file paths, image dimensions, and category styles
+
+    // Main Function
+    FUNCTION main():
+        setup()
+        process_presentation()
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION setup():
+        CREATE image directory if it doesn't exist
+        CHECK if the input PowerPoint file exists
+    END FUNCTION
+
+    FUNCTION process_presentation():
+        LOAD the presentation
+        FOR each slide (up to a limit):
+            EXTRACT slide content
+            DEFINE image file path
+            IF image doesn't exist THEN
+                generate_image_for_slide()
+            END IF
+            add_image_to_slide()
+        END FOR
+        SAVE the modified presentation
+    END FUNCTION
+
+    FUNCTION generate_image_for_slide(slide_title, slide_content, output_path):
+        CREATE a prompt from the slide content
+        CALL the Runware API to generate the image
+        IF API call fails THEN
+            CREATE a local placeholder image
+        END IF
+    END FUNCTION
+
+    FUNCTION create_placeholder_image(title, category, width, height):
+        CREATE a new image with category-specific styling
+        DRAW an icon and the title on the image
+        RETURN the image
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

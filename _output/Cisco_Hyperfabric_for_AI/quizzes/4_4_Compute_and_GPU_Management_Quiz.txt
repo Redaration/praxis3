@@ -1,0 +1,71 @@
+# Quiz for 4: Compute and GPU Management
+
+Question 1: Which NVIDIA GPU component is specifically designed to accelerate AI workloads through specialized matrix operations?
+  A. CUDA Cores
+  B. Tensor Cores
+  C. Streaming Multiprocessors (SMs)
+  D. NVLink
+
+
+Question 2: When installing NVIDIA drivers and CUDA, what is a crucial step to ensure compatibility and avoid conflicts?
+  A. Installing the latest driver regardless of CUDA version
+  B. Verifying CUDA Toolkit compatibility with the chosen driver version
+  C. Uninstalling all previous NVIDIA software without a trace
+  D. Prioritizing driver performance settings over stability
+
+
+Question 3: The primary benefit of NVIDIA's Multi-Instance GPU (MIG) technology for smaller AI workloads is:
+  A. Increasing the maximum memory available to a single instance
+  B. Partitioning a single GPU into smaller, isolated instances with dedicated resources
+  C. Allowing multiple users to share the same compute cores on a GPU
+  D. Enabling direct GPU-to-GPU communication between different physical GPUs
+
+
+Question 4: Which utility is commonly used to monitor real-time GPU utilization, memory usage, temperature, and clock speeds on an NVIDIA GPU?
+  A. nvidia-smi
+  B. kubectl top nodes
+  C. nvprof
+  D. htop
+
+
+Question 5: In Kubernetes, how does the NVIDIA Device Plugin facilitate GPU resource management?
+  A. It directly schedules pods onto GPU nodes without any configuration
+  B. It exposes GPU resources to the Kubernetes API, allowing pods to request them
+  C. It automatically converts CPU cores into GPU cores
+  D. It manages GPU firmware updates within the cluster
+
+
+Question 6: When deploying AI/ML workloads on Kubernetes, what is the purpose of defining resource requests and limits for GPUs in a Pod specification?
+  A. To dictate the exact GPU model to be used
+  B. To inform the Kubernetes scheduler about the GPU resources the pod needs and can consume
+  C. To control the network bandwidth allocated to the pod
+  D. To specify the number of CPU cores the pod requires
+
+
+Question 7: Which Kubernetes feature allows for automatic scaling of AI workloads based on observed metrics like CPU or memory utilization?
+  A. ReplicaSet
+  B. Horizontal Pod Autoscaler (HPA)
+  C. StatefulSet
+  D. Node Affinity
+
+
+Question 8: In Kubernetes scheduling, what is the role of 'Taints' and 'Tolerations'?
+  A. To ensure pods are scheduled on nodes with specific labels
+  B. To prevent pods from being scheduled on certain nodes unless they have a matching toleration
+  C. To define read-only access to storage volumes
+  D. To manage network policies between pods
+
+
+Question 9: For optimizing AI/ML training performance, using 'mixed precision training' primarily aims to:
+  A. Increase the number of CUDA cores used
+  B. Reduce memory footprint and speed up computations using lower-precision data types
+  C. Distribute the training process across multiple GPUs
+  D. Enhance the CPU's data loading capabilities
+
+
+Question 10: When optimizing resource allocation for AI inference, what is a key consideration for achieving low latency?
+  A. Maximizing GPU utilization by batching as many requests as possible.
+  B. Allocating minimum necessary resources for each inference pod.
+  C. Prioritizing CPU-bound operations over GPU-bound ones.
+  D. Distributing inference workloads across a large number of less powerful GPUs.
+

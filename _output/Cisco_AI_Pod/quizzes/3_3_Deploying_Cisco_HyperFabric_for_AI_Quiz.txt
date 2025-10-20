@@ -1,0 +1,71 @@
+# Quiz for 3: Deploying Cisco HyperFabric for AI
+
+Question 1: When planning for AI workloads, which of these factors is LEAST likely to directly influence the choice of GPU type and quantity?
+  A. Model architecture and size
+  B. Dataset size and characteristics
+  C. Budget constraints
+  D. User interface design preferences
+
+
+Question 2: What is the primary purpose of understanding inter-GPU interconnect bandwidth, such as NVLink or PCIe, during the planning phase of a HyperFabric deployment?
+  A. To determine power consumption of the servers
+  B. To ensure efficient data transfer between GPUs for distributed training
+  C. To calculate the required cooling capacity for the data center
+  D. To plan the number of network ports needed per node
+
+
+Question 3: For optimal performance in an AI cluster using RoCE, what network settings are commonly recommended?
+  A. Lower MTU values and disabled flow control
+  B. Higher MTU values and configured Priority Flow Control (PFC)
+  C. Standard jumbo frame sizes with Per-Unit Pause (PUP)
+  D. Standard Ethernet MTU with reactive flow control
+
+
+Question 4: Which of the following is a crucial step in the 'Pre-installation Checklist' before deploying Cisco HyperFabric?
+  A. Verifying application compatibility with the chosen OS
+  B. Ensuring all hardware components are physically secured in the rack
+  C. Confirming network connectivity and correct IP/DNS configuration
+  D. Installing the Kubernetes control plane components
+
+
+Question 5: During the hardware installation phase, what is the purpose of BIOS/UEFI configuration?
+  A. To install the operating system
+  B. To set up network interfaces for management access
+  C. To configure boot order, enable virtualization features, and set initial hardware parameters
+  D. To verify the integrity of the GPU drivers
+
+
+Question 6: What is the role of CSI drivers in the context of Kubernetes and HyperFabric?
+  A. To manage GPU scheduling and resource allocation
+  B. To provide persistent storage for containerized AI applications
+  C. To handle network traffic routing between nodes
+  D. To orchestrate the deployment of NVIDIA AI Enterprise software
+
+
+Question 7: When configuring the network for high performance in HyperFabric, what is a key best practice regarding MTU settings?
+  A. Use the default Smallest MTU across all network segments
+  B. Increase MTU to handle larger data packets, often referred to as Jumbo Frames
+  C. Lower MTU to reduce packet overhead
+  D. Disable MTU settings to allow dynamic adjustment by the OS
+
+
+Question 8: Which Kubernetes feature is used for dynamically provisioning storage based on predefined templates?
+  A. PersistentVolumeClaims (PVCs)
+  B. StorageClasses
+  C. Volume Snapshots
+  D. Deployments
+
+
+Question 9: Cisco Validated Designs (CVDs) for HyperFabric AI deployments primarily aim to provide:
+  A. General guidelines for AI infrastructure that can be broadly applied
+  B. Specific, tested configurations with performance benchmarks and deployment steps
+  C. Theoretical models for AI workload sizing
+  D. Software tools for AI application development
+
+
+Question 10: In terms of GPU placement and connectivity within a HyperFabric cluster, what is the benefit of optimizing GPU adjacency?
+  A. To simplify cable management
+  B. To reduce the physical footprint of the servers
+  C. To minimize latency and maximize bandwidth for direct GPU-to-GPU communication
+  D. To ensure even heat distribution across the server chassis
+

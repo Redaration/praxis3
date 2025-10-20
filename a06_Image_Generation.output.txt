@@ -1,0 +1,41 @@
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % python3 a06_Image_Generation.py 
+Using directory from current_directory.txt: _output/Cisco_AI_Pod
+Using image directory: _output/Cisco_AI_Pod/slide_images
+Image Generation Module - Run from a05_CREATE_POWERPOINT.py
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2063 @@
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % python3 a05_CREATE_POWERPOINT.py
+Using directory from current_directory.txt: _output/Cisco_AI_Pod
+Using image directory: _output/Cisco_AI_Pod/slide_images
+Speaker notes module not available.
+Using directory from current_directory.txt: _output/Cisco_AI_Pod
+======================================================================
+                     Course PowerPoint Generator                      
+======================================================================
+
+Using PowerPoint template: template.pptx
+Loading enhanced speaker notes from _output/Cisco_AI_Pod/06_Enhanced_Notes.txt...
+Error loading enhanced speaker notes: Invalid control character at: line 33 column 99 (char 19987)
+*****************************
+Fine Tuned System Prompt: 
+ 
+You are an expert AI image prompt engineer for presentations.
+
+I will provide you with a list of slide titles and content.
+For EACH slide, create an AI image generation concise prompt that would produce a visually appealing 
+image representing that slide's idea or concept.
+
+The image prompts should:
+- Be visually appealing and suitable for a professional business
+- NOT generate any text
+- Focus on people and technology concepts with an exciting and modern design
+- Use modern corporate look
+
+Provide your response as a JSON object with the following structure:
+{"slide_title": "prompt"}
+
+Only include the JSON response with no additional explanations or text.
+*******************************
+
+No enhanced notes loaded.
+
+Reading course outline from '_output/Cisco_AI_Pod/course_outline.txt'...
+Created default module: Module 1
+Found topic: Topic 1.Introduction - to Cisco HyperFabric for AI
+Found topic: Topic 1.1 - The AI/ML Infrastructure Challenge
+Found subtopic: Subtopic 1.1.1 - Increasing complexity of AI/ML projects
+Found subtopic: Subtopic 1.1.2 - Demands for specialized hardware
+Found subtopic: Subtopic 1.1.3 - Need for robust data pipelines
+Found subtopic: Subtopic 1.1.4 - Challenges in scaling infrastructure
+Found subtopic: Subtopic 1.1.5 - Importance of seamless integration
+Found subtopic: Subtopic 1.1.6 - Impact on research and development cycles
+Found topic: Topic 1.2 - Cisco's Approach to AI/ML Infrastructure
+Found subtopic: Subtopic 1.2.1 - Integrated hardware and software solutions
+Found subtopic: Subtopic 1.2.2 - Focus on performance and scalability
+Found subtopic: Subtopic 1.2.3 - End-to-end automation and management
+Found subtopic: Subtopic 1.2.4 - Leveraging existing Cisco expertise
+Found subtopic: Subtopic 1.2.5 - Partnerships with leading AI vendors
+Found subtopic: Subtopic 1.2.6 - Accelerating time to insight
+Found topic: Topic 1.3 - Cisco HyperFabric for AI Overview and Value Proposition
+Found subtopic: Subtopic 1.3.1 - Defining HyperFabric for AI
+Found subtopic: Subtopic 1.3.2 - Key architectural principles
+Found subtopic: Subtopic 1.3.3 - Benefits of an integrated solution
+Found subtopic: Subtopic 1.3.4 - Business drivers for adoption
+Found subtopic: Subtopic 1.3.5 - Competitive advantages
+Found subtopic: Subtopic 1.3.6 - Cisco's commitment to AI infrastructure
+Found topic: Topic 1.4 - Key Use Cases and Business Benefits
+Found subtopic: Subtopic 1.4.1 - Accelerating model training
+Found subtopic: Subtopic 1.4.2 - Enhancing inference performance
+Found subtopic: Subtopic 1.4.3 - Streamlining MLOps processes
+Found subtopic: Subtopic 1.4.4 - Enabling large-scale data processing
+Found subtopic: Subtopic 1.4.5 - Supporting diverse AI/ML frameworks
+Found subtopic: Subtopic 1.4.6 - Driving innovation and competitive edge
+Found topic: Topic 2.Cisco - HyperFabric for AI Architecture
+Found topic: Topic 2.1 - Core Components (Compute, Network, Storage)
+Found subtopic: Subtopic 2.1.1 - Compute: GPU-accelerated nodes
+Found subtopic: Subtopic 2.1.2 - Compute: CPU-based processing units
+Found subtopic: Subtopic 2.1.3 - Network: High-speed interconnects
+Found subtopic: Subtopic 2.1.4 - Network: Fabric management
+Found subtopic: Subtopic 2.1.5 - Storage: Distributed file systems support
+Found subtopic: Subtopic 2.1.6 - Storage: High-throughput access
+Found topic: Topic 2.2 - Integration with NVIDIA AI Enterprise
+Found subtopic: Subtopic 2.2.1 - Role of NVIDIA AI Enterprise
+Found subtopic: Subtopic 2.2.2 - Software compatibility and certification
+Found subtopic: Subtopic 2.2.3 - Streamlined deployment of AI software
+Found subtopic: Subtopic 2.2.4 - Optimized runtime performance
+Found subtopic: Subtopic 2.2.5 - Access to NVIDIA drivers and libraries
+Found subtopic: Subtopic 2.2.6 - Ensuring a validated ecosystem
+Found topic: Topic 2.3 - Software Stack Overview (Kubernetes, AI/ML Frameworks)
+Found subtopic: Subtopic 2.3.1 - Kubernetes as the orchestrator
+Found subtopic: Subtopic 2.3.2 - Containerized application deployment
+Found subtopic: Subtopic 2.3.3 - Popular AI/ML frameworks (TensorFlow, PyTorch)
+Found subtopic: Subtopic 2.3.4 - Data science platforms integration
+Found subtopic: Subtopic 2.3.5 - Workflow management tools
+Found subtopic: Subtopic 2.3.6 - Open-source ecosystem support
+Found topic: Topic 2.4 - Data Flow and Connectivity within HyperFabric
+Found subtopic: Subtopic 2.4.1 - Ingress data pipelines
+Found subtopic: Subtopic 2.4.2 - Data movement between compute and storage
+Found subtopic: Subtopic 2.4.3 - Inter-GPU communication
+Found subtopic: Subtopic 2.4.4 - Network protocols for data transfer
+Found subtopic: Subtopic 2.4.5 - Latency considerations
+Found subtopic: Subtopic 2.4.6 - Bandwidth requirements
+Found topic: Topic 3.Deploying - Cisco HyperFabric for AI
+Found topic: Topic 3.1 - Planning and Sizing for AI Workloads
+Found subtopic: Subtopic 3.1.1 - Assessing application requirements
+Found subtopic: Subtopic 3.1.2 - Estimating compute and GPU needs
+Found subtopic: Subtopic 3.1.3 - Determining storage capacity and performance
+Found subtopic: Subtopic 3.1.4 - Network bandwidth considerations
+Found subtopic: Subtopic 3.1.5 - Future growth projections
+Found subtopic: Subtopic 3.1.6 - Cost-benefit analysis
+Found topic: Topic 3.2 - Installation and Initial Setup
+Found subtopic: Subtopic 3.2.1 - Hardware integration steps
+Found subtopic: Subtopic 3.2.2 - Software installation procedures
+Found subtopic: Subtopic 3.2.3 - Initial cluster configuration
+Found subtopic: Subtopic 3.2.4 - Network interface setup
+Found subtopic: Subtopic 3.2.5 - Storage provisioning
+Found subtopic: Subtopic 3.2.6 - Verification of core services
+Found topic: Topic 3.3 - Network and Storage Configuration Best Practices
+Found subtopic: Subtopic 3.3.1 - High-performance network fabric setup
+Found subtopic: Subtopic 3.3.2 - VLAN and subnetting strategies
+Found subtopic: Subtopic 3.3.3 - Quality of Service (QoS) for AI traffic
+Found subtopic: Subtopic 3.3.4 - Storage access control lists (ACLs)
+Found subtopic: Subtopic 3.3.5 - Data redundancy and backup strategies
+Found subtopic: Subtopic 3.3.6 - Network segmentation for security
+Found topic: Topic 3.4 - Validated Designs and Reference Architectures
+Found subtopic: Subtopic 3.4.1 - Understanding pre-defined configurations
+Found subtopic: Subtopic 3.4.2 - Benefits of using validated designs
+Found subtopic: Subtopic 3.4.3 - Components of reference architectures
+Found subtopic: Subtopic 3.4.4 - Adapting designs to specific needs
+Found subtopic: Subtopic 3.4.5 - Documentation and support resources
+Found subtopic: Subtopic 3.4.6 - Case studies of successful deployments
+Found topic: Topic 4.Compute - and GPU Management
+Found topic: Topic 4.1 - NVIDIA GPU Integration and Management
+Found subtopic: Subtopic 4.1.1 - Hardware installation and detection
+Found subtopic: Subtopic 4.1.2 - Driver installation and verification
+Found subtopic: Subtopic 4.1.3 - GPU monitoring tools
+Found subtopic: Subtopic 4.1.4 - Virtualization and GPU passthrough
+Found subtopic: Subtopic 4.1.5 - Multi-GPU configurations
+Found subtopic: Subtopic 4.1.6 - GPU utilization optimization
+Found topic: Topic 4.2 - Kubernetes for Container Orchestration
+Found subtopic: Subtopic 4.2.1 - Pod and deployment concepts
+Found subtopic: Subtopic 4.2.2 - StatefulSets for persistent storage
+Found subtopic: Subtopic 4.2.3 - DaemonSets for node-level services
+Found subtopic: Subtopic 4.2.4 - Resource requests and limits
+Found subtopic: Subtopic 4.2.5 - Namespace-based resource isolation
+Found subtopic: Subtopic 4.2.6 - Cluster autoscaling
+Found topic: Topic 4.3 - Resource Allocation and Scheduling for AI/ML
+Found subtopic: Subtopic 4.3.1 - GPU scheduling within Kubernetes
+Found subtopic: Subtopic 4.3.2 - Fair sharing of compute resources
+Found subtopic: Subtopic 4.3.3 - Prioritization of critical workloads
+Found subtopic: Subtopic 4.3.4 - Affinity and anti-affinity rules
+Found subtopic: Subtopic 4.3.5 - Node selectors for specific hardware
+Found subtopic: Subtopic 4.3.6 - Dynamic resource allocation
+Found topic: Topic 4.4 - Performance Tuning for Compute Resources
+Found subtopic: Subtopic 4.4.1 - Optimizing container image sizes
+Found subtopic: Subtopic 4.4.2 - Application-level performance tuning
+Found subtopic: Subtopic 4.4.3 - GPU memory management
+Found subtopic: Subtopic 4.4.4 - CPU-GPU synchronization
+Found subtopic: Subtopic 4.4.5 - Efficient data loading techniques
+Found subtopic: Subtopic 4.4.6 - Profiling and identifying bottlenecks
+Found topic: Topic 5.Network - Optimization for AI
+Found topic: Topic 5.1 - High-Performance Networking (e.g., InfiniBand, Ethernet)
+Found subtopic: Subtopic 5.1.1 - Overview of InfiniBand technology
+Found subtopic: Subtopic 5.1.2 - Latest Ethernet standards for AI
+Found subtopic: Subtopic 5.1.3 - Comparing InfiniBand and Ethernet for AI
+Found subtopic: Subtopic 5.1.4 - Network interface card (NIC) selection
+Found subtopic: Subtopic 5.1.5 - Switch fabric capabilities
+Found subtopic: Subtopic 5.1.6 - Latency and bandwidth trade-offs
+Found topic: Topic 5.2 - Network Fabric Design for AI/ML Traffic
+Found subtopic: Subtopic 5.2.1 - Fat-tree and Clos network topologies
+Found subtopic: Subtopic 5.2.2 - Non-blocking fabric requirements
+Found subtopic: Subtopic 5.2.3 - Minimizing network hops
+Found subtopic: Subtopic 5.2.4 - Designing for east-west traffic
+Found subtopic: Subtopic 5.2.5 - Scalability of the fabric
+Found subtopic: Subtopic 5.2.6 - Redundancy and fault tolerance
+Found topic: Topic 5.3 - RDMA over Converged Ethernet (RoCE)
+Found subtopic: Subtopic 5.3.1 - Understanding Remote Direct Memory Access (RDMA)
+Found subtopic: Subtopic 5.3.2 - RoCE v1 and v2 protocol differences
+Found subtopic: Subtopic 5.3.3 - Configuration requirements for RoCE
+Found subtopic: Subtopic 5.3.4 - Benefits for low-latency communication
+Found subtopic: Subtopic 5.3.5 - Impact on CPU utilization
+Found subtopic: Subtopic 5.3.6 - Troubleshooting RoCE connectivity
+Found topic: Topic 5.4 - Network Monitoring and Troubleshooting
+Found subtopic: Subtopic 5.4.1 - Key network performance metrics
+Found subtopic: Subtopic 5.4.2 - Tools for network analysis
+Found subtopic: Subtopic 5.4.3 - Identifying packet loss and congestion
+Found subtopic: Subtopic 5.4.4 - Diagnosing connectivity issues
+Found subtopic: Subtopic 5.4.5 - Monitoring fabric health
+Found subtopic: Subtopic 5.4.6 - Performance baselining
+Found topic: Topic 6.Storage - Solutions for AI
+Found topic: Topic 6.1 - High-Performance Storage for AI/ML Data
+Found subtopic: Subtopic 6.1.1 - Requirements for large datasets
+Found subtopic: Subtopic 6.1.2 - Parallel file systems (e.g., Lustre, GPFS)
+Found subtopic: Subtopic 6.1.3 - Object storage considerations
+Found subtopic: Subtopic 6.1.4 - NVMe-based storage solutions
+Found subtopic: Subtopic 6.1.5 - Network Attached Storage (NAS) performance
+Found subtopic: Subtopic 6.1.6 - Storage Area Network (SAN) options
+Found topic: Topic 6.2 - Data Management and Lifecycle
+Found subtopic: Subtopic 6.2.1 - Data ingestion strategies
+Found subtopic: Subtopic 6.2.2 - Data versioning and lineage
+Found subtopic: Subtopic 6.2.3 - Archiving and data tiering
+Found subtopic: Subtopic 6.2.4 - Data cleanup and deletion policies
+Found subtopic: Subtopic 6.2.5 - Compliance and regulatory requirements
+Found subtopic: Subtopic 6.2.6 - Data backup and recovery plans
+Found topic: Topic 6.3 - Integration with Distributed File Systems
+Found subtopic: Subtopic 6.3.1 - Mounting requirements
+Found subtopic: Subtopic 6.3.2 - Access protocols (NFS, SMB, Object)
+Found subtopic: Subtopic 6.3.3 - Performance tuning for file systems
+Found subtopic: Subtopic 6.3.4 - Kubernetes CSI driver integration
+Found subtopic: Subtopic 6.3.5 - Handling small file performance
+Found subtopic: Subtopic 6.3.6 - Metadata operations optimization
+Found topic: Topic 6.4 - Data Security and Access Control
+Found subtopic: Subtopic 6.4.1 - User authentication and authorization
+Found subtopic: Subtopic 6.4.2 - Role-based access control (RBAC)
+Found subtopic: Subtopic 6.4.3 - Data encryption at rest and in transit
+Found subtopic: Subtopic 6.4.4 - Network-level security for storage
+Found subtopic: Subtopic 6.4.5 - Auditing data access
+Found subtopic: Subtopic 6.4.6 - Data masking and anonymization
+Found topic: Topic 7.Managing - AI/ML Workflows on HyperFabric
+Found topic: Topic 7.1 - Deploying AI/ML Applications
+Found subtopic: Subtopic 7.1.1 - Containerizing AI/ML applications
+Found subtopic: Subtopic 7.1.2 - Defining deployment manifests (YAML)
+Found subtopic: Subtopic 7.1.3 - Using Helm charts for complex applications
+Found subtopic: Subtopic 7.1.4 - Managing dependencies
+Found subtopic: Subtopic 7.1.5 - Integrating with CI/CD pipelines
+Found subtopic: Subtopic 7.1.6 - Blue-green deployments and canary releases
+Found topic: Topic 7.2 - MLOps Concepts and Tools on HyperFabric
+Found subtopic: Subtopic 7.2.1 - Continuous Integration (CI) for ML
+Found subtopic: Subtopic 7.2.2 - Continuous Delivery (CD) for ML models
+Found subtopic: Subtopic 7.2.3 - Model versioning and registry
+Found subtopic: Subtopic 7.2.4 - Experiment tracking
+Found subtopic: Subtopic 7.2.5 - Feature stores
+Found subtopic: Subtopic 7.2.6 - Model deployment strategies
+Found topic: Topic 8.3 - Model Training and Inference Workflows
+Found subtopic: Subtopic 8.3.1 - Orchestrating distributed training jobs
+Found subtopic: Subtopic 8.3.2 - Optimizing inference endpoints
+Found subtopic: Subtopic 8.3.3 - Batch inference processing
+Found subtopic: Subtopic 8.3.4 - Real-time inference requirements
+Found subtopic: Subtopic 8.3.5 - Resource management for training vs. inference
+Found subtopic: Subtopic 8.3.6 - Workflow automation tools
+Found topic: Topic 7.4 - Monitoring AI/ML Pipeline Performance
+Found subtopic: Subtopic 7.4.1 - Tracking training job progress
+Found subtopic: Subtopic 7.4.2 - Monitoring model accuracy and drift
+Found subtopic: Subtopic 7.4.3 - Performance metrics for inference servers
+Found subtopic: Subtopic 7.4.4 - Resource utilization during pipelines
+Found subtopic: Subtopic 7.4.5 - Alerting on pipeline failures
+Found subtopic: Subtopic 7.4.6 - Visualizing workflow execution
+Found topic: Topic 8.Monitoring - and Troubleshooting HyperFabric for AI
+Found topic: Topic 8.1 - Unified Management Interface
+Found subtopic: Subtopic 8.1.1 - Dashboard overview
+Found subtopic: Subtopic 8.1.2 - Navigating through system components
+Found subtopic: Subtopic 8.1.3 - Centralized logging access
+Found subtopic: Subtopic 8.1.4 - Key performance indicators (KPIs)
+Found subtopic: Subtopic 8.1.5 - User and role management
+Found subtopic: Subtopic 8.1.6 - Configuration management tools
+Found topic: Topic 8.2 - Performance Monitoring and Telemetry
+Found subtopic: Subtopic 8.2.1 - Collecting hardware metrics (CPU, GPU, Network, Storage)
+Found subtopic: Subtopic 8.2.2 - Collecting software metrics (Kubernetes, applications)
+Found subtopic: Subtopic 8.2.3 - Real-time performance visualization
+Found subtopic: Subtopic 8.2.4 - Historical performance analysis
+Found subtopic: Subtopic 8.2.5 - Setting performance thresholds
+Found subtopic: Subtopic 8.2.6 - Correlating metrics across components
+Found topic: Topic 8.3 - Log Analysis and Diagnostics
+Found subtopic: Subtopic 8.3.1 - Centralized logging architecture
+Found subtopic: Subtopic 8.3.2 - Filtering and searching logs
+Found subtopic: Subtopic 8.3.3 - Analyzing Kubernetes event logs
+Found subtopic: Subtopic 8.3.4 - Troubleshooting application errors from logs
+Found subtopic: Subtopic 8.3.5 - Identifying security-related log events
+Found subtopic: Subtopic 8.3.6 - Log retention policies
+Found topic: Topic 8.4 - Common Troubleshooting Scenarios and Best Practices
+Found subtopic: Subtopic 8.4.1 - Network connectivity issues
+Found subtopic: Subtopic 8.4.2 - Storage access problems
+Found subtopic: Subtopic 8.4.3 - Compute resource contention
+Found subtopic: Subtopic 8.4.4 - GPU driver or configuration errors
+Found subtopic: Subtopic 8.4.5 - Application deployment failures
+Found subtopic: Subtopic 8.4.6 - Performance degradation troubleshooting
+Found topic: Topic 1.1 - Accessing the lab environment
+Found subtopic: Subtopic 1.1.1 - Understanding the provided credentials
+Found subtopic: Subtopic 1.1.2 - Connecting to the management console
+Found subtopic: Subtopic 1.1.3 - Verifying network connectivity
+Found subtopic: Subtopic 1.1.4 - Familiarizing with the lab topology
+Found subtopic: Subtopic 1.1.5 - Identifying key hardware components
+Found subtopic: Subtopic 1.1.6 - Checking system health status
+Found topic: Topic 1.2 - Initial HyperFabric installation
+Found subtopic: Subtopic 1.2.1 - Following installation documentation
+Found subtopic: Subtopic 1.2.2 - Configuring basic network settings
+Found subtopic: Subtopic 1.2.3 - Deploying core cluster components
+Found subtopic: Subtopic 1.2.4 - Verifying service availability
+Found subtopic: Subtopic 1.2.5 - Performing initial system checks
+Found subtopic: Subtopic 1.2.6 - Documenting the setup process
+Found topic: Topic 1.3 - Deploying compute nodes
+Found subtopic: Subtopic 1.3.1 - Registering compute hardware
+Found subtopic: Subtopic 1.3.2 - Allocating resources to nodes
+Found subtopic: Subtopic 1.3.3 - Verifying GPU detection
+Found subtopic: Subtopic 1.3.4 - Installing necessary drivers
+Found subtopic: Subtopic 1.3.5 - Configuring node networking
+Found subtopic: Subtopic 1.3.6 - Confirming node readiness
+Found topic: Topic 1.4 - Basic network fabric configuration
+Found subtopic: Subtopic 1.4.1 - Setting up VLANs and subnets
+Found subtopic: Subtopic 1.4.2 - Configuring switch ports
+Found subtopic: Subtopic 1.4.3 - Establishing fabric connectivity
+Found subtopic: Subtopic 1.4.4 - Implementing basic Quality of Service (QoS)
+Found subtopic: Subtopic 1.4.5 - Verifying network reachability
+Found subtopic: Subtopic 1.4.6 - Documenting network configuration
+Found topic: Topic 1.5 - Basic storage configuration
+Found subtopic: Subtopic 1.5.1 - Connecting to the storage system
+Found subtopic: Subtopic 1.5.2 - Creating initial storage pools
+Found subtopic: Subtopic 1.5.3 - Defining storage access policies
+Found subtopic: Subtopic 1.5.4 - Mounting storage from compute nodes
+Found subtopic: Subtopic 1.5.5 - Performing basic storage I/O tests
+Found subtopic: Subtopic 1.5.6 - Documenting storage setup
+Found topic: Topic 1.6 - Verifying system integration
+Found subtopic: Subtopic 1.6.1 - Checking communication between components
+Found subtopic: Subtopic 1.6.2 - Validating resource manager operation
+Found subtopic: Subtopic 1.6.3 - Ensuring all services report healthy
+Found subtopic: Subtopic 1.6.4 - Testing basic job submission
+Found subtopic: Subtopic 1.6.5 - Addressing any initial configuration errors
+Found subtopic: Subtopic 1.6.6 - Finalizing the deployment checklist
+Found topic: Topic 2.1 - Advanced network fabric tuning
+Found subtopic: Subtopic 2.1.1 - Implementing RoCE configuration
+Found subtopic: Subtopic 2.1.2 - Optimizing MTU settings
+Found subtopic: Subtopic 2.1.3 - Configuring flow control parameters
+Found subtopic: Subtopic 2.1.4 - Adjusting buffer sizes
+Found subtopic: Subtopic 2.1.5 - Implementing network segmentation
+Found subtopic: Subtopic 2.1.6 - Verifying network performance enhancements
+Found topic: Topic 2.2 - Storage provisioning for large datasets
+Found subtopic: Subtopic 2.2.1 - Creating large capacity storage volumes
+Found subtopic: Subtopic 2.2.2 - Configuring high-performance storage tiers
+Found subtopic: Subtopic 2.2.3 - Setting up distributed file system mounts
+Found subtopic: Subtopic 2.2.4 - Defining access control lists (ACLs)
+Found topic: Topic 2.3 - Network-aware storage access
+Found subtopic: Subtopic 2.3.1 - Optimizing storage paths for performance
+Found subtopic: Subtopic 2.3.2 - Configuring multipathing for storage
+Found subtopic: Subtopic 2.3.3 - Load balancing storage connections
+Found subtopic: Subtopic 2.3.4 - Ensuring low-latency storage access
+Found subtopic: Subtopic 2.3.5 - Testing storage bandwidth utilization
+Found subtopic: Subtopic 2.3.6 - Validating storage configuration against workload needs
+Found topic: Topic 2.4 - Implementing data management policies
+Found subtopic: Subtopic 2.4.1 - Setting up retention policies
+Found subtopic: Subtopic 2.4.2 - Configuring data tiering rules
+Found subtopic: Subtopic 2.4.3 - Defining backup schedules
+Found subtopic: Subtopic 2.4.4 - Implementing data lifecycle management
+Found subtopic: Subtopic 2.4.5 - Testing data archival procedures
+Found subtopic: Subtopic 2.4.6 - Verifying data recovery capabilities
+Found topic: Topic 2.5 - Configuring network security for storage
+Found subtopic: Subtopic 2.5.1 - Setting up firewalls for storage access
+Found subtopic: Subtopic 2.5.2 - Implementing IP-based access restrictions
+Found subtopic: Subtopic 2.5.3 - Configuring secure communication protocols
+Found subtopic: Subtopic 2.5.4 - Auditing storage access logs
+Found subtopic: Subtopic 2.5.5 - Ensuring compliance with security standards
+Found subtopic: Subtopic 2.5.6 - Reviewing security configurations
+Found topic: Topic 2.6 - Performance testing of network and storage
+Found subtopic: Subtopic 2.6.1 - Running synthetic benchmarks
+Found subtopic: Subtopic 2.6.2 - Measuring throughput and latency
+Found subtopic: Subtopic 2.6.3 - Identifying bottlenecks through testing
+Found subtopic: Subtopic 2.6.4 - Validating configuration against expected performance
+Found subtopic: Subtopic 2.6.5 - Documenting performance results
+Found subtopic: Subtopic 2.6.6 - Making necessary adjustments based on tests
+Found topic: Topic 3.1 - Containerizing a simple AI/ML model
+Found subtopic: Subtopic 3.1.1 - Writing a Dockerfile for the model
+Found subtopic: Subtopic 3.1.2 - Defining dependencies and libraries
+Found subtopic: Subtopic 3.1.3 - Building and testing the container image
+Found subtopic: Subtopic 3.1.4 - Pushing the image to a registry
+Found subtopic: Subtopic 3.1.5 - Optimizing the container image size
+Found subtopic: Subtopic 3.1.6 - Documenting the containerization process
+Found topic: Topic 3.2 - Creating Kubernetes deployment manifests
+Found subtopic: Subtopic 3.2.1 - Defining Pod specifications
+Found subtopic: Subtopic 3.2.2 - Configuring resource requests and limits (CPU, GPU, Memory)
+Found subtopic: Subtopic 3.2.3 - Setting up environment variables
+Found subtopic: Subtopic 3.2.4 - Specifying storage volumes and persistent data
+Found subtopic: Subtopic 3.2.5 - Implementing readiness and liveness probes
+Found subtopic: Subtopic 3.2.6 - Reviewing deployment configurations
+Found topic: Topic 3.3 - Deploying the application to the cluster
+Found subtopic: Subtopic 3.3.1 - Applying the deployment manifest
+Found subtopic: Subtopic 3.3.2 - Monitoring the deployment status
+Found subtopic: Subtopic 3.3.3 - Troubleshooting failed deployments
+Found subtopic: Subtopic 3.3.4 - Scaling the application deployment
+Found subtopic: Subtopic 3.3.5 - Verifying container execution
+Found subtopic: Subtopic 3.3.6 - Rolling back to a previous version if necessary
+Found topic: Topic 3.4 - Integrating with storage for data access
+Found subtopic: Subtopic 3.4.1 - Mounting persistent volumes for data
+Found subtopic: Subtopic 3.4.2 - Ensuring correct data paths within the container
+Found subtopic: Subtopic 3.4.3 - Testing data read and write operations
+Found subtopic: Subtopic 3.4.4 - Verifying data integrity
+Found subtopic: Subtopic 3.4.5 - Handling potential data access errors
+Found subtopic: Subtopic 3.4.6 - Configuring auto-mounting of data
+Found topic: Topic 3.5 - Configuring network access to the application
+Found subtopic: Subtopic 3.5.1 - Creating Kubernetes Services for access
+Found subtopic: Subtopic 3.5.2 - Exposing the application externally (e.g., LoadBalancer, NodePort)
+Found subtopic: Subtopic 3.5.3 - Configuring Ingress controllers for advanced routing
+Found subtopic: Subtopic 3.5.4 - Testing application accessibility
+Found subtopic: Subtopic 3.5.5 - Implementing network security policies
+Found subtopic: Subtopic 3.5.6 - Verifying network connectivity
+Found topic: Topic 3.6 - Performing basic inference with the deployed model
+Found subtopic: Subtopic 3.6.1 - Sending sample data to the application
+Found subtopic: Subtopic 3.6.2 - Analyzing the output results
+Found subtopic: Subtopic 3.6.3 - Verifying model accuracy
+Found subtopic: Subtopic 3.6.4 - Measuring inference latency
+Found subtopic: Subtopic 3.6.5 - Testing edge cases and error handling
+Found subtopic: Subtopic 3.6.6 - Documenting inference results
+Found topic: Topic 4.1 - Accessing the unified monitoring dashboard
+Found subtopic: Subtopic 4.1.1 - Navigating to the monitoring section
+Found subtopic: Subtopic 4.1.2 - Understanding key dashboard widgets
+Found subtopic: Subtopic 4.1.3 - Customizing the dashboard view
+Found subtopic: Subtopic 4.1.4 - Filtering data by time range
+Found subtopic: Subtopic 4.1.5 - Setting up user-specific views
+Found subtopic: Subtopic 4.1.6 - Saving customized dashboards
+Found topic: Topic 4.2 - Monitoring compute and GPU utilization
+Found subtopic: Subtopic 4.2.1 - Tracking CPU usage per pod and node
+Found subtopic: Subtopic 4.2.2 - Monitoring GPU utilization percentages
+Found subtopic: Subtopic 4.2.3 - Analyzing GPU memory consumption
+Found subtopic: Subtopic 4.2.4 - Identifying underutilized or overloaded resources
+Found subtopic: Subtopic 4.2.5 - Correlating compute metrics with workload performance
+Found subtopic: Subtopic 4.2.6 - Setting alerts for high utilization
+Found topic: Topic 4.3 - Network performance monitoring
+Found subtopic: Subtopic 4.3.1 - Tracking bandwidth usage
+Found subtopic: Subtopic 4.3.2 - Monitoring latency between nodes
+Found subtopic: Subtopic 4.3.3 - Analyzing packet loss rates
+Found subtopic: Subtopic 4.3.4 - Identifying network congestion points
+Found subtopic: Subtopic 4.3.5 - Verifying RDMA connectivity status
+Found subtopic: Subtopic 4.3.6 - Setting alerts for network anomalies
+Found topic: Topic 4.4 - Storage performance monitoring
+Found subtopic: Subtopic 4.4.1 - Measuring storage IOPS and throughput
+Found subtopic: Subtopic 4.4.2 - Monitoring storage latency
+Found subtopic: Subtopic 4.4.3 - Checking storage capacity utilization
+Found subtopic: Subtopic 4.4.4 - Analyzing I/O wait times
+Found subtopic: Subtopic 4.4.5 - Verifying storage mount points and accessibility
+Found subtopic: Subtopic 4.4.6 - Setting alerts for storage performance degradation
+Found topic: Topic 4.5 - Monitoring AI/ML application-specific metrics
+Found subtopic: Subtopic 4.5.1 - Tracking training job progress indicators
+Found subtopic: Subtopic 4.5.2 - Monitoring model inference speed
+Found subtopic: Subtopic 4.5.3 - Analyzing queue lengths for inference requests
+Found subtopic: Subtopic 4.5.4 - Observing data loading times
+Found subtopic: Subtopic 4.5.5 - Tracking resource usage by the ML framework
+Found subtopic: Subtopic 4.5.6 - Identifying application-level performance bottlenecks
+Found topic: Topic 4.6 - Setting up alerts and notifications
+Found subtopic: Subtopic 4.6.1 - Defining alert conditions based on metrics
+Found subtopic: Subtopic 4.6.2 - Configuring notification channels (email, Slack)
+Found subtopic: Subtopic 4.6.3 - Setting alert severity levels
+Found subtopic: Subtopic 4.6.4 - Testing alert triggers
+Found subtopic: Subtopic 4.6.5 - Reviewing historical alerts
+Found subtopic: Subtopic 4.6.6 - Tuning alert thresholds to reduce false positives
+Found topic: Topic 5.1 - Understanding workload scaling needs
+Found subtopic: Subtopic 5.1.1 - Identifying performance limitations during training
+Found subtopic: Subtopic 5.1.2 - Analyzing resource utilization patterns
+Found subtopic: Subtopic 5.1.3 - Determining the need for more compute or GPU power
+Found subtopic: Subtopic 5.1.4 - Estimating the required scale-up
+Found subtopic: Subtopic 5.1.5 - Deciding between horizontal and vertical scaling
+Found subtopic: Subtopic 5.1.6 - Planning for potential resource contention
+Found topic: Topic 5.2 - Scaling compute nodes (Horizontal Scaling)
+Found subtopic: Subtopic 5.2.1 - Adding new compute nodes to the cluster
+Found subtopic: Subtopic 5.2.2 - Registering and configuring new nodes
+Found subtopic: Subtopic 5.2.3 - Ensuring proper network connectivity for new nodes
+Found subtopic: Subtopic 5.2.4 - Verifying GPU availability on new nodes
+Found subtopic: Subtopic 5.2.5 - Updating cluster autoscaler configurations
+Found subtopic: Subtopic 5.2.6 - Monitoring cluster capacity changes
+Found topic: Topic 5.3 - Scaling GPU resources within existing nodes
+Found subtopic: Subtopic 5.3.1 - Understanding GPU sharing mechanisms
+Found subtopic: Subtopic 5.3.2 - Adjusting GPU allocation policies
+Found subtopic: Subtopic 5.3.3 - Utilizing tools for GPU slicing if available
+Found subtopic: Subtopic 5.3.4 - Monitoring GPU utilization after changes
+Found subtopic: Subtopic 5.3.5 - Rebalancing workloads across GPUs
+Found subtopic: Subtopic 5.3.6 - Assessing the impact of GPU scaling on performance
+Found topic: Topic 5.4 - Scaling application deployments (Pods)
+Found subtopic: Subtopic 5.4.1 - Adjusting replica counts for deployments
+Found subtopic: Subtopic 5.4.2 - Using Horizontal Pod Autoscaler (HPA) with custom metrics
+Found subtopic: Subtopic 5.4.3 - Configuring HPA based on GPU utilization
+Found subtopic: Subtopic 5.4.4 - Monitoring pod scaling events
+Found subtopic: Subtopic 5.4.5 - Ensuring proper load distribution across pods
+Found subtopic: Subtopic 5.4.6 - Testing application responsiveness under increased load
+Found topic: Topic 5.5 - Impact of scaling on network and storage
+Found subtopic: Subtopic 5.5.1 - Monitoring network bandwidth usage during scaling
+Found subtopic: Subtopic 5.5.2 - Assessing storage I/O impact from increased workloads
+Found subtopic: Subtopic 5.5.3 - Verifying storage access performance for new pods
+Found subtopic: Subtopic 5.5.4 - Checking for network bottlenecks created by scaling
+Found subtopic: Subtopic 5.5.5 - Re-evaluating storage capacity needs
+Found subtopic: Subtopic 5.5.6 - Adjusting network configurations if necessary
+Found topic: Topic 5.6 - Performance validation after scaling
+Found subtopic: Subtopic 5.6.1 - Rerunning benchmark tests
+Found subtopic: Subtopic 5.6.2 - Comparing training times before and after scaling
+Found subtopic: Subtopic 5.6.3 - Measuring inference latency under load
+Found subtopic: Subtopic 5.6.4 - Verifying resource utilization remains balanced
+Found subtopic: Subtopic 5.6.5 - Identifying any new performance bottlenecks
+Found subtopic: Subtopic 5.6.6 - Documenting scaling results and improvements
+Found topic: Topic 6.1 - Simulating common failure scenarios
+Found subtopic: Subtopic 6.1.1 - Simulating network connectivity loss between nodes
+Found subtopic: Subtopic 6.1.2 - Simulating storage I/O errors
+Found subtopic: Subtopic 6.1.3 - Introducing compute resource exhaustion
+Found subtopic: Subtopic 6.1.4 - Simulating GPU driver failures
+Found subtopic: Subtopic 6.1.5 - Causing application deployment failures
+Found subtopic: Subtopic 6.1.6 - Simulating a service outage
+Found topic: Topic 6.2 - Identifying and isolating the faulty component
+Found subtopic: Subtopic 6.2.1 - Using monitoring tools to detect anomalies
+Found subtopic: Subtopic 6.2.2 - Analyzing system logs for error messages
+Found subtopic: Subtopic 6.2.3 - Checking the health status of Kubernetes components
+Found subtopic: Subtopic 6.2.4 - Verifying network reachability
+Found subtopic: Subtopic 6.2.5 - Assessing storage system health
+Found subtopic: Subtopic 6.2.6 - Examining compute node status
+Found topic: Topic 6.3 - Diagnosing root causes using diagnostic tools
+Found subtopic: Subtopic 6.3.1 - Running network diagnostic commands (ping, traceroute)
+Found subtopic: Subtopic 6.3.2 - Performing disk checks on storage
+Found subtopic: Subtopic 6.3.3 - Using `kubectl describe` and `kubectl logs` effectively
+Found subtopic: Subtopic 6.3.4 - Checking system resource utilization (CPU, memory, GPU)
+Found subtopic: Subtopic 6.3.5 - Inspecting relevant configuration files
+Found subtopic: Subtopic 6.3.6 - Utilizing vendor-specific diagnostic tools
+Found topic: Topic 6.4 - Applying corrective actions
+Found subtopic: Subtopic 6.4.1 - Restarting failed services or nodes
+Found subtopic: Subtopic 6.4.2 - Adjusting resource allocations
+Found subtopic: Subtopic 6.4.3 - Reconfiguring network or storage settings
+Found subtopic: Subtopic 6.4.4 - Rolling back faulty software updates
+Found subtopic: Subtopic 6.4.5 - Rescheduling failed application instances
+Found subtopic: Subtopic 6.4.6 - Applying security patches if needed
+Found topic: Topic 6.5 - Verifying the resolution of the issue
+Found subtopic: Subtopic 6.5.1 - Re-running diagnostic tests
+Found subtopic: Subtopic 6.5.2 - Monitoring system health and performance metrics
+Found subtopic: Subtopic 6.5.3 - Testing application functionality
+Found subtopic: Subtopic 6.5.4 - Confirming normal resource utilization
+Found subtopic: Subtopic 6.5.5 - Ensuring stability post-resolution
+Found subtopic: Subtopic 6.5.6 - Documenting the troubleshooting process and resolution
+Found topic: Topic 6.6 - Post-incident review and preventative measures
+Found subtopic: Subtopic 6.6.1 - Analyzing the cause of the failure
+Found subtopic: Subtopic 6.6.2 - Identifying gaps in monitoring or alerting
+Found subtopic: Subtopic 6.6.3 - Recommending configuration changes to prevent recurrence
+Found subtopic: Subtopic 6.6.4 - Updating documentation or runbooks
+Found subtopic: Subtopic 6.6.5 - Discussing lessons learned with the team
+Found subtopic: Subtopic 6.6.6 - Implementing automated checks for potential issues
+Found topic: Topic 7.1 - Introduction to MLOps concepts in HyperFabric
+Found subtopic: Subtopic 7.1.1 - Understanding the CI/CD pipeline for ML
+Found subtopic: Subtopic 7.1.2 - Key stages of the MLOps lifecycle
+Found subtopic: Subtopic 7.1.3 - Benefits of automating ML workflows
+Found subtopic: Subtopic 7.1.4 - Integration points with HyperFabric components
+Found subtopic: Subtopic 7.1.5 - Importance of reproducibility in ML
+Found subtopic: Subtopic 7.1.6 - Role of collaboration in MLOps
+Found topic: Topic 7.2 - Using a Model Registry
+Found subtopic: Subtopic 7.2.1 - Registering different versions of a model
+Found subtopic: Subtopic 7.2.2 - Storing model metadata (parameters, metrics)
+Found subtopic: Subtopic 7.2.3 - Versioning datasets used for training
+Found subtopic: Subtopic 7.2.4 - Associating models with specific training runs
+Found subtopic: Subtopic 7.2.5 - Managing model lifecycle stages (e.g., staging, production)
+Found subtopic: Subtopic 7.2.6 - Retrieving specific model versions for deployment
+Found topic: Topic 7.3 - Implementing Experiment Tracking
+Found subtopic: Subtopic 7.3.1 - Logging training parameters and hyperparameters
+Found subtopic: Subtopic 7.3.2 - Recording performance metrics during training
+Found subtopic: Subtopic 7.3.3 - Visualizing experiment results and comparisons
+Found subtopic: Subtopic 7.3.4 - Tracking code versions used for experiments
+Found subtopic: Subtopic 7.3.5 - Associating experiments with specific datasets
+Found subtopic: Subtopic 7.3.6 - Techniques for systematic experimentation
+Found topic: Topic 7.4 - Automating Model Training Pipelines
+Found subtopic: Subtopic 7.4.1 - Defining training workflows using orchestration tools
+Found subtopic: Subtopic 7.4.2 - Triggering training jobs based on code changes or new data
+Found subtopic: Subtopic 7.4.3 - Integrating with CI/CD systems (e.g., Jenkins, GitLab CI)
+Found subtopic: Subtopic 7.4.4 - Handling distributed training configurations
+Found subtopic: Subtopic 7.4.5 - Automating hyperparameter tuning
+Found subtopic: Subtopic 7.4.6 - Setting up notifications for training completion or failure
+Found topic: Topic 7.5 - Deploying Models as Services
+Found subtopic: Subtopic 7.5.1 - Creating inference endpoints using Kubernetes
+Found subtopic: Subtopic 7.5.2 - Packaging models into deployable containers
+Found subtopic: Subtopic 7.5.3 - Strategies for A/B testing new model versions
+Found subtopic: Subtopic 7.5.4 - Implementing canary deployments for models
+Found subtopic: Subtopic 7.5.5 - Scaling inference services based on demand
+Found subtopic: Subtopic 7.5.6 - Monitoring inference performance and resource usage
+Found topic: Topic 7.6 - Monitoring Deployed Models
+Found subtopic: Subtopic 7.6.1 - Tracking model prediction drift
+Found subtopic: Subtopic 7.6.2 - Monitoring data drift in incoming requests
+Found subtopic: Subtopic 7.6.3 - Logging model predictions and confidence scores
+Found subtopic: Subtopic 7.6.4 - Setting up alerts for performance degradation
+Found subtopic: Subtopic 7.6.5 - Analyzing model behavior in production
+Found subtopic: Subtopic 7.6.6 - Establishing retraining triggers based on monitoring data
+Found 1 modules, 54 topics, and 274 subtopics in outline.
+Found 1 modules, 54 topics, and 274 subtopics.
+Generating PowerPoint presentation with 330 slides...
+Using the title: 'Cisco HyperFabric for AI Fundamentals'
+Preparing 49 slides for generation
+Generating slide images...
+
+Generating images for 49 slides...
+Step 1: Generating enhanced image prompts with LLM...
+
+Preparing slide content for batch prompt generation...
+Processing simplified outline format...
+Extracted 49 slides for image prompt generation
+Found 49 slides for prompt generation
+****************************************************
+Sending batch request to generate 49 slide prompts...
+Sending request to OpenRouter.ai
+{'model': 'google/gemini-2.5-flash-lite-preview-06-17', 'messages': [{'role': 'system', 'content': '\nYou are an expert AI image prompt engineer for presentations.\n\nI will provide you with a list of slide titles and content.\nFor EACH slide, create an AI image generation concise prompt that would produce a visually appealing \nimage representing that slide\'s idea or concept.\n\nThe image prompts should:\n- Be visually appealing and suitable for a professional business\n- NOT generate any text\n- Focus on people and technology concepts with an exciting and modern design\n- Use modern corporate looke\n\nProvide your response as a JSON object with the following structure:\n{"slide_title": "prompt"}\n\nOnly include the JSON response with no additional explanations or text.\n'}, {'role': 'user', 'content': 'Generate unique image prompts for each of these presentation slides:\n[\n  {\n    "title": "Module 1: Main Module",\n    "content": "to Cisco HyperFabric for AI\\nAccessing the lab environment\\nInitial HyperFabric installation\\nDeploying compute nodes\\nBasic network fabric configuration\\nHyperFabric for AI Architecture\\nAdvanced network fabric tuning\\nStorage provisioning for large datasets\\nNetwork-aware storage access\\nImplementing data management policies\\nCisco HyperFabric for AI\\nContainerizing a simple AI/ML model\\nCreating Kubernetes deployment manifests\\nDeploying the application to the cluster\\nIntegrating with storage for data access\\nand GPU Management\\nAccessing the unified monitoring dashboard\\nMonitoring compute and GPU utilization\\nNetwork performance monitoring\\nStorage performance monitoring\\nOptimization for AI\\nUnderstanding workload scaling needs\\nScaling compute nodes (Horizontal Scaling)\\nScaling GPU resources within existing nodes\\nScaling application deployments (Pods)\\nSolutions for AI\\nSimulating common failure scenarios\\nIdentifying and isolating the faulty component\\nDiagnosing root causes using diagnostic tools\\nApplying corrective actions\\nAI/ML Workflows on HyperFabric\\nIntroduction to MLOps concepts in HyperFabric\\nUsing a Model Registry\\nLog Analysis and Diagnostics\\nAutomating Model Training Pipelines\\nand Troubleshooting HyperFabric for AI\\nUnified Management Interface\\nPerformance Monitoring and Telemetry\\nCommon Troubleshooting Scenarios and Best Practices\\nBasic storage configuration\\nVerifying system integration\\nConfiguring network security for storage\\nPerformance testing of network and storage\\nConfiguring network access to the application\\nPerforming basic inference with the deployed model\\nMonitoring AI/ML application-specific metrics\\nSetting up alerts and notifications\\nImpact of scaling on network and storage\\nPerformance validation after scaling\\nVerifying the resolution of the issue\\nPost-incident review and preventative measures\\nImplementing Experiment Tracking\\nDeploying Models as Services\\nMonitoring Deployed Models"\n  },\n  {\n    "title": "1.Introduction: to Cisco HyperFabric for AI",\n    "content": ""\n  },\n  {\n    "title": "1.1: Accessing the lab environment",\n    "content": "Understanding the provided credentials\\nConnecting to the management console\\nVerifying network connectivity\\nFamiliarizing with the lab topology\\nIdentifying key hardware components\\nChecking system health status"\n  },\n  {\n    "title": "Understanding the provided credentials",\n    "content": ""\n  },\n  {\n    "title": "Connecting to the management console",\n    "content": ""\n  },\n  {\n    "title": "Verifying network connectivity",\n    "content": ""\n  },\n  {\n    "title": "Familiarizing with the lab topology",\n    "content": ""\n  },\n  {\n    "title": "Identifying key hardware components",\n    "content": ""\n  },\n  {\n    "title": "Checking system health status",\n    "content": ""\n  },\n  {\n    "title": "1.2: Initial HyperFabric installation",\n    "content": "Following installation documentation\\nConfiguring basic network settings\\nDeploying core cluster components\\nVerifying service availability\\nPerforming initial system checks\\nDocumenting the setup process"\n  },\n  {\n    "title": "Following installation documentation",\n    "content": ""\n  },\n  {\n    "title": "Configuring basic network settings",\n    "content": ""\n  },\n  {\n    "title": "Deploying core cluster components",\n    "content": ""\n  },\n  {\n    "title": "Verifying service availability",\n    "content": ""\n  },\n  {\n    "title": "Performing initial system checks",\n    "content": ""\n  },\n  {\n    "title": "Documenting the setup process",\n    "content": ""\n  },\n  {\n    "title": "1.3: Deploying compute nodes",\n    "content": "Registering compute hardware\\nAllocating resources to nodes\\nVerifying GPU detection\\nInstalling necessary drivers\\nConfiguring node networking\\nConfirming node readiness"\n  },\n  {\n    "title": "Registering compute hardware",\n    "content": ""\n  },\n  {\n    "title": "Allocating resources to nodes",\n    "content": ""\n  },\n  {\n    "title": "Verifying GPU detection",\n    "content": ""\n  },\n  {\n    "title": "Installing necessary drivers",\n    "content": ""\n  },\n  {\n    "title": "Configuring node networking",\n    "content": ""\n  },\n  {\n    "title": "Confirming node readiness",\n    "content": ""\n  },\n  {\n    "title": "1.4: Basic network fabric configuration",\n    "content": "Setting up VLANs and subnets\\nConfiguring switch ports\\nEstablishing fabric connectivity\\nImplementing basic Quality of Service (QoS)\\nVerifying network reachability\\nDocumenting network configuration"\n  },\n  {\n    "title": "Setting up VLANs and subnets",\n    "content": ""\n  },\n  {\n    "title": "Configuring switch ports",\n    "content": ""\n  },\n  {\n    "title": "Establishing fabric connectivity",\n    "content": ""\n  },\n  {\n    "title": "Implementing basic Quality of Service (QoS)",\n    "content": ""\n  },\n  {\n    "title": "Verifying network reachability",\n    "content": ""\n  },\n  {\n    "title": "Documenting network configuration",\n    "content": ""\n  },\n  {\n    "title": "2.Cisco: HyperFabric for AI Architecture",\n    "content": ""\n  },\n  {\n    "title": "2.1: Advanced network fabric tuning",\n    "content": "Implementing RoCE configuration\\nOptimizing MTU settings\\nConfiguring flow control parameters\\nAdjusting buffer sizes\\nImplementing network segmentation\\nVerifying network performance enhancements"\n  },\n  {\n    "title": "Implementing RoCE configuration",\n    "content": ""\n  },\n  {\n    "title": "Optimizing MTU settings",\n    "content": ""\n  },\n  {\n    "title": "Configuring flow control parameters",\n    "content": ""\n  },\n  {\n    "title": "Adjusting buffer sizes",\n    "content": ""\n  },\n  {\n    "title": "Implementing network segmentation",\n    "content": ""\n  },\n  {\n    "title": "Verifying network performance enhancements",\n    "content": ""\n  },\n  {\n    "title": "2.2: Storage provisioning for large datasets",\n    "content": "Creating large capacity storage volumes\\nConfiguring high-performance storage tiers\\nSetting up distributed file system mounts\\nDefining access control lists (ACLs)"\n  },\n  {\n    "title": "Creating large capacity storage volumes",\n    "content": ""\n  },\n  {\n    "title": "Configuring high-performance storage tiers",\n    "content": ""\n  },\n  {\n    "title": "Setting up distributed file system mounts",\n    "content": ""\n  },\n  {\n    "title": "Defining access control lists (ACLs)",\n    "content": ""\n  },\n  {\n    "title": "2.3: Network-aware storage access",\n    "content": "Optimizing storage paths for performance\\nConfiguring multipathing for storage\\nLoad balancing storage connections\\nEnsuring low-latency storage access\\nTesting storage bandwidth utilization\\nValidating storage configuration against workload needs"\n  },\n  {\n    "title": "Optimizing storage paths for performance",\n    "content": ""\n  },\n  {\n    "title": "Configuring multipathing for storage",\n    "content": ""\n  },\n  {\n    "title": "Load balancing storage connections",\n    "content": ""\n  },\n  {\n    "title": "Ensuring low-latency storage access",\n    "content": ""\n  },\n  {\n    "title": "Testing storage bandwidth utilization",\n    "content": ""\n  }\n]'}], 'temperature': 1, 'max_tokens': 260000}
+Using model: google/gemini-2.5-flash-lite-preview-06-17
+Using directory from current_directory.txt: _output/Cisco_AI_Pod
+Enhanced prompts saved to: _output/Cisco_AI_Pod/06_Enhanced_Prompts.txt
+Successfully received 49 enhanced prompts
+Generated all enhanced prompts in 9.5 seconds
+
+Step 2: Generating images from enhanced prompts...
+Processing batch 1, slides 1 to 25
+Using pre-generated prompt for: Module 1: Main Module
+Using pre-generated prompt for: 1.Introduction: to Cisco HyperFabric for AI
+Using pre-generated prompt for: 1.1: Accessing the lab environment
+Using pre-generated prompt for: Understanding the provided credentials
+Using pre-generated prompt for: Connecting to the management console
+Using pre-generated prompt for: Verifying network connectivity
+Using pre-generated prompt for: Familiarizing with the lab topology
+Using pre-generated prompt for: Identifying key hardware components
+Using pre-generated prompt for: Checking system health status
+Using pre-generated prompt for: 1.2: Initial HyperFabric installation
+Using pre-generated prompt for: Following installation documentation
+Using pre-generated prompt for: Configuring basic network settings
+Using pre-generated prompt for: Deploying core cluster components
+Using pre-generated prompt for: Verifying service availability
+Using pre-generated prompt for: Performing initial system checks
+Using pre-generated prompt for: Documenting the setup process
+Using pre-generated prompt for: 1.3: Deploying compute nodes
+Using pre-generated prompt for: Registering compute hardware
+Using pre-generated prompt for: Allocating resources to nodes
+Using pre-generated prompt for: Verifying GPU detection
+Using pre-generated prompt for: Installing necessary drivers
+Using pre-generated prompt for: Configuring node networking
+Using pre-generated prompt for: Confirming node readiness
+Using pre-generated prompt for: 1.4: Basic network fabric configuration
+Using pre-generated prompt for: Setting up VLANs and subnets
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/01_slide.png
+1 - Generated 1 image(s) for prompt 1/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/02_slide.png
+1 - Generated 1 image(s) for prompt 2/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/03_slide.png
+1 - Generated 1 image(s) for prompt 3/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/04_slide.png
+1 - Generated 1 image(s) for prompt 4/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/05_slide.png
+1 - Generated 1 image(s) for prompt 5/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/06_slide.png
+1 - Generated 1 image(s) for prompt 6/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/07_slide.png
+1 - Generated 1 image(s) for prompt 7/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/08_slide.png
+1 - Generated 1 image(s) for prompt 8/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/09_slide.png
+1 - Generated 1 image(s) for prompt 9/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/10_slide.png
+1 - Generated 1 image(s) for prompt 10/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/11_slide.png
+1 - Generated 1 image(s) for prompt 11/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/12_slide.png
+1 - Generated 1 image(s) for prompt 12/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/13_slide.png
+1 - Generated 1 image(s) for prompt 13/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/14_slide.png
+1 - Generated 1 image(s) for prompt 14/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/15_slide.png
+1 - Generated 1 image(s) for prompt 15/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/16_slide.png
+1 - Generated 1 image(s) for prompt 16/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/17_slide.png
+1 - Generated 1 image(s) for prompt 17/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/18_slide.png
+1 - Generated 1 image(s) for prompt 18/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/19_slide.png
+1 - Generated 1 image(s) for prompt 19/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/20_slide.png
+1 - Generated 1 image(s) for prompt 20/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/21_slide.png
+1 - Generated 1 image(s) for prompt 21/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/22_slide.png
+1 - Generated 1 image(s) for prompt 22/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/23_slide.png
+1 - Generated 1 image(s) for prompt 23/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/24_slide.png
+1 - Generated 1 image(s) for prompt 24/25
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/25_slide.png
+1 - Generated 1 image(s) for prompt 25/25
+Generated 25/25 images in 21.7 seconds
+Processing batch 2, slides 26 to 49
+Using pre-generated prompt for: Configuring switch ports
+Using pre-generated prompt for: Establishing fabric connectivity
+Using pre-generated prompt for: Implementing basic Quality of Service (QoS)
+Using pre-generated prompt for: Verifying network reachability
+Using pre-generated prompt for: Documenting network configuration
+Using pre-generated prompt for: 2.Cisco: HyperFabric for AI Architecture
+Using pre-generated prompt for: 2.1: Advanced network fabric tuning
+Using pre-generated prompt for: Implementing RoCE configuration
+Using pre-generated prompt for: Optimizing MTU settings
+Using pre-generated prompt for: Configuring flow control parameters
+Using pre-generated prompt for: Adjusting buffer sizes
+Using pre-generated prompt for: Implementing network segmentation
+Using pre-generated prompt for: Verifying network performance enhancements
+Using pre-generated prompt for: 2.2: Storage provisioning for large datasets
+Using pre-generated prompt for: Creating large capacity storage volumes
+Using pre-generated prompt for: Configuring high-performance storage tiers
+Using pre-generated prompt for: Setting up distributed file system mounts
+Using pre-generated prompt for: Defining access control lists (ACLs)
+Using pre-generated prompt for: 2.3: Network-aware storage access
+Using pre-generated prompt for: Optimizing storage paths for performance
+Using pre-generated prompt for: Configuring multipathing for storage
+Using pre-generated prompt for: Load balancing storage connections
+Using pre-generated prompt for: Ensuring low-latency storage access
+Using pre-generated prompt for: Testing storage bandwidth utilization
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/26_slide.png
+1 - Generated 1 image(s) for prompt 1/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/27_slide.png
+1 - Generated 1 image(s) for prompt 2/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/28_slide.png
+1 - Generated 1 image(s) for prompt 3/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/29_slide.png
+1 - Generated 1 image(s) for prompt 4/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/30_slide.png
+1 - Generated 1 image(s) for prompt 5/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/31_slide.png
+1 - Generated 1 image(s) for prompt 6/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/32_slide.png
+1 - Generated 1 image(s) for prompt 7/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/33_slide.png
+1 - Generated 1 image(s) for prompt 8/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/34_slide.png
+1 - Generated 1 image(s) for prompt 9/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/35_slide.png
+1 - Generated 1 image(s) for prompt 10/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/36_slide.png
+1 - Generated 1 image(s) for prompt 11/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/37_slide.png
+1 - Generated 1 image(s) for prompt 12/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/38_slide.png
+1 - Generated 1 image(s) for prompt 13/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/39_slide.png
+1 - Generated 1 image(s) for prompt 14/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/40_slide.png
+1 - Generated 1 image(s) for prompt 15/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/41_slide.png
+1 - Generated 1 image(s) for prompt 16/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/42_slide.png
+1 - Generated 1 image(s) for prompt 17/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/43_slide.png
+1 - Generated 1 image(s) for prompt 18/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/44_slide.png
+1 - Generated 1 image(s) for prompt 19/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/45_slide.png
+1 - Generated 1 image(s) for prompt 20/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/46_slide.png
+1 - Generated 1 image(s) for prompt 21/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/47_slide.png
+1 - Generated 1 image(s) for prompt 22/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/48_slide.png
+1 - Generated 1 image(s) for prompt 23/24
+2 -Downloaded image to: _output/Cisco_AI_Pod/slide_images/49_slide.png
+1 - Generated 1 image(s) for prompt 24/24
+Generated 24/24 images in 25.9 seconds
+Creating PowerPoint presentation...
+
+Generating title slide image based on course title...
+Generated title slide image: _output/Cisco_AI_Pod/title_slide_image.png
+
+Adding title slide with generated image...
+Using Layout 'Title Slide' for title slide
+Adding full-slide image to title slide: _output/Cisco_AI_Pod/title_slide_image.png
+Added fallback speaker notes to title slide (enhanced notes not available)
+
+Creating slides with pre-generated images...
+
+Creating slides with pre-generated images...
+Using pre-generated image for slide: Module 1: Main Module
+Added image to slide: Module 1: Main Module
+Added fallback speaker notes to module slide: Module 1: Main Module (enhanced notes not available)
+Using pre-generated image for slide: 1.Introduction: to Cisco HyperFabric for AI
+Added image to slide: 1.Introduction: to Cisco HyperFabric for AI
+Using pre-generated image for slide: 1.1: Accessing the lab environment
+Added image to slide: 1.1: Accessing the lab environment
+Using pre-generated image for slide: Understanding the provided credentials
+Added image to slide: Understanding the provided credentials
+Using pre-generated image for slide: Connecting to the management console
+Added image to slide: Connecting to the management console
+Using pre-generated image for slide: Verifying network connectivity
+Added image to slide: Verifying network connectivity
+Using pre-generated image for slide: Familiarizing with the lab topology
+Added image to slide: Familiarizing with the lab topology
+Using pre-generated image for slide: Identifying key hardware components
+Added image to slide: Identifying key hardware components
+Using pre-generated image for slide: Checking system health status
+Added image to slide: Checking system health status
+Using pre-generated image for slide: 1.2: Initial HyperFabric installation
+Added image to slide: 1.2: Initial HyperFabric installation
+Using pre-generated image for slide: Following installation documentation
+Added image to slide: Following installation documentation
+Using pre-generated image for slide: Configuring basic network settings
+Added image to slide: Configuring basic network settings
+Using pre-generated image for slide: Deploying core cluster components
+Added image to slide: Deploying core cluster components
+Using pre-generated image for slide: Verifying service availability
+Added image to slide: Verifying service availability
+Using pre-generated image for slide: Performing initial system checks
+Added image to slide: Performing initial system checks
+Using pre-generated image for slide: Documenting the setup process
+Added image to slide: Documenting the setup process
+Using pre-generated image for slide: 1.3: Deploying compute nodes
+Added image to slide: 1.3: Deploying compute nodes
+Using pre-generated image for slide: Registering compute hardware
+Added image to slide: Registering compute hardware
+Using pre-generated image for slide: Allocating resources to nodes
+Added image to slide: Allocating resources to nodes
+Using pre-generated image for slide: Verifying GPU detection
+Added image to slide: Verifying GPU detection
+Using pre-generated image for slide: Installing necessary drivers
+Added image to slide: Installing necessary drivers
+Using pre-generated image for slide: Configuring node networking
+Added image to slide: Configuring node networking
+Using pre-generated image for slide: Confirming node readiness
+Added image to slide: Confirming node readiness
+Using pre-generated image for slide: 1.4: Basic network fabric configuration
+Added image to slide: 1.4: Basic network fabric configuration
+Using pre-generated image for slide: Setting up VLANs and subnets
+Added image to slide: Setting up VLANs and subnets
+Using pre-generated image for slide: Configuring switch ports
+Added image to slide: Configuring switch ports
+Using pre-generated image for slide: Establishing fabric connectivity
+Added image to slide: Establishing fabric connectivity
+Using pre-generated image for slide: Implementing basic Quality of Service (QoS)
+Added image to slide: Implementing basic Quality of Service (QoS)
+Using pre-generated image for slide: Verifying network reachability
+Added image to slide: Verifying network reachability
+Using pre-generated image for slide: Documenting network configuration
+Added image to slide: Documenting network configuration
+Using pre-generated image for slide: 2.Cisco: HyperFabric for AI Architecture
+Added image to slide: 2.Cisco: HyperFabric for AI Architecture
+Using pre-generated image for slide: 2.1: Advanced network fabric tuning
+Added image to slide: 2.1: Advanced network fabric tuning
+Using pre-generated image for slide: Implementing RoCE configuration
+Added image to slide: Implementing RoCE configuration
+Using pre-generated image for slide: Optimizing MTU settings
+Added image to slide: Optimizing MTU settings
+Using pre-generated image for slide: Configuring flow control parameters
+Added image to slide: Configuring flow control parameters
+Using pre-generated image for slide: Adjusting buffer sizes
+Added image to slide: Adjusting buffer sizes
+Using pre-generated image for slide: Implementing network segmentation
+Added image to slide: Implementing network segmentation
+Using pre-generated image for slide: Verifying network performance enhancements
+Added image to slide: Verifying network performance enhancements
+Using pre-generated image for slide: 2.2: Storage provisioning for large datasets
+Added image to slide: 2.2: Storage provisioning for large datasets
+Using pre-generated image for slide: Creating large capacity storage volumes
+Added image to slide: Creating large capacity storage volumes
+Using pre-generated image for slide: Configuring high-performance storage tiers
+Added image to slide: Configuring high-performance storage tiers
+Using pre-generated image for slide: Setting up distributed file system mounts
+Added image to slide: Setting up distributed file system mounts
+Using pre-generated image for slide: Defining access control lists (ACLs)
+Added image to slide: Defining access control lists (ACLs)
+Using pre-generated image for slide: 2.3: Network-aware storage access
+Added image to slide: 2.3: Network-aware storage access
+Using pre-generated image for slide: Optimizing storage paths for performance
+Added image to slide: Optimizing storage paths for performance
+Using pre-generated image for slide: Configuring multipathing for storage
+Added image to slide: Configuring multipathing for storage
+Using pre-generated image for slide: Load balancing storage connections
+Added image to slide: Load balancing storage connections
+Using pre-generated image for slide: Ensuring low-latency storage access
+Added image to slide: Ensuring low-latency storage access
+Using pre-generated image for slide: Testing storage bandwidth utilization
+Added image to slide: Testing storage bandwidth utilization
+
+Generated 50 slides.
+
+Generating enhanced slide snapshots for Markdown export...
+Looking for AI images in: _output/Cisco_AI_Pod/slide_images
+Found 49 AI-generated images
+Created title slide snapshot (1920x1080): _output/Cisco_AI_Pod/slide_snapshots/00_snapshot_title_slide.png
+Looking for image for 'Module 1: Main Module': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/01_slide.png
+Created snapshot for 'Module 1: Main Module'
+Looking for image for '1.Introduction: to Cisco HyperFabric for AI': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/02_slide.png
+Created snapshot for '1.Introduction: to Cisco HyperFabric for AI'
+Looking for image for '1.1: Accessing the lab environment': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/03_slide.png
+Created snapshot for '1.1: Accessing the lab environment'
+Looking for image for 'Understanding the provided credentials': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/04_slide.png
+Created snapshot for 'Understanding the provided credentials'
+Looking for image for 'Connecting to the management console': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/05_slide.png
+Created snapshot for 'Connecting to the management console'
+Looking for image for 'Verifying network connectivity': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/06_slide.png
+Created snapshot for 'Verifying network connectivity'
+Looking for image for 'Familiarizing with the lab topology': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/07_slide.png
+Created snapshot for 'Familiarizing with the lab topology'
+Looking for image for 'Identifying key hardware components': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/08_slide.png
+Created snapshot for 'Identifying key hardware components'
+Looking for image for 'Checking system health status': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/09_slide.png
+Created snapshot for 'Checking system health status'
+Looking for image for '1.2: Initial HyperFabric installation': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/10_slide.png
+Created snapshot for '1.2: Initial HyperFabric installation'
+Looking for image for 'Following installation documentation': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/11_slide.png
+Created snapshot for 'Following installation documentation'
+Looking for image for 'Configuring basic network settings': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/12_slide.png
+Created snapshot for 'Configuring basic network settings'
+Looking for image for 'Deploying core cluster components': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/13_slide.png
+Created snapshot for 'Deploying core cluster components'
+Looking for image for 'Verifying service availability': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/14_slide.png
+Created snapshot for 'Verifying service availability'
+Looking for image for 'Performing initial system checks': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/15_slide.png
+Created snapshot for 'Performing initial system checks'
+Looking for image for 'Documenting the setup process': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/16_slide.png
+Created snapshot for 'Documenting the setup process'
+Looking for image for '1.3: Deploying compute nodes': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/17_slide.png
+Created snapshot for '1.3: Deploying compute nodes'
+Looking for image for 'Registering compute hardware': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/18_slide.png
+Created snapshot for 'Registering compute hardware'
+Looking for image for 'Allocating resources to nodes': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/19_slide.png
+Created snapshot for 'Allocating resources to nodes'
+Looking for image for 'Verifying GPU detection': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/20_slide.png
+Created snapshot for 'Verifying GPU detection'
+Looking for image for 'Installing necessary drivers': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/21_slide.png
+Created snapshot for 'Installing necessary drivers'
+Looking for image for 'Configuring node networking': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/22_slide.png
+Created snapshot for 'Configuring node networking'
+Looking for image for 'Confirming node readiness': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/23_slide.png
+Created snapshot for 'Confirming node readiness'
+Looking for image for '1.4: Basic network fabric configuration': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/24_slide.png
+Created snapshot for '1.4: Basic network fabric configuration'
+Looking for image for 'Setting up VLANs and subnets': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/25_slide.png
+Created snapshot for 'Setting up VLANs and subnets'
+Looking for image for 'Configuring switch ports': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/26_slide.png
+Created snapshot for 'Configuring switch ports'
+Looking for image for 'Establishing fabric connectivity': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/27_slide.png
+Created snapshot for 'Establishing fabric connectivity'
+Looking for image for 'Implementing basic Quality of Service (QoS)': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/28_slide.png
+Created snapshot for 'Implementing basic Quality of Service (QoS)'
+Looking for image for 'Verifying network reachability': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/29_slide.png
+Created snapshot for 'Verifying network reachability'
+Looking for image for 'Documenting network configuration': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/30_slide.png
+Created snapshot for 'Documenting network configuration'
+Looking for image for '2.Cisco: HyperFabric for AI Architecture': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/31_slide.png
+Created snapshot for '2.Cisco: HyperFabric for AI Architecture'
+Looking for image for '2.1: Advanced network fabric tuning': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/32_slide.png
+Created snapshot for '2.1: Advanced network fabric tuning'
+Looking for image for 'Implementing RoCE configuration': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/33_slide.png
+Created snapshot for 'Implementing RoCE configuration'
+Looking for image for 'Optimizing MTU settings': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/34_slide.png
+Created snapshot for 'Optimizing MTU settings'
+Looking for image for 'Configuring flow control parameters': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/35_slide.png
+Created snapshot for 'Configuring flow control parameters'
+Looking for image for 'Adjusting buffer sizes': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/36_slide.png
+Created snapshot for 'Adjusting buffer sizes'
+Looking for image for 'Implementing network segmentation': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/37_slide.png
+Created snapshot for 'Implementing network segmentation'
+Looking for image for 'Verifying network performance enhancements': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/38_slide.png
+Created snapshot for 'Verifying network performance enhancements'
+Looking for image for '2.2: Storage provisioning for large datasets': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/39_slide.png
+Created snapshot for '2.2: Storage provisioning for large datasets'
+Looking for image for 'Creating large capacity storage volumes': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/40_slide.png
+Created snapshot for 'Creating large capacity storage volumes'
+Looking for image for 'Configuring high-performance storage tiers': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/41_slide.png
+Created snapshot for 'Configuring high-performance storage tiers'
+Looking for image for 'Setting up distributed file system mounts': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/42_slide.png
+Created snapshot for 'Setting up distributed file system mounts'
+Looking for image for 'Defining access control lists (ACLs)': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/43_slide.png
+Created snapshot for 'Defining access control lists (ACLs)'
+Looking for image for '2.3: Network-aware storage access': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/44_slide.png
+Created snapshot for '2.3: Network-aware storage access'
+Looking for image for 'Optimizing storage paths for performance': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/45_slide.png
+Created snapshot for 'Optimizing storage paths for performance'
+Looking for image for 'Configuring multipathing for storage': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/46_slide.png
+Created snapshot for 'Configuring multipathing for storage'
+Looking for image for 'Load balancing storage connections': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/47_slide.png
+Created snapshot for 'Load balancing storage connections'
+Looking for image for 'Ensuring low-latency storage access': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/48_slide.png
+Created snapshot for 'Ensuring low-latency storage access'
+Looking for image for 'Testing storage bandwidth utilization': Found in image_paths
+Image found at: _output/Cisco_AI_Pod/slide_images/49_slide.png
+Created snapshot for 'Testing storage bandwidth utilization'
+Markdown version with images saved to: _output/Cisco_AI_Pod/course_presentation.md
+
+Generation complete!
+PowerPoint version: _output/Cisco_AI_Pod/course_presentation.pptx
+Markdown version: _output/Cisco_AI_Pod/course_presentation.md
+Enhanced prompts saved to: _output/Cisco_AI_Pod/06_Enhanced_Prompts.txt
+Images saved to: _output/Cisco_AI_Pod/slide_images
+Using directory from current_directory.txt: _output/Cisco_AI_Pod
+Added title slide for course: Cisco AI Pod
+Added module slide: 1: Main Module
+
+Preparing slide content for batch speaker notes generation...
+Processing 330 slides for notes generation
+Slide: Course: Cisco AI Pod
+Content: Welcome to this comprehensive course on Cisco AI P...
+---
+Slide: 1: Main Module
+Content: to Cisco HyperFabric for AI
+Accessing the lab envi...
+---
+Slide: 1.Introduction: to Cisco HyperFabric for AI
+Content: 
+---
+Slide: 1.1: Accessing the lab environment
+Content: Understanding the provided credentials
+Connecting ...
+---
+Slide: Understanding the provided credentials
+Content: 
+---
+Slide: Connecting to the management console
+Content: 
+---
+Slide: Verifying network connectivity
+Content: 
+---
+Slide: Familiarizing with the lab topology
+Content: 
+---
+Slide: Identifying key hardware components
+Content: 
+---
+Slide: Checking system health status
+Content: 
+---
+Slide: 1.2: Initial HyperFabric installation
+Content: Following installation documentation
+Configuring b...
+---
+Slide: Following installation documentation
+Content: 
+---
+Slide: Configuring basic network settings
+Content: 
+---
+Slide: Deploying core cluster components
+Content: 
+---
+Slide: Verifying service availability
+Content: 
+---
+Slide: Performing initial system checks
+Content: 
+---
+Slide: Documenting the setup process
+Content: 
+---
+Slide: 1.3: Deploying compute nodes
+Content: Registering compute hardware
+Allocating resources ...
+---
+Slide: Registering compute hardware
+Content: 
+---
+Slide: Allocating resources to nodes
+Content: 
+---
+Slide: Verifying GPU detection
+Content: 
+---
+Slide: Installing necessary drivers
+Content: 
+---
+Slide: Configuring node networking
+Content: 
+---
+Slide: Confirming node readiness
+Content: 
+---
+Slide: 1.4: Basic network fabric configuration
+Content: Setting up VLANs and subnets
+Configuring switch po...
+---
+Slide: Setting up VLANs and subnets
+Content: 
+---
+Slide: Configuring switch ports
+Content: 
+---
+Slide: Establishing fabric connectivity
+Content: 
+---
+Slide: Implementing basic Quality of Service (QoS)
+Content: 
+---
+Slide: Verifying network reachability
+Content: 
+---
+Slide: Documenting network configuration
+Content: 
+---
+Slide: 2.Cisco: HyperFabric for AI Architecture
+Content: 
+---
+Slide: 2.1: Advanced network fabric tuning
+Content: Implementing RoCE configuration
+Optimizing MTU set...
+---
+Slide: Implementing RoCE configuration
+Content: 
+---
+Slide: Optimizing MTU settings
+Content: 
+---
+Slide: Configuring flow control parameters
+Content: 
+---
+Slide: Adjusting buffer sizes
+Content: 
+---
+Slide: Implementing network segmentation
+Content: 
+---
+Slide: Verifying network performance enhancements
+Content: 
+---
+Slide: 2.2: Storage provisioning for large datasets
+Content: Creating large capacity storage volumes
+Configurin...
+---
+Slide: Creating large capacity storage volumes
+Content: 
+---
+Slide: Configuring high-performance storage tiers
+Content: 
+---
+Slide: Setting up distributed file system mounts
+Content: 
+---
+Slide: Defining access control lists (ACLs)
+Content: 
+---
+Slide: 2.3: Network-aware storage access
+Content: Optimizing storage paths for performance
+Configuri...
+---
+Slide: Optimizing storage paths for performance
+Content: 
+---
+Slide: Configuring multipathing for storage
+Content: 
+---
+Slide: Load balancing storage connections
+Content: 
+---
+Slide: Ensuring low-latency storage access
+Content: 
+---
+Slide: Testing storage bandwidth utilization
+Content: 
+---
+Slide: Validating storage configuration against workload needs
+Content: 
+---
+Slide: 2.4: Implementing data management policies
+Content: Setting up retention policies
+Configuring data tie...
+---
+Slide: Setting up retention policies
+Content: 
+---
+Slide: Configuring data tiering rules
+Content: 
+---
+Slide: Defining backup schedules
+Content: 
+---
+Slide: Implementing data lifecycle management
+Content: 
+---
+Slide: Testing data archival procedures
+Content: 
+---
+Slide: Verifying data recovery capabilities
+Content: 
+---
+Slide: 3.Deploying: Cisco HyperFabric for AI
+Content: 
+---
+Slide: 3.1: Containerizing a simple AI/ML model
+Content: Writing a Dockerfile for the model
+Defining depend...
+---
+Slide: Writing a Dockerfile for the model
+Content: 
+---
+Slide: Defining dependencies and libraries
+Content: 
+---
+Slide: Building and testing the container image
+Content: 
+---
+Slide: Pushing the image to a registry
+Content: 
+---
+Slide: Optimizing the container image size
+Content: 
+---
+Slide: Documenting the containerization process
+Content: 
+---
+Slide: 3.2: Creating Kubernetes deployment manifests
+Content: Defining Pod specifications
+Configuring resource r...
+---
+Slide: Defining Pod specifications
+Content: 
+---
+Slide: Configuring resource requests and limits (CPU, GPU, Memory)
+Content: 
+---
+Slide: Setting up environment variables
+Content: 
+---
+Slide: Specifying storage volumes and persistent data
+Content: 
+---
+Slide: Implementing readiness and liveness probes
+Content: 
+---
+Slide: Reviewing deployment configurations
+Content: 
+---
+Slide: 3.3: Deploying the application to the cluster
+Content: Applying the deployment manifest
+Monitoring the de...
+---
+Slide: Applying the deployment manifest
+Content: 
+---
+Slide: Monitoring the deployment status
+Content: 
+---
+Slide: Troubleshooting failed deployments
+Content: 
+---
+Slide: Scaling the application deployment
+Content: 
+---
+Slide: Verifying container execution
+Content: 
+---
+Slide: Rolling back to a previous version if necessary
+Content: 
+---
+Slide: 3.4: Integrating with storage for data access
+Content: Mounting persistent volumes for data
+Ensuring corr...
+---
+Slide: Mounting persistent volumes for data
+Content: 
+---
+Slide: Ensuring correct data paths within the container
+Content: 
+---
+Slide: Testing data read and write operations
+Content: 
+---
+Slide: Verifying data integrity
+Content: 
+---
+Slide: Handling potential data access errors
+Content: 
+---
+Slide: Configuring auto-mounting of data
+Content: 
+---
+Slide: 4.Compute: and GPU Management
+Content: 
+---
+Slide: 4.1: Accessing the unified monitoring dashboard
+Content: Navigating to the monitoring section
+Understanding...
+---
+Slide: Navigating to the monitoring section
+Content: 
+---
+Slide: Understanding key dashboard widgets
+Content: 
+---
+Slide: Customizing the dashboard view
+Content: 
+---
+Slide: Filtering data by time range
+Content: 
+---
+Slide: Setting up user-specific views
+Content: 
+---
+Slide: Saving customized dashboards
+Content: 
+---
+Slide: 4.2: Monitoring compute and GPU utilization
+Content: Tracking CPU usage per pod and node
+Monitoring GPU...
+---
+Slide: Tracking CPU usage per pod and node
+Content: 
+---
+Slide: Monitoring GPU utilization percentages
+Content: 
+---
+Slide: Analyzing GPU memory consumption
+Content: 
+---
+Slide: Identifying underutilized or overloaded resources
+Content: 
+---
+Slide: Correlating compute metrics with workload performance
+Content: 
+---
+Slide: Setting alerts for high utilization
+Content: 
+---
+Slide: 4.3: Network performance monitoring
+Content: Tracking bandwidth usage
+Monitoring latency betwee...
+---
+Slide: Tracking bandwidth usage
+Content: 
+---
+Slide: Monitoring latency between nodes
+Content: 
+---
+Slide: Analyzing packet loss rates
+Content: 
+---
+Slide: Identifying network congestion points
+Content: 
+---
+Slide: Verifying RDMA connectivity status
+Content: 
+---
+Slide: Setting alerts for network anomalies
+Content: 
+---
+Slide: 4.4: Storage performance monitoring
+Content: Measuring storage IOPS and throughput
+Monitoring s...
+---
+Slide: Measuring storage IOPS and throughput
+Content: 
+---
+Slide: Monitoring storage latency
+Content: 
+---
+Slide: Checking storage capacity utilization
+Content: 
+---
+Slide: Analyzing I/O wait times
+Content: 
+---
+Slide: Verifying storage mount points and accessibility
+Content: 
+---
+Slide: Setting alerts for storage performance degradation
+Content: 
+---
+Slide: 5.Network: Optimization for AI
+Content: 
+---
+Slide: 5.1: Understanding workload scaling needs
+Content: Identifying performance limitations during trainin...
+---
+Slide: Identifying performance limitations during training
+Content: 
+---
+Slide: Analyzing resource utilization patterns
+Content: 
+---
+Slide: Determining the need for more compute or GPU power
+Content: 
+---
+Slide: Estimating the required scale-up
+Content: 
+---
+Slide: Deciding between horizontal and vertical scaling
+Content: 
+---
+Slide: Planning for potential resource contention
+Content: 
+---
+Slide: 5.2: Scaling compute nodes (Horizontal Scaling)
+Content: Adding new compute nodes to the cluster
+Registerin...
+---
+Slide: Adding new compute nodes to the cluster
+Content: 
+---
+Slide: Registering and configuring new nodes
+Content: 
+---
+Slide: Ensuring proper network connectivity for new nodes
+Content: 
+---
+Slide: Verifying GPU availability on new nodes
+Content: 
+---
+Slide: Updating cluster autoscaler configurations
+Content: 
+---
+Slide: Monitoring cluster capacity changes
+Content: 
+---
+Slide: 5.3: Scaling GPU resources within existing nodes
+Content: Understanding GPU sharing mechanisms
+Adjusting GPU...
+---
+Slide: Understanding GPU sharing mechanisms
+Content: 
+---
+Slide: Adjusting GPU allocation policies
+Content: 
+---
+Slide: Utilizing tools for GPU slicing if available
+Content: 
+---
+Slide: Monitoring GPU utilization after changes
+Content: 
+---
+Slide: Rebalancing workloads across GPUs
+Content: 
+---
+Slide: Assessing the impact of GPU scaling on performance
+Content: 
+---
+Slide: 5.4: Scaling application deployments (Pods)
+Content: Adjusting replica counts for deployments
+Using Hor...
+---
+Slide: Adjusting replica counts for deployments
+Content: 
+---
+Slide: Using Horizontal Pod Autoscaler (HPA) with custom metrics
+Content: 
+---
+Slide: Configuring HPA based on GPU utilization
+Content: 
+---
+Slide: Monitoring pod scaling events
+Content: 
+---
+Slide: Ensuring proper load distribution across pods
+Content: 
+---
+Slide: Testing application responsiveness under increased load
+Content: 
+---
+Slide: 6.Storage: Solutions for AI
+Content: 
+---
+Slide: 6.1: Simulating common failure scenarios
+Content: Simulating network connectivity loss between nodes...
+---
+Slide: Simulating network connectivity loss between nodes
+Content: 
+---
+Slide: Simulating storage I/O errors
+Content: 
+---
+Slide: Introducing compute resource exhaustion
+Content: 
+---
+Slide: Simulating GPU driver failures
+Content: 
+---
+Slide: Causing application deployment failures
+Content: 
+---
+Slide: Simulating a service outage
+Content: 
+---
+Slide: 6.2: Identifying and isolating the faulty component
+Content: Using monitoring tools to detect anomalies
+Analyzi...
+---
+Slide: Using monitoring tools to detect anomalies
+Content: 
+---
+Slide: Analyzing system logs for error messages
+Content: 
+---
+Slide: Checking the health status of Kubernetes components
+Content: 
+---
+Slide: Verifying network reachability
+Content: 
+---
+Slide: Assessing storage system health
+Content: 
+---
+Slide: Examining compute node status
+Content: 
+---
+Slide: 6.3: Diagnosing root causes using diagnostic tools
+Content: Running network diagnostic commands (ping, tracero...
+---
+Slide: Running network diagnostic commands (ping, traceroute)
+Content: 
+---
+Slide: Performing disk checks on storage
+Content: 
+---
+Slide: Using `kubectl describe` and `kubectl logs` effectively
+Content: 
+---
+Slide: Checking system resource utilization (CPU, memory, GPU)
+Content: 
+---
+Slide: Inspecting relevant configuration files
+Content: 
+---
+Slide: Utilizing vendor-specific diagnostic tools
+Content: 
+---
+Slide: 6.4: Applying corrective actions
+Content: Restarting failed services or nodes
+Adjusting reso...
+---
+Slide: Restarting failed services or nodes
+Content: 
+---
+Slide: Adjusting resource allocations
+Content: 
+---
+Slide: Reconfiguring network or storage settings
+Content: 
+---
+Slide: Rolling back faulty software updates
+Content: 
+---
+Slide: Rescheduling failed application instances
+Content: 
+---
+Slide: Applying security patches if needed
+Content: 
+---
+Slide: 7.Managing: AI/ML Workflows on HyperFabric
+Content: 
+---
+Slide: 7.1: Introduction to MLOps concepts in HyperFabric
+Content: Understanding the CI/CD pipeline for ML
+Key stages...
+---
+Slide: Understanding the CI/CD pipeline for ML
+Content: 
+---
+Slide: Key stages of the MLOps lifecycle
+Content: 
+---
+Slide: Benefits of automating ML workflows
+Content: 
+---
+Slide: Integration points with HyperFabric components
+Content: 
+---
+Slide: Importance of reproducibility in ML
+Content: 
+---
+Slide: Role of collaboration in MLOps
+Content: 
+---
+Slide: 7.2: Using a Model Registry
+Content: Registering different versions of a model
+Storing ...
+---
+Slide: Registering different versions of a model
+Content: 
+---
+Slide: Storing model metadata (parameters, metrics)
+Content: 
+---
+Slide: Versioning datasets used for training
+Content: 
+---
+Slide: Associating models with specific training runs
+Content: 
+---
+Slide: Managing model lifecycle stages (e.g., staging, production)
+Content: 
+---
+Slide: Retrieving specific model versions for deployment
+Content: 
+---
+Slide: 8.3: Log Analysis and Diagnostics
+Content: Centralized logging architecture
+Filtering and sea...
+---
+Slide: Centralized logging architecture
+Content: 
+---
+Slide: Filtering and searching logs
+Content: 
+---
+Slide: Analyzing Kubernetes event logs
+Content: 
+---
+Slide: Troubleshooting application errors from logs
+Content: 
+---
+Slide: Identifying security-related log events
+Content: 
+---
+Slide: Log retention policies
+Content: 
+---
+Slide: 7.4: Automating Model Training Pipelines
+Content: Defining training workflows using orchestration to...
+---
+Slide: Defining training workflows using orchestration tools
+Content: 
+---
+Slide: Triggering training jobs based on code changes or new data
+Content: 
+---
+Slide: Integrating with CI/CD systems (e.g., Jenkins, GitLab CI)
+Content: 
+---
+Slide: Handling distributed training configurations
+Content: 
+---
+Slide: Automating hyperparameter tuning
+Content: 
+---
+Slide: Setting up notifications for training completion or failure
+Content: 
+---
+Slide: 8.Monitoring: and Troubleshooting HyperFabric for AI
+Content: 
+---
+Slide: 8.1: Unified Management Interface
+Content: Dashboard overview
+Navigating through system compo...
+---
+Slide: Dashboard overview
+Content: 
+---
+Slide: Navigating through system components
+Content: 
+---
+Slide: Centralized logging access
+Content: 
+---
+Slide: Key performance indicators (KPIs)
+Content: 
+---
+Slide: User and role management
+Content: 
+---
+Slide: Configuration management tools
+Content: 
+---
+Slide: 8.2: Performance Monitoring and Telemetry
+Content: Collecting hardware metrics (CPU, GPU, Network, St...
+---
+Slide: Collecting hardware metrics (CPU, GPU, Network, Storage)
+Content: 
+---
+Slide: Collecting software metrics (Kubernetes, applications)
+Content: 
+---
+Slide: Real-time performance visualization
+Content: 
+---
+Slide: Historical performance analysis
+Content: 
+---
+Slide: Setting performance thresholds
+Content: 
+---
+Slide: Correlating metrics across components
+Content: 
+---
+Slide: 8.4: Common Troubleshooting Scenarios and Best Practices
+Content: Network connectivity issues
+Storage access problem...
+---
+Slide: Network connectivity issues
+Content: 
+---
+Slide: Storage access problems
+Content: 
+---
+Slide: Compute resource contention
+Content: 
+---
+Slide: GPU driver or configuration errors
+Content: 
+---
+Slide: Application deployment failures
+Content: 
+---
+Slide: Performance degradation troubleshooting
+Content: 
+---
+Slide: 1.5: Basic storage configuration
+Content: Connecting to the storage system
+Creating initial ...
+---
+Slide: Connecting to the storage system
+Content: 
+---
+Slide: Creating initial storage pools
+Content: 
+---
+Slide: Defining storage access policies
+Content: 
+---
+Slide: Mounting storage from compute nodes
+Content: 
+---
+Slide: Performing basic storage I/O tests
+Content: 
+---
+Slide: Documenting storage setup
+Content: 
+---
+Slide: 1.6: Verifying system integration
+Content: Checking communication between components
+Validati...
+---
+Slide: Checking communication between components
+Content: 
+---
+Slide: Validating resource manager operation
+Content: 
+---
+Slide: Ensuring all services report healthy
+Content: 
+---
+Slide: Testing basic job submission
+Content: 
+---
+Slide: Addressing any initial configuration errors
+Content: 
+---
+Slide: Finalizing the deployment checklist
+Content: 
+---
+Slide: 2.5: Configuring network security for storage
+Content: Setting up firewalls for storage access
+Implementi...
+---
+Slide: Setting up firewalls for storage access
+Content: 
+---
+Slide: Implementing IP-based access restrictions
+Content: 
+---
+Slide: Configuring secure communication protocols
+Content: 
+---
+Slide: Auditing storage access logs
+Content: 
+---
+Slide: Ensuring compliance with security standards
+Content: 
+---
+Slide: Reviewing security configurations
+Content: 
+---
+Slide: 2.6: Performance testing of network and storage
+Content: Running synthetic benchmarks
+Measuring throughput ...
+---
+Slide: Running synthetic benchmarks
+Content: 
+---
+Slide: Measuring throughput and latency
+Content: 
+---
+Slide: Identifying bottlenecks through testing
+Content: 
+---
+Slide: Validating configuration against expected performance
+Content: 
+---
+Slide: Documenting performance results
+Content: 
+---
+Slide: Making necessary adjustments based on tests
+Content: 
+---
+Slide: 3.5: Configuring network access to the application
+Content: Creating Kubernetes Services for access
+Exposing t...
+---
+Slide: Creating Kubernetes Services for access
+Content: 
+---
+Slide: Exposing the application externally (e.g., LoadBalancer, NodePort)
+Content: 
+---
+Slide: Configuring Ingress controllers for advanced routing
+Content: 
+---
+Slide: Testing application accessibility
+Content: 
+---
+Slide: Implementing network security policies
+Content: 
+---
+Slide: Verifying network connectivity
+Content: 
+---
+Slide: 3.6: Performing basic inference with the deployed model
+Content: Sending sample data to the application
+Analyzing t...
+---
+Slide: Sending sample data to the application
+Content: 
+---
+Slide: Analyzing the output results
+Content: 
+---
+Slide: Verifying model accuracy
+Content: 
+---
+Slide: Measuring inference latency
+Content: 
+---
+Slide: Testing edge cases and error handling
+Content: 
+---
+Slide: Documenting inference results
+Content: 
+---
+Slide: 4.5: Monitoring AI/ML application-specific metrics
+Content: Tracking training job progress indicators
+Monitori...
+---
+Slide: Tracking training job progress indicators
+Content: 
+---
+Slide: Monitoring model inference speed
+Content: 
+---
+Slide: Analyzing queue lengths for inference requests
+Content: 
+---
+Slide: Observing data loading times
+Content: 
+---
+Slide: Tracking resource usage by the ML framework
+Content: 
+---
+Slide: Identifying application-level performance bottlenecks
+Content: 
+---
+Slide: 4.6: Setting up alerts and notifications
+Content: Defining alert conditions based on metrics
+Configu...
+---
+Slide: Defining alert conditions based on metrics
+Content: 
+---
+Slide: Configuring notification channels (email, Slack)
+Content: 
+---
+Slide: Setting alert severity levels
+Content: 
+---
+Slide: Testing alert triggers
+Content: 
+---
+Slide: Reviewing historical alerts
+Content: 
+---
+Slide: Tuning alert thresholds to reduce false positives
+Content: 
+---
+Slide: 5.5: Impact of scaling on network and storage
+Content: Monitoring network bandwidth usage during scaling
+...
+---
+Slide: Monitoring network bandwidth usage during scaling
+Content: 
+---
+Slide: Assessing storage I/O impact from increased workloads
+Content: 
+---
+Slide: Verifying storage access performance for new pods
+Content: 
+---
+Slide: Checking for network bottlenecks created by scaling
+Content: 
+---
+Slide: Re-evaluating storage capacity needs
+Content: 
+---
+Slide: Adjusting network configurations if necessary
+Content: 
+---
+Slide: 5.6: Performance validation after scaling
+Content: Rerunning benchmark tests
+Comparing training times...
+---
+Slide: Rerunning benchmark tests
+Content: 
+---
+Slide: Comparing training times before and after scaling
+Content: 
+---
+Slide: Measuring inference latency under load
+Content: 
+---
+Slide: Verifying resource utilization remains balanced
+Content: 
+---
+Slide: Identifying any new performance bottlenecks
+Content: 
+---
+Slide: Documenting scaling results and improvements
+Content: 
+---
+Slide: 6.5: Verifying the resolution of the issue
+Content: Re-running diagnostic tests
+Monitoring system heal...
+---
+Slide: Re-running diagnostic tests
+Content: 
+---
+Slide: Monitoring system health and performance metrics
+Content: 
+---
+Slide: Testing application functionality
+Content: 
+---
+Slide: Confirming normal resource utilization
+Content: 
+---
+Slide: Ensuring stability post-resolution
+Content: 
+---
+Slide: Documenting the troubleshooting process and resolution
+Content: 
+---
+Slide: 6.6: Post-incident review and preventative measures
+Content: Analyzing the cause of the failure
+Identifying gap...
+---
+Slide: Analyzing the cause of the failure
+Content: 
+---
+Slide: Identifying gaps in monitoring or alerting
+Content: 
+---
+Slide: Recommending configuration changes to prevent recurrence
+Content: 
+---
+Slide: Updating documentation or runbooks
+Content: 
+---
+Slide: Discussing lessons learned with the team
+Content: 
+---
+Slide: Implementing automated checks for potential issues
+Content: 
+---
+Slide: 7.3: Implementing Experiment Tracking
+Content: Logging training parameters and hyperparameters
+Re...
+---
+Slide: Logging training parameters and hyperparameters
+Content: 
+---
+Slide: Recording performance metrics during training
+Content: 
+---
+Slide: Visualizing experiment results and comparisons
+Content: 
+---
+Slide: Tracking code versions used for experiments
+Content: 
+---
+Slide: Associating experiments with specific datasets
+Content: 
+---
+Slide: Techniques for systematic experimentation
+Content: 
+---
+Slide: 7.5: Deploying Models as Services
+Content: Creating inference endpoints using Kubernetes
+Pack...
+---
+Slide: Creating inference endpoints using Kubernetes
+Content: 
+---
+Slide: Packaging models into deployable containers
+Content: 
+---
+Slide: Strategies for A/B testing new model versions
+Content: 
+---
+Slide: Implementing canary deployments for models
+Content: 
+---
+Slide: Scaling inference services based on demand
+Content: 
+---
+Slide: Monitoring inference performance and resource usage
+Content: 
+---
+Slide: 7.6: Monitoring Deployed Models
+Content: Tracking model prediction drift
+Monitoring data dr...
+---
+Slide: Tracking model prediction drift
+Content: 
+---
+Slide: Monitoring data drift in incoming requests
+Content: 
+---
+Slide: Logging model predictions and confidence scores
+Content: 
+---
+Slide: Setting up alerts for performance degradation
+Content: 
+---
+Slide: Analyzing model behavior in production
+Content: 
+---
+Slide: Establishing retraining triggers based on monitoring data
+Content: 
+---
+Found 330 slides for speaker notes generation
+Sending batch request to LLM for 330 slide notes...
+Sending request to OpenRouter.ai
+{'model': 'google/gemini-2.5-flash-lite-preview-06-17', 'messages': [{'role': 'system', 'content': '\n    You are an expert educator and speaker notes writer for technical presentations.\n    \n    I will provide you with a list of slide titles and content for a technical course.\n    For EACH slide, create comprehensive speaker notes that would help an instructor deliver the content effectively.\n    \n    PAY SPECIAL ATTENTION to these specific slide types:\n    1. For slides with "type": "title", create a welcoming introduction for the entire course.\n    2. For slides with "type": "module", create an engaging module introduction.\n    3. For all other slides, create standard detailed notes.\n    \n    IMPORTANT: EVERY slide must have notes, including title slides and module slides.\n    \n    The student notes should:\n    - Be a couple of paragraphs long and can be read by a student to understand the content\n    - For title slides: Include a warm welcome and brief course overview\n    - For module slides: Include an introduction to the module\'s importance and key learning objectives\n    \n    Provide your response as a JSON object with the following structure:\n    {"slide_title": "student notes"}\n    \n    For example:\n    {\n      "Course: AI in Cybersecurity": "Welcome to our comprehensive course on AI in Cybersecurity. Throughout this program, we\'ll explore how artificial intelligence is revolutionizing both offensive and defensive cybersecurity operations. This course will equip you with practical knowledge of AI-powered security tools and strategies for implementing them in your organization.",\n      "1: Introduction to AI in Cybersecurity": "Welcome to our module on AI in Cybersecurity. This module provides an overview of how artificial intelligence technologies are transforming the cybersecurity landscape. Emphasize to participants that AI is both creating new security challenges and offering powerful new defensive capabilities. Engage the audience by asking how many of them currently use AI tools in their security operations. Transition: Let\'s begin by examining how cyber threats have evolved alongside AI technologies."\n    }\n    \n    Only include the JSON response with no additional explanations or text.\n    '}, {'role': 'user', 'content': 'Generate detailed speaker notes for each of these technical presentation slides:\n[\n  {\n    "title": "Course: Cisco AI Pod",\n    "content": "Welcome to this comprehensive course on Cisco AI Pod",\n    "type": "title"\n  },\n  {\n    "title": "1: Main Module",\n    "content": "to Cisco HyperFabric for AI\\nAccessing the lab environment\\nInitial HyperFabric installation\\nDeploying compute nodes\\nBasic network fabric configuration\\nHyperFabric for AI Architecture\\nAdvanced network fabric tuning\\nStorage provisioning for large datasets\\nNetwork-aware storage access\\nImplementing data management policies\\nCisco HyperFabric for AI\\nContainerizing a simple AI/ML model\\nCreating Kubernetes deployment manifests\\nDeploying the application to the cluster\\nIntegrating with storage for data access\\nand GPU Management\\nAccessing the unified monitoring dashboard\\nMonitoring compute and GPU utilization\\nNetwork performance monitoring\\nStorage performance monitoring\\nOptimization for AI\\nUnderstanding workload scaling needs\\nScaling compute nodes (Horizontal Scaling)\\nScaling GPU resources within existing nodes\\nScaling application deployments (Pods)\\nSolutions for AI\\nSimulating common failure scenarios\\nIdentifying and isolating the faulty component\\nDiagnosing root causes using diagnostic tools\\nApplying corrective actions\\nAI/ML Workflows on HyperFabric\\nIntroduction to MLOps concepts in HyperFabric\\nUsing a Model Registry\\nLog Analysis and Diagnostics\\nAutomating Model Training Pipelines\\nand Troubleshooting HyperFabric for AI\\nUnified Management Interface\\nPerformance Monitoring and Telemetry\\nCommon Troubleshooting Scenarios and Best Practices\\nBasic storage configuration\\nVerifying system integration\\nConfiguring network security for storage\\nPerformance testing of network and storage\\nConfiguring network access to the application\\nPerforming basic inference with the deployed model\\nMonitoring AI/ML application-specific metrics\\nSetting up alerts and notifications\\nImpact of scaling on network and storage\\nPerformance validation after scaling\\nVerifying the resolution of the issue\\nPost-incident review and preventative measures\\nImplementing Experiment Tracking\\nDeploying Models as Services\\nMonitoring Deployed Models",\n    "type": "module"\n  },\n  {\n    "title": "1.Introduction: to Cisco HyperFabric for AI",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "1.1: Accessing the lab environment",\n    "content": "Understanding the provided credentials\\nConnecting to the management console\\nVerifying network connectivity\\nFamiliarizing with the lab topology\\nIdentifying key hardware components\\nChecking system health status",\n    "type": "topic"\n  },\n  {\n    "title": "Understanding the provided credentials",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Connecting to the management console",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying network connectivity",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Familiarizing with the lab topology",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying key hardware components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Checking system health status",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "1.2: Initial HyperFabric installation",\n    "content": "Following installation documentation\\nConfiguring basic network settings\\nDeploying core cluster components\\nVerifying service availability\\nPerforming initial system checks\\nDocumenting the setup process",\n    "type": "topic"\n  },\n  {\n    "title": "Following installation documentation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring basic network settings",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Deploying core cluster components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying service availability",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Performing initial system checks",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting the setup process",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "1.3: Deploying compute nodes",\n    "content": "Registering compute hardware\\nAllocating resources to nodes\\nVerifying GPU detection\\nInstalling necessary drivers\\nConfiguring node networking\\nConfirming node readiness",\n    "type": "topic"\n  },\n  {\n    "title": "Registering compute hardware",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Allocating resources to nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying GPU detection",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Installing necessary drivers",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring node networking",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Confirming node readiness",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "1.4: Basic network fabric configuration",\n    "content": "Setting up VLANs and subnets\\nConfiguring switch ports\\nEstablishing fabric connectivity\\nImplementing basic Quality of Service (QoS)\\nVerifying network reachability\\nDocumenting network configuration",\n    "type": "topic"\n  },\n  {\n    "title": "Setting up VLANs and subnets",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring switch ports",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Establishing fabric connectivity",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing basic Quality of Service (QoS)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying network reachability",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting network configuration",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.Cisco: HyperFabric for AI Architecture",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "2.1: Advanced network fabric tuning",\n    "content": "Implementing RoCE configuration\\nOptimizing MTU settings\\nConfiguring flow control parameters\\nAdjusting buffer sizes\\nImplementing network segmentation\\nVerifying network performance enhancements",\n    "type": "topic"\n  },\n  {\n    "title": "Implementing RoCE configuration",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Optimizing MTU settings",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring flow control parameters",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Adjusting buffer sizes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing network segmentation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying network performance enhancements",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.2: Storage provisioning for large datasets",\n    "content": "Creating large capacity storage volumes\\nConfiguring high-performance storage tiers\\nSetting up distributed file system mounts\\nDefining access control lists (ACLs)",\n    "type": "topic"\n  },\n  {\n    "title": "Creating large capacity storage volumes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring high-performance storage tiers",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting up distributed file system mounts",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Defining access control lists (ACLs)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.3: Network-aware storage access",\n    "content": "Optimizing storage paths for performance\\nConfiguring multipathing for storage\\nLoad balancing storage connections\\nEnsuring low-latency storage access\\nTesting storage bandwidth utilization\\nValidating storage configuration against workload needs",\n    "type": "topic"\n  },\n  {\n    "title": "Optimizing storage paths for performance",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring multipathing for storage",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Load balancing storage connections",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring low-latency storage access",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing storage bandwidth utilization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Validating storage configuration against workload needs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.4: Implementing data management policies",\n    "content": "Setting up retention policies\\nConfiguring data tiering rules\\nDefining backup schedules\\nImplementing data lifecycle management\\nTesting data archival procedures\\nVerifying data recovery capabilities",\n    "type": "topic"\n  },\n  {\n    "title": "Setting up retention policies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring data tiering rules",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Defining backup schedules",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing data lifecycle management",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing data archival procedures",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying data recovery capabilities",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.Deploying: Cisco HyperFabric for AI",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "3.1: Containerizing a simple AI/ML model",\n    "content": "Writing a Dockerfile for the model\\nDefining dependencies and libraries\\nBuilding and testing the container image\\nPushing the image to a registry\\nOptimizing the container image size\\nDocumenting the containerization process",\n    "type": "topic"\n  },\n  {\n    "title": "Writing a Dockerfile for the model",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Defining dependencies and libraries",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Building and testing the container image",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Pushing the image to a registry",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Optimizing the container image size",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting the containerization process",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.2: Creating Kubernetes deployment manifests",\n    "content": "Defining Pod specifications\\nConfiguring resource requests and limits (CPU, GPU, Memory)\\nSetting up environment variables\\nSpecifying storage volumes and persistent data\\nImplementing readiness and liveness probes\\nReviewing deployment configurations",\n    "type": "topic"\n  },\n  {\n    "title": "Defining Pod specifications",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring resource requests and limits (CPU, GPU, Memory)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting up environment variables",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Specifying storage volumes and persistent data",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing readiness and liveness probes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Reviewing deployment configurations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.3: Deploying the application to the cluster",\n    "content": "Applying the deployment manifest\\nMonitoring the deployment status\\nTroubleshooting failed deployments\\nScaling the application deployment\\nVerifying container execution\\nRolling back to a previous version if necessary",\n    "type": "topic"\n  },\n  {\n    "title": "Applying the deployment manifest",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring the deployment status",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Troubleshooting failed deployments",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Scaling the application deployment",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying container execution",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Rolling back to a previous version if necessary",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.4: Integrating with storage for data access",\n    "content": "Mounting persistent volumes for data\\nEnsuring correct data paths within the container\\nTesting data read and write operations\\nVerifying data integrity\\nHandling potential data access errors\\nConfiguring auto-mounting of data",\n    "type": "topic"\n  },\n  {\n    "title": "Mounting persistent volumes for data",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring correct data paths within the container",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing data read and write operations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying data integrity",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Handling potential data access errors",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring auto-mounting of data",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.Compute: and GPU Management",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "4.1: Accessing the unified monitoring dashboard",\n    "content": "Navigating to the monitoring section\\nUnderstanding key dashboard widgets\\nCustomizing the dashboard view\\nFiltering data by time range\\nSetting up user-specific views\\nSaving customized dashboards",\n    "type": "topic"\n  },\n  {\n    "title": "Navigating to the monitoring section",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Understanding key dashboard widgets",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Customizing the dashboard view",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Filtering data by time range",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting up user-specific views",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Saving customized dashboards",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.2: Monitoring compute and GPU utilization",\n    "content": "Tracking CPU usage per pod and node\\nMonitoring GPU utilization percentages\\nAnalyzing GPU memory consumption\\nIdentifying underutilized or overloaded resources\\nCorrelating compute metrics with workload performance\\nSetting alerts for high utilization",\n    "type": "topic"\n  },\n  {\n    "title": "Tracking CPU usage per pod and node",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring GPU utilization percentages",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing GPU memory consumption",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying underutilized or overloaded resources",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Correlating compute metrics with workload performance",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting alerts for high utilization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.3: Network performance monitoring",\n    "content": "Tracking bandwidth usage\\nMonitoring latency between nodes\\nAnalyzing packet loss rates\\nIdentifying network congestion points\\nVerifying RDMA connectivity status\\nSetting alerts for network anomalies",\n    "type": "topic"\n  },\n  {\n    "title": "Tracking bandwidth usage",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring latency between nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing packet loss rates",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying network congestion points",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying RDMA connectivity status",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting alerts for network anomalies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.4: Storage performance monitoring",\n    "content": "Measuring storage IOPS and throughput\\nMonitoring storage latency\\nChecking storage capacity utilization\\nAnalyzing I/O wait times\\nVerifying storage mount points and accessibility\\nSetting alerts for storage performance degradation",\n    "type": "topic"\n  },\n  {\n    "title": "Measuring storage IOPS and throughput",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring storage latency",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Checking storage capacity utilization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing I/O wait times",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying storage mount points and accessibility",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting alerts for storage performance degradation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.Network: Optimization for AI",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "5.1: Understanding workload scaling needs",\n    "content": "Identifying performance limitations during training\\nAnalyzing resource utilization patterns\\nDetermining the need for more compute or GPU power\\nEstimating the required scale-up\\nDeciding between horizontal and vertical scaling\\nPlanning for potential resource contention",\n    "type": "topic"\n  },\n  {\n    "title": "Identifying performance limitations during training",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing resource utilization patterns",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Determining the need for more compute or GPU power",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Estimating the required scale-up",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Deciding between horizontal and vertical scaling",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Planning for potential resource contention",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.2: Scaling compute nodes (Horizontal Scaling)",\n    "content": "Adding new compute nodes to the cluster\\nRegistering and configuring new nodes\\nEnsuring proper network connectivity for new nodes\\nVerifying GPU availability on new nodes\\nUpdating cluster autoscaler configurations\\nMonitoring cluster capacity changes",\n    "type": "topic"\n  },\n  {\n    "title": "Adding new compute nodes to the cluster",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Registering and configuring new nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring proper network connectivity for new nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying GPU availability on new nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Updating cluster autoscaler configurations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring cluster capacity changes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.3: Scaling GPU resources within existing nodes",\n    "content": "Understanding GPU sharing mechanisms\\nAdjusting GPU allocation policies\\nUtilizing tools for GPU slicing if available\\nMonitoring GPU utilization after changes\\nRebalancing workloads across GPUs\\nAssessing the impact of GPU scaling on performance",\n    "type": "topic"\n  },\n  {\n    "title": "Understanding GPU sharing mechanisms",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Adjusting GPU allocation policies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Utilizing tools for GPU slicing if available",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring GPU utilization after changes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Rebalancing workloads across GPUs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Assessing the impact of GPU scaling on performance",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.4: Scaling application deployments (Pods)",\n    "content": "Adjusting replica counts for deployments\\nUsing Horizontal Pod Autoscaler (HPA) with custom metrics\\nConfiguring HPA based on GPU utilization\\nMonitoring pod scaling events\\nEnsuring proper load distribution across pods\\nTesting application responsiveness under increased load",\n    "type": "topic"\n  },\n  {\n    "title": "Adjusting replica counts for deployments",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Using Horizontal Pod Autoscaler (HPA) with custom metrics",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring HPA based on GPU utilization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring pod scaling events",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring proper load distribution across pods",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing application responsiveness under increased load",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.Storage: Solutions for AI",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "6.1: Simulating common failure scenarios",\n    "content": "Simulating network connectivity loss between nodes\\nSimulating storage I/O errors\\nIntroducing compute resource exhaustion\\nSimulating GPU driver failures\\nCausing application deployment failures\\nSimulating a service outage",\n    "type": "topic"\n  },\n  {\n    "title": "Simulating network connectivity loss between nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Simulating storage I/O errors",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Introducing compute resource exhaustion",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Simulating GPU driver failures",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Causing application deployment failures",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Simulating a service outage",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.2: Identifying and isolating the faulty component",\n    "content": "Using monitoring tools to detect anomalies\\nAnalyzing system logs for error messages\\nChecking the health status of Kubernetes components\\nVerifying network reachability\\nAssessing storage system health\\nExamining compute node status",\n    "type": "topic"\n  },\n  {\n    "title": "Using monitoring tools to detect anomalies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing system logs for error messages",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Checking the health status of Kubernetes components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying network reachability",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Assessing storage system health",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Examining compute node status",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.3: Diagnosing root causes using diagnostic tools",\n    "content": "Running network diagnostic commands (ping, traceroute)\\nPerforming disk checks on storage\\nUsing `kubectl describe` and `kubectl logs` effectively\\nChecking system resource utilization (CPU, memory, GPU)\\nInspecting relevant configuration files\\nUtilizing vendor-specific diagnostic tools",\n    "type": "topic"\n  },\n  {\n    "title": "Running network diagnostic commands (ping, traceroute)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Performing disk checks on storage",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Using `kubectl describe` and `kubectl logs` effectively",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Checking system resource utilization (CPU, memory, GPU)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Inspecting relevant configuration files",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Utilizing vendor-specific diagnostic tools",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.4: Applying corrective actions",\n    "content": "Restarting failed services or nodes\\nAdjusting resource allocations\\nReconfiguring network or storage settings\\nRolling back faulty software updates\\nRescheduling failed application instances\\nApplying security patches if needed",\n    "type": "topic"\n  },\n  {\n    "title": "Restarting failed services or nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Adjusting resource allocations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Reconfiguring network or storage settings",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Rolling back faulty software updates",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Rescheduling failed application instances",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Applying security patches if needed",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.Managing: AI/ML Workflows on HyperFabric",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "7.1: Introduction to MLOps concepts in HyperFabric",\n    "content": "Understanding the CI/CD pipeline for ML\\nKey stages of the MLOps lifecycle\\nBenefits of automating ML workflows\\nIntegration points with HyperFabric components\\nImportance of reproducibility in ML\\nRole of collaboration in MLOps",\n    "type": "topic"\n  },\n  {\n    "title": "Understanding the CI/CD pipeline for ML",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Key stages of the MLOps lifecycle",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Benefits of automating ML workflows",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Integration points with HyperFabric components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Importance of reproducibility in ML",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Role of collaboration in MLOps",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.2: Using a Model Registry",\n    "content": "Registering different versions of a model\\nStoring model metadata (parameters, metrics)\\nVersioning datasets used for training\\nAssociating models with specific training runs\\nManaging model lifecycle stages (e.g., staging, production)\\nRetrieving specific model versions for deployment",\n    "type": "topic"\n  },\n  {\n    "title": "Registering different versions of a model",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Storing model metadata (parameters, metrics)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Versioning datasets used for training",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Associating models with specific training runs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Managing model lifecycle stages (e.g., staging, production)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Retrieving specific model versions for deployment",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "8.3: Log Analysis and Diagnostics",\n    "content": "Centralized logging architecture\\nFiltering and searching logs\\nAnalyzing Kubernetes event logs\\nTroubleshooting application errors from logs\\nIdentifying security-related log events\\nLog retention policies",\n    "type": "topic"\n  },\n  {\n    "title": "Centralized logging architecture",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Filtering and searching logs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing Kubernetes event logs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Troubleshooting application errors from logs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying security-related log events",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Log retention policies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.4: Automating Model Training Pipelines",\n    "content": "Defining training workflows using orchestration tools\\nTriggering training jobs based on code changes or new data\\nIntegrating with CI/CD systems (e.g., Jenkins, GitLab CI)\\nHandling distributed training configurations\\nAutomating hyperparameter tuning\\nSetting up notifications for training completion or failure",\n    "type": "topic"\n  },\n  {\n    "title": "Defining training workflows using orchestration tools",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Triggering training jobs based on code changes or new data",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Integrating with CI/CD systems (e.g., Jenkins, GitLab CI)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Handling distributed training configurations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Automating hyperparameter tuning",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting up notifications for training completion or failure",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "8.Monitoring: and Troubleshooting HyperFabric for AI",\n    "content": "",\n    "type": "topic"\n  },\n  {\n    "title": "8.1: Unified Management Interface",\n    "content": "Dashboard overview\\nNavigating through system components\\nCentralized logging access\\nKey performance indicators (KPIs)\\nUser and role management\\nConfiguration management tools",\n    "type": "topic"\n  },\n  {\n    "title": "Dashboard overview",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Navigating through system components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Centralized logging access",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Key performance indicators (KPIs)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "User and role management",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuration management tools",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "8.2: Performance Monitoring and Telemetry",\n    "content": "Collecting hardware metrics (CPU, GPU, Network, Storage)\\nCollecting software metrics (Kubernetes, applications)\\nReal-time performance visualization\\nHistorical performance analysis\\nSetting performance thresholds\\nCorrelating metrics across components",\n    "type": "topic"\n  },\n  {\n    "title": "Collecting hardware metrics (CPU, GPU, Network, Storage)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Collecting software metrics (Kubernetes, applications)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Real-time performance visualization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Historical performance analysis",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting performance thresholds",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Correlating metrics across components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "8.4: Common Troubleshooting Scenarios and Best Practices",\n    "content": "Network connectivity issues\\nStorage access problems\\nCompute resource contention\\nGPU driver or configuration errors\\nApplication deployment failures\\nPerformance degradation troubleshooting",\n    "type": "topic"\n  },\n  {\n    "title": "Network connectivity issues",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Storage access problems",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Compute resource contention",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "GPU driver or configuration errors",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Application deployment failures",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Performance degradation troubleshooting",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "1.5: Basic storage configuration",\n    "content": "Connecting to the storage system\\nCreating initial storage pools\\nDefining storage access policies\\nMounting storage from compute nodes\\nPerforming basic storage I/O tests\\nDocumenting storage setup",\n    "type": "topic"\n  },\n  {\n    "title": "Connecting to the storage system",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Creating initial storage pools",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Defining storage access policies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Mounting storage from compute nodes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Performing basic storage I/O tests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting storage setup",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "1.6: Verifying system integration",\n    "content": "Checking communication between components\\nValidating resource manager operation\\nEnsuring all services report healthy\\nTesting basic job submission\\nAddressing any initial configuration errors\\nFinalizing the deployment checklist",\n    "type": "topic"\n  },\n  {\n    "title": "Checking communication between components",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Validating resource manager operation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring all services report healthy",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing basic job submission",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Addressing any initial configuration errors",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Finalizing the deployment checklist",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.5: Configuring network security for storage",\n    "content": "Setting up firewalls for storage access\\nImplementing IP-based access restrictions\\nConfiguring secure communication protocols\\nAuditing storage access logs\\nEnsuring compliance with security standards\\nReviewing security configurations",\n    "type": "topic"\n  },\n  {\n    "title": "Setting up firewalls for storage access",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing IP-based access restrictions",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring secure communication protocols",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Auditing storage access logs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring compliance with security standards",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Reviewing security configurations",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "2.6: Performance testing of network and storage",\n    "content": "Running synthetic benchmarks\\nMeasuring throughput and latency\\nIdentifying bottlenecks through testing\\nValidating configuration against expected performance\\nDocumenting performance results\\nMaking necessary adjustments based on tests",\n    "type": "topic"\n  },\n  {\n    "title": "Running synthetic benchmarks",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Measuring throughput and latency",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying bottlenecks through testing",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Validating configuration against expected performance",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting performance results",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Making necessary adjustments based on tests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.5: Configuring network access to the application",\n    "content": "Creating Kubernetes Services for access\\nExposing the application externally (e.g., LoadBalancer, NodePort)\\nConfiguring Ingress controllers for advanced routing\\nTesting application accessibility\\nImplementing network security policies\\nVerifying network connectivity",\n    "type": "topic"\n  },\n  {\n    "title": "Creating Kubernetes Services for access",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Exposing the application externally (e.g., LoadBalancer, NodePort)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring Ingress controllers for advanced routing",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing application accessibility",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing network security policies",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying network connectivity",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "3.6: Performing basic inference with the deployed model",\n    "content": "Sending sample data to the application\\nAnalyzing the output results\\nVerifying model accuracy\\nMeasuring inference latency\\nTesting edge cases and error handling\\nDocumenting inference results",\n    "type": "topic"\n  },\n  {\n    "title": "Sending sample data to the application",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing the output results",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying model accuracy",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Measuring inference latency",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing edge cases and error handling",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting inference results",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.5: Monitoring AI/ML application-specific metrics",\n    "content": "Tracking training job progress indicators\\nMonitoring model inference speed\\nAnalyzing queue lengths for inference requests\\nObserving data loading times\\nTracking resource usage by the ML framework\\nIdentifying application-level performance bottlenecks",\n    "type": "topic"\n  },\n  {\n    "title": "Tracking training job progress indicators",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring model inference speed",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing queue lengths for inference requests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Observing data loading times",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Tracking resource usage by the ML framework",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying application-level performance bottlenecks",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "4.6: Setting up alerts and notifications",\n    "content": "Defining alert conditions based on metrics\\nConfiguring notification channels (email, Slack)\\nSetting alert severity levels\\nTesting alert triggers\\nReviewing historical alerts\\nTuning alert thresholds to reduce false positives",\n    "type": "topic"\n  },\n  {\n    "title": "Defining alert conditions based on metrics",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Configuring notification channels (email, Slack)",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting alert severity levels",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing alert triggers",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Reviewing historical alerts",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Tuning alert thresholds to reduce false positives",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.5: Impact of scaling on network and storage",\n    "content": "Monitoring network bandwidth usage during scaling\\nAssessing storage I/O impact from increased workloads\\nVerifying storage access performance for new pods\\nChecking for network bottlenecks created by scaling\\nRe-evaluating storage capacity needs\\nAdjusting network configurations if necessary",\n    "type": "topic"\n  },\n  {\n    "title": "Monitoring network bandwidth usage during scaling",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Assessing storage I/O impact from increased workloads",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying storage access performance for new pods",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Checking for network bottlenecks created by scaling",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Re-evaluating storage capacity needs",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Adjusting network configurations if necessary",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "5.6: Performance validation after scaling",\n    "content": "Rerunning benchmark tests\\nComparing training times before and after scaling\\nMeasuring inference latency under load\\nVerifying resource utilization remains balanced\\nIdentifying any new performance bottlenecks\\nDocumenting scaling results and improvements",\n    "type": "topic"\n  },\n  {\n    "title": "Rerunning benchmark tests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Comparing training times before and after scaling",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Measuring inference latency under load",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Verifying resource utilization remains balanced",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying any new performance bottlenecks",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting scaling results and improvements",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.5: Verifying the resolution of the issue",\n    "content": "Re-running diagnostic tests\\nMonitoring system health and performance metrics\\nTesting application functionality\\nConfirming normal resource utilization\\nEnsuring stability post-resolution\\nDocumenting the troubleshooting process and resolution",\n    "type": "topic"\n  },\n  {\n    "title": "Re-running diagnostic tests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring system health and performance metrics",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Testing application functionality",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Confirming normal resource utilization",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Ensuring stability post-resolution",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Documenting the troubleshooting process and resolution",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "6.6: Post-incident review and preventative measures",\n    "content": "Analyzing the cause of the failure\\nIdentifying gaps in monitoring or alerting\\nRecommending configuration changes to prevent recurrence\\nUpdating documentation or runbooks\\nDiscussing lessons learned with the team\\nImplementing automated checks for potential issues",\n    "type": "topic"\n  },\n  {\n    "title": "Analyzing the cause of the failure",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Identifying gaps in monitoring or alerting",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Recommending configuration changes to prevent recurrence",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Updating documentation or runbooks",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Discussing lessons learned with the team",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing automated checks for potential issues",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.3: Implementing Experiment Tracking",\n    "content": "Logging training parameters and hyperparameters\\nRecording performance metrics during training\\nVisualizing experiment results and comparisons\\nTracking code versions used for experiments\\nAssociating experiments with specific datasets\\nTechniques for systematic experimentation",\n    "type": "topic"\n  },\n  {\n    "title": "Logging training parameters and hyperparameters",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Recording performance metrics during training",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Visualizing experiment results and comparisons",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Tracking code versions used for experiments",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Associating experiments with specific datasets",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Techniques for systematic experimentation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.5: Deploying Models as Services",\n    "content": "Creating inference endpoints using Kubernetes\\nPackaging models into deployable containers\\nStrategies for A/B testing new model versions\\nImplementing canary deployments for models\\nScaling inference services based on demand\\nMonitoring inference performance and resource usage",\n    "type": "topic"\n  },\n  {\n    "title": "Creating inference endpoints using Kubernetes",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Packaging models into deployable containers",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Strategies for A/B testing new model versions",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Implementing canary deployments for models",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Scaling inference services based on demand",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring inference performance and resource usage",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "7.6: Monitoring Deployed Models",\n    "content": "Tracking model prediction drift\\nMonitoring data drift in incoming requests\\nLogging model predictions and confidence scores\\nSetting up alerts for performance degradation\\nAnalyzing model behavior in production\\nEstablishing retraining triggers based on monitoring data",\n    "type": "topic"\n  },\n  {\n    "title": "Tracking model prediction drift",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Monitoring data drift in incoming requests",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Logging model predictions and confidence scores",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Setting up alerts for performance degradation",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Analyzing model behavior in production",\n    "content": "",\n    "type": "subtopic"\n  },\n  {\n    "title": "Establishing retraining triggers based on monitoring data",\n    "content": "",\n    "type": "subtopic"\n  }\n]'}], 'temperature': 1, 'max_tokens': 260000}
+Using model: google/gemini-2.5-flash-lite-preview-06-17
+
+Enhanced notes saved to: _output/Cisco_AI_Pod/06_Enhanced_Notes.txt
+Successfully received 328 speaker notes from LLM
+Successfully added speaker notes to 48 slides in '_output/Cisco_AI_Pod/course_presentation.pptx'
+
+Student notes added to presentation '_output/Cisco_AI_Pod/course_presentation.pptx'.
+======================================================================
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % 
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 %                                 
+

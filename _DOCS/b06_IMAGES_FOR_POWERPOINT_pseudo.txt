@@ -1,0 +1,33 @@
+FUNCTION setup():
+    CREATE image directory and CHECK for PowerPoint file
+
+FUNCTION get_image_category(slide_title, slide_content):
+    DETERMINE and RETURN image category based on slide content keywords
+
+FUNCTION create_placeholder_image(title, category, width, height):
+    CREATE and RETURN styled placeholder image with title and icon
+
+FUNCTION generate_image_for_slide(slide_title, slide_content, output_path):
+    CREATE prompt from slide content
+    CALL image generation API
+    IF successful, SAVE image
+    ELSE, CREATE and SAVE placeholder image
+    RETURN True
+
+FUNCTION extract_slide_content(slide):
+    EXTRACT and RETURN title and content from slide
+
+FUNCTION add_image_to_slide(slide, image_path):
+    ADD picture to slide
+
+FUNCTION process_presentation():
+    LOAD presentation
+    FOR each slide (up to a limit):
+        EXTRACT content
+        GENERATE image if it doesn't exist
+        ADD image to slide
+    SAVE modified presentation
+
+FUNCTION main():
+    CALL setup
+    CALL process_presentation

@@ -1,0 +1,38 @@
+START
+    // Final Exam Generator for Course
+    // This script generates a final exam for the entire course.
+
+    // Initialization
+    IMPORT necessary libraries and custom modules
+
+    // Main Function
+    FUNCTION main():
+        PRINT "Course Final Exam Generator" banner
+        DETERMINE file paths
+        PARSE the course outline file to get all content
+        exam_content, answer_key = generate_final_exam(all_content, course_title, module_count)
+        IF exam and answer key are generated THEN
+            create_exam_files(exam_content, answer_key, course_title)
+        END IF
+    END FUNCTION
+
+    // Helper Functions
+    FUNCTION generate_final_exam(course_content, course_title, module_count):
+        FORMAT the course content for the LLM prompt
+        CONSTRUCT a system prompt for final exam creation
+        CALL the LLM to generate the exam
+        PARSE the JSON response
+        FORMAT the exam and answer key
+        RETURN the formatted exam and answer key
+    END FUNCTION
+
+    FUNCTION create_exam_files(exam_content, answer_key, course_title):
+        SAVE the exam to a file
+        SAVE the answer key to a file
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END

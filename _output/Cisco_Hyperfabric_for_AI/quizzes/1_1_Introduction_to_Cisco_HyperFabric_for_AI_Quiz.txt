@@ -1,0 +1,71 @@
+# Quiz for 1: Introduction to Cisco HyperFabric for AI
+
+Question 1: According to the module, which of the following is a primary challenge contributing to the AI/ML infrastructure gap?
+  A. Decreasing data volumes for training.
+  B. The requirement for specialized hardware like GPUs.
+  C. Lack of need for high-speed interconnects.
+  D. Simpler AI model architectures.
+
+
+Question 2: Which of these is identified as a common data bottleneck in AI workflows?
+  A. Excessively fast data ingestion speeds.
+  B. Inefficient data transfer and preparation.
+  C. Abundant unified data access.
+  D. Minimal data governance concerns.
+
+
+Question 3: What is a key compute limitation mentioned for AI training?
+  A. Sufficient GPU capacity.
+  B. CPU processing being bottlenecked.
+  C. Ample memory during model training.
+  D. Ease of parallelization.
+
+
+Question 4: Identify a network inefficiency that hinders AI/ML infrastructure performance.
+  A. Low latency in distributed training.
+  B. Sufficient bandwidth between nodes.
+  C. Network congestion points.
+  D. Ideal interconnect technology matches.
+
+
+Question 5: From an operational perspective, what complexity does the module highlight for AI infrastructure?
+  A. Easy management of diverse hardware.
+  B. Seamless software stack integration.
+  C. Simple provisioning and orchestration.
+  D. The need to manage diverse hardware components.
+
+
+Question 6: Cisco's vision for AI-Optimized Infrastructure emphasizes what key aspect?
+  A. A focus on legacy systems.
+  B. An end-to-end solution approach.
+  C. Limited scalability.
+  D. Complex deployment procedures.
+
+
+Question 7: Which of the following is listed as a key pillar of Cisco's AI strategy?
+  A. High-latency networking.
+  B. Independent compute and storage solutions.
+  C. Integrated software for orchestration and management.
+  D. Basic security features.
+
+
+Question 8: How does Cisco HyperFabric for AI simplify deployment and management according to the module?
+  A. By requiring complex, custom integrations.
+  B. Through a unified management platform and automated provisioning.
+  C. By segmenting the stack into many disparate parts.
+  D. By relying solely on manual configurations.
+
+
+Question 9: What is a key value proposition of Cisco HyperFabric for AI in terms of performance?
+  A. Optimized for low-throughput data.
+  B. Increased latency for distributed tasks.
+  C. Maximizing GPU utilization and fast interconnects.
+  D. Reduced efficiency in parallel processing.
+
+
+Question 10: Which use case is highlighted for its benefit in accelerating model training and enabling larger, more complex models?
+  A. High-Performance Inference.
+  B. Large-Scale Data Processing and Analytics.
+  C. Automotive and Industrial IoT.
+  D. Accelerated Model Training.
+

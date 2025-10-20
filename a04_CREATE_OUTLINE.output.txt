@@ -1,0 +1,483 @@
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % python3 a04_CREATE_OUTLINE.py
+======================================================================
+                       COURSE OUTLINE GENERATOR                       
+======================================================================
+
+This tool generates a comprehensive course outline from a Cisco course description file.
+Available course description files:
+1. Cisco_AI_Pod.txt
+2. Cisco_Hyperfabric_for_AI.txt
+3. Cisco_AI_Defense.txt
+4. SONiC_NOS.txt
+5. Cisco Secure AI Factory.txt
+
+Enter the number of the file to use: 2
+Using directory path: _output/Cisco_Hyperfabric_for_AI
+Directory path saved to 'current_directory.txt'
+
+Using course description from: Cisco_Hyperfabric_for_AI.txt
+
+======================================================================
+                          FINE-TUNED PROMPT                           
+======================================================================
+
+You are an expert curriculum designer with years of experience in creating 
+comprehensive course outlines. Your task is to analyze the provided course 
+description and generate a detailed, well-structured course outline.
+
+The useer will provide information that may include:
+1. Course title
+2. Course overview (1-2 paragraphs)
+3. Learning objectives (5-8 items)
+4. Target audience
+5. Prerequisites (if any)
+6. Course duration recommendation
+7. Detailed module breakdown with:
+   - Modules
+   - Topics
+   - Recommended activities or assignments
+8. Assessment methods
+9. Recommended resources
+---
+Example of course outline with Module and topics submitted by the user:
+Course Outline: 
+Understanding SASE 
+• Cloud Computing = Network and Security Disruption • SASE Business Outcomes 
+• Challenges solved by Cisco SASE 
+• Cisco SASE: Connect – Control – Converge • Cisco SASE components 
+• Cisco SD-WAN 
+• Cisco DUO 
+SASE Use Cases 
+• Secure Remote Worker 
+• Provisioning 
+• Administration and Monitoring 
+---
+
+
+
+Your Outline should include the Modules and Topics from the user.
+
+For each every topic include 3-6 Subtopics.
+For each and every subtopic include 3-6 points - these will be used on powerpoint slides and should be short sentences.
+do not put the words "module, topic, subtopic, or point in the outline"
+The output format should looke like
+Title: Course Title
+1.Module 1
+1.1 Topic 1
+1.1.1 Subtopic 1
+1.1.1.1 Point 1
+1.1.1.2 Point 2
+1.1.1.3 Point 3
+1.1.1.4 Point 4
+1.1.1.5 Point 5
+1.1.1.6 Point 6
+1.1.2 Subtopic 2
+1.1.2.1 Point 1
+1.1.2.2 Point 2
+1.1.2.3 Point 3
+1.1.2.4 Point 4
+1.1.2.5 Point 5
+1.1.2.6 Point 6
+1.1.3 Subtopic 3
+1.1.3.1 Point 1
+1.1.3.2 Point 2
+1.1.3.3 Point 3
+1.1.3.4 Point 4
+1.1.3.5 Point 5
+1.1.3.6 Point 6
+1.1.4 Subtopic 4
+1.1.4.1 Point 1
+1.1.4.2 Point 2
+1.1.4.3 Point 3
+1.1.4.4 Point 4
+1.1.4.5 Point 5
+1.1.4.6 Point 6
+
+The outline should go four levels deep.
+
+The course outline that you create should the 
+Only output the outline, do not include any additional text.
+Do not use markdown, only plain text.
+
+======================================================================
+
+Generating course outline... This may take a moment.
+Sending request to OpenRouter.ai
+{'model': 'google/gemini-2.5-flash-lite-preview-06-17', 'messages': [{'role': 'system', 'content': '\nYou are an expert curriculum designer with years of experience in creating \ncomprehensive course outlines. Your task is to analyze the provided course \ndescription and generate a detailed, well-structured course outline.\n\nThe useer will provide information that may include:\n1. Course title\n2. Course overview (1-2 paragraphs)\n3. Learning objectives (5-8 items)\n4. Target audience\n5. Prerequisites (if any)\n6. Course duration recommendation\n7. Detailed module breakdown with:\n   - Modules\n   - Topics\n   - Recommended activities or assignments\n8. Assessment methods\n9. Recommended resources\n---\nExample of course outline with Module and topics submitted by the user:\nCourse Outline: \nUnderstanding SASE \n• Cloud Computing = Network and Security Disruption • SASE Business Outcomes \n• Challenges solved by Cisco SASE \n• Cisco SASE: Connect – Control – Converge • Cisco SASE components \n• Cisco SD-WAN \n• Cisco DUO \nSASE Use Cases \n• Secure Remote Worker \n• Provisioning \n• Administration and Monitoring \n---\n\n\n\nYour Outline should include the Modules and Topics from the user.\n\nFor each every topic include 3-6 Subtopics.\nFor each and every subtopic include 3-6 points - these will be used on powerpoint slides and should be short sentences.\ndo not put the words "module, topic, subtopic, or point in the outline"\nThe output format should looke like\nTitle: Course Title\n1.Module 1\n1.1 Topic 1\n1.1.1 Subtopic 1\n1.1.1.1 Point 1\n1.1.1.2 Point 2\n1.1.1.3 Point 3\n1.1.1.4 Point 4\n1.1.1.5 Point 5\n1.1.1.6 Point 6\n1.1.2 Subtopic 2\n1.1.2.1 Point 1\n1.1.2.2 Point 2\n1.1.2.3 Point 3\n1.1.2.4 Point 4\n1.1.2.5 Point 5\n1.1.2.6 Point 6\n1.1.3 Subtopic 3\n1.1.3.1 Point 1\n1.1.3.2 Point 2\n1.1.3.3 Point 3\n1.1.3.4 Point 4\n1.1.3.5 Point 5\n1.1.3.6 Point 6\n1.1.4 Subtopic 4\n1.1.4.1 Point 1\n1.1.4.2 Point 2\n1.1.4.3 Point 3\n1.1.4.4 Point 4\n1.1.4.5 Point 5\n1.1.4.6 Point 6\n\nThe outline should go four levels deep.\n\nThe course outline that you create should the \nOnly output the outline, do not include any additional text.\nDo not use markdown, only plain text.\n\n'}, {'role': 'user', 'content': "\nPlease create a comprehensive course outline based on the following course description:\n\n\ufeffCisco HyperFabric for AI Fundamentals\nClass Size:\nWho Should Attend\n* Data Scientists\n* AI/ML Engineers\n* Infrastructure Architects\n* Network Engineers\n* System Administrators\n* DevOps Engineers\nCourse Description\nThis course provides a comprehensive overview of Cisco HyperFabric for AI, an integrated solution designed to accelerate AI/ML workloads from infrastructure to operations. The goal of this course is to understand the architecture, components, and capabilities of Cisco HyperFabric for AI, and how it can be deployed, configured, and managed to optimize performance and efficiency for AI/ML initiatives. This course will also include hands-on labs where you will configure and administer key Cisco HyperFabric for AI features.\nLearning Objectives\n* Cisco HyperFabric for AI Overview, Use Cases, and Business Drivers\n* Cisco HyperFabric for AI System Architecture and Components\n* Deploy Cisco HyperFabric for AI solutions\n* Configure and manage network, compute, and storage for AI workloads\n* Optimize infrastructure for AI/ML performance\n* Implement and manage AI/ML workflows on HyperFabric\n* Monitor and troubleshoot Cisco HyperFabric for AI environments\n* Understand integration with AI/ML frameworks and platforms\nCourse Outline\nModule 1: Introduction to Cisco HyperFabric for AI\n* The AI/ML Infrastructure Challenge\n* Cisco's Approach to AI/ML Infrastructure\n* Cisco HyperFabric for AI Overview and Value Proposition\n* Key Use Cases and Business Benefits\nModule 2: Cisco HyperFabric for AI Architecture\n* Core Components (Compute, Network, Storage)\n* Integration with NVIDIA AI Enterprise\n* Software Stack Overview (Kubernetes, AI/ML Frameworks)\n* Data Flow and Connectivity within HyperFabric\nModule 3: Deploying Cisco HyperFabric for AI\n* Planning and Sizing for AI Workloads\n* Installation and Initial Setup\n* Network and Storage Configuration Best Practices\n* Validated Designs and Reference Architectures\nModule 4: Compute and GPU Management\n* NVIDIA GPU Integration and Management\n* Kubernetes for Container Orchestration\n* Resource Allocation and Scheduling for AI/ML\n* Performance Tuning for Compute Resources\nModule 5: Network Optimization for AI\n* High-Performance Networking (e.g., InfiniBand, Ethernet)\n* Network Fabric Design for AI/ML Traffic\n* RDMA over Converged Ethernet (RoCE)\n* Network Monitoring and Troubleshooting\nModule 6: Storage Solutions for AI\n* High-Performance Storage for AI/ML Data\n* Data Management and Lifecycle\n* Integration with Distributed File Systems\n* Data Security and Access Control\nModule 7: Managing AI/ML Workflows on HyperFabric\n* Deploying AI/ML Applications\n* MLOps Concepts and Tools on HyperFabric\n* Model Training and Inference Workflows\n* Monitoring AI/ML Pipeline Performance\nModule 8: Monitoring and Troubleshooting HyperFabric for AI\n* Unified Management Interface\n* Performance Monitoring and Telemetry\n* Log Analysis and Diagnostics\n* Common Troubleshooting Scenarios and Best Practices\nLab 1: Environment Setup and Initial HyperFabric Deployment\nLab 2: Configuring Network and Storage for AI Workloads\nLab 3: Deploying a Sample AI/ML Application on HyperFabric\nLab 4: Monitoring AI/ML Workload Performance\nLab 5: Scaling Compute Resources for AI Training\nLab 6: Troubleshooting a Simulated Infrastructure Issue\nLab 7: Exploring MLOps Tools and Workflows on HyperFabric\n\nPlease be thorough and follow the structure specified in the system prompt.\n"}], 'temperature': 1, 'max_tokens': 260000}
+Using model: google/gemini-2.5-flash-lite-preview-06-17
+
+======================================================================
+                          FINE-TUNED PROMPT                           
+======================================================================
+
+You are an expert curriculum designer with years of experience in creating 
+comprehensive course outlines. Your task is to analyze the provided course 
+description and generate a detailed, well-structured course outline.
+
+The useer will provide information that may include:
+1. Course title
+2. Course overview (1-2 paragraphs)
+3. Learning objectives (5-8 items)
+4. Target audience
+5. Prerequisites (if any)
+6. Course duration recommendation
+7. Detailed module breakdown with:
+   - Modules
+   - Topics
+   - Recommended activities or assignments
+8. Assessment methods
+9. Recommended resources
+---
+Example of course outline with Module and topics submitted by the user:
+Course Outline: 
+Understanding SASE 
+• Cloud Computing = Network and Security Disruption • SASE Business Outcomes 
+• Challenges solved by Cisco SASE 
+• Cisco SASE: Connect – Control – Converge • Cisco SASE components 
+• Cisco SD-WAN 
+• Cisco DUO 
+SASE Use Cases 
+• Secure Remote Worker 
+• Provisioning 
+• Administration and Monitoring 
+---
+
+
+
+Your Outline should include the Modules and Topics from the user.
+
+For each every topic include 3-6 Subtopics.
+For each and every subtopic include 3-6 points - these will be used on powerpoint slides and should be short sentences.
+do not put the words "module, topic, subtopic, or point in the outline"
+The output format should looke like
+Title: Course Title
+1.Module 1
+1.1 Topic 1
+1.1.1 Subtopic 1
+1.1.1.1 Point 1
+1.1.1.2 Point 2
+1.1.1.3 Point 3
+1.1.1.4 Point 4
+1.1.1.5 Point 5
+1.1.1.6 Point 6
+1.1.2 Subtopic 2
+1.1.2.1 Point 1
+1.1.2.2 Point 2
+1.1.2.3 Point 3
+1.1.2.4 Point 4
+1.1.2.5 Point 5
+1.1.2.6 Point 6
+1.1.3 Subtopic 3
+1.1.3.1 Point 1
+1.1.3.2 Point 2
+1.1.3.3 Point 3
+1.1.3.4 Point 4
+1.1.3.5 Point 5
+1.1.3.6 Point 6
+1.1.4 Subtopic 4
+1.1.4.1 Point 1
+1.1.4.2 Point 2
+1.1.4.3 Point 3
+1.1.4.4 Point 4
+1.1.4.5 Point 5
+1.1.4.6 Point 6
+
+The outline should go four levels deep.
+
+The course outline that you create should the 
+Only output the outline, do not include any additional text.
+Do not use markdown, only plain text.
+
+======================================================================
+
+======================================================================
+                       GENERATED COURSE OUTLINE                       
+======================================================================
+
+Cisco HyperFabric for AI Fundamentals
+1.Module 1: Introduction to Cisco HyperFabric for AI
+1.1 The AI/ML Infrastructure Challenge
+1.1.1 Increasing complexity of AI/ML projects.
+1.1.2 Demand for specialized hardware, especially GPUs.
+1.1.3 Need for high-speed networking and low-latency storage.
+1.1.4 Challenges in managing diverse AI/ML infrastructure.
+1.1.5 Impact of infrastructure on AI/ML project timelines.
+1.1.6 Cost considerations for AI infrastructure.
+1.2 Cisco's Approach to AI/ML Infrastructure
+1.2.1 Integrated solutions for end-to-end AI workflows.
+1.2.2 Focus on performance, scalability, and manageability.
+1.2.3 Leveraging existing Cisco networking expertise.
+1.2.4 Partnership with leading AI hardware and software vendors.
+1.2.5 Simplifying AI infrastructure deployment and operations.
+1.2.6 Addressing the entire AI lifecycle from data to deployment.
+1.3 Cisco HyperFabric for AI Overview and Value Proposition
+1.3.1 Definition of Cisco HyperFabric for AI.
+1.3.2 Key benefits: acceleration, simplification, and optimization.
+1.3.3 How it addresses the AI/ML infrastructure challenge.
+1.3.4 Unique selling points of the HyperFabric solution.
+1.3.5 Target infrastructure requirements for AI/ML.
+1.3.6 The role of Cisco in the AI ecosystem.
+1.4 Key Use Cases and Business Benefits
+1.4.1 Accelerating model training times.
+1.4.2 Enabling faster inference for AI applications.
+1.4.3 Supporting large-scale data processing for AI.
+1.4.4 Streamlining MLOps for efficient pipeline management.
+1.4.5 Driving innovation through faster AI development cycles.
+1.4.6 Achieving a competitive advantage with advanced AI capabilities.
+2.Module 2: Cisco HyperFabric for AI Architecture
+2.1 Core Components (Compute, Network, Storage)
+2.1.1 Compute: High-density GPU servers.
+2.1.2 Network: High-speed, low-latency fabric technology.
+2.1.3 Storage: Performance-optimized data solutions.
+2.1.4 Interconnectivity and integration of components.
+2.1.5 Role of each component in the AI workflow.
+2.1.6 Architectural considerations for scalability.
+2.2 Integration with NVIDIA AI Enterprise
+2.2.1 NVIDIA AI Enterprise software suite overview.
+2.2.2 Compatibility and pre-validated configurations.
+2.2.3 Benefits of tight integration for AI/ML frameworks.
+2.2.4 Delivering optimized performance with NVIDIA hardware.
+2.2.5 Simplified deployment of NVIDIA software stack.
+2.2.6 Leveraging GPU acceleration effectively.
+2.3 Software Stack Overview (Kubernetes, AI/ML Frameworks)
+2.3.1 Kubernetes as the orchestration layer.
+2.3.2 Containerization for deploying AI applications.
+2.3.3 Popular AI/ML frameworks supported (TensorFlow, PyTorch).
+2.3.4 Data science tools and libraries.
+2.3.5 Management and automation features.
+2.3.6 Essential software for AI/ML development and deployment.
+2.4 Data Flow and Connectivity within HyperFabric
+2.4.1 Data ingestion paths.
+2.4.2 Data access patterns during training and inference.
+2.4.3 Network traffic characteristics for AI workloads.
+2.4.4 Storage access protocols and performance.
+2.4.5 Ensuring data locality and minimizing latency.
+2.4.6 Optimized data movement for GPU utilization.
+3.Module 3: Deploying Cisco HyperFabric for AI
+3.1 Planning and Sizing for AI Workloads
+3.1.1 Assessing current and future AI/ML project needs.
+3.1.2 Determining compute, network, and storage requirements.
+3.1.3 GPU type, quantity, and interconnect needs.
+3.1.4 Data volume and I/O requirements.
+3.1.5 Network bandwidth and latency considerations.
+3.1.6 Capacity planning for growth and new workloads.
+3.2 Installation and Initial Setup
+3.2.1 Hardware installation and rack integration.
+3.2.2 Initial network fabric configuration.
+3.2.3 Software installation and bootstrapping.
+3.2.4 System validation and basic health checks.
+3.2.5 Connecting to existing data center infrastructure.
+3.2.6 Security best practices during deployment.
+3.3 Network and Storage Configuration Best Practices
+3.3.1 Designing for high bandwidth and low latency.
+3.3.2 VLANs and segmentation for AI traffic.
+3.3.3 Quality of Service (QoS) for critical AI workloads.
+3.3.4 Storage connectivity options (NFS, iSCSI, NVMe-oF).
+3.3.5 Performance tuning for storage protocols.
+3.3.6 Data protection and redundancy configurations.
+3.4 Validated Designs and Reference Architectures
+3.4.1 Understanding pre-defined deployment blueprints.
+3.4.2 Benefits of using validated designs.
+3.4.3 Common reference architectures for different AI use cases.
+3.4.4 Customization options within reference architectures.
+3.4.5 Ensuring interoperability and performance.
+3.4.6 Resources for accessing validated designs.
+4.Module 4: Compute and GPU Management
+4.1 NVIDIA GPU Integration and Management
+4.1.1 Types of NVIDIA GPUs supported.
+4.1.2 Driver installation and configuration.
+4.1.3 GPU monitoring tools and metrics.
+4.1.4 GPU virtualization and sharing techniques.
+4.1.5 Ensuring optimal GPU utilization.
+4.1.6 Troubleshooting GPU-related issues.
+4.2 Kubernetes for Container Orchestration
+4.2.1 Kubernetes architecture and core concepts.
+4.2.2 Deploying AI/ML applications as containers.
+4.2.3 Resource management with Kubernetes (CPU, memory, GPU).
+4.2.4 Scheduling pods to appropriate nodes.
+4.2.5 Handling stateful applications for AI/ML.
+4.2.6 Kubernetes networking within the fabric.
+4.3 Resource Allocation and Scheduling for AI/ML
+4.3.1 Defining resource requests and limits.
+4.3.2 GPU sharing and partitioning strategies.
+4.3.3 Fair sharing of resources among users.
+4.3.4 Prioritization of critical AI workloads.
+4.3.5 Dynamic resource allocation based on demand.
+4.3.6 Impact of scheduling on training times.
+4.4 Performance Tuning for Compute Resources
+4.4.1 Optimizing Kubernetes configurations for performance.
+4.4.2 Tuning container runtimes and OS settings.
+4.4.3 GPU-aware scheduling and affinity.
+4.4.4 Profiling application performance.
+4.4.5 Identifying and resolving compute bottlenecks.
+4.4.6 Best practices for maximizing throughput.
+5.Module 5: Network Optimization for AI
+5.1 High-Performance Networking (e.g., InfiniBand, Ethernet)
+5.1.1 Introduction to InfiniBand technology.
+5.1.2 High-speed Ethernet (100GbE, 200GbE, 400GbE).
+5.1.3 RDMA (Remote Direct Memory Access) capabilities.
+5.1.4 Low-latency communication paradigms.
+5.1.5 Choosing the right fabric technology for AI.
+5.1.6 Benefits of specialized AI networking.
+5.2 Network Fabric Design for AI/ML Traffic
+5.2.1 Topologies for AI fabrics (e.g., Clos, Fat-Tree).
+5.2.2 Designing for non-blocking performance.
+5.2.3 High bisection bandwidth considerations.
+5.2.4 Scalability of the network fabric.
+5.2.5 Minimizing packet loss and jitter.
+5.2.6 Fabric configuration for distributed workloads.
+5.3 RDMA over Converged Ethernet (RoCE)
+5.3.1 Understanding RoCE v1 and v2.
+5.3.2 Benefits of RoCE for AI/ML applications.
+5.3.3 Configuration requirements for RoCE.
+5.3.4 RoCE utilization in storage and compute interconnects.
+5.3.5 Troubleshooting RoCE connectivity.
+5.3.6 Impact of RoCE on application performance.
+5.4 Network Monitoring and Troubleshooting
+5.4.1 Key network performance metrics.
+5.4.2 Tools for network visibility and analysis.
+5.4.3 Monitoring fabric health and utilization.
+5.4.4 Identifying network congestion points.
+5.4.5 Diagnosing latency and packet loss issues.
+5.4.6 Best practices for network troubleshooting in AI environments.
+6.Module 6: Storage Solutions for AI
+6.1 High-Performance Storage for AI/ML Data
+6.1.1 Requirements for AI/ML data access.
+6.1.2 SSD, NVMe, and persistent memory technologies.
+6.1.3 Parallel file systems (e.g., Lustre, BeeGFS).
+6.1.4 Object storage considerations for large datasets.
+6.1.5 Storage network protocols (NVMe-oF).
+6.1.6 Choosing the right storage tier for AI workloads.
+6.2 Data Management and Lifecycle
+6.2.1 Strategies for handling massive datasets.
+6.2.2 Data versioning and lineage tracking.
+6.2.3 Data tiering and archiving.
+6.2.4 data deduplication and compression.
+6.2.5 Data preparation and feature engineering.
+6.2.6 Efficient data ingestion pipelines.
+6.3 Integration with Distributed File Systems
+6.3.1 How HyperFabric integrates with DFS.
+6.3.2 Performance implications of DFS configurations.
+6.3.3 Data access patterns and caching.
+6.3.4 Managing metadata performance.
+6.3.5 Best practices for DFS tuning.
+6.3.6 Ensuring data consistency across nodes.
+6.4 Data Security and Access Control
+6.4.1 Securing data at rest and in transit.
+6.4.2 Role-based access control (RBAC) for data.
+6.4.3 Data encryption techniques.
+6.4.4 Compliance requirements for AI data.
+6.4.5 Auditing data access and modifications.
+6.4.6 Data anonymization and privacy concerns.
+7.Module 7: Managing AI/ML Workflows on HyperFabric
+7.1 Deploying AI/ML Applications
+7.1.1 Packaging AI models and dependencies.
+7.1.2 Containerizing AI applications.
+7.1.3 Using Kubernetes to deploy applications.
+7.1.4 Managing deployment configurations.
+7.1.5 Rolling updates and rollbacks.
+7.1.6 Service discovery and load balancing.
+7.2 MLOps Concepts and Tools on HyperFabric
+7.2.1 Introduction to MLOps principles.
+7.2.2 CI/CD for machine learning.
+7.2.3 Experiment tracking and model registry.
+7.2.4 Model versioning and reproducibility.
+7.2.5 Automation of ML pipelines.
+7.2.6 Integration with popular MLOps platforms.
+7.3 Model Training and Inference Workflows
+7.3.1 Orchestrating distributed training jobs.
+7.3.2 GPU utilization during training.
+7.3.3 Optimizing for model inference performance.
+7.3.4 Batch inference vs. real-time inference.
+7.3.5 Managing training data and model artifacts.
+7.3.6 Workflow orchestration tools.
+7.4 Monitoring AI/ML Pipeline Performance
+7.4.1 Metrics for tracking pipeline health.
+7.4.2 Performance bottlenecks in the ML pipeline.
+7.4.3 Resource consumption (CPU, GPU, memory, network).
+7.4.4 Data drift and model retraining triggers.
+7.4.5 Alerting and notification for pipeline failures.
+7.4.6 Continuous performance optimization.
+8.Module 8: Monitoring and Troubleshooting HyperFabric for AI
+8.1 Unified Management Interface
+8.1.1 Overview of the HyperFabric management console.
+8.1.2 Key features and functionalities.
+8.1.3 Dashboard for system health and status.
+8.1.4 Centralized configuration management.
+8.1.5 User interface for monitoring and administration.
+8.1.6 Role-based access to the management interface.
+8.2 Performance Monitoring and Telemetry
+8.2.1 Collecting performance data from all components.
+8.2.2 Key performance indicators (KPIs) for AI infrastructure.
+8.2.3 Real-time monitoring of system resources.
+8.2.4 Historical performance trending.
+8.2.5 Alerting based on performance thresholds.
+8.2.6 Correlating performance with AI workload metrics.
+8.3 Log Analysis and Diagnostics
+8.3.1 Centralized logging for the entire environment.
+8.3.2 Filtering and searching log data.
+8.3.3 Analyzing system and application logs.
+8.3.4 Identifying error patterns and anomalies.
+8.3.5 Using logs for root cause analysis.
+8.3.6 Log retention and management strategies.
+8.4 Common Troubleshooting Scenarios and Best Practices
+8.4.1 Network connectivity issues.
+8.4.2 Storage access problems.
+8.4.3 GPU availability and performance issues.
+8.4.4 Kubernetes pod scheduling failures.
+8.4.5 Application deployment errors.
+8.4.6 Systematic approach to troubleshooting complex issues.
+Lab 1: Environment Setup and Initial HyperFabric Deployment
+1.1 Accessing the lab environment.
+1.2 Performing initial hardware checks.
+1.3 Connecting to the management interface.
+1.4 Executing the initial setup scripts.
+1.5 Verifying basic system health.
+1.6 Documenting the initial deployment state.
+Lab 2: Configuring Network and Storage for AI Workloads
+2.1 Defining network segments for AI traffic.
+2.2 Configuring high-speed network interfaces.
+2.3 Setting up storage access paths.
+2.4 Validating storage performance.
+2.5 Applying QoS policies.
+2.6 Testing network connectivity between nodes.
+Lab 3: Deploying a Sample AI/ML Application on HyperFabric
+3.1 Preparing the AI application container image.
+3.2 Creating Kubernetes deployment manifests.
+3.3 Deploying the application to the cluster.
+3.4 Verifying application startup and functionality.
+3.5 Testing basic application features.
+3.6 Accessing application logs.
+Lab 4: Monitoring AI/ML Workload Performance
+4.1 Using the management interface to monitor the application.
+4.2 Observing GPU utilization during workload execution.
+4.3 Tracking network traffic volume.
+4.4 Analyzing storage I/O patterns.
+4.5 Identifying key performance metrics related to the application.
+4.6 Setting up basic performance alerts.
+Lab 5: Scaling Compute Resources for AI Training
+5.1 Modifying Kubernetes deployments to request more resources.
+5.2 Adding more nodes to the cluster.
+5.3 Observing automatic scaling of AI workloads.
+5.4 Monitoring resource distribution across nodes.
+5.5 Testing performance improvements with increased resources.
+5.6 Verifying efficient GPU allocation.
+Lab 6: Troubleshooting a Simulated Infrastructure Issue
+6.1 Simulating a network connectivity failure.
+6.2 Simulating a storage performance degradation.
+6.3 Simulating a compute resource contention.
+6.4 Using monitoring tools to diagnose the issue.
+6.5 Applying troubleshooting steps to resolve the simulated problem.
+6.6 Documenting the resolution process.
+Lab 7: Exploring MLOps Tools and Workflows on HyperFabric
+7.1 Accessing an integrated MLOps platform.
+7.2 Registering a trained model.
+7.3 Creating a simple ML pipeline.
+7.4 Triggering a pipeline execution.
+7.5 Monitoring pipeline progress and artifacts.
+7.6 Exploring model versioning capabilities.
+
+======================================================================
+Outline saved to course_outline.txt and _output/Cisco_Hyperfabric_for_AI/course_outline.txt
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % 
+

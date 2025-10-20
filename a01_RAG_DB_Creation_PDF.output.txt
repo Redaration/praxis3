@@ -1,0 +1,68 @@
+(base) byohn@YOHNs-MacBook-Pro jupyter_brand 3 % python3 a01_RAG_DB_Creation_PDF.py
+
+Clear the existing Chroma collection (y) or continue adding data to the collection (n)? [y/N]: 
+================================================================================
+Cisco AI PDF RAG Database Creator
+================================================================================
+Collection mode: APPEND
+
+Found 6 PDF files to process.
+Processing: nb-06-cisco-dna-ai-ml-primer-cte-en.pdf
+  - Saved text to: nb-06-cisco-dna-ai-ml-primer-cte-en.txt
+  - Extracted 18834 characters
+Processing: cisco-responsible-artificial-intelligence-framework.pdf
+  - Saved text to: cisco-responsible-artificial-intelligence-framework.txt
+  - Extracted 4171 characters
+Processing: Cisco-CX-Agentic-AI-Research.pdf
+  - Saved text to: Cisco-CX-Agentic-AI-Research.txt
+  - Extracted 37548 characters
+Processing: AI-Defense-OD.pdf
+  - Saved text to: AI-Defense-OD.txt
+  - Extracted 6838 characters
+Processing: ai-pods-aag.pdf
+  - Saved text to: ai-pods-aag.txt
+  - Extracted 8680 characters
+Processing: cisco-responsible-artificial-intelligence-principles.pdf
+  - Saved text to: cisco-responsible-artificial-intelligence-principles.txt
+  - Extracted 8323 characters
+
+Extracted 116 text chunks from 6 PDF files.
+
+Initializing ChromaDB...
+Appending to existing collection: cisco_ai_pdf_collection (116 chunks already stored)
+
+Adding 116 document chunks to ChromaDB...
+Append mode active: using upsert to merge document chunks.
+  Adding batch 1/3...
+  Adding batch 2/3...
+  Adding batch 3/3...
+Successfully added 116 document chunks to ChromaDB.
+
+Running test query: 'What are Cisco's AI principles?'
+
+Query Results:
+
+Results for query 'What are Cisco's AI principles?':
+
+  Result 1:
+    Document: cisco-responsible-artificial-intelligence-principles.pdf
+    Chunk ID: 0
+    Relevance: 56.76%
+    Preview: --- Page 1 --- 1 Cisco Public Cisco Principles for   Responsible Artificial Intelligence Our Artificial Intelligence Mission Artificial intelligence (AI) and subdisciplines such as machine learning offer enormous positive potential  for humanity, businesses, and public services that span industry se...
+
+  Result 2:
+    Document: cisco-responsible-artificial-intelligence-framework.pdf
+    Chunk ID: 0
+    Relevance: 66.74%
+    Preview: --- Page 1 --- 1 Cisco Public The Cisco Responsible   AI Framework Trustworthy AI by Design At Cisco, we appreciate that Artificial Intelligence (AI) can be leveraged to power an inclusive future for all. We  also recognize that by applying this technology, we have a responsibility to mitigate poten...
+
+  Result 3:
+    Document: cisco-responsible-artificial-intelligence-principles.pdf
+    Chunk ID: 1
+    Relevance: 74.58%
+    Preview: --- 2 Cisco Public Our Responsible AI Principles Cisco’s Responsible AI Principles and approach described below form the foundation of our AI governance  framework – to build safe and trustworthy AI. We have translated each principle into concrete working practices  that appear in italics after each...
+
+RAG database creation complete!
+- PDF text files saved to: /Users/byohn/Documents/code/jupyter_brand 3/_Cisco_AI_TXTs
+- RAG database saved to: /Users/byohn/Documents/code/jupyter_brand 3/rag
+================================================================================

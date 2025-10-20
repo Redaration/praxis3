@@ -1,0 +1,12 @@
+# Answer Key for 3: Deploying SONiC
+
+Question 1: B
+Question 2: C
+Question 3: B
+Question 4: B
+Question 5: C
+Question 6: C
+Question 7: B
+Question 8: B
+Question 9: B
+Question 10: C

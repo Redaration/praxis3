@@ -1,0 +1,71 @@
+# Quiz for 4: Compute and GPU Management
+
+Question 1: Which NVIDIA GPU architecture introduction enabled hardware-level partitioning of a GPU into smaller instances for multi-tenant environments?
+  A. Ampere
+  B. Hopper
+  C. Turing
+  D. Volta
+
+
+Question 2: When managing GPUs with Kubernetes, what is the primary mechanism for discovering and exposing GPU hardware to pods?
+  A. Kubernetes Native Device Management
+  B. The NVIDIA Container Toolkit
+  C. The GPU device plugin for Kubernetes
+  D. Custom Pod `spec.containers` configurations
+
+
+Question 3: To ensure that a Pod gets access to a specific type of GPU, such as an A100, on a Kubernetes node, what should be used in the Pod specification?
+  A. A `nodeSelector` matching the GPU model
+  B. A `nodeSelector` with a label indicating the GPU type
+  C. A `toleration` for a GPU-specific taint
+  D. A `resource.limits` entry for `nvidia.com/gpu`
+
+
+Question 4: In Kubernetes, what is the role of `nvidia-smi` in the context of GPU management?
+  A. It is a Kubernetes component for scheduling GPUs.
+  B. It is a driver-level tool for monitoring GPU status and utilization.
+  C. It is a plugin for enabling MIG functionality.
+  D. It is used to configure GPU memory types.
+
+
+Question 5: When deploying AI/ML workloads on Kubernetes, what is the correct way to request GPU resources for a Pod?
+  A. By setting `cpu` requests for GPUs.
+  B. By adding `nvidia.com/gpu: <count>` to the `resources.requests` section of the Pod's container.
+  C. By using `nodeAffinity` to select GPU nodes.
+  D. By defining a `Service` that targets GPU-enabled nodes.
+
+
+Question 6: Which Kubernetes concept is most appropriate for managing stateful AI services that require stable network identities and ordered deployments, like a distributed machine learning inference service?
+  A. Deployments
+  B. ReplicaSets
+  C. StatefulSets
+  D. DaemonSets
+
+
+Question 7: What is the primary advantage of using Kubernetes Operators for AI workloads?
+  A. They simplify the creation of Docker images for AI models.
+  B. They automate the management of complex AI application lifecycles, including deployment and scaling.
+  C. They directly optimize CUDA kernel performance.
+  D. They abstract away the need for GPU drivers.
+
+
+Question 8: The Kubernetes Scheduler makes scheduling decisions based on predicates and priorities. What makes a scheduler GPU-aware?
+  A. Its ability to manage network bandwidth.
+  B. Its understanding of NVLink and PCIe speeds.
+  C. Its ability to consider GPU resources and node labels when assigning Pods.
+  D. Its capacity to automatically install GPU drivers.
+
+
+Question 9: Which optimization technique directly leverages the specialized hardware on modern NVIDIA GPUs to accelerate AI computations, particularly matrix multiplications?
+  A. Gradient accumulation
+  B. Data loading optimization
+  C. Utilizing Tensor Cores
+  D. Minimizing data transfer overhead
+
+
+Question 10: To avoid `OOMKilled` events for a computationally intensive AI workload in Kubernetes, what is the most crucial allocation strategy to implement?
+  A. Setting high CPU `requests` and `limits`.
+  B. Ensuring adequate `memory` requests and `limits` are specified based on workload needs.
+  C. Using Node Selectors to target nodes with more RAM.
+  D. Implementing network policies to reduce traffic.
+

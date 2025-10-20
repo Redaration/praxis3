@@ -1,0 +1,10 @@
+graph TD
+    A[Start] --> B{Parse Outline};
+    B --> C{For Each Module};
+    C --> D{Generate Module Quiz};
+    D --> E{Call LLM};
+    E --> F{Parse JSON Response};
+    F --> G{Format Quiz & Key};
+    G --> H{Save Quiz & Key Files};
+    H --> C;
+    C -- Loop End --> I[End];

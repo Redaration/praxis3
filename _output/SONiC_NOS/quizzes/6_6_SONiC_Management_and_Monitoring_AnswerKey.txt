@@ -1,0 +1,12 @@
+# Answer Key for 6: SONiC Management and Monitoring
+
+Question 1: B
+Question 2: B
+Question 3: D
+Question 4: B
+Question 5: B
+Question 6: B
+Question 7: C
+Question 8: B
+Question 9: B
+Question 10: B

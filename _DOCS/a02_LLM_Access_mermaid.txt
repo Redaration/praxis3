@@ -1,0 +1,11 @@
+graph TD
+    A[Start] --> B{call_llm}
+    B --> C{Define Parameters}
+    C --> D{Get API Key}
+    D --> E{Prepare Request}
+    E --> F{Send Request}
+    F --> G{Return Content}
+
+    H[Start] --> I{main}
+    I --> J{call_llm}
+    J --> K{Print Response}

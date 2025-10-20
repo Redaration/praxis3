@@ -1,0 +1,20 @@
+graph TD
+    A[Start] --> B{Process PDF Files};
+    B --> C{Convert PDF to Text};
+    C --> D{Chunk Text};
+    D --> E{Setup ChromaDB};
+    E --> F{Add Documents to ChromaDB};
+    F --> G{Test Query};
+    G --> H[End];
+
+    subgraph "PDF Processing"
+        B
+        C
+        D
+    end
+
+    subgraph "Database Operations"
+        E
+        F
+        G
+    end

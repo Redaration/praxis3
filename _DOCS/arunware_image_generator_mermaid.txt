@@ -1,0 +1,23 @@
+graph TD
+    A[Start] --> B{download_image}
+    B --> C{Download and Save Image}
+
+    D[Start] --> E{generate_and_download_image}
+    E --> F{Connect to Runware}
+    F --> G{Send Request}
+    G --> H{Download Images}
+    H --> I{Disconnect}
+    I --> J[Return Paths]
+
+    K[Start] --> L{generate_image}
+    L --> M{Run generate_and_download_image async}
+
+    N[Start] --> O{generate_multiple_images_parallel}
+    O --> P{Connect to Runware}
+    P --> Q{Send Parallel Requests}
+    Q --> R{Download Images}
+    R --> S{Disconnect}
+    S --> T[Return Paths]
+
+    U[Start] --> V{generate_images_parallel}
+    V --> W{Run generate_multiple_images_parallel async}

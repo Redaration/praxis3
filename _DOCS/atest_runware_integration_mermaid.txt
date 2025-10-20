@@ -1,0 +1,9 @@
+graph TD
+    A[Start] --> B{test_generate_slide_image}
+    B --> C{Define content and path}
+    C --> D{Create prompt}
+    D --> E{Call generate_image}
+    E --> F{Print result}
+
+    G[Start] --> H{main}
+    H --> B

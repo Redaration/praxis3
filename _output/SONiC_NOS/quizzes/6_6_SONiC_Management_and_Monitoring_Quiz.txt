@@ -1,0 +1,71 @@
+# Quiz for 6: SONiC Management and Monitoring
+
+Question 1: What is the primary role of the SONiC Configuration Database (Config DB)?
+  A. To store real-time operational status of network interfaces.
+  B. To maintain the desired state of the network configuration.
+  C. To log all network events and system messages.
+  D. To manage user authentication and authorization.
+
+
+Question 2: When you make a configuration change using the SONiC CLI, where is that change initially applied?
+  A. Directly to the running configuration of each microservice.
+  B. To the Config DB, which is then reconciled with the hardware.
+  C. To a temporary log file before commit.
+  D. Only to configuration backups for auditing purposes.
+
+
+Question 3: Which command is used to export the current SONiC configuration to a file?
+  A. `sudo config export filename.json`
+  B. `sudo sonic-backup save filename.json`
+  C. `sudo consul export filename.json`
+  D. `sudo config save filename.json`
+
+
+Question 4: What is the purpose of the SWSS (Switch State Service) in SONiC?
+  A. To provide a web-based GUI for configuration.
+  B. To reconcile the Config DB with the actual hardware state.
+  C. To aggregate logs from all microservices.
+  D. To manage SNMP traps and alerts.
+
+
+Question 5: If you want to view the logs of a specific SONiC microservice (container) in real-time, which CLI command would be most appropriate?
+  A. `show log --tail`
+  B. `show log <service_name>`
+  C. `tail -f /var/log/syslog`
+  D. `show log filename.log`
+
+
+Question 6: When configuring remote syslog, which syntax is used to send logs via UDP to a syslog server?
+  A. `*.* @@<syslog_server_ip>:<port>`
+  B. `*.* @<syslog_server_ip>:<port>`
+  C. `syslog.* @<syslog_server_ip>:<port>`
+  D. `*.* UDP:<syslog_server_ip>:<port>`
+
+
+Question 7: What is gNMI primarily utilized for in SONiC?
+  A. Collecting NetFlow and sFlow data for traffic analysis.
+  B. Managing SNMP community strings and user credentials.
+  C. Streaming telemetry and configuration management using gRPC.
+  D. Performing software upgrades and downgrades.
+
+
+Question 8: Before performing a SONiC software upgrade, what is a crucial pre-upgrade check?
+  A. Disabling all logging services.
+  B. Checking release notes for compatibility and known issues.
+  C. Deleting all existing configuration backups.
+  D. Rebooting the device to clear memory.
+
+
+Question 9: Which command is used to initiate a SONiC software upgrade?
+  A. `sudo sonic-upgrade install <image_path>`
+  B. `sudo sonic-installer upgrade <image_path>`
+  C. `sudo update-sonicos <image_path>`
+  D. `sudo boot-manager load <image_path>`
+
+
+Question 10: To revert to a previous stable version of SONiC if an upgrade causes issues, you would typically use:
+  A. `sudo config load <previous_config_backup.json>`
+  B. `sudo sonic-installer downgrade`
+  C. `sudo rollback <version>`
+  D. `sudo sonic-image revert`
+

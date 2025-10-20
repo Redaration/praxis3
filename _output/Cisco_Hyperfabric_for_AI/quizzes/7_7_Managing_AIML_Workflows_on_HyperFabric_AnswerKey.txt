@@ -1,0 +1,12 @@
+# Answer Key for 7: Managing AI/ML Workflows on HyperFabric
+
+Question 1: B
+Question 2: D
+Question 3: C
+Question 4: C
+Question 5: B
+Question 6: C
+Question 7: B
+Question 8: B
+Question 9: C
+Question 10: C

@@ -1,0 +1,7 @@
+FUNCTION rename_files_with_prefix(directory, prefix):
+    GET list of Python files, excluding the current script
+    FOR each file:
+        IF file lacks prefix, RENAME with prefix
+
+FUNCTION main():
+    CALL rename_files_with_prefix for current directory with prefix 'a'

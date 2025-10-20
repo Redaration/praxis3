@@ -1,0 +1,71 @@
+# Quiz for 5: Network Optimization for AI
+
+Question 1: Which networking technology was initially developed for High-Performance Computing (HPC) and is characterized by very low latency and high bandwidth, often utilizing zero-copy data transfers?
+  A. Gigabit Ethernet
+  B. 100Gigabit Ethernet
+  C. InfiniBand
+  D. Wi-Fi 6
+
+
+Question 2: What is a key advantage of using RDMA (Remote Direct Memory Access) in AI/ML workloads?
+  A. It increases CPU utilization to manage data transfers.
+  B. It offloads network processing from the CPU, reducing latency and overhead.
+  C. It requires complex routing protocols for efficient communication.
+  D. It is primarily designed for small-scale, non-distributed applications.
+
+
+Question 3: In the context of high-speed Ethernet for AI, what is the purpose of Data Center Bridging (DCB) features like Priority Flow Control (PFC)?
+  A. To introduce intentional packet loss for traffic management.
+  B. To ensure a lossless network, crucial for protocols like RoCE.
+  C. To increase network latency for better data synchronization.
+  D. To simplify network diagnostics by disabling advanced features.
+
+
+Question 4: What is a primary characteristic of a Fat-Tree (or Clos) network topology commonly used in AI clusters?
+  A. It has a single central core switch, creating a bottleneck.
+  B. It offers a non-blocking or low oversubscription design with high bisection bandwidth.
+  C. It relies heavily on mesh connections between all nodes.
+  D. It is only suitable for very small, tightly coupled clusters.
+
+
+Question 5: RoCE v2 differs from RoCE v1 primarily in its ability to:
+  A. Operate exclusively at the Layer 2 level.
+  B. Be routed across different network segments using UDP/IP.
+  C. Eliminate the need for lossless Ethernet, allowing packet loss.
+  D. Reduce bandwidth by encapsulating data in higher overhead protocols.
+
+
+Question 6: When designing a network fabric for AI/ML traffic, why is traffic classification and prioritization (using QoS) important?
+  A. To ensure all traffic types receive identical treatment, regardless of their sensitivity to latency.
+  B. To slow down critical AI training data transfers to match slower inference traffic.
+  C. To guarantee that latency-sensitive traffic, like model synchronization, receives preferential treatment.
+  D. To simplify network configuration by treating all traffic as best-effort.
+
+
+Question 7: What is the main benefit of using technologies like NCCL (NVIDIA Collective Communications Library) in conjunction with high-performance networks for distributed AI training?
+  A. NCCL is a standalone technology that replaces the need for fast networking.
+  B. It optimizes collective communication operations (like all-reduce) for GPUs and leverages the underlying network for high bandwidth and low latency.
+  C. NCCL is designed to manage storage access and has no impact on network performance.
+  D. It intentionally introduces latency to improve training stability.
+
+
+Question 8: Which of the following is a common cause of network congestion in large AI clusters?
+  A. Underutilization of network links by compute nodes.
+  B. Inconsistent IP addressing schemes.
+  C. Burst traffic patterns from numerous nodes simultaneously transferring large datasets.
+  D. Over-reliance on simple hub-based network architectures.
+
+
+Question 9: When troubleshooting low throughput issues in an AI network, what is a crucial first step?
+  A. Immediately replace all network cables.
+  B. Check link speeds, duplex settings, and basic connectivity.
+  C. Reconfigure all routing protocols.
+  D. Disable all Quality of Service (QoS) policies.
+
+
+Question 10: What does the term 'fabric scalability' refer to in the context of AI networking?
+  A. The ability of a single network cable to carry more data.
+  B. The network's capacity to grow and accommodate a larger number of nodes and increased traffic demands without significant performance degradation.
+  C. The software's ability to manage network security policies.
+  D. The process of physically shrinking network equipment for easier installation.
+

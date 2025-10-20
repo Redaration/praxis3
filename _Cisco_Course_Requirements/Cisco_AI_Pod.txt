@@ -1,0 +1,68 @@
+﻿Cisco HyperFabric for AI Fundamentals
+Class Size:
+Who Should Attend
+* Data Scientists
+* AI/ML Engineers
+* Infrastructure Architects
+* Network Engineers
+* System Administrators
+* DevOps Engineers
+Course Description
+This course provides a comprehensive overview of Cisco HyperFabric for AI, an integrated solution designed to accelerate AI/ML workloads from infrastructure to operations. The goal of this course is to understand the architecture, components, and capabilities of Cisco HyperFabric for AI, and how it can be deployed, configured, and managed to optimize performance and efficiency for AI/ML initiatives. This course will also include hands-on labs where you will configure and administer key Cisco HyperFabric for AI features.
+Learning Objectives
+* Cisco HyperFabric for AI Overview, Use Cases, and Business Drivers
+* Cisco HyperFabric for AI System Architecture and Components
+* Deploy Cisco HyperFabric for AI solutions
+* Configure and manage network, compute, and storage for AI workloads
+* Optimize infrastructure for AI/ML performance
+* Implement and manage AI/ML workflows on HyperFabric
+* Monitor and troubleshoot Cisco HyperFabric for AI environments
+* Understand integration with AI/ML frameworks and platforms
+Course Outline
+Module 1: Introduction to Cisco HyperFabric for AI
+* The AI/ML Infrastructure Challenge
+* Cisco's Approach to AI/ML Infrastructure
+* Cisco HyperFabric for AI Overview and Value Proposition
+* Key Use Cases and Business Benefits
+Module 2: Cisco HyperFabric for AI Architecture
+* Core Components (Compute, Network, Storage)
+* Integration with NVIDIA AI Enterprise
+* Software Stack Overview (Kubernetes, AI/ML Frameworks)
+* Data Flow and Connectivity within HyperFabric
+Module 3: Deploying Cisco HyperFabric for AI
+* Planning and Sizing for AI Workloads
+* Installation and Initial Setup
+* Network and Storage Configuration Best Practices
+* Validated Designs and Reference Architectures
+Module 4: Compute and GPU Management
+* NVIDIA GPU Integration and Management
+* Kubernetes for Container Orchestration
+* Resource Allocation and Scheduling for AI/ML
+* Performance Tuning for Compute Resources
+Module 5: Network Optimization for AI
+* High-Performance Networking (e.g., InfiniBand, Ethernet)
+* Network Fabric Design for AI/ML Traffic
+* RDMA over Converged Ethernet (RoCE)
+* Network Monitoring and Troubleshooting
+Module 6: Storage Solutions for AI
+* High-Performance Storage for AI/ML Data
+* Data Management and Lifecycle
+* Integration with Distributed File Systems
+* Data Security and Access Control
+Module 7: Managing AI/ML Workflows on HyperFabric
+* Deploying AI/ML Applications
+* MLOps Concepts and Tools on HyperFabric
+* Model Training and Inference Workflows
+* Monitoring AI/ML Pipeline Performance
+Module 8: Monitoring and Troubleshooting HyperFabric for AI
+* Unified Management Interface
+* Performance Monitoring and Telemetry
+* Log Analysis and Diagnostics
+* Common Troubleshooting Scenarios and Best Practices
+Lab 1: Environment Setup and Initial HyperFabric Deployment
+Lab 2: Configuring Network and Storage for AI Workloads
+Lab 3: Deploying a Sample AI/ML Application on HyperFabric
+Lab 4: Monitoring AI/ML Workload Performance
+Lab 5: Scaling Compute Resources for AI Training
+Lab 6: Troubleshooting a Simulated Infrastructure Issue
+Lab 7: Exploring MLOps Tools and Workflows on HyperFabric

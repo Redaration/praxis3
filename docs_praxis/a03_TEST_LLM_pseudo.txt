@@ -1,0 +1,34 @@
+START
+    // Test LLM Interaction Script
+    // This script provides an interactive command-line interface to test the LLM.
+
+    // Initialization
+    IMPORT call_llm function from a02_LLM_Access module
+
+    // Main Function
+    FUNCTION main():
+        PRINT "LLM Question-Answering System" banner
+        INITIALIZE system_prompt to None
+
+        LOOP indefinitely:
+            GET user_input
+            IF user_input is an exit command THEN
+                BREAK loop
+            ELSE IF user_input is a system prompt command THEN
+                SET system_prompt
+            ELSE IF user_input is a clear command THEN
+                CLEAR system_prompt
+            ELSE IF user_input is a show command THEN
+                SHOW system_prompt
+            ELSE
+                SEND user_input to call_llm with system_prompt
+                PRINT the response
+            END IF
+        END LOOP
+    END FUNCTION
+
+    // Script Execution
+    IF script is run directly THEN
+        main()
+    END IF
+END
