@@ -1,9 +1,46 @@
 #!/usr/bin/env python3
 """
-Shared utilities for the AI-powered course content generation system.
+Shared Utility Functions for AI-Powered Course Content Generation System
 
-This module provides common utility functions used across the application
-to eliminate code duplication and improve maintainability.
+This module provides common utility functions and helper classes used across the
+application to eliminate code duplication, improve maintainability, and provide
+reusable components for file operations, caching, validation, and performance monitoring.
+
+UTILITY CLASSES:
+    - FileUtils: File system operations (read, write, copy, delete, hash)
+    - CacheUtils: Caching operations and cache key generation
+    - ValidationUtils: Input validation and sanitization
+    - AsyncUtils: Asynchronous file I/O operations
+    - PerformanceUtils: Performance monitoring and timing
+    - TextUtils: Text processing and cleaning
+    - RetryUtils: Retry logic with exponential backoff
+
+THIRD-PARTY LIBRARIES:
+    - aiofiles: Asynchronous file operations
+      License: Apache 2.0
+      PyPI: https://pypi.org/project/aiofiles/
+
+    - psutil: System and process utilities (optional)
+      License: BSD-3-Clause
+      PyPI: https://pypi.org/project/psutil/
+      Purpose: Memory usage tracking (gracefully degrades if not installed)
+
+DESIGN PATTERNS:
+    - DRY (Don't Repeat Yourself): Centralized utility functions
+    - Decorator Pattern: Retry logic and timing decorators
+    - Strategy Pattern: Configurable validation and caching strategies
+
+ACADEMIC CONTEXT:
+    These utilities support research reproducibility by providing consistent
+    file handling, error management, and performance monitoring across all
+    components of the course generation system.
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import os
@@ -16,7 +53,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Union
 from functools import wraps
 import asyncio
-import aiofiles
+import aiofiles  # Apache 2.0 License
 
 from config import config
 from exceptions import (

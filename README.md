@@ -1,6 +1,13 @@
-# AI Course Generator
+# AI-Powered Course Content Generation System
 
 An opinionated toolkit for turning technical source material into a full training course with the help of large language models, image generation, and automated slide production. The repository bundles the orchestration scripts, supporting services, and observability utilities that power the workflow.
+
+**Author**: Brandon Yohn
+**Institution**: The George Washington University
+**Program**: Praxis Doctoral Program
+**Last Updated**: January 20, 2025
+
+**Academic Notice**: This system is part of doctoral research on AI-powered educational content generation. All third-party libraries and services are properly attributed in `ATTRIBUTIONS.md`. AI-generated content is clearly marked and should be reviewed before production use.
 
 ## Overview
 
@@ -223,3 +230,49 @@ Enable Prometheus metrics by installing `prometheus-client` (already in `require
 ---
 
 For background on the refactor and rationale behind the abstractions, see `MIGRATION_GUIDE.md`.
+
+## Academic Attribution & Citations
+
+### Third-Party Services
+
+This project uses the following commercial AI services:
+- **OpenRouter API** (https://openrouter.ai/) - LLM text generation
+- **Runware AI** (https://runware.ai/) - AI image generation
+
+### Key Libraries and Licenses
+
+All third-party Python libraries are used in compliance with their respective licenses:
+- `python-pptx` (MIT) - PowerPoint generation
+- `requests` (Apache 2.0) - HTTP client
+- `python-dotenv` (BSD-3-Clause) - Environment management
+- `aiohttp` (Apache 2.0) - Async HTTP operations
+- `runware` (Proprietary) - Runware SDK
+- `chromadb` (Apache 2.0) - Vector database
+- `prometheus-client` (Apache 2.0) - Metrics collection
+- And others (see `ATTRIBUTIONS.md` for complete list)
+
+### Full Attribution Document
+
+See **`ATTRIBUTIONS.md`** for comprehensive attribution of all third-party libraries, services, design patterns, and references used in this project. This document is required reading for academic integrity compliance.
+
+### Citation Format
+
+If citing this work in academic contexts:
+
+```
+Yohn, Brandon. (2025). AI-Powered Course Content Generation System:
+A Framework for Automated Educational Content Development Using Large Language Models.
+Praxis Doctoral Research Project. The George Washington University.
+```
+
+### AI-Generated Content Disclosure
+
+This system generates educational content using AI models. All AI-generated materials should be:
+- Reviewed for accuracy before publication
+- Clearly marked as AI-assisted when used
+- Validated against educational standards
+- Used in compliance with institutional policies
+
+---
+
+**Doctoral Research Context**: This project demonstrates practical application of Large Language Models in educational technology, exploring automation, quality control, and integration challenges in AI-powered content generation systems.

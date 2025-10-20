@@ -1,18 +1,41 @@
 #!/usr/bin/env python3
 """
-Centralized configuration management for the AI-powered course content generation system.
+Centralized Configuration Management for AI-Powered Course Content Generation System
 
 This module provides a centralized way to manage all configuration settings,
 API keys, and constants used throughout the application.
+
+THIRD-PARTY LIBRARIES:
+    - python-dotenv: For loading environment variables from .env files
+      License: BSD-3-Clause
+      PyPI: https://pypi.org/project/python-dotenv/
+
+ACADEMIC CONTEXT:
+    This configuration system is part of a doctoral research project focusing
+    on AI-powered educational content generation. All API keys and sensitive
+    data are managed securely through environment variables.
+
+SECURITY NOTES:
+    - API keys are loaded from .env file (not committed to version control)
+    - Validation ensures required keys are present before operations
+    - Default values are provided for non-sensitive settings
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import os
 import json
 from typing import Dict, Any, Optional
 from pathlib import Path
-from dotenv import load_dotenv
+from dotenv import load_dotenv  # BSD-3-Clause License
 from exceptions import ConfigurationError
 
+# Load environment variables from .env file
 load_dotenv()
 
 class Config:

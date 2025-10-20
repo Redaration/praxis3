@@ -1,9 +1,33 @@
 #!/usr/bin/env python3
 """
-Custom exception classes for the AI-powered course content generation system.
+Custom Exception Classes for AI-Powered Course Content Generation System
 
-This module provides a comprehensive set of exception classes for handling
-various error scenarios in the application.
+This module provides a comprehensive hierarchy of exception classes for handling
+various error scenarios throughout the application, from API failures to validation
+errors and resource management issues.
+
+DESIGN PATTERN:
+    Custom exception hierarchy following Python best practices, enabling granular
+    error handling and informative error messages for debugging and logging.
+
+EXCEPTION CATEGORIES:
+    - API Errors: LLM, image generation, network, authentication, rate limiting
+    - File Operations: Reading, writing, parsing, resource not found
+    - Validation: Input validation, security, configuration
+    - Cache & Database: Caching operations, RAG database operations
+    - Content Generation: Presentation, audio, video, template processing
+    - System: Dependencies, timeouts, service unavailability
+
+ACADEMIC CONTEXT:
+    Proper error handling is crucial for research reproducibility and debugging.
+    All exceptions include contextual information for logging and analysis.
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete documentation.
 """
 
 class CourseGeneratorException(Exception):

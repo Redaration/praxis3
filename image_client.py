@@ -1,14 +1,62 @@
 #!/usr/bin/env python3
 """
-Enhanced image generation client with caching, retry logic, and parallel processing.
+Enhanced Image Generation Client with Caching, Retry Logic, and Parallel Processing
 
-This module provides a robust interface for generating images using various APIs
+This module provides a robust interface for generating AI images using the Runware API,
 with built-in caching, retry mechanisms, and parallel processing capabilities.
+
+THIRD-PARTY SERVICES:
+    - Runware AI: AI-powered image generation service
+      Website: https://runware.ai/
+      Documentation: https://docs.runware.ai/
+      License: Commercial API service (requires API key)
+      Purpose: Generate high-quality images from text prompts for educational content
+
+THIRD-PARTY LIBRARIES:
+    - runware: Official Runware Python SDK
+      License: Proprietary/Commercial
+      PyPI: https://pypi.org/project/runware/
+      Documentation: https://docs.runware.ai/
+
+    - requests: HTTP library for downloading generated images
+      License: Apache 2.0
+      PyPI: https://pypi.org/project/requests/
+
+    - aiohttp: Asynchronous HTTP client/server
+      License: Apache 2.0
+      PyPI: https://pypi.org/project/aiohttp/
+
+DESIGN PATTERNS:
+    - Circuit Breaker: Handles API failures gracefully
+    - Retry with Exponential Backoff: Manages transient network issues
+    - Thread Pool Executor: Enables parallel image generation
+    - Async/Await: Efficient concurrent operations
+    - Caching: Reduces duplicate API calls for same prompts
+
+ACADEMIC CONTEXT:
+    This client generates educational images for course presentations, including:
+    - Slide backgrounds and visual aids
+    - Conceptual diagrams and illustrations
+    - Title slides and module headers
+    All generated images should be reviewed for educational appropriateness.
+
+IMPORTANT NOTES:
+    - Image generation is computationally expensive and metered
+    - Default dimensions: 1024x512 pixels (configurable)
+    - Parallel processing improves performance for batch operations
+    - Cache reduces costs for repeated prompts
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import os
 import asyncio
-import aiohttp
+import aiohttp  # Apache 2.0 License
 from typing import List, Dict, Any, Optional, Tuple
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed

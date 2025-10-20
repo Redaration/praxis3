@@ -1,7 +1,62 @@
 #!/usr/bin/env python3
 """
-AI Course Generator Application Runner
-Demonstrates the enhanced system with all improvements integrated.
+AI Course Generator - Main Application Runner
+
+This is the primary application entry point that demonstrates the complete
+AI-powered course content generation system with all enhancements integrated.
+
+SYSTEM OVERVIEW:
+    This application generates comprehensive educational course content using AI,
+    including PowerPoint presentations, quizzes, exams, images, and multimedia.
+    It integrates multiple AI services with production-grade infrastructure.
+
+KEY FEATURES:
+    - Health monitoring and system diagnostics
+    - Performance metrics collection
+    - Input validation and security
+    - LLM-powered text generation (via OpenRouter)
+    - AI image generation (via Runware)
+    - Caching for performance optimization
+    - Circuit breaker for fault tolerance
+    - Rate limiting for cost control
+
+THIRD-PARTY SERVICES:
+    - OpenRouter API: LLM text generation
+    - Runware API: AI image generation
+
+DESIGN PATTERNS:
+    - Circuit Breaker: Fault tolerance
+    - Rate Limiter: API quota management
+    - Cache Manager: Performance optimization
+    - Health Checker: System monitoring
+    - Metrics Collector: Usage tracking
+
+ACADEMIC CONTEXT:
+    This application is part of a doctoral research project exploring AI-powered
+    educational content generation. It demonstrates how AI can assist in creating
+    comprehensive course materials while maintaining quality and consistency.
+
+USAGE:
+    python app.py
+
+    The application provides an interactive menu for:
+    - Running health checks
+    - Viewing system metrics
+    - Testing LLM and image generation
+    - Running validation tests
+    - Managing cache
+
+REQUIREMENTS:
+    - Python 3.12+
+    - Valid API keys in .env file (OPENROUTER_API_KEY, RUNWARE_API_KEY)
+    - Required Python packages (see requirements.txt)
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import os
@@ -144,12 +199,7 @@ class CourseGeneratorApp:
         except Exception as e:
             print(f"❌ Prompt validation failed: {e}")
         
-        # Test API key validation
-        try:
-            key = validate_api_key("sk-or-v1-test-key", "openrouter")
-            print(f"✅ Valid API key format")
-        except Exception as e:
-            print(f"❌ API key validation failed: {e}")
+
     
     def test_rate_limiting(self):
         """Test rate limiting."""

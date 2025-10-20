@@ -1,18 +1,58 @@
 #!/usr/bin/env python3
 """
-Enhanced LLM client with caching, retry logic, and comprehensive error handling.
+Enhanced LLM Client with Caching, Retry Logic, and Comprehensive Error Handling
 
-This module provides a robust interface for interacting with LLM APIs
-(OpenRouter.ai) with built-in caching, retry mechanisms, and proper error handling.
+This module provides a robust interface for interacting with Large Language Model (LLM)
+APIs through OpenRouter.ai, with built-in caching, retry mechanisms, and proper error handling.
+
+THIRD-PARTY SERVICES:
+    - OpenRouter API: Unified LLM API aggregation service
+      Website: https://openrouter.ai/
+      Documentation: https://openrouter.ai/docs
+      License: Commercial API service (requires API key)
+      Purpose: Provides access to multiple LLM models including Google Gemini, OpenAI, Anthropic, etc.
+
+THIRD-PARTY LIBRARIES:
+    - requests: HTTP library for API communication
+      License: Apache 2.0
+      PyPI: https://pypi.org/project/requests/
+
+    - urllib3: HTTP client with connection pooling and retry mechanisms
+      License: MIT
+      PyPI: https://pypi.org/project/urllib3/
+
+DESIGN PATTERNS:
+    - Circuit Breaker: Prevents cascade failures when API is down
+    - Retry with Exponential Backoff: Handles transient failures gracefully
+    - Caching: Reduces API calls and costs for repeated prompts
+    - Rate Limiting: Prevents exceeding API quotas
+
+ACADEMIC CONTEXT:
+    This client is used to generate educational content including course outlines,
+    module descriptions, quiz questions, and explanatory text for the doctoral
+    research project on AI-powered educational content generation.
+
+IMPORTANT NOTES:
+    - All AI-generated content should be reviewed before publication
+    - API usage is metered and incurs costs
+    - Responses are cached to optimize performance and reduce costs
+    - Default model: Google Gemini 2.5 Flash (configurable)
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
+Last Modified: 2025-01-20
+
+See ATTRIBUTIONS.md for complete library and service attributions.
 """
 
 import json
 import time
 import logging
 from typing import Optional, Dict, Any, List
-import requests
+import requests  # Apache 2.0 License
 from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from urllib3.util.retry import Retry  # MIT License
 
 import os
 from config import config
