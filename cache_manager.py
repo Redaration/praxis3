@@ -19,28 +19,77 @@ from exceptions import CacheError
 from utils import FileUtils, logger
 
 class CacheManager:
-    """Centralized cache management system."""
-    
+    """
+    Centralized cache management system for storing and retrieving API responses.
+
+    This class provides a file-based caching mechanism that:
+    - Stores cached values with TTL (time-to-live) expiration
+    - Uses pickle for serialization to support complex Python objects
+    - Maintains metadata for each cached item (creation time, expiration)
+    - Provides statistics and cleanup utilities
+
+    Cache files are stored in the configured cache directory (.cache/ by default).
+    Each cache entry consists of two files:
+    - <key>.cache - The pickled cached value
+    - <key>.meta - JSON metadata about the cache entry
+    """
+
     def __init__(self, cache_dir: Optional[str] = None):
-        """Initialize the cache manager."""
+        """
+        Initialize the cache manager with a specified cache directory.
+
+        Args:
+            cache_dir: Optional custom cache directory path. If not provided,
+                      uses the default from config (typically .cache/)
+
+        The cache directory is created automatically if it doesn't exist.
+        """
         self.cache_dir = cache_dir or os.path.join(
-            config.get_current_directory() or ".", 
+            config.get_current_directory() or ".",
             config.CACHE_DIR
         )
         FileUtils.ensure_directory(self.cache_dir)
         
     def _get_cache_path(self, key: str) -> str:
-        """Get the full path for a cache file."""
+        """
+        Get the full filesystem path for a cache data file.
+
+        Args:
+            key: The cache key (sanitized to remove unsafe characters)
+
+        Returns:
+            Full path to the .cache file for this key
+        """
         safe_key = FileUtils.safe_filename(key)
         return os.path.join(self.cache_dir, f"{safe_key}.cache")
-    
+
     def _get_metadata_path(self, key: str) -> str:
-        """Get the full path for cache metadata."""
+        """
+        Get the full filesystem path for cache metadata file.
+
+        Args:
+            key: The cache key (sanitized to remove unsafe characters)
+
+        Returns:
+            Full path to the .meta file containing cache metadata (TTL, expiration)
+        """
         safe_key = FileUtils.safe_filename(key)
         return os.path.join(self.cache_dir, f"{safe_key}.meta")
-    
+
     def _generate_key(self, *args, **kwargs) -> str:
-        """Generate a cache key from arguments."""
+        """
+        Generate a unique cache key from function arguments.
+
+        Creates an MD5 hash of the serialized arguments to use as a cache key.
+        This ensures consistent cache keys for the same inputs.
+
+        Args:
+            *args: Positional arguments to hash
+            **kwargs: Keyword arguments to hash (sorted for consistency)
+
+        Returns:
+            32-character hexadecimal MD5 hash string
+        """
         key_data = {
             'args': args,
             'kwargs': sorted(kwargs.items()) if kwargs else []
@@ -49,56 +98,95 @@ class CacheManager:
         return hashlib.md5(key_string.encode()).hexdigest()
     
     def set(self, key: str, value: Any, ttl: Optional[int] = None) -> None:
-        """Store a value in cache."""
+        """
+        Store a value in the cache with optional TTL (time-to-live).
+
+        The value is serialized using pickle and stored in a .cache file.
+        Metadata (creation time, TTL, expiration) is stored in a .meta file.
+
+        Args:
+            key: Unique identifier for the cached value
+            value: Any Python object to cache (must be pickle-able)
+            ttl: Time-to-live in seconds. If None, uses config.CACHE_TTL (default: 3600s)
+
+        Raises:
+            CacheError: If caching fails due to I/O or serialization errors
+
+        Example:
+            cache_manager.set("my_key", {"data": "value"}, ttl=1800)
+        """
         try:
+            # Use default TTL from config if not specified
             ttl = ttl or config.CACHE_TTL
             cache_path = self._get_cache_path(key)
             metadata_path = self._get_metadata_path(key)
-            
-            # Store the value
+
+            # Store the value using pickle for complex object support
             with open(cache_path, 'wb') as f:
                 pickle.dump(value, f)
-            
-            # Store metadata
+
+            # Store metadata for expiration checking
             metadata = {
                 'created': time.time(),
                 'ttl': ttl,
                 'expires': time.time() + ttl
             }
-            
+
             with open(metadata_path, 'w') as f:
                 json.dump(metadata, f)
-                
+
             logger.debug(f"Cached value for key: {key}")
-            
+
         except Exception as e:
             raise CacheError(f"Failed to cache value: {e}")
     
     def get(self, key: str) -> Optional[Any]:
-        """Retrieve a value from cache."""
+        """
+        Retrieve a value from cache if it exists and hasn't expired.
+
+        Checks the metadata to determine if the cached value is still valid.
+        Expired entries are automatically deleted.
+
+        Args:
+            key: The cache key to retrieve
+
+        Returns:
+            The cached value if found and not expired, None otherwise
+
+        Example:
+            value = cache_manager.get("my_key")
+            if value is not None:
+                # Use cached value
+                process(value)
+            else:
+                # Cache miss - compute and cache
+                value = expensive_operation()
+                cache_manager.set("my_key", value)
+        """
         try:
             cache_path = self._get_cache_path(key)
             metadata_path = self._get_metadata_path(key)
-            
-            # Check if cache exists
+
+            # Check if both cache files exist
             if not os.path.exists(cache_path) or not os.path.exists(metadata_path):
                 return None
-            
-            # Check if cache is expired
+
+            # Load and check metadata for expiration
             with open(metadata_path, 'r') as f:
                 metadata = json.load(f)
-            
+
+            # If expired, delete the cache entry and return None
             if time.time() > metadata['expires']:
                 self.delete(key)
                 return None
-            
-            # Load cached value
+
+            # Load and return the cached value
             with open(cache_path, 'rb') as f:
                 value = pickle.load(f)
-            
+
             logger.debug(f"Retrieved cached value for key: {key}")
             return value
-            
+
         except Exception as e:
             logger.warning(f"Failed to retrieve cached value: {e}")
             return None

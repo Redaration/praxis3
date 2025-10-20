@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """
 Input validation and sanitization utilities.
+
+This module provides comprehensive validation for all user inputs, API keys,
+file paths, URLs, and other data to ensure security and data integrity.
+
+Author: Brandon Yohn
+Institution: The George Washington University
+Program: Praxis Doctoral Program
 """
 
 import re
@@ -12,61 +19,137 @@ from exceptions import ValidationError, ConfigurationError
 from utils import logger
 
 class InputValidator:
-    """Comprehensive input validation and sanitization."""
-    
+    """
+    Comprehensive input validation and sanitization class.
+
+    Provides static methods for validating various types of input including:
+    - API keys for OpenRouter and Runware services
+    - User prompts (with XSS prevention)
+    - Image dimensions
+    - File paths (with path traversal protection)
+    - URLs
+    - Model names
+
+    All validation methods raise ValidationError on invalid input.
+    """
+
     @staticmethod
     def validate_api_key(key: str, service: str) -> str:
-        """Validate API key format."""
+        """
+        Validate API key format for supported services.
+
+        Checks that API keys match expected format patterns:
+        - OpenRouter: Must start with "sk-or-"
+        - Runware: Must be at least 20 chars, uppercase alphanumeric + hyphens
+
+        Args:
+            key: The API key string to validate
+            service: Service name ("openrouter" or "runware")
+
+        Returns:
+            The validated and trimmed API key
+
+        Raises:
+            ValidationError: If key is missing or format is invalid
+
+        Example:
+            validated_key = InputValidator.validate_api_key(
+                "sk-or-v1-abc123...",
+                "openrouter"
+            )
+        """
         if not key:
             raise ValidationError(f"{service} API key is required")
-        
+
         key = key.strip()
-        
-        # Basic format validation
+
+        # Service-specific format validation
         if service.lower() == "openrouter":
             if not key.startswith("sk-or-"):
-                raise ValidationError("Invalid OpenRouter API key format")
+                raise ValidationError("Invalid OpenRouter API key format (must start with 'sk-or-')")
         elif service.lower() == "runware":
             if len(key) < 20 or not re.match(r'^[A-Z0-9-]+$', key):
-                raise ValidationError("Invalid Runware API key format")
-        
+                raise ValidationError("Invalid Runware API key format (min 20 chars, uppercase alphanumeric)")
+
         return key
     
     @staticmethod
     def validate_prompt(prompt: str, max_length: int = 4000) -> str:
-        """Validate and sanitize prompt."""
+        """
+        Validate and sanitize user prompts for LLM and image generation.
+
+        Performs security sanitization to prevent XSS and injection attacks:
+        - Removes <script> tags
+        - Removes javascript: protocol
+        - Normalizes whitespace
+
+        Args:
+            prompt: The user input prompt to validate
+            max_length: Maximum allowed prompt length (default: 4000 chars)
+
+        Returns:
+            Sanitized and validated prompt string
+
+        Raises:
+            ValidationError: If prompt is empty or exceeds max_length
+
+        Example:
+            safe_prompt = InputValidator.validate_prompt(
+                "Generate a course on Python programming",
+                max_length=5000
+            )
+        """
         if not prompt:
             raise ValidationError("Prompt cannot be empty")
-        
+
         prompt = prompt.strip()
-        
+
         if len(prompt) > max_length:
             raise ValidationError(f"Prompt exceeds maximum length of {max_length} characters")
-        
-        # Remove potential injection attempts
+
+        # Security: Remove potential XSS injection attempts
         prompt = re.sub(r'<script.*?</script>', '', prompt, flags=re.IGNORECASE | re.DOTALL)
         prompt = re.sub(r'javascript:', '', prompt, flags=re.IGNORECASE)
-        
-        # Normalize whitespace
+
+        # Normalize whitespace for consistent processing
         prompt = re.sub(r'\s+', ' ', prompt)
-        
+
         return prompt
-    
+
     @staticmethod
     def validate_image_dimensions(width: int, height: int) -> tuple:
-        """Validate image dimensions."""
+        """
+        Validate image dimensions for generation requests.
+
+        Ensures dimensions are within acceptable ranges for image generation APIs:
+        - Minimum: 64x64 pixels
+        - Maximum: 2048x2048 pixels
+
+        Args:
+            width: Image width in pixels
+            height: Image height in pixels
+
+        Returns:
+            Tuple of (width, height) if valid
+
+        Raises:
+            ValidationError: If dimensions are invalid, non-positive, or out of range
+
+        Example:
+            w, h = InputValidator.validate_image_dimensions(1024, 512)
+        """
         if not isinstance(width, int) or not isinstance(height, int):
             raise ValidationError("Width and height must be integers")
-        
+
         if width <= 0 or height <= 0:
             raise ValidationError("Width and height must be positive")
-        
+
         if width > 2048 or height > 2048:
-            raise ValidationError("Maximum dimensions are 2048x2048")
-        
+            raise ValidationError("Maximum dimensions are 2048x2048 pixels")
+
         if width < 64 or height < 64:
-            raise ValidationError("Minimum dimensions are 64x64")
-        
+            raise ValidationError("Minimum dimensions are 64x64 pixels")
+
         return width, height
     
     @staticmethod
